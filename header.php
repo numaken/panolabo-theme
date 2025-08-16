@@ -24,18 +24,19 @@ if ( isset($post) && $post !== null ) {
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- UIKit CSS and JS - Synchronous Loading -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/css/uikit.min.css">
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit-icons.min.js"></script>
+<!-- UIKit CSS and JS - Local Files -->
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/uikit.min.css">
+<script src="<?php echo get_template_directory_uri(); ?>/js/uikit.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/uikit-icons.min.js"></script>
 <script>
 // 即座にUIKit確認
 console.log('Header: UIKit type:', typeof UIkit);
+console.log('Header: UIKit object:', UIkit);
 if (typeof UIkit !== 'undefined') {
-    console.log('Header: UIKit successfully loaded');
+    console.log('Header: UIKit successfully loaded from local files');
     window.UIKitReady = true;
 } else {
-    console.error('Header: UIKit failed to load');
+    console.error('Header: UIKit failed to load from local files');
 }
 </script>
 
