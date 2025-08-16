@@ -125,48 +125,48 @@
     });
 </script>
 
-<!-- UIKit初期化とハンバーガーメニュー設定 -->
+<!-- UIKit正式構文での初期化 -->
 <script>
 (function() {
     'use strict';
     
     function waitForUIKit() {
         if (typeof UIkit !== 'undefined' && window.UIKitReady) {
-            console.log('UIKit ready, initializing components...');
-            initializeComponents();
+            console.log('UIKit ready, using official syntax...');
+            initializeUIKitComponents();
         } else {
             setTimeout(waitForUIKit, 100);
         }
     }
     
-    function initializeComponents() {
-        // Offcanvasの初期化
+    function initializeUIKitComponents() {
+        // UIKitの自動初期化を信頼（推奨方法）
+        // HTMLの uk-offcanvas 属性により自動的に初期化される
+        console.log('Trusting UIKit auto-initialization...');
+        
+        // 必要に応じて手動で更新
+        UIkit.update();
+        
+        // デバッグ用：offcanvasが正しく初期化されているか確認
         var offcanvasElement = document.getElementById('offcanvas-nav');
         if (offcanvasElement) {
-            var offcanvas = UIkit.offcanvas(offcanvasElement, {
-                mode: 'slide',
-                overlay: true
-            });
-            console.log('Offcanvas initialized');
+            // UIKitコンポーネントが既に初期化されているか確認
+            if (UIkit.getComponent(offcanvasElement, 'offcanvas')) {
+                console.log('Offcanvas component auto-initialized successfully');
+            } else {
+                console.log('Manual offcanvas initialization...');
+                UIkit.offcanvas(offcanvasElement);
+            }
         }
         
-        // ハンバーガーメニューボタンに手動でイベントリスナーを追加
-        var toggleButton = document.querySelector('a[href="#offcanvas-nav"]');
-        if (toggleButton && offcanvasElement) {
-            toggleButton.addEventListener('click', function(e) {
-                e.preventDefault();
-                if (typeof UIkit !== 'undefined') {
-                    UIkit.offcanvas(offcanvasElement).toggle();
-                }
-            });
-            console.log('Hamburger menu event listener added');
+        // uk-toggle属性による自動動作を確認
+        var toggleButton = document.querySelector('[uk-toggle]');
+        if (toggleButton) {
+            console.log('Toggle button found with uk-toggle attribute');
         }
-        
-        // UIKitコンポーネントの更新
-        UIkit.update();
     }
     
-    // DOMContentLoadedまたはUIKitの準備完了を待つ
+    // DOMとUIKitの準備完了を待つ
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', waitForUIKit);
     } else {
