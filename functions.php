@@ -73,32 +73,44 @@ add_action('wp_head', function () {
     printf('<meta name="twitter:image" content="%s"/>' . "\n", esc_url($image));
 }, 9);
 
-// UIkit読み込み（正しい順序で）
+// UIkit読み込み（最優先で確実に）
 add_action('wp_enqueue_scripts', function () {
     $ver = wp_get_theme()->get('Version') ?: '1.0.0';
     
-    // UIKit CSS（head内で読み込み）
-    wp_enqueue_style('uikit', 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/css/uikit.min.css', [], '3.17.12');
+    // UIKit CSS（最優先で読み込み）
+    wp_enqueue_style('uikit-css', 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/css/uikit.min.css', [], '3.17.12');
     
-    // UIKit JS（footer内で読み込み、defer不使用）
-    wp_enqueue_script('uikit', 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit.min.js', [], '3.17.12', true);
-    wp_enqueue_script('uikit-icons', 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit-icons.min.js', ['uikit'], '3.17.12', true);
+    // UIKit JS（headで読み込み、確実に初期化）
+    wp_enqueue_script('uikit-js', 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit.min.js', [], '3.17.12', false);
+    wp_enqueue_script('uikit-icons-js', 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit-icons.min.js', ['uikit-js'], '3.17.12', false);
     
     // Theme assets（UIKit読み込み後）
-    wp_enqueue_style('theme-style', get_stylesheet_uri(), ['uikit'], $ver);
+    wp_enqueue_style('theme-style', get_stylesheet_uri(), ['uikit-css'], $ver);
     wp_enqueue_style('theme-polish', get_template_directory_uri() . '/assets/css/theme-polish.css', ['theme-style'], $ver);
+    
     if (file_exists(get_template_directory() . '/dist/main.bundle.js')) {
-        wp_enqueue_script('theme-js', get_template_directory_uri() . '/dist/main.bundle.js', ['uikit-icons'], $ver, true);
+        wp_enqueue_script('theme-js', get_template_directory_uri() . '/dist/main.bundle.js', ['uikit-icons-js'], $ver, true);
     }
     
-    // UIKitが確実に読み込まれるようインライン初期化を追加
-    wp_add_inline_script('uikit-icons', '
-        console.log("UIKit loaded:", typeof UIkit);
-        if (typeof UIkit !== "undefined") {
-            console.log("UIKit components:", Object.keys(UIkit));
-        }
+    // UIKit強制初期化
+    wp_add_inline_script('uikit-icons-js', '
+        // UIKit初期化確認
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("UIKit status:", typeof UIkit);
+            if (typeof UIkit !== "undefined") {
+                console.log("UIKit available, initializing components...");
+                // Offcanvasの手動初期化
+                UIkit.use(UIkit.icons);
+                var offcanvasElement = document.querySelector("#offcanvas-nav");
+                if (offcanvasElement) {
+                    console.log("Initializing offcanvas manually");
+                }
+            } else {
+                console.error("UIKit not loaded!");
+            }
+        });
     ');
-}, 20);
+}, 5);
 
 // セキュリティ強化
 remove_action('wp_head', 'wp_generator');
