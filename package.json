@@ -52,7 +52,7 @@
     "sass": "^1.69.5",
     "sass-loader": "^13.3.2",
     "style-loader": "^3.3.3",
-    "stylelint": "^15.11.0",
+    "stylelint": "^13.13.1",
     "stylelint-config-wordpress": "^17.0.0",
     "terser-webpack-plugin": "^5.3.9",
     "url-loader": "^4.1.1",
