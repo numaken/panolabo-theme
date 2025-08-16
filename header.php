@@ -24,6 +24,13 @@ if ( isset($post) && $post !== null ) {
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!-- Preload critical resources -->
+<link rel="preload" as="image" href="<?php echo esc_url( get_theme_file_uri('/assets/img/hero-placeholder.webp') ); ?>">
+<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/css/uikit.min.css">
+
+<!-- Skip to main content link for accessibility -->
+<a class="skip-link uk-visible-focus" href="#main" style="position:absolute;left:-9999px;z-index:999;padding:1em;background:#000;color:#fff;text-decoration:none;">メインコンテンツへ移動</a>
+
 <!-- アプリアイコン（オプション: 管理画面で設定可能にしている例） -->
 <link rel="apple-touch-icon" href="<?php echo esc_url( get_option('bottom_patch_url') ); ?>">
 <link rel="icon" sizes="192x192" href="<?php echo esc_url( get_option('bottom_patch_url') ); ?>">

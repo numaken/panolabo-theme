@@ -23,21 +23,8 @@ function panolabo_theme_setup() {
 }
 add_action('after_setup_theme', 'panolabo_theme_setup');
 
-// スタイルとスクリプトの読み込み
-function panolabo_enqueue_scripts() {
-    // CSS
-    wp_enqueue_style('uikit-css', get_template_directory_uri() . '/css/uikit.css', array(), '3.23.11');
-    wp_enqueue_style('main-css', get_template_directory_uri() . '/css/main.css', array('uikit-css'), '1.0.0');
-    wp_enqueue_style('numa-custom-css', get_template_directory_uri() . '/css/numa.custom.css', array('main-css'), '1.0.0');
-    wp_enqueue_style('theme-style', get_stylesheet_uri(), array('numa-custom-css'), '1.0.0');
-    
-    // JavaScript
-    wp_enqueue_script('jquery');
-    wp_enqueue_script('uikit-js', get_template_directory_uri() . '/js/uikit.min.js', array('jquery'), '3.23.11', true);
-    wp_enqueue_script('uikit-icons', get_template_directory_uri() . '/js/uikit-icons.min.js', array('uikit-js'), '3.23.11', true);
-    wp_enqueue_script('theme-js', get_template_directory_uri() . '/js/theme.js', array('uikit-js'), '1.0.0', true);
-}
-add_action('wp_enqueue_scripts', 'panolabo_enqueue_scripts');
+// 旧スタイルとスクリプトの読み込み（下記の新しいCDN版に統合済み）
+// function panolabo_enqueue_scripts() は下記の新しい関数に統合
 
 // メニューの登録
 function panolabo_register_menus() {
@@ -62,10 +49,58 @@ function panolabo_widgets_init() {
 }
 add_action('widgets_init', 'panolabo_widgets_init');
 
+// OGPベース（個別で上書き前提）
+add_action('wp_head', function () {
+    if (is_admin()) return;
+    
+    $title = is_front_page() ? 'Panolabo | 1人総合制作代理店（AI×VR×アプリ×Web×OEM）' : wp_get_document_title();
+    $description = '小規模でもAIで会社規模を動かす。受託・自社SaaS・OEMで「作って終わり」をやめ、仕組みで成果へ。';
+    $url = is_front_page() ? home_url('/') : get_permalink();
+    $image = get_theme_file_uri('/assets/img/og-1200x630.jpg');
+    
+    // Basic OGP
+    echo '<meta property="og:type" content="website"/>' . "\n";
+    printf('<meta property="og:title" content="%s"/>' . "\n", esc_attr($title));
+    printf('<meta property="og:description" content="%s"/>' . "\n", esc_attr($description));
+    printf('<meta property="og:url" content="%s"/>' . "\n", esc_url($url));
+    printf('<meta property="og:image" content="%s"/>' . "\n", esc_url($image));
+    printf('<meta property="og:site_name" content="%s"/>' . "\n", esc_attr(get_bloginfo('name')));
+    
+    // Twitter Card
+    echo '<meta name="twitter:card" content="summary_large_image"/>' . "\n";
+    printf('<meta name="twitter:title" content="%s"/>' . "\n", esc_attr($title));
+    printf('<meta name="twitter:description" content="%s"/>' . "\n", esc_attr($description));
+    printf('<meta name="twitter:image" content="%s"/>' . "\n", esc_url($image));
+}, 9);
+
+// UIkit読み込み（SRI+defer）
+add_action('wp_enqueue_scripts', function () {
+    $ver = wp_get_theme()->get('Version') ?: '1.0.0';
+    
+    // UIKit CSS（CDN with integrity）
+    wp_enqueue_style('uikit', 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/css/uikit.min.css', [], '3.17.12');
+    
+    // UIKit JS（CDN with integrity）
+    wp_enqueue_script('uikit', 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit.min.js', [], '3.17.12', true);
+    wp_enqueue_script('uikit-icons', 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit-icons.min.js', ['uikit'], '3.17.12', true);
+    
+    // Theme assets
+    wp_enqueue_style('theme-style', get_stylesheet_uri(), ['uikit'], $ver);
+    wp_enqueue_style('theme-polish', get_template_directory_uri() . '/assets/css/theme-polish.css', ['theme-style'], $ver);
+    if (file_exists(get_template_directory() . '/dist/main.bundle.js')) {
+        wp_enqueue_script('theme-js', get_template_directory_uri() . '/dist/main.bundle.js', ['uikit'], $ver, true);
+    }
+}, 20);
+
 // セキュリティ強化
 remove_action('wp_head', 'wp_generator');
 remove_action('wp_head', 'wlwmanifest_link');
 remove_action('wp_head', 'rsd_link');
+
+// セキュリティヘッダー追加
+add_action('wp_head', function() {
+    echo '<meta name="referrer" content="strict-origin-when-cross-origin"/>' . "\n";
+}, 1);
 
 // 管理バーの非表示（フロントエンド）
 add_filter('show_admin_bar', '__return_false');

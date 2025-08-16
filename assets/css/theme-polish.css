@@ -1,0 +1,236 @@
+/* Panolabo Theme Polish - 全体デザイン統一性向上 */
+
+/* ================================
+   カスタムプロパティ（CSS変数）
+================================ */
+:root {
+  /* Brand Colors */
+  --plb-primary: #316B3F;     /* Forest Green */
+  --plb-secondary: #2E86AB;   /* Blue */
+  --plb-accent: #FF6B35;      /* Orange Red */
+  --plb-warning: #FFC857;     /* Yellow */
+  --plb-dark: #1e1e1e;
+  --plb-light: #f8f9fa;
+  --plb-gray: #6c757d;
+  
+  /* Typography */
+  --plb-font-primary: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic Medium', 'Meiryo', -apple-system, BlinkMacSystemFont, sans-serif;
+  --plb-line-height: 1.6;
+  
+  /* Spacing */
+  --plb-spacing-xs: 0.5rem;
+  --plb-spacing-sm: 1rem;
+  --plb-spacing-md: 1.5rem;
+  --plb-spacing-lg: 2rem;
+  --plb-spacing-xl: 3rem;
+  
+  /* Shadows */
+  --plb-shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+  --plb-shadow-md: 0 4px 8px rgba(0,0,0,0.15);
+  --plb-shadow-lg: 0 10px 30px rgba(0,0,0,0.2);
+  
+  /* Transitions */
+  --plb-transition: all 0.3s ease;
+}
+
+/* ================================
+   グローバルスタイル調整
+================================ */
+body {
+  font-family: var(--plb-font-primary);
+  line-height: var(--plb-line-height);
+  color: #333;
+  background-color: #fff;
+}
+
+/* UIKit上書き - ブランドカラー統一 */
+.uk-button-primary {
+  background-color: var(--plb-primary);
+  border-color: var(--plb-primary);
+}
+
+.uk-button-primary:hover {
+  background-color: #255530;
+  border-color: #255530;
+}
+
+.uk-button-secondary {
+  background-color: var(--plb-secondary);
+  border-color: var(--plb-secondary);
+}
+
+.uk-button-default {
+  background-color: var(--plb-light);
+  color: var(--plb-dark);
+  border-color: var(--plb-gray);
+}
+
+.uk-label-warning {
+  background-color: var(--plb-warning);
+  color: var(--plb-dark);
+}
+
+.uk-label-danger {
+  background-color: var(--plb-accent);
+}
+
+/* ================================
+   ヒーローセクション改善
+================================ */
+.uk-section-muted {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.plb-hero-thumb {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--plb-shadow-md);
+}
+
+/* ================================
+   カード統一デザイン
+================================ */
+.uk-card {
+  transition: var(--plb-transition);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.uk-card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--plb-shadow-lg);
+}
+
+.uk-card-primary {
+  background: linear-gradient(135deg, var(--plb-primary) 0%, #255530 100%);
+}
+
+.uk-card-secondary {
+  background: linear-gradient(135deg, var(--plb-secondary) 0%, #236583 100%);
+}
+
+/* ================================
+   三本柱セクション強化
+================================ */
+#business-pillars .uk-card {
+  position: relative;
+  min-height: 400px;
+}
+
+#business-pillars .uk-card-badge {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  z-index: 1;
+}
+
+/* ================================
+   FAQ アコーディオン改善
+================================ */
+.uk-accordion-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: var(--plb-spacing-md);
+  background: var(--plb-light);
+  border-radius: 4px;
+  margin-bottom: var(--plb-spacing-xs);
+}
+
+.uk-accordion-title:hover {
+  background: #e9ecef;
+}
+
+.uk-accordion-content {
+  padding: var(--plb-spacing-md);
+  background: white;
+  border-left: 4px solid var(--plb-primary);
+}
+
+/* ================================
+   最終CTAセクション
+================================ */
+.uk-section-primary {
+  background: linear-gradient(135deg, var(--plb-primary) 0%, var(--plb-secondary) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.uk-section-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+}
+
+/* ================================
+   レスポンシブ調整
+================================ */
+@media (max-width: 959px) {
+  .uk-heading-medium {
+    font-size: 1.8rem !important;
+    line-height: 1.3;
+  }
+  
+  .uk-text-lead {
+    font-size: 1.125rem;
+  }
+  
+  .uk-card {
+    margin-bottom: var(--plb-spacing-md);
+  }
+}
+
+/* ================================
+   アクセシビリティ改善
+================================ */
+.skip-link:focus {
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  z-index: 9999;
+  padding: 1em;
+  background: var(--plb-dark);
+  color: white;
+  text-decoration: none;
+}
+
+/* フォーカスリング強化 */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--plb-primary);
+  outline-offset: 2px;
+}
+
+/* ================================
+   パフォーマンス最適化
+================================ */
+.lazy-load {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.lazy-load.loaded {
+  opacity: 1;
+}
+
+/* ================================
+   印刷対応
+================================ */
+@media print {
+  .uk-navbar,
+  .uk-section-primary,
+  .skip-link {
+    display: none;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+}
