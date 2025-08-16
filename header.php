@@ -181,3 +181,65 @@ document.addEventListener("scroll", function() {
         custom_breadcrumb();
     }
 ?>
+
+<!-- UIKit初期化とハンバーガーメニュー修正 -->
+<script>
+(function() {
+    // UIKitが読み込まれていない場合、強制的にロード
+    if (typeof UIkit === 'undefined') {
+        console.error('UIKit not loaded, loading manually...');
+        
+        // UIKit CSS
+        var uikitCSS = document.createElement('link');
+        uikitCSS.rel = 'stylesheet';
+        uikitCSS.href = 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/css/uikit.min.css';
+        document.head.appendChild(uikitCSS);
+        
+        // UIKit JS
+        var uikitJS = document.createElement('script');
+        uikitJS.src = 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit.min.js';
+        uikitJS.onload = function() {
+            // UIKit Icons
+            var uikitIconsJS = document.createElement('script');
+            uikitIconsJS.src = 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit-icons.min.js';
+            uikitIconsJS.onload = function() {
+                console.log('UIKit manually loaded');
+                initializeOffcanvas();
+            };
+            document.head.appendChild(uikitIconsJS);
+        };
+        document.head.appendChild(uikitJS);
+    } else {
+        // UIKitが既に読み込まれている場合
+        document.addEventListener('DOMContentLoaded', initializeOffcanvas);
+    }
+    
+    function initializeOffcanvas() {
+        console.log('Initializing offcanvas...');
+        
+        // uk-toggleボタンを手動で設定
+        var toggleButtons = document.querySelectorAll('[uk-toggle]');
+        toggleButtons.forEach(function(button) {
+            button.removeAttribute('uk-toggle');
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                var target = this.getAttribute('href');
+                if (target && target.startsWith('#')) {
+                    var offcanvasElement = document.querySelector(target);
+                    if (offcanvasElement && typeof UIkit !== 'undefined') {
+                        UIkit.offcanvas(offcanvasElement).toggle();
+                    }
+                }
+            });
+        });
+        
+        // uk-iconを手動で初期化
+        if (typeof UIkit !== 'undefined' && UIkit.icon) {
+            var icons = document.querySelectorAll('[uk-icon]');
+            icons.forEach(function(icon) {
+                UIkit.icon(icon);
+            });
+        }
+    }
+})();
+</script>
