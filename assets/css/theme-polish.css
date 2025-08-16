@@ -275,6 +275,24 @@ body {
 /* ================================
    タイポグラフィの階層強化
 ================================ */
+/* 全てのh2要素とUKitクラス見出しの統一カラー */
+h1, h2, h3, h4, h5, h6,
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6,
+.uk-heading-small, .uk-heading-medium, .uk-heading-large, 
+.uk-heading-xlarge, .uk-heading-2xlarge, .uk-heading-3xlarge {
+  color: var(--plb-dark) !important;
+}
+
+/* セクション内の見出しで白文字が必要な場合 */
+.uk-section-primary h1, .uk-section-primary h2, .uk-section-primary h3,
+.uk-section-primary h4, .uk-section-primary h5, .uk-section-primary h6,
+.uk-section-muted h1, .uk-section-muted h2, .uk-section-muted h3,
+.uk-section-muted h4, .uk-section-muted h5, .uk-section-muted h6,
+.uk-section-primary .uk-heading-small, .uk-section-primary .uk-heading-medium,
+.uk-section-muted .uk-heading-small, .uk-section-muted .uk-heading-medium {
+  color: white !important;
+}
+
 .uk-heading-medium {
   font-size: 2.5rem;
   font-weight: 800;
