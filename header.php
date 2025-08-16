@@ -24,34 +24,19 @@ if ( isset($post) && $post !== null ) {
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- UIKit CSS and JS - Immediate Load Before WordPress Scripts -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/css/uikit.min.css" id="uikit-css">
+<!-- UIKit CSS and JS - Synchronous Loading -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/css/uikit.min.css">
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit-icons.min.js"></script>
 <script>
-// 即座にUIKitをロード（WordPressスクリプトの前に）
-(function() {
-    'use strict';
-    
-    // UIKit JS を同期ロード
-    var script1 = document.createElement('script');
-    script1.src = 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit.min.js';
-    script1.id = 'uikit-js';
-    document.head.appendChild(script1);
-    
-    script1.addEventListener('load', function() {
-        console.log('UIKit core loaded');
-        
-        // UIKit Icons を同期ロード  
-        var script2 = document.createElement('script');
-        script2.src = 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit-icons.min.js';
-        script2.id = 'uikit-icons';
-        document.head.appendChild(script2);
-        
-        script2.addEventListener('load', function() {
-            console.log('UIKit icons loaded');
-            window.UIKitReady = true;
-        });
-    });
-})();
+// 即座にUIKit確認
+console.log('Header: UIKit type:', typeof UIkit);
+if (typeof UIkit !== 'undefined') {
+    console.log('Header: UIKit successfully loaded');
+    window.UIKitReady = true;
+} else {
+    console.error('Header: UIKit failed to load');
+}
 </script>
 
 <!-- Preload critical resources -->
@@ -211,15 +196,40 @@ document.addEventListener("scroll", function() {
     }
 ?>
 
-<!-- UIKit初期化確認 -->
+<!-- UIKit初期化とハンバーガーメニュー直接対応 -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // UIKitが正常に読み込まれているか確認
+    console.log('DOMContentLoaded: UIKit type:', typeof UIkit);
+    
     if (typeof UIkit !== 'undefined') {
-        console.log('UIKit loaded successfully');
-        // UIKitの自動初期化を信頼
+        console.log('DOMContentLoaded: UIKit available');
+        
+        // ハンバーガーメニューボタンに直接イベントを設定
+        var hamburgerButton = document.querySelector('a[href="#offcanvas-nav"]');
+        var offcanvasElement = document.getElementById('offcanvas-nav');
+        
+        if (hamburgerButton && offcanvasElement) {
+            console.log('Setting up hamburger menu...');
+            
+            hamburgerButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                console.log('Hamburger clicked');
+                
+                if (typeof UIkit !== 'undefined' && UIkit.offcanvas) {
+                    var offcanvas = UIkit.offcanvas(offcanvasElement);
+                    offcanvas.toggle();
+                    console.log('Offcanvas toggled');
+                } else {
+                    console.error('UIKit offcanvas not available');
+                }
+            });
+            
+            console.log('Hamburger menu setup complete');
+        } else {
+            console.error('Hamburger button or offcanvas element not found');
+        }
     } else {
-        console.error('UIKit failed to load');
+        console.error('DOMContentLoaded: UIKit not available');
     }
 });
 </script>
