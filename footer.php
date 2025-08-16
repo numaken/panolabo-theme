@@ -125,53 +125,54 @@
     });
 </script>
 
-<!-- UIKit強制ロードと初期化 -->
+<!-- UIKit初期化とハンバーガーメニュー設定 -->
 <script>
-// UIKitが読み込まれていない場合、強制的にロード
-if (typeof UIkit === 'undefined') {
-    console.log('UIKit not found, loading manually...');
+(function() {
+    'use strict';
     
-    // UIKit CSS
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/css/uikit.min.css';
-    document.head.appendChild(link);
+    function waitForUIKit() {
+        if (typeof UIkit !== 'undefined' && window.UIKitReady) {
+            console.log('UIKit ready, initializing components...');
+            initializeComponents();
+        } else {
+            setTimeout(waitForUIKit, 100);
+        }
+    }
     
-    // UIKit JS
-    var script1 = document.createElement('script');
-    script1.src = 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit.min.js';
-    script1.onload = function() {
-        // UIKit Icons
-        var script2 = document.createElement('script');
-        script2.src = 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit-icons.min.js';
-        script2.onload = function() {
-            console.log('UIKit loaded successfully via footer');
-            initializeUIKit();
-        };
-        document.body.appendChild(script2);
-    };
-    document.body.appendChild(script1);
-} else {
-    document.addEventListener('DOMContentLoaded', function() {
-        initializeUIKit();
-    });
-}
-
-function initializeUIKit() {
-    if (typeof UIkit !== 'undefined') {
-        console.log('Initializing UIKit components...');
-        
-        // Offcanvasメニューの初期化
+    function initializeComponents() {
+        // Offcanvasの初期化
         var offcanvasElement = document.getElementById('offcanvas-nav');
         if (offcanvasElement) {
-            UIkit.offcanvas(offcanvasElement);
+            var offcanvas = UIkit.offcanvas(offcanvasElement, {
+                mode: 'slide',
+                overlay: true
+            });
             console.log('Offcanvas initialized');
         }
         
-        // すべてのUIKitコンポーネントを初期化
+        // ハンバーガーメニューボタンに手動でイベントリスナーを追加
+        var toggleButton = document.querySelector('a[href="#offcanvas-nav"]');
+        if (toggleButton && offcanvasElement) {
+            toggleButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (typeof UIkit !== 'undefined') {
+                    UIkit.offcanvas(offcanvasElement).toggle();
+                }
+            });
+            console.log('Hamburger menu event listener added');
+        }
+        
+        // UIKitコンポーネントの更新
         UIkit.update();
     }
-}
+    
+    // DOMContentLoadedまたはUIKitの準備完了を待つ
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', waitForUIKit);
+    } else {
+        waitForUIKit();
+    }
+})();
 </script>
 
 <?php wp_footer(); ?>

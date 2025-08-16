@@ -24,10 +24,35 @@ if ( isset($post) && $post !== null ) {
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- UIKit CSS and JS - Direct Load for Stability -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/css/uikit.min.css">
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit-icons.min.js"></script>
+<!-- UIKit CSS and JS - Immediate Load Before WordPress Scripts -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/css/uikit.min.css" id="uikit-css">
+<script>
+// 即座にUIKitをロード（WordPressスクリプトの前に）
+(function() {
+    'use strict';
+    
+    // UIKit JS を同期ロード
+    var script1 = document.createElement('script');
+    script1.src = 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit.min.js';
+    script1.id = 'uikit-js';
+    document.head.appendChild(script1);
+    
+    script1.addEventListener('load', function() {
+        console.log('UIKit core loaded');
+        
+        // UIKit Icons を同期ロード  
+        var script2 = document.createElement('script');
+        script2.src = 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit-icons.min.js';
+        script2.id = 'uikit-icons';
+        document.head.appendChild(script2);
+        
+        script2.addEventListener('load', function() {
+            console.log('UIKit icons loaded');
+            window.UIKitReady = true;
+        });
+    });
+})();
+</script>
 
 <!-- Preload critical resources -->
 <link rel="preload" as="image" href="<?php echo esc_url( get_theme_file_uri('/assets/img/hero-placeholder.webp') ); ?>">
