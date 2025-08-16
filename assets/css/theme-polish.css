@@ -455,6 +455,47 @@ select:focus {
 }
 
 /* ================================
+   背景画像のクロスブラウザ対応
+================================ */
+/* 背景画像要素の基本設定 */
+[style*="background-image"],
+.uk-background-cover,
+.parallax,
+.uk-section-muted,
+.uk-section-primary {
+  /* iOS Safari & Chrome 両対応 */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  /* 背景位置の固定 */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll; /* fixedをscrollに変更でモバイル対応 */
+  
+  /* GPU加速でパフォーマンス向上 */
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* 特定の背景要素の強化 */
+.uk-background-fixed {
+  /* モバイルでfixedが問題になる場合の対応 */
+  background-attachment: scroll;
+}
+
+/* SVGパターン背景の互換性向上 */
+.uk-section-muted::before,
+.uk-section-primary::before {
+  /* SVG背景画像の確実な表示 */
+  background-size: 60px 60px;
+  background-repeat: repeat;
+  opacity: 0.1;
+}
+
+/* ================================
    印刷対応
 ================================ */
 @media print {

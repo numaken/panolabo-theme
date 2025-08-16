@@ -62,6 +62,9 @@ function initializeTheme() {
     
     // Analytics tracking
     initAnalytics();
+    
+    // モバイル背景画像対応
+    initMobileBackgroundImages();
 }
 
 function handleContactForm(e) {
@@ -126,10 +129,40 @@ function initAnalytics() {
     });
 }
 
+function initMobileBackgroundImages() {
+    // モバイルデバイスで背景画像の表示を確実にする
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    
+    if (isMobile) {
+        const bgElements = document.querySelectorAll('[style*="background-image"], [data-bg-mobile]');
+        
+        bgElements.forEach(element => {
+            const mobileBg = element.getAttribute('data-bg-mobile');
+            if (mobileBg) {
+                // モバイル専用背景画像がある場合
+                element.style.backgroundImage = `url('${mobileBg}')`;
+            }
+            
+            // 背景画像の表示を強制
+            element.style.backgroundSize = 'cover';
+            element.style.backgroundPosition = 'center center';
+            element.style.backgroundRepeat = 'no-repeat';
+            element.style.backgroundAttachment = 'scroll'; // fixedはモバイルで問題
+            
+            // GPU加速
+            element.style.transform = 'translateZ(0)';
+            element.style.willChange = 'transform';
+        });
+        
+        console.log('Mobile background images initialized');
+    }
+}
+
 // Export for global access
 window.PanolaboTheme = {
     initializeTheme,
     handleContactForm,
     initLazyLoading,
-    initAnalytics
+    initAnalytics,
+    initMobileBackgroundImages
 };

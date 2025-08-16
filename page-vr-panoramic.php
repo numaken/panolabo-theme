@@ -25,7 +25,8 @@ $obj = ($json !== false) ? json_decode($json, true) : [];
 
 <!-- ヒーローセクション -->
 <section class="uk-section uk-section-muted uk-dark parallax"
-  style="background-image: url('<?php bloginfo('template_directory'); ?>/images/frontpage/images/hero-bg.jpg'); background-size: cover; background-position: center;">
+  style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/frontpage/hero-bg.jpg'); background-size: cover; background-position: center;"
+  data-bg-mobile="<?php echo get_template_directory_uri(); ?>/images/frontpage/hero-bg.jpg">
   <div class="uk-container">
     <div class="uk-padding">
       <div class="uk-grid uk-child-width-1-2@m" uk-grid>
@@ -84,7 +85,8 @@ $obj = ($json !== false) ? json_decode($json, true) : [];
 </section>
 
 <!-- Googleマップセクション -->
-<section class="uk-section uk-section-muted uk-dark uk-background-cover uk-background-fixed parallax" style="background-image: url(<?php bloginfo('template_directory'); ?>/images/success-bg.jpg);">
+<section class="uk-section uk-section-muted uk-dark uk-background-cover parallax" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/success-bg.jpg');"
+  data-bg-mobile="<?php echo get_template_directory_uri(); ?>/images/success-bg.jpg">
     <div class="uk-container">
         <h2 class="uk-heading-line uk-text-center uk-animation-slide-bottom uk-text-primary uk-text-bold"><span>全ての業種に適用！</span></h2>
         <p class="uk-text-center uk-padding uk-padding-remove-bottom">飲食店、エステ、美容院、コーポレイト、ECサイト、学校、病院、ホテル、旅行社、工務店、アーティスト、アスリート、個人、<br>デザインやメニュー名なども自由に変更ができます。</p>
