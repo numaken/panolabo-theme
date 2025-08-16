@@ -283,14 +283,41 @@ h1, h2, h3, h4, h5, h6,
   color: var(--plb-dark) !important;
 }
 
-/* セクション内の見出しで白文字が必要な場合 */
+/* 暗い背景セクションでの白文字見出し */
 .uk-section-primary h1, .uk-section-primary h2, .uk-section-primary h3,
 .uk-section-primary h4, .uk-section-primary h5, .uk-section-primary h6,
 .uk-section-muted h1, .uk-section-muted h2, .uk-section-muted h3,
 .uk-section-muted h4, .uk-section-muted h5, .uk-section-muted h6,
+.uk-section-secondary h1, .uk-section-secondary h2, .uk-section-secondary h3,
+.uk-section-secondary h4, .uk-section-secondary h5, .uk-section-secondary h6,
+.uk-light h1, .uk-light h2, .uk-light h3, .uk-light h4, .uk-light h5, .uk-light h6,
 .uk-section-primary .uk-heading-small, .uk-section-primary .uk-heading-medium,
-.uk-section-muted .uk-heading-small, .uk-section-muted .uk-heading-medium {
+.uk-section-muted .uk-heading-small, .uk-section-muted .uk-heading-medium,
+.uk-section-secondary .uk-heading-small, .uk-section-secondary .uk-heading-medium,
+.uk-light .uk-heading-small, .uk-light .uk-heading-medium {
   color: white !important;
+}
+
+/* UIKitの特定のクラスでの白文字強制 */
+.uk-card-primary h1, .uk-card-primary h2, .uk-card-primary h3,
+.uk-card-primary h4, .uk-card-primary h5, .uk-card-primary h6,
+.uk-card-secondary h1, .uk-card-secondary h2, .uk-card-secondary h3,
+.uk-card-secondary h4, .uk-card-secondary h5, .uk-card-secondary h6,
+.uk-background-primary h1, .uk-background-primary h2, .uk-background-primary h3,
+.uk-background-primary h4, .uk-background-primary h5, .uk-background-primary h6,
+.uk-background-secondary h1, .uk-background-secondary h2, .uk-background-secondary h3,
+.uk-background-secondary h4, .uk-background-secondary h5, .uk-background-secondary h6 {
+  color: white !important;
+}
+
+/* 白背景で誤って白文字になることを防ぐ */
+.uk-section-default h1, .uk-section-default h2, .uk-section-default h3,
+.uk-section-default h4, .uk-section-default h5, .uk-section-default h6,
+.uk-background-default h1, .uk-background-default h2, .uk-background-default h3,
+.uk-background-default h4, .uk-background-default h5, .uk-background-default h6,
+.uk-card-default h1, .uk-card-default h2, .uk-card-default h3,
+.uk-card-default h4, .uk-card-default h5, .uk-card-default h6 {
+  color: var(--plb-dark) !important;
 }
 
 .uk-heading-medium {
