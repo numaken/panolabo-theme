@@ -15,15 +15,15 @@ get_header();
     </div>
 
     <h1 class="uk-heading-large uk-text-bold uk-margin-medium-bottom" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400;">
-      <span class="uk-text-warning">普通なら5つの部署</span>でやる仕事を、<br class="uk-visible@m">
-      <strong>1人で完結</strong>する<br class="uk-visible@m">
-      クリエイティブテック企業
+      <span class="uk-text-warning">「VRショールーム作って」</span><br class="uk-visible@m">
+      <span class="uk-text-warning">「アプリで集客したい」</span><br class="uk-visible@m">
+      <strong>その日のうちに提案書</strong>が出る会社
     </h1>
     
     <p class="uk-text-large uk-margin-medium-bottom uk-width-3-4@m uk-margin-auto" uk-scrollspy="cls: uk-animation-fade; delay: 600;">
-      受託開発で課題解決し、自社開発で仕組みを磨き、OEM供給でスケールさせる。<br class="uk-visible@m">
-      そのすべてを<strong>AIを駆使しながら、1人で回す"総合制作代理店＋開発ラボ"</strong>です。<br class="uk-visible@m">
-      小規模だからこそ速く、大手経験があるからこそ確か。それがPanolaboのスタイルです。
+      営業も企画も開発も運用も、全部1人だから<strong>即断即決</strong>。<br class="uk-visible@m">
+      「普通なら2ヶ月」が「2週間」で完成。<br class="uk-visible@m">
+      <span class="uk-text-warning">30年の大手経験×AI活用</span>でスピードと品質を両立します。
     </p>
     
     <div class="uk-margin-large-top" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 800;">
