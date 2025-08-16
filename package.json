@@ -1,0 +1,75 @@
+{
+  "name": "panolabo-wordpress-theme",
+  "version": "2.0.0",
+  "description": "AI×VR×アプリ×Web×OEM総合制作代理店のWordPressテーマ",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch",
+    "watch": "npm run dev",
+    "zip": "npm run build && npm run create-zip",
+    "create-zip": "zip -r panolabo-theme.zip . -x '*.git*' -x 'node_modules/*' -x '.env' -x '*.log' -x 'deploy_temp/*' -x '*.zip' -x '.DS_Store' -x 'Thumbs.db'",
+    "deploy:staging": "./deploy.sh staging",
+    "deploy:production": "./deploy.sh production",
+    "lint:css": "stylelint 'assets/css/**/*.css' --fix",
+    "lint:js": "eslint 'assets/js/**/*.js' --fix",
+    "lint": "npm run lint:css && npm run lint:js",
+    "test": "echo 'No tests specified'",
+    "clean": "rm -rf node_modules dist build *.zip"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "panolabo",
+    "ai",
+    "vr",
+    "oem"
+  ],
+  "author": "Panolabo <hello@panolabollc.com>",
+  "license": "Proprietary",
+  "homepage": "https://panolabollc.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/[your-username]/panolabo-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/[your-username]/panolabo-theme/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "autoprefixer": "^10.4.16",
+    "babel-loader": "^9.1.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.8.1",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "eslint": "^8.52.0",
+    "eslint-config-wordpress": "^2.0.0",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "postcss": "^8.4.31",
+    "postcss-loader": "^7.3.3",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "stylelint": "^15.11.0",
+    "stylelint-config-wordpress": "^17.0.0",
+    "terser-webpack-plugin": "^5.3.9",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "uikit": "^3.23.11"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ]
+}

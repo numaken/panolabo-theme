@@ -1,0 +1,117 @@
+/* Numa Custom CSS */
+
+/* Theme Specific Styles */
+.heading-inner {
+    width: 85%;
+    margin: 6rem auto;
+    position: relative;
+}
+
+.sec-title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    color: inherit;
+}
+
+.sec-title span {
+    color: #69ba64;
+}
+
+/* Cards */
+.uk-card-frontpage {
+    background: #fff;
+    color: #666;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    background: rgba(34, 34, 34, 0.25);
+}
+
+.uk-overlay-panolabo {
+    background: rgba(34, 34, 34, 0.5);
+}
+
+/* Feature styles */
+.feature-title {
+    margin-bottom: 20px;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #444;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+/* Footer styles */
+.footer-link {
+    text-align: center;
+    background-color: #222;
+    color: #545454;
+    transition: background-color .3s;
+    margin-bottom: 1rem;
+}
+
+.footer-link:hover {
+    background-color: #69ba64;
+    color: #ffffff;
+}
+
+.footer-link .footer-icons {
+    padding: 10px;
+}
+
+.footer-link .footer-text {
+    padding-bottom: 10px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+nav ul li {
+    float: left;
+    display: inline-block;
+    width: 16%;
+    background: #F6F6F6;
+    padding: 10px 0;
+    border: 1px solid #d5d5d5;
+}
+
+nav ul li:hover {
+    background: #ECECEC;
+}
+
+nav ul li a {
+    padding: 2% 0%;
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+/* Gaps */
+.gap-80 {
+    clear: both;
+    height: 80px;
+}
+
+.gap-40 {
+    clear: both;
+    height: 40px;
+}
+
+.gap-30 {
+    clear: both;
+    height: 30px;
+}
+
+.gap-20 {
+    clear: both;
+    height: 20px;
+}

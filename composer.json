@@ -1,0 +1,44 @@
+{
+  "name": "panolabo/wordpress-theme",
+  "description": "AI×VR×アプリ×Web×OEM総合制作代理店のWordPressテーマ",
+  "type": "wordpress-theme",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Panolabo",
+      "email": "hello@panolabollc.com",
+      "homepage": "https://panolabollc.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "composer/installers": "^2.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.7",
+    "wp-coding-standards/wpcs": "^3.0",
+    "phpunit/phpunit": "^9.5",
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "allow-plugins": {
+      "composer/installers": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "scripts": {
+    "phpcs": "phpcs --standard=WordPress .",
+    "phpcbf": "phpcbf --standard=WordPress .",
+    "test": "phpunit",
+    "lint": "composer run phpcs",
+    "fix": "composer run phpcbf",
+    "post-install-cmd": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ]
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}

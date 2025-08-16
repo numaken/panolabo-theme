@@ -1,0 +1,688 @@
+
+<?php
+/**
+ * Template Name: Services Overview
+ * Description: 事業・サービス詳細紹介ページ
+ */
+get_header(); ?>
+
+<main class="uk-section uk-section-default">
+  
+  <!-- Hero Section: サービス概要 -->
+  <section class="uk-section uk-section-secondary uk-background-cover uk-background-center-center uk-background-norepeat" style="background-image: url('<?php bloginfo('template_directory'); ?>/images/hero-services.jpg');">
+    <div class="uk-container">
+      <div class="uk-text-center" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
+        <h1 class="uk-heading-primary uk-text-bold uk-margin-bottom">
+          <span class="uk-text-emphasis">panolaboのサービス</span><br>
+          <span class="uk-text-warning uk-text-large">実績×AI技術で、ビジネスを次の次元へ</span>
+        </h1>
+        <p class="uk-text-lead uk-margin-bottom">
+          <strong>VR・アプリ・Web制作</strong>の9年間の実績に、<br>
+          AI技術を統合して「継続成長するビジネス」を実現
+        </p>
+        <div class="uk-grid-small uk-child-width-auto uk-flex-center uk-margin-top" uk-grid>
+          <div><span class="uk-label uk-label-warning uk-text-bold">基本制作</span></div>
+          <div><span class="uk-label uk-label-primary uk-text-bold">+ AI強化</span></div>
+          <div><span class="uk-label uk-label-success uk-text-bold">= 継続収益</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- サービス目次ナビゲーション -->
+  <section class="uk-section uk-section-default uk-padding-remove-top">
+    <div class="uk-container">
+      <div class="uk-text-center uk-margin-large">
+        <h2 class="uk-heading-small uk-text-bold uk-text-primary uk-margin-bottom">サービス一覧</h2>
+        <nav class="uk-flex uk-flex-center uk-flex-wrap uk-margin-top">
+          <a href="#vr-service" class="uk-button uk-button-text" uk-scroll>
+            <span uk-icon="icon: world" class="uk-margin-small-right"></span>VR/360°制作
+          </a>
+          <a href="#app-service" class="uk-button uk-button-text" uk-scroll>
+            <span uk-icon="icon: tablet" class="uk-margin-small-right"></span>アプリ開発
+          </a>
+          <a href="#web-service" class="uk-button uk-button-text" uk-scroll>
+            <span uk-icon="icon: desktop" class="uk-margin-small-right"></span>Web制作
+          </a>
+          <a href="#ai-service" class="uk-button uk-button-text" uk-scroll>
+            <span uk-icon="icon: future" class="uk-margin-small-right"></span>AI統合
+          </a>
+          <a href="#plugin-service" class="uk-button uk-button-text" uk-scroll>
+            <span uk-icon="icon: wordpress" class="uk-margin-small-right"></span>プラグイン
+          </a>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1. VR/360°制作サービス -->
+  <section id="vr-service" class="uk-section uk-section-muted">
+    <div class="uk-container">
+      <div class="uk-grid-large uk-child-width-1-2@m uk-flex-middle" uk-grid>
+            <div>
+              <h2 class="uk-heading-small uk-text-bold uk-text-primary uk-margin-bottom">
+                <span uk-icon="icon: world" class="uk-margin-small-right"></span>
+                VR/360°制作サービス
+              </h2>
+              
+              <div class="uk-margin-bottom">
+                <span class="uk-label uk-label-primary uk-margin-small-right">基本制作</span>
+                <span class="uk-label uk-label-warning">+ AI分析</span>
+                <span class="uk-label uk-label-success">= ROI向上</span>
+              </div>
+
+              <p class="uk-text-lead uk-margin-bottom">
+                豊富な実績を持つ360°撮影・制作技術に、AI視線解析・行動予測を統合。
+                単なる空間表示から「売上に直結する体験設計」へ進化。
+              </p>
+
+              <div class="uk-margin-bottom">
+                <h3 class="uk-text-bold uk-text-small uk-margin-small-bottom">✓ 基本制作サービス</h3>
+                <div class="uk-grid-small uk-child-width-1-2@s" uk-grid>
+                  <div>
+                    <ul class="uk-list uk-list-bullet uk-text-small">
+                      <li>360°パノラマ撮影</li>
+                      <li>VRツアー構築</li>
+                      <li>ホットスポット設定</li>
+                      <li>マルチデバイス対応</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="uk-list uk-list-bullet uk-text-small">
+                      <li>埋め込みコード提供</li>
+                      <li>SNS連携</li>
+                      <li>アクセス解析</li>
+                      <li>保守・更新対応</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="uk-margin-bottom">
+                <h3 class="uk-text-bold uk-text-small uk-margin-small-bottom uk-text-warning">⚡ AI強化機能</h3>
+                <ul class="uk-list uk-list-bullet uk-text-small">
+                  <li><strong>AI視線解析：</strong>ユーザーの注目ポイント自動検出・ヒートマップ生成</li>
+                  <li><strong>動的コンテンツ：</strong>訪問者属性に応じた表示最適化</li>
+                  <li><strong>成果予測：</strong>コンバージョン率向上のAI提案</li>
+                  <li><strong>自動レポート：</strong>ROI分析と改善案の定期配信</li>
+                </ul>
+              </div>
+
+              <div class="uk-margin-top">
+                <h3 class="uk-text-bold uk-text-small uk-margin-small-bottom">適用業界・事例</h3>
+                <div class="uk-grid-small uk-child-width-auto" uk-grid>
+                  <div><span class="uk-label uk-label-default">不動産</span></div>
+                  <div><span class="uk-label uk-label-default">飲食店</span></div>
+                  <div><span class="uk-label uk-label-default">美容室</span></div>
+                  <div><span class="uk-label uk-label-default">医療機関</span></div>
+                  <div><span class="uk-label uk-label-default">観光</span></div>
+                  <div><span class="uk-label uk-label-default">教育</span></div>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="uk-cover-container uk-height-large uk-box-shadow-small uk-border-rounded uk-position-relative">
+                <iframe
+                  src="https://s3-ap-northeast-1.amazonaws.com/static.panolabo.com/155/1087/74213012408102/index.html"
+                  width="100%" height="100%" frameborder="0" allowfullscreen
+                  style="border-radius: 12px;">
+                </iframe>
+                <div class="uk-position-top-right uk-margin-small">
+                  <span class="uk-label uk-label-warning">AI Powered</span>
+                </div>
+              </div>
+              
+              <div class="uk-margin-top uk-text-center">
+                <p class="uk-text-small uk-text-muted">
+                  <strong>実績例：</strong>飲食店内360°ツアー（AI視線解析でメニュー注目度を可視化）
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- 2. アプリ開発サービス -->
+  <section id="app-service" class="uk-section uk-section-default">
+    <div class="uk-container">
+      <div class="uk-grid-large uk-child-width-1-2@m uk-flex-middle" uk-grid>
+            <div class="uk-flex-last@m">
+              <div class="uk-position-relative uk-text-center">
+                <div uk-slider="autoplay: true; autoplay-interval: 5000;">
+                  <ul class="uk-slider-items uk-child-width-1-1">
+                    <?php
+                    $app_slides = [
+                      'https://s3-ap-northeast-1.amazonaws.com/static.panolabo.com/74/818/34902180207102/index.html',
+                      'https://www.trattoria-haru-italian.com/recommend-app/',
+                      'https://www.trattoria-haru-italian.com/blog-app/',
+                      'https://www.trattoria-haru-italian.com/about-app/'
+                    ];
+                    foreach ($app_slides as $url) : ?>
+                      <li>
+                        <div class="uk-position-relative uk-text-center">
+                          <img src="<?php bloginfo('template_directory'); ?>/images/iphone.png" alt="AI App" style="width: 60%;">
+                          <div class="uk-position-absolute" style="top: 2%; left: 25%; width: 50%; height: 96%; overflow: hidden; border-radius: 15px;">
+                            <iframe src="<?php echo esc_url($url); ?>" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+                          </div>
+                        </div>
+                      </li>
+                    <?php endforeach; ?>
+                  </ul>
+                  <div class="uk-position-top-right uk-margin-small">
+                    <span class="uk-label uk-label-warning">AI Native</span>
+                  </div>
+                  <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                  <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                </div>
+                
+                <div class="uk-margin-top uk-text-center">
+                  <p class="uk-text-small uk-text-muted">
+                    <strong>実績例：</strong>飲食店アプリ（AI予測プッシュ通知でリピート率35%向上）
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="uk-flex-first@m">
+              <h2 class="uk-heading-small uk-text-bold uk-text-primary uk-margin-bottom">
+                <span uk-icon="icon: tablet" class="uk-margin-small-right"></span>
+                アプリ開発サービス
+              </h2>
+              
+              <div class="uk-margin-bottom">
+                <span class="uk-label uk-label-primary uk-margin-small-right">iOS・Android</span>
+                <span class="uk-label uk-label-warning">+ AI予測</span>
+                <span class="uk-label uk-label-success">= LTV最大化</span>
+              </div>
+
+              <p class="uk-text-lead uk-margin-bottom">
+                iOS・Android両対応のネイティブアプリ開発に、AI技術を統合。
+                プッシュ通知・スタンプカード・予約システムが、ユーザー行動学習により自動最適化。
+              </p>
+
+              <div class="uk-margin-bottom">
+                <h3 class="uk-text-bold uk-text-small uk-margin-small-bottom">✓ 基本開発サービス</h3>
+                <div class="uk-grid-small uk-child-width-1-2@s" uk-grid>
+                  <div>
+                    <ul class="uk-list uk-list-bullet uk-text-small">
+                      <li>iOS・Androidアプリ開発</li>
+                      <li>プッシュ通知システム</li>
+                      <li>スタンプカード・ポイント</li>
+                      <li>予約・クーポン機能</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="uk-list uk-list-bullet uk-text-small">
+                      <li>管理画面・CMS構築</li>
+                      <li>決済システム連携</li>
+                      <li>SNS連携</li>
+                      <li>アプリストア申請代行</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="uk-margin-bottom">
+                <h3 class="uk-text-bold uk-text-small uk-margin-small-bottom uk-text-warning">⚡ AI強化機能</h3>
+                <ul class="uk-list uk-list-bullet uk-text-small">
+                  <li><strong>予測プッシュ：</strong>AI分析による最適タイミング通知（開封率2倍改善）</li>
+                  <li><strong>動的UI：</strong>ユーザー行動学習による画面自動調整</li>
+                  <li><strong>チャーン予防：</strong>離脱リスク早期検出・自動対策メッセージ</li>
+                  <li><strong>LTV最大化：</strong>個別最適化されたオファー・クーポン配信</li>
+                </ul>
+              </div>
+
+              <div class="uk-margin-top">
+                <h3 class="uk-text-bold uk-text-small uk-margin-small-bottom">導入効果実績</h3>
+                <div class="uk-grid-small uk-child-width-1-3@s" uk-grid>
+                  <div class="uk-text-center">
+                    <div class="uk-text-bold uk-text-large uk-text-primary">+35%</div>
+                    <div class="uk-text-small">リピート率改善</div>
+                  </div>
+                  <div class="uk-text-center">
+                    <div class="uk-text-bold uk-text-large uk-text-primary">+200%</div>
+                    <div class="uk-text-small">プッシュ開封率</div>
+                  </div>
+                  <div class="uk-text-center">
+                    <div class="uk-text-bold uk-text-large uk-text-primary">+45%</div>
+                    <div class="uk-text-small">顧客LTV向上</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- 3. Web制作サービス -->
+  <section id="web-service" class="uk-section uk-section-muted">
+    <div class="uk-container">
+      <div class="uk-grid-large uk-child-width-1-2@m uk-flex-middle" uk-grid>
+            <div>
+              <h2 class="uk-heading-small uk-text-bold uk-text-primary uk-margin-bottom">
+                <span uk-icon="icon: desktop" class="uk-margin-small-right"></span>
+                Web制作・開発サービス
+              </h2>
+              
+              <div class="uk-margin-bottom">
+                <span class="uk-label uk-label-primary uk-margin-small-right">WordPress・カスタム</span>
+                <span class="uk-label uk-label-warning">+ AI最適化</span>
+                <span class="uk-label uk-label-success">= 継続成長</span>
+              </div>
+
+              <p class="uk-text-lead uk-margin-bottom">
+                WordPress・カスタム開発による高品質Webサイトに、AI技術を統合。
+                スマホファースト・SEO対策を標準装備し、「成長し続けるWebサイト」を実現。
+              </p>
+
+              <div class="uk-margin-bottom">
+                <h3 class="uk-text-bold uk-text-small uk-margin-small-bottom">✓ 基本制作サービス</h3>
+                <div class="uk-grid-small uk-child-width-1-2@s" uk-grid>
+                  <div>
+                    <ul class="uk-list uk-list-bullet uk-text-small">
+                      <li>レスポンシブWebサイト制作</li>
+                      <li>WordPress構築・カスタマイズ</li>
+                      <li>EC・予約サイト開発</li>
+                      <li>カスタムシステム開発</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="uk-list uk-list-bullet uk-text-small">
+                      <li>SEO対策・高速化</li>
+                      <li>SSL・セキュリティ対策</li>
+                      <li>アクセス解析導入</li>
+                      <li>保守・運用サポート</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="uk-margin-bottom">
+                <h3 class="uk-text-bold uk-text-small uk-margin-small-bottom uk-text-warning">⚡ AI強化機能</h3>
+                <ul class="uk-list uk-list-bullet uk-text-small">
+                  <li><strong>A/Bテスト自動化：</strong>AIによる継続的コンバージョン改善</li>
+                  <li><strong>コンテンツ最適化：</strong>SEO・ユーザビリティの自動調整</li>
+                  <li><strong>パフォーマンス監視：</strong>速度・離脱率の予測改善</li>
+                  <li><strong>競合分析：</strong>AI市場分析による戦略提案</li>
+                </ul>
+              </div>
+
+              <div class="uk-margin-top">
+                <h3 class="uk-text-bold uk-text-small uk-margin-small-bottom">技術スタック</h3>
+                <div class="uk-grid-small uk-child-width-auto" uk-grid>
+                  <div><span class="uk-label uk-label-primary">WordPress</span></div>
+                  <div><span class="uk-label uk-label-primary">PHP</span></div>
+                  <div><span class="uk-label uk-label-primary">JavaScript</span></div>
+                  <div><span class="uk-label uk-label-primary">React</span></div>
+                  <div><span class="uk-label uk-label-warning">Node.js</span></div>
+                  <div><span class="uk-label uk-label-warning">Python</span></div>
+                  <div><span class="uk-label uk-label-success">AI API</span></div>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="uk-position-relative uk-text-center">
+                <img src="<?php bloginfo('template_directory'); ?>/images/pc.png" alt="AI Web" style="width: 100%; height: auto;">
+                <div class="uk-position-absolute" style="top: 6%; left: 21%; width: 70%; height: 85%; overflow: hidden;">
+                  <iframe
+                    src="https://www.torafukudou.com/"
+                    width="100%" height="100%" frameborder="0" allowfullscreen
+                    style="transform: scale(0.7); transform-origin: top left; border-radius: 15px;">
+                  </iframe>
+                </div>
+                <div class="uk-position-top-right uk-margin-small">
+                  <span class="uk-label uk-label-warning">AI Driven</span>
+                </div>
+              </div>
+              
+              <div class="uk-margin-top uk-text-center">
+                <p class="uk-text-small uk-text-muted">
+                  <strong>実績例：</strong>飲食店Webサイト（AI A/Bテストで予約率40%向上）
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- 4. AI統合ソリューション -->
+  <section id="ai-service" class="uk-section uk-section-default">
+    <div class="uk-container">
+      <div class="uk-text-center uk-margin-large-bottom">
+            <h2 class="uk-heading-medium uk-text-bold uk-text-primary">
+              <span uk-icon="icon: future; ratio: 1.5" class="uk-margin-small-right"></span>
+              AI統合ソリューション
+            </h2>
+            <p class="uk-text-lead">
+              既存の制作サービスにAI技術を統合し、データドリブンなビジネス変革を支援
+            </p>
+          </div>
+
+          <div class="uk-grid-large uk-child-width-1-3@m" uk-grid>
+            
+            <!-- データ分析・予測 -->
+            <div>
+              <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
+                <div class="uk-text-center uk-margin-bottom">
+                  <span uk-icon="icon: database; ratio: 2.5" class="uk-text-primary"></span>
+                </div>
+                <h3 class="uk-text-bold uk-text-center uk-margin-bottom">データ分析・予測</h3>
+                <ul class="uk-list uk-list-bullet uk-text-small">
+                  <li>ユーザー行動分析・予測</li>
+                  <li>売上・需要予測モデル</li>
+                  <li>チャーン（離脱）予測</li>
+                  <li>LTV（顧客生涯価値）分析</li>
+                  <li>市場トレンド分析</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 自動化・最適化 -->
+            <div>
+              <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
+                <div class="uk-text-center uk-margin-bottom">
+                  <span uk-icon="icon: cog; ratio: 2.5" class="uk-text-warning"></span>
+                </div>
+                <h3 class="uk-text-bold uk-text-center uk-margin-bottom">自動化・最適化</h3>
+                <ul class="uk-list uk-list-bullet uk-text-small">
+                  <li>A/Bテスト自動実行・最適化</li>
+                  <li>コンテンツ・価格動的調整</li>
+                  <li>プッシュ通知タイミング最適化</li>
+                  <li>在庫・リソース管理自動化</li>
+                  <li>レポート自動生成・配信</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- パーソナライゼーション -->
+            <div>
+              <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
+                <div class="uk-text-center uk-margin-bottom">
+                  <span uk-icon="icon: users; ratio: 2.5" class="uk-text-success"></span>
+                </div>
+                <h3 class="uk-text-bold uk-text-center uk-margin-bottom">パーソナライゼーション</h3>
+                <ul class="uk-list uk-list-bullet uk-text-small">
+                  <li>個別レコメンド機能</li>
+                  <li>パーソナライズド広告配信</li>
+                  <li>動的価格設定</li>
+                  <li>カスタマイズUIデザイン</li>
+                  <li>個別メッセージング</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="uk-text-center uk-margin-large-top">
+            <h3 class="uk-text-bold uk-margin-bottom">AI統合による効果実績</h3>
+            <div class="uk-grid-large uk-child-width-1-4@m" uk-grid>
+              <div class="uk-text-center">
+                <div class="uk-text-bold uk-heading-small uk-text-primary">+150%</div>
+                <div class="uk-text-small">コンバージョン率改善</div>
+              </div>
+              <div class="uk-text-center">
+                <div class="uk-text-bold uk-heading-small uk-text-primary">+80%</div>
+                <div class="uk-text-small">運用効率化</div>
+              </div>
+              <div class="uk-text-center">
+                <div class="uk-text-bold uk-heading-small uk-text-primary">+200%</div>
+                <div class="uk-text-small">リピート率向上</div>
+              </div>
+              <div class="uk-text-center">
+                <div class="uk-text-bold uk-heading-small uk-text-primary">+60%</div>
+                <div class="uk-text-small">ROI改善</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- 5. WordPressプラグイン -->
+  <section id="plugin-service" class="uk-section uk-section-muted">
+    <div class="uk-container">
+      <div class="uk-text-center uk-margin-large-bottom">
+            <h2 class="uk-heading-medium uk-text-bold uk-text-primary">
+              <span uk-icon="icon: wordpress; ratio: 1.5" class="uk-margin-small-right"></span>
+              WordPressプラグイン開発・販売
+            </h2>
+            <p class="uk-text-lead">
+              受注管理・分析ダッシュボード・自動投稿など、ビジネス効率化プラグインを開発・販売
+            </p>
+          </div>
+
+          <div class="uk-grid-large uk-child-width-1-2@m" uk-grid>
+            
+            <!-- プラグイン一覧 -->
+            <div>
+              <h3 class="uk-text-bold uk-margin-bottom">開発プラグイン一覧</h3>
+              
+              <div class="uk-margin-bottom">
+                <div class="uk-card uk-card-default uk-card-body uk-card-small">
+                  <h4 class="uk-text-bold uk-margin-small-bottom">
+                    <span uk-icon="icon: cart" class="uk-margin-small-right"></span>
+                    Panolabo Order
+                  </h4>
+                  <p class="uk-text-small uk-margin-small-bottom">受注・発注・請求管理プラグイン</p>
+                  <div class="uk-grid-small uk-child-width-auto" uk-grid>
+                    <div><span class="uk-label uk-label-primary uk-text-small">受注管理</span></div>
+                    <div><span class="uk-label uk-label-primary uk-text-small">請求書生成</span></div>
+                    <div><span class="uk-label uk-label-warning uk-text-small">UI Kit対応</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="uk-margin-bottom">
+                <div class="uk-card uk-card-default uk-card-body uk-card-small">
+                  <h4 class="uk-text-bold uk-margin-small-bottom">
+                    <span uk-icon="icon: database" class="uk-margin-small-right"></span>
+                    App Analytics Dashboard
+                  </h4>
+                  <p class="uk-text-small uk-margin-small-bottom">App Store・Google Play分析ダッシュボード</p>
+                  <div class="uk-grid-small uk-child-width-auto" uk-grid>
+                    <div><span class="uk-label uk-label-success uk-text-small">iOS分析</span></div>
+                    <div><span class="uk-label uk-label-success uk-text-small">Android分析</span></div>
+                    <div><span class="uk-label uk-label-warning uk-text-small">Chart.js</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="uk-margin-bottom">
+                <div class="uk-card uk-card-default uk-card-body uk-card-small">
+                  <h4 class="uk-text-bold uk-margin-small-bottom">
+                    <span uk-icon="icon: social" class="uk-margin-small-right"></span>
+                    AI SNS Autoposter
+                  </h4>
+                  <p class="uk-text-small uk-margin-small-bottom">AI自動SNS投稿・スケジュール管理</p>
+                  <div class="uk-grid-small uk-child-width-auto" uk-grid>
+                    <div><span class="uk-label uk-label-primary uk-text-small">AI生成</span></div>
+                    <div><span class="uk-label uk-label-primary uk-text-small">自動投稿</span></div>
+                    <div><span class="uk-label uk-label-warning uk-text-small">多SNS対応</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 販売・ライセンス戦略 -->
+            <div>
+              <h3 class="uk-text-bold uk-margin-bottom">販売・ライセンス戦略</h3>
+              
+              <div class="uk-margin-bottom">
+                <h4 class="uk-text-bold uk-text-small uk-margin-small-bottom">販売チャネル</h4>
+                <ul class="uk-list uk-list-bullet uk-text-small">
+                  <li><strong>自社サイト販売：</strong>Stripe連携による直接販売</li>
+                  <li><strong>WordPressリポジトリ：</strong>無料版・有料版展開</li>
+                  <li><strong>パートナー販売：</strong>代理店・リセラー展開</li>
+                  <li><strong>企業向けライセンス：</strong>カスタマイズ・サポート付き</li>
+                </ul>
+              </div>
+
+              <div class="uk-margin-bottom">
+                <h4 class="uk-text-bold uk-text-small uk-margin-small-bottom">ライセンス管理</h4>
+                <ul class="uk-list uk-list-bullet uk-text-small">
+                  <li>自動ライセンス認証システム</li>
+                  <li>利用状況監視・制限機能</li>
+                  <li>アップデート配信管理</li>
+                  <li>サポート・保守契約管理</li>
+                </ul>
+              </div>
+
+              <div class="uk-margin-bottom">
+                <h4 class="uk-text-bold uk-text-small uk-margin-small-bottom">収益モデル</h4>
+                <div class="uk-grid-small uk-child-width-1-2@s" uk-grid>
+                  <div>
+                    <div class="uk-card uk-card-primary uk-card-body uk-card-small uk-text-center">
+                      <div class="uk-text-bold">単発販売</div>
+                      <div class="uk-text-small">¥5,000-50,000</div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-card uk-card-secondary uk-card-body uk-card-small uk-text-center">
+                      <div class="uk-text-bold">サブスクリプション</div>
+                      <div class="uk-text-small">¥500-5,000/月</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="uk-margin-top">
+                <div class="uk-text-center">
+                  <a href="#" class="uk-button uk-button-text">
+                    <span uk-icon="icon: cart"></span> プラグイン一覧を見る
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- パートナーシップ・料金モデル -->
+  <section class="uk-section uk-section-default">
+    <div class="uk-container">
+      <div class="uk-text-center uk-margin-large-bottom">
+        <h2 class="uk-heading-medium uk-text-bold uk-text-primary">
+          <span uk-icon="icon: users; ratio: 1.5" class="uk-margin-small-right"></span>
+          パートナーシップ・料金モデル
+        </h2>
+        <p class="uk-text-lead">
+          制作完了で終わりではなく、継続的な成長をサポートする3つのモデル
+        </p>
+      </div>
+
+      <div class="uk-grid-large uk-child-width-1-3@m" uk-grid>
+        
+        <!-- 従来制作モデル -->
+        <div>
+          <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
+            <div class="uk-text-center uk-margin-bottom">
+              <span uk-icon="icon: cog; ratio: 2.5" class="uk-text-muted"></span>
+            </div>
+            <h3 class="uk-text-bold uk-text-center uk-margin-bottom">従来制作モデル</h3>
+            <div class="uk-text-center uk-margin-bottom">
+              <div class="uk-text-bold uk-text-large">¥300,000-</div>
+              <div class="uk-text-small uk-text-muted">一括制作費</div>
+            </div>
+            <ul class="uk-list uk-list-bullet uk-text-small">
+              <li>VR・アプリ・Web制作</li>
+              <li>基本機能実装</li>
+              <li>3ヶ月保証・サポート</li>
+              <li>納品・完了</li>
+            </ul>
+            <div class="uk-text-center uk-margin-top">
+              <span class="uk-label uk-label-default">短期完了型</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI統合モデル -->
+        <div>
+          <div class="uk-card uk-card-primary uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
+            <div class="uk-text-center uk-margin-bottom">
+              <span uk-icon="icon: future; ratio: 2.5" class="uk-text-warning"></span>
+            </div>
+            <h3 class="uk-text-bold uk-text-center uk-margin-bottom">AI統合モデル</h3>
+            <div class="uk-text-center uk-margin-bottom">
+              <div class="uk-text-bold uk-text-large">¥500,000- + ¥50,000/月</div>
+              <div class="uk-text-small uk-text-muted">初期 + 継続改善</div>
+            </div>
+            <ul class="uk-list uk-list-bullet uk-text-small">
+              <li>基本制作 + AI機能統合</li>
+              <li>データ分析・改善提案</li>
+              <li>継続的最適化</li>
+              <li>月次レポート・相談</li>
+            </ul>
+            <div class="uk-text-center uk-margin-top">
+              <span class="uk-label uk-label-warning">継続改善型</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- パートナーシップモデル -->
+        <div>
+          <div class="uk-card uk-card-secondary uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
+            <div class="uk-text-center uk-margin-bottom">
+              <span uk-icon="icon: heart; ratio: 2.5" class="uk-text-success"></span>
+            </div>
+            <h3 class="uk-text-bold uk-text-center uk-margin-bottom">パートナーシップモデル</h3>
+            <div class="uk-text-center uk-margin-bottom">
+              <div class="uk-text-bold uk-text-large">売上連動型</div>
+              <div class="uk-text-small uk-text-muted">成功報酬・収益分配</div>
+            </div>
+            <ul class="uk-list uk-list-bullet uk-text-small">
+              <li>初期費用最小化</li>
+              <li>売上・利益向上に連動</li>
+              <li>長期戦略パートナー</li>
+              <li>共同事業展開</li>
+            </ul>
+            <div class="uk-text-center uk-margin-top">
+              <span class="uk-label uk-label-success">収益共有型</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- お問い合わせ・相談 CTA -->
+  <section class="uk-section uk-section-primary">
+    <div class="uk-container">
+      <div class="uk-text-center">
+        <h2 class="uk-heading-small uk-text-bold uk-margin-bottom">
+          まずは無料相談から始めましょう
+        </h2>
+        <p class="uk-text-lead uk-margin-bottom">
+          あなたのビジネスに最適なソリューション・パートナーシップを一緒に考えます
+        </p>
+        
+        <div class="uk-button-group uk-flex-center uk-margin-top">
+          <a href="<?php echo esc_url(home_url('/contact')); ?>" 
+             class="uk-button uk-button-text">
+            <span uk-icon="icon: mail"></span> 無料相談を申し込む
+          </a>
+          <a href="<?php echo esc_url(home_url('/about')); ?>" 
+             class="uk-button uk-button-text">
+            <span uk-icon="icon: info"></span> 会社について
+          </a>
+        </div>
+
+        <div class="uk-margin-large-top">
+          <div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid>
+            <div><span class="uk-label uk-label-success">初回相談無料</span></div>
+            <div><span class="uk-label uk-label-warning">オンライン対応</span></div>
+            <div><span class="uk-label uk-label-default">見積もり無料</span></div>
+            <div><span class="uk-label uk-label-primary">NDA対応</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<?php get_footer(); ?>
