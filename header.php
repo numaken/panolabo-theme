@@ -24,9 +24,13 @@ if ( isset($post) && $post !== null ) {
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!-- UIKit CSS and JS - Direct Load for Stability -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/css/uikit.min.css">
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit-icons.min.js"></script>
+
 <!-- Preload critical resources -->
 <link rel="preload" as="image" href="<?php echo esc_url( get_theme_file_uri('/assets/img/hero-placeholder.webp') ); ?>">
-<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/css/uikit.min.css">
 
 <!-- Skip to main content link for accessibility -->
 <a class="skip-link uk-visible-focus" href="#main" style="position:absolute;left:-9999px;z-index:999;padding:1em;background:#000;color:#fff;text-decoration:none;">メインコンテンツへ移動</a>
@@ -182,64 +186,15 @@ document.addEventListener("scroll", function() {
     }
 ?>
 
-<!-- UIKit初期化とハンバーガーメニュー修正 -->
+<!-- UIKit初期化確認 -->
 <script>
-(function() {
-    // UIKitが読み込まれていない場合、強制的にロード
-    if (typeof UIkit === 'undefined') {
-        console.error('UIKit not loaded, loading manually...');
-        
-        // UIKit CSS
-        var uikitCSS = document.createElement('link');
-        uikitCSS.rel = 'stylesheet';
-        uikitCSS.href = 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/css/uikit.min.css';
-        document.head.appendChild(uikitCSS);
-        
-        // UIKit JS
-        var uikitJS = document.createElement('script');
-        uikitJS.src = 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit.min.js';
-        uikitJS.onload = function() {
-            // UIKit Icons
-            var uikitIconsJS = document.createElement('script');
-            uikitIconsJS.src = 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit-icons.min.js';
-            uikitIconsJS.onload = function() {
-                console.log('UIKit manually loaded');
-                initializeOffcanvas();
-            };
-            document.head.appendChild(uikitIconsJS);
-        };
-        document.head.appendChild(uikitJS);
+document.addEventListener('DOMContentLoaded', function() {
+    // UIKitが正常に読み込まれているか確認
+    if (typeof UIkit !== 'undefined') {
+        console.log('UIKit loaded successfully');
+        // UIKitの自動初期化を信頼
     } else {
-        // UIKitが既に読み込まれている場合
-        document.addEventListener('DOMContentLoaded', initializeOffcanvas);
+        console.error('UIKit failed to load');
     }
-    
-    function initializeOffcanvas() {
-        console.log('Initializing offcanvas...');
-        
-        // uk-toggleボタンを手動で設定
-        var toggleButtons = document.querySelectorAll('[uk-toggle]');
-        toggleButtons.forEach(function(button) {
-            button.removeAttribute('uk-toggle');
-            button.addEventListener('click', function(e) {
-                e.preventDefault();
-                var target = this.getAttribute('href');
-                if (target && target.startsWith('#')) {
-                    var offcanvasElement = document.querySelector(target);
-                    if (offcanvasElement && typeof UIkit !== 'undefined') {
-                        UIkit.offcanvas(offcanvasElement).toggle();
-                    }
-                }
-            });
-        });
-        
-        // uk-iconを手動で初期化
-        if (typeof UIkit !== 'undefined' && UIkit.icon) {
-            var icons = document.querySelectorAll('[uk-icon]');
-            icons.forEach(function(icon) {
-                UIkit.icon(icon);
-            });
-        }
-    }
-})();
+});
 </script>

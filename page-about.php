@@ -8,7 +8,7 @@ get_header(); ?>
 <main class="uk-section uk-section-default">
   
   <!-- Hero Section: 会社概要 -->
-  <section class="uk-section uk-section-primary uk-background-cover uk-background-center-center uk-background-norepeat" style="background-image: url('<?php bloginfo('template_directory'); ?>/images/hero-about.jpg');">
+  <section class="uk-section uk-section-primary uk-background-cover uk-background-center-center uk-background-norepeat" style="background: linear-gradient(135deg, #316B3F 0%, #2E86AB 100%);">
     <div class="uk-container">
       <div class="uk-grid-large uk-child-width-1-2@m uk-flex-middle" uk-grid>
         <div uk-scrollspy="cls: uk-animation-slide-left-small; delay: 200;">
@@ -316,10 +316,10 @@ get_header(); ?>
           <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded">
             <div class="uk-grid-small uk-flex-middle" uk-grid>
               <div class="uk-width-auto">
-                <img src="<?php bloginfo('template_directory'); ?>/images/ceo-profile.jpg" 
-                     alt="代表者" 
-                     class="uk-border-circle" 
-                     style="width: 80px; height: 80px; object-fit: cover;">
+                <div class="uk-border-circle uk-background-primary uk-flex uk-flex-center uk-flex-middle" 
+                     style="width: 80px; height: 80px; color: white; font-size: 32px; font-weight: bold;">
+                     P
+                </div>
               </div>
               <div class="uk-width-expand">
                 <h3 class="uk-text-bold uk-margin-remove">代表社員</h3>
