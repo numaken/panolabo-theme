@@ -30,10 +30,10 @@
   "homepage": "https://panolabollc.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/[your-username]/panolabo-theme.git"
+    "url": "git+https://github.com/numaken/panolabo-theme.git"
   },
   "bugs": {
-    "url": "https://github.com/[your-username]/panolabo-theme/issues"
+    "url": "https://github.com/numaken/panolabo-theme/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.23.0",

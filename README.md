@@ -34,7 +34,7 @@ Panolaboは、「普通なら5つの部署でやる仕事を、1人で完結す�
 
 1. **リポジトリをクローン**
 ```bash
-git clone https://github.com/[your-username]/panolabo-theme.git
+git clone https://github.com/numaken/panolabo-theme.git
 cd panolabo-theme
 ```
 
