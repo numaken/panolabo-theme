@@ -125,33 +125,53 @@
     });
 </script>
 
-<!-- UIKit初期化スクリプト -->
+<!-- UIKit強制ロードと初期化 -->
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    // UIKitが読み込まれているか確認
+// UIKitが読み込まれていない場合、強制的にロード
+if (typeof UIkit === 'undefined') {
+    console.log('UIKit not found, loading manually...');
+    
+    // UIKit CSS
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/css/uikit.min.css';
+    document.head.appendChild(link);
+    
+    // UIKit JS
+    var script1 = document.createElement('script');
+    script1.src = 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit.min.js';
+    script1.onload = function() {
+        // UIKit Icons
+        var script2 = document.createElement('script');
+        script2.src = 'https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/js/uikit-icons.min.js';
+        script2.onload = function() {
+            console.log('UIKit loaded successfully via footer');
+            initializeUIKit();
+        };
+        document.body.appendChild(script2);
+    };
+    document.body.appendChild(script1);
+} else {
+    document.addEventListener('DOMContentLoaded', function() {
+        initializeUIKit();
+    });
+}
+
+function initializeUIKit() {
     if (typeof UIkit !== 'undefined') {
-        console.log('UIkit loaded successfully');
+        console.log('Initializing UIKit components...');
         
-        // Offcanvasメニューの強制初期化
+        // Offcanvasメニューの初期化
         var offcanvasElement = document.getElementById('offcanvas-nav');
         if (offcanvasElement) {
-            UIkit.offcanvas(offcanvasElement, {
-                mode: 'slide',
-                overlay: true
-            });
+            UIkit.offcanvas(offcanvasElement);
             console.log('Offcanvas initialized');
         }
         
-        // トグルボタンの強制初期化
-        var toggleButtons = document.querySelectorAll('[uk-toggle]');
-        toggleButtons.forEach(function(button) {
-            UIkit.toggle(button);
-        });
-        
-    } else {
-        console.error('UIkit not loaded');
+        // すべてのUIKitコンポーネントを初期化
+        UIkit.update();
     }
-});
+}
 </script>
 
 <?php wp_footer(); ?>
