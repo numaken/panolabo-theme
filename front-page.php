@@ -21,9 +21,9 @@ get_header();
     </h1>
     
     <p class="uk-text-large uk-margin-medium-bottom uk-width-3-4@m uk-margin-auto" uk-scrollspy="cls: uk-animation-fade; delay: 600;">
-      営業・企画・開発・運用・マーケティングを全て1人で。<br class="uk-visible@m">
-      <strong>AI×VR×アプリ×Web×OEM</strong>を武器に、<br class="uk-visible@m">
-      パートナー企業様の<span class="uk-text-warning">売上20-40%向上</span>を実現します。
+      受託開発で課題解決し、自社開発で仕組みを磨き、OEM供給でスケールさせる。<br class="uk-visible@m">
+      そのすべてを<strong>AIを駆使しながら、1人で回す"総合制作代理店＋開発ラボ"</strong>です。<br class="uk-visible@m">
+      小規模だからこそ速く、大手経験があるからこそ確か。それがPanolaboのスタイルです。
     </p>
     
     <div class="uk-margin-large-top" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 800;">
@@ -117,15 +117,16 @@ get_header();
           <h3 class="uk-card-title uk-text-bold">受託開発</h3>
           <h4 class="uk-text-small uk-text-muted">VR・アプリ・Web</h4>
           <div class="uk-margin-small">
-            <p class="uk-text-small">クライアントの要望に応じた<br>直接的な制作・導入支援</p>
+            <p class="uk-text-small">Panolaboの原点は「受託開発」。<br>360°VR、スマホアプリ、WordPressサイトの設計・構築・運用までを一貫して担います。</p>
           </div>
           <hr class="uk-divider-small">
-          <p class="uk-text-bold uk-text-primary uk-margin-small">成果物</p>
+          <p class="uk-text-bold uk-text-primary uk-margin-small">特徴</p>
           <ul class="uk-list uk-list-bullet uk-text-left uk-text-small">
-            <li>360°VRパノラマ</li>
-            <li>スマホアプリ</li>
-            <li>WordPressサイト</li>
+            <li>WordPress: AI活用した独自プラグイン組み込み</li>
+            <li>アプリ: WebView連動で運用コスト最小化</li>
+            <li>VR: AI×VR連携で再展開視野</li>
           </ul>
+          <p class="uk-text-small uk-text-emphasis">"作って終わり"ではなく、運用が続く構造を提供</p>
           <a href="<?php echo home_url('/services'); ?>" class="uk-button uk-button-text">詳細を見る</a>
         </div>
       </div>
@@ -138,19 +139,16 @@ get_header();
           <h3 class="uk-card-title uk-text-bold">自社開発</h3>
           <h4 class="uk-text-small" style="opacity: 0.9;">SaaS・WPプラグイン</h4>
           <div class="uk-margin-small">
-            <p class="uk-text-small">AIを絡めた効率化ツール群<br>"Webの本流"も継続開発</p>
+            <p class="uk-text-small">AI活用による生産性向上を武器に、自社プロダクトを次々に生み出すラボとしての顔も持ちます。</p>
           </div>
           <hr class="uk-divider-small" style="border-color: rgba(255,255,255,0.3);">
-          <p class="uk-text-bold uk-margin-small">強み</p>
+          <p class="uk-text-bold uk-margin-small">主力SaaS</p>
           <ul class="uk-list uk-text-left uk-text-small">
-            <li>✅ AI活用による高生産性</li>
-            <li>✅ 低コスト運用</li>
-            <li>✅ 継続収益モデル</li>
+            <li>AiPostPilot Pro: ゼロ設定でSNSを自動投稿</li>
+            <li>Chat2Doc: AIとの会話を自動でドキュメント化</li>
+            <li>WordPressプラグイン: "続かないブログ"をAIで支援</li>
           </ul>
-          <div class="uk-margin-small">
-            <span class="uk-label uk-label-success uk-text-small">AiPostPilot Pro</span>
-            <span class="uk-label uk-label-success uk-text-small">Chat2Doc</span>
-          </div>
+          <p class="uk-text-small uk-text-emphasis">小規模でもAIを駆使すれば、大規模開発に負けないスピードと品質でプロダクトを量産</p>
         </div>
       </div>
       
@@ -162,16 +160,16 @@ get_header();
           <h3 class="uk-card-title uk-text-bold">OEM供給</h3>
           <h4 class="uk-text-small" style="opacity: 0.9;">パートナーシップ</h4>
           <div class="uk-margin-small">
-            <p class="uk-text-small">営業力はあるが商材を持たない<br>企業/個人に強力な武器を供給</p>
+            <p class="uk-text-small">営業力はあるが商材のない企業・個人にとって、Panolaboの仕組みは最適な武器。</p>
           </div>
           <hr class="uk-divider-small" style="border-color: rgba(255,255,255,0.3);">
-          <p class="uk-text-bold uk-margin-small">強み</p>
+          <p class="uk-text-bold uk-margin-small">メリット</p>
           <ul class="uk-list uk-text-left uk-text-small">
-            <li>🚀 協業によるスケール</li>
-            <li>💰 値付け自由・収益自由</li>
-            <li>🎯 リスク小・利益最大化</li>
+            <li>自社ブランドで販売可能・値付け自由</li>
+            <li>すぐに市場参入・強い商材をすぐに保有</li>
+            <li>協業や共同プロジェクトで事業拡張加速</li>
           </ul>
-          <div class="uk-label uk-label-warning uk-text-small">パートナーフィー＋制作費のみ</div>
+          <p class="uk-text-small uk-text-emphasis">パートナーは利益最大化、Panolaboはフィー+制作費のみ</p>
         </div>
       </div>
     </div>
@@ -179,13 +177,15 @@ get_header();
     <!-- 補足説明 -->
     <div class="uk-text-center uk-margin-large-top">
       <div class="uk-card uk-card-default uk-card-body uk-width-3-4@m uk-margin-auto">
+        <h3 class="uk-card-title uk-text-primary">📝 Panolaboの三本柱</h3>
         <p class="uk-text-lead uk-margin-small">
-          <span class="uk-text-primary uk-text-bold">受託で安定収益</span>を確保しながら、
-          <span class="uk-text-warning uk-text-bold">自社開発でストック収益</span>を積み上げ、<br>
-          <span class="uk-text-danger uk-text-bold">OEM供給でスケールアウト</span>を実現する。
+          <span class="uk-text-primary uk-text-bold">受託開発で課題解決し</span>、
+          <span class="uk-text-warning uk-text-bold">自社開発で仕組みを磨き</span>、<br>
+          <span class="uk-text-danger uk-text-bold">OEM供給でスケールさせる</span>。
         </p>
-        <p class="uk-text-small uk-text-muted">
-          この3つを1人で回すことで、一般的な制作会社とは異なる高収益体質を実現しています。
+        <p class="uk-text-small uk-text-muted uk-margin-medium">
+          そのすべてを<strong>AIを駆使しながら、1人で回す"総合制作代理店＋開発ラボ"</strong>です。<br>
+          小規模だからこそ速く、大手経験があるからこそ確か。それがPanolaboのスタイルです。
         </p>
       </div>
     </div>
