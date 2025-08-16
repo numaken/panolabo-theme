@@ -58,7 +58,7 @@ cat > $DEPLOY_DIR/version.php << EOF
 EOF
 
 # 環境別設定
-if [ "$ENVIRONMENT" = "staging" ]; then
+if [ "$ENVIRONMENT" = "production" ]; then
     FTP_HOST=$PROD_FTP_HOST
     FTP_USER=$PROD_FTP_USER
     FTP_PASS=$PROD_FTP_PASS
@@ -75,7 +75,7 @@ else
 fi
 
 # 確認プロンプト（本番環境の場合）
-if [ "$ENVIRONMENT" = "staging" ]; then
+if [ "$ENVIRONMENT" = "production" ]; then
     echo "⚠️  本番環境への変更を適用します。続行しますか？ [y/N]"
     read -r response
     if [[ ! "$response" =~ ^[Yy]$ ]]; then
@@ -137,7 +137,7 @@ if [ -n "$WEBHOOK_URL" ]; then
 fi
 
 echo "🌐 サイトを確認してください:"
-if [ "$ENVIRONMENT" = "staging" ]; then
+if [ "$ENVIRONMENT" = "production" ]; then
     echo "   本番: $SITE_URL"
 else
     echo "   ステージング: $SITE_URL"

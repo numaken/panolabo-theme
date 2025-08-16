@@ -1,16 +1,17 @@
 // Panolabo WordPress Theme - Main JavaScript
-import UIkit from 'uikit';
-import Icons from 'uikit/dist/js/uikit-icons';
+// UIKitはCDNから読み込まれるので、window.UIkitを使用
 
-// Load UIKit Icons
-UIkit.use(Icons);
-
-// Initialize UIKit
-UIkit.util.ready(() => {
-    console.log('Panolabo Theme - UIKit Ready');
-    
-    // Custom theme initialization
-    initializeTheme();
+document.addEventListener('DOMContentLoaded', function() {
+    // UIKitが読み込まれるまで待機
+    function waitForUIKit() {
+        if (typeof UIkit !== 'undefined') {
+            console.log('Panolabo Theme - UIKit Ready');
+            initializeTheme();
+        } else {
+            setTimeout(waitForUIKit, 100);
+        }
+    }
+    waitForUIKit();
 });
 
 function initializeTheme() {
@@ -28,12 +29,26 @@ function initializeTheme() {
         });
     });
 
-    // Mobile menu enhancements
-    const mobileNavToggle = document.querySelector('.uk-navbar-toggle');
-    if (mobileNavToggle) {
-        mobileNavToggle.addEventListener('click', function() {
-            document.body.classList.toggle('mobile-nav-open');
+    // UIKit Offcanvas debugging
+    console.log('Checking UIKit offcanvas...');
+    const offcanvasToggle = document.querySelector('[uk-toggle]');
+    const offcanvasElement = document.querySelector('#offcanvas-nav');
+    
+    if (offcanvasToggle && offcanvasElement) {
+        console.log('Offcanvas elements found:', { toggle: offcanvasToggle, element: offcanvasElement });
+        
+        // UIKitのoffcanvasが初期化されていない場合のフォールバック
+        offcanvasToggle.addEventListener('click', function(e) {
+            console.log('Toggle clicked');
+            if (typeof UIkit !== 'undefined' && UIkit.offcanvas) {
+                const offcanvas = UIkit.offcanvas(offcanvasElement);
+                if (offcanvas) {
+                    offcanvas.toggle();
+                }
+            }
         });
+    } else {
+        console.error('Offcanvas elements not found!');
     }
 
     // Contact form enhancements

@@ -60,7 +60,6 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "uikit": "^3.23.11"
   },
   "engines": {
     "node": ">=14.0.0",
