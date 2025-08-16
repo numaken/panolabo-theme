@@ -464,20 +464,35 @@ select:focus {
 .uk-section-muted,
 .uk-section-primary {
   /* iOS Safari & Chrome 両対応 */
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
   
   /* 背景位置の固定 */
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: scroll; /* fixedをscrollに変更でモバイル対応 */
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll !important; /* fixedをscrollに変更でモバイル対応 */
   
   /* GPU加速でパフォーマンス向上 */
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   will-change: transform;
+  
+  /* モバイル WebKit の特別対応 */
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+/* モバイル専用の背景画像強制表示 */
+@media screen and (max-width: 768px) {
+  [style*="background-image"] {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    min-height: 400px;
+  }
 }
 
 /* 特定の背景要素の強化 */

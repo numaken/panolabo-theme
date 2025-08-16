@@ -9,7 +9,9 @@ get_header();
 <!-- =========================
      Hero
 ========================== -->
-<section class="uk-section uk-section-muted uk-padding-large">
+<section class="uk-section uk-section-muted uk-padding-large parallax"
+  style="background-image: linear-gradient(rgba(49, 107, 63, 0.8), rgba(46, 134, 171, 0.8)), url('<?php echo get_template_directory_uri(); ?>/images/panolabo_paralax.jpg'); background-size: cover; background-position: center center; background-attachment: scroll;"
+  data-bg-mobile="<?php echo get_template_directory_uri(); ?>/images/panolabo_paralax.jpg">
   <div class="uk-container">
     <div class="uk-grid-large" uk-grid>
       <div class="uk-width-2-3@m">

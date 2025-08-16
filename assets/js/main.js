@@ -132,30 +132,42 @@ function initAnalytics() {
 function initMobileBackgroundImages() {
     // モバイルデバイスで背景画像の表示を確実にする
     const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
     
-    if (isMobile) {
-        const bgElements = document.querySelectorAll('[style*="background-image"], [data-bg-mobile]');
+    // すべてのデバイスで背景画像を確認・修正
+    const bgElements = document.querySelectorAll('[style*="background-image"], [data-bg-mobile], .uk-section-muted, .parallax');
+    
+    bgElements.forEach(element => {
+        // 現在の背景画像を取得
+        const currentBg = window.getComputedStyle(element).backgroundImage;
+        const mobileBg = element.getAttribute('data-bg-mobile');
         
-        bgElements.forEach(element => {
-            const mobileBg = element.getAttribute('data-bg-mobile');
-            if (mobileBg) {
-                // モバイル専用背景画像がある場合
-                element.style.backgroundImage = `url('${mobileBg}')`;
-            }
-            
-            // 背景画像の表示を強制
-            element.style.backgroundSize = 'cover';
-            element.style.backgroundPosition = 'center center';
-            element.style.backgroundRepeat = 'no-repeat';
-            element.style.backgroundAttachment = 'scroll'; // fixedはモバイルで問題
-            
-            // GPU加速
-            element.style.transform = 'translateZ(0)';
-            element.style.willChange = 'transform';
-        });
+        if (isMobile && mobileBg) {
+            // モバイル専用背景画像がある場合
+            element.style.backgroundImage = `url('${mobileBg}')`;
+            console.log('Applied mobile background:', mobileBg);
+        }
         
-        console.log('Mobile background images initialized');
-    }
+        // 背景画像の表示を強制（すべてのデバイス）
+        element.style.setProperty('background-size', 'cover', 'important');
+        element.style.setProperty('background-position', 'center center', 'important');
+        element.style.setProperty('background-repeat', 'no-repeat', 'important');
+        element.style.setProperty('background-attachment', 'scroll', 'important');
+        
+        // iOS専用対応
+        if (isIOS) {
+            element.style.setProperty('-webkit-background-size', 'cover', 'important');
+            element.style.setProperty('-webkit-transform', 'translateZ(0)', 'important');
+            element.style.minHeight = '400px'; // 最小高さを保証
+        }
+        
+        // GPU加速
+        element.style.transform = 'translateZ(0)';
+        element.style.willChange = 'transform';
+    });
+    
+    console.log(`Background images processed: ${bgElements.length} elements`);
+    console.log('User agent:', navigator.userAgent);
 }
 
 // Export for global access
