@@ -4,14 +4,14 @@
    カスタムプロパティ（CSS変数）
 ================================ */
 :root {
-  /* Brand Colors */
-  --plb-primary: #316B3F;     /* Forest Green */
-  --plb-secondary: #2E86AB;   /* Blue */
-  --plb-accent: #FF6B35;      /* Orange Red */
-  --plb-warning: #FFC857;     /* Yellow */
-  --plb-dark: #1e1e1e;
-  --plb-light: #f8f9fa;
-  --plb-gray: #6c757d;
+  /* Brand Colors - Modern & Bright */
+  --plb-primary: #4CAF50;     /* Bright Green */
+  --plb-secondary: #42A5F5;   /* Bright Blue */
+  --plb-accent: #FF7043;      /* Coral Orange */
+  --plb-warning: #FFC107;     /* Bright Yellow */
+  --plb-dark: #37474F;        /* Modern Dark Gray */
+  --plb-light: #FAFAFA;       /* Clean White */
+  --plb-gray: #78909C;        /* Light Modern Gray */
   
   /* Typography */
   --plb-font-primary: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic Medium', 'Meiryo', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -39,8 +39,8 @@
 body {
   font-family: var(--plb-font-primary);
   line-height: var(--plb-line-height);
-  color: #333;
-  background-color: #fff;
+  color: var(--plb-dark);
+  background-color: var(--plb-light);
   margin: 0;
   padding: 0;
 }
@@ -61,8 +61,8 @@ body {
 }
 
 .uk-button-primary:hover {
-  background-color: #255530;
-  border-color: #255530;
+  background-color: #43A047;
+  border-color: #43A047;
 }
 
 .uk-button-secondary {
@@ -88,43 +88,11 @@ body {
 /* ================================
    セクション背景の視覚的階層
 ================================ */
-/* ヒーローセクション - 強いインパクト */
-.uk-section-muted {
+/* セクション背景の基本スタイル */
+
+/* 最終CTAセクション - モダンで明るいコントラスト */
+.cta-section {
   background: linear-gradient(135deg, var(--plb-primary) 0%, var(--plb-secondary) 100%);
-  color: white;
-  position: relative;
-  overflow: hidden;
-}
-
-.uk-section-muted::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
-  opacity: 0.5;
-}
-
-.uk-section-muted * {
-  position: relative;
-  z-index: 1;
-}
-
-/* 通常セクション - 軽いグレー */
-.uk-section-default {
-  background: #ffffff;
-}
-
-/* 強調セクション - 軽いブランドカラー */
-.uk-section:nth-child(even) {
-  background: linear-gradient(135deg, #f8f9fa 0%, rgba(49, 107, 63, 0.05) 100%);
-}
-
-/* 最終CTAセクション - 強いコントラスト */
-.uk-section-primary {
-  background: linear-gradient(135deg, var(--plb-dark) 0%, var(--plb-primary) 100%);
   position: relative;
 }
 
@@ -152,13 +120,13 @@ body {
 }
 
 .uk-card-primary {
-  background: linear-gradient(135deg, var(--plb-primary) 0%, #255530 100%);
+  background: linear-gradient(135deg, var(--plb-primary) 0%, #66BB6A 100%);
   border: none;
   color: white;
 }
 
 .uk-card-secondary {
-  background: linear-gradient(135deg, var(--plb-secondary) 0%, #236583 100%);
+  background: linear-gradient(135deg, var(--plb-secondary) 0%, #64B5F6 100%);
   border: none;
   color: white;
 }
@@ -220,32 +188,55 @@ body {
    CTAボタンの強化デザイン
 ================================ */
 .uk-button {
-  border-radius: 25px;
+  border-radius: 8px;
   font-weight: 600;
   text-transform: none;
   transition: var(--plb-transition);
   padding: 12px 24px;
   font-size: 1rem;
   border: 2px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  min-height: 44px; /* タッチしやすい最小サイズ */
+  position: relative;
+  overflow: hidden;
+}
+
+.uk-button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s;
+}
+
+.uk-button:hover:before {
+  left: 100%;
 }
 
 .uk-button-primary {
   background: linear-gradient(45deg, var(--plb-primary), var(--plb-secondary));
   border: none;
   color: white;
-  box-shadow: var(--plb-shadow-md);
+  box-shadow: var(--plb-shadow-sm);
 }
 
 .uk-button-primary:hover {
   transform: translateY(-2px);
   box-shadow: var(--plb-shadow-lg);
-  background: linear-gradient(45deg, #255530, #236583);
+  background: linear-gradient(45deg, #66BB6A, #64B5F6);
 }
 
 .uk-button-default {
   background: white;
   color: var(--plb-primary);
-  border-color: var(--plb-primary);
+  border: 2px solid var(--plb-primary);
 }
 
 .uk-button-default:hover {
@@ -259,6 +250,7 @@ body {
   background: var(--plb-accent);
   color: white;
   border: none;
+  box-shadow: var(--plb-shadow-sm);
 }
 
 .uk-button-secondary:hover {
@@ -267,9 +259,73 @@ body {
   box-shadow: var(--plb-shadow-md);
 }
 
+/* テキストボタン（よく使われる） */
+.uk-button-text {
+  background: var(--plb-primary);
+  color: white;
+  border: none;
+  box-shadow: var(--plb-shadow-sm);
+  font-weight: 700;
+}
+
+.uk-button-text:hover {
+  background: #66BB6A;
+  transform: translateY(-2px);
+  box-shadow: var(--plb-shadow-md);
+  color: white;
+}
+
+/* 危険・注意ボタン */
+.uk-button-danger {
+  background: var(--plb-accent);
+  color: white;
+  border: none;
+  box-shadow: var(--plb-shadow-sm);
+}
+
+.uk-button-danger:hover {
+  background: #e55a2b;
+  transform: translateY(-2px);
+  box-shadow: var(--plb-shadow-md);
+}
+
+/* ボタンサイズバリエーション */
+.uk-button-small {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  min-height: 36px;
+}
+
 .uk-button-large {
   padding: 16px 32px;
   font-size: 1.125rem;
+  min-height: 52px;
+}
+
+/* アイコン付きボタン */
+.uk-button [uk-icon], 
+.uk-button .uk-icon {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.uk-button [uk-icon]:last-child, 
+.uk-button .uk-icon:last-child {
+  margin-right: 0;
+  margin-left: 8px;
+}
+
+/* ボタングループ */
+.uk-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.uk-button-group .uk-button {
+  margin: 0;
 }
 
 /* ================================
@@ -284,17 +340,8 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* 暗い背景セクションでの白文字見出し */
-.uk-section-primary h1, .uk-section-primary h2, .uk-section-primary h3,
-.uk-section-primary h4, .uk-section-primary h5, .uk-section-primary h6,
-.uk-section-muted h1, .uk-section-muted h2, .uk-section-muted h3,
-.uk-section-muted h4, .uk-section-muted h5, .uk-section-muted h6,
-.uk-section-secondary h1, .uk-section-secondary h2, .uk-section-secondary h3,
-.uk-section-secondary h4, .uk-section-secondary h5, .uk-section-secondary h6,
-.uk-light h1, .uk-light h2, .uk-light h3, .uk-light h4, .uk-light h5, .uk-light h6,
-.uk-section-primary .uk-heading-small, .uk-section-primary .uk-heading-medium,
-.uk-section-muted .uk-heading-small, .uk-section-muted .uk-heading-medium,
-.uk-section-secondary .uk-heading-small, .uk-section-secondary .uk-heading-medium,
-.uk-light .uk-heading-small, .uk-light .uk-heading-medium {
+.cta-section h1, .cta-section h2, .cta-section h3, .cta-section h4, .cta-section h5, .cta-section h6,
+.cta-section .uk-heading-small, .cta-section .uk-heading-medium {
   color: white !important;
 }
 
@@ -311,8 +358,6 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* 白背景で誤って白文字になることを防ぐ */
-.uk-section-default h1, .uk-section-default h2, .uk-section-default h3,
-.uk-section-default h4, .uk-section-default h5, .uk-section-default h6,
 .uk-background-default h1, .uk-background-default h2, .uk-background-default h3,
 .uk-background-default h4, .uk-background-default h5, .uk-background-default h6,
 .uk-card-default h1, .uk-card-default h2, .uk-card-default h3,
@@ -349,7 +394,7 @@ h1, h2, h3, h4, h5, h6,
 /* ================================
    最終CTAセクション
 ================================ */
-.uk-section-primary::before {
+.cta-section::before {
   content: '';
   position: absolute;
   top: 0;
@@ -395,12 +440,22 @@ h1, h2, h3, h4, h5, h6,
   .uk-button-large {
     padding: 14px 28px;
     font-size: 1rem;
+    min-height: 48px;
+  }
+  
+  .uk-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    min-height: 42px;
+  }
+  
+  .uk-button-small {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    min-height: 34px;
   }
   
   /* ヒーローセクションの調整 */
-  .uk-section-muted {
-    text-align: center;
-  }
 }
 
 @media (max-width: 640px) {
@@ -411,10 +466,22 @@ h1, h2, h3, h4, h5, h6,
   .uk-button {
     width: 100%;
     margin-bottom: var(--plb-spacing-sm);
+    padding: 12px 20px;
+    font-size: 1rem;
+    min-height: 48px;
   }
   
   .uk-button + .uk-button {
     margin-left: 0;
+  }
+  
+  .uk-button-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .uk-button-group .uk-button {
+    width: 100%;
   }
 }
 
@@ -442,6 +509,38 @@ select:focus {
   outline-offset: 2px;
 }
 
+/* ボタンフォーカス状態 */
+.uk-button:focus {
+  outline: 2px solid var(--plb-primary);
+  outline-offset: 2px;
+  transform: translateY(-1px);
+  box-shadow: var(--plb-shadow-md);
+}
+
+.uk-button:active {
+  transform: translateY(0);
+  box-shadow: var(--plb-shadow-sm);
+}
+
+/* ボタン無効状態 */
+.uk-button:disabled,
+.uk-button.uk-disabled {
+  background: var(--plb-gray);
+  color: white;
+  border-color: var(--plb-gray);
+  cursor: not-allowed;
+  opacity: 0.6;
+  transform: none;
+  box-shadow: none;
+}
+
+.uk-button:disabled:hover,
+.uk-button.uk-disabled:hover {
+  background: var(--plb-gray);
+  transform: none;
+  box-shadow: none;
+}
+
 /* ================================
    パフォーマンス最適化
 ================================ */
@@ -461,8 +560,7 @@ select:focus {
 [style*="background-image"],
 .uk-background-cover,
 .parallax,
-.uk-section-muted,
-.uk-section-primary {
+.cta-section {
   /* iOS Safari & Chrome 両対応 */
   -webkit-background-size: cover !important;
   -moz-background-size: cover !important;
@@ -501,9 +599,21 @@ select:focus {
   background-attachment: scroll;
 }
 
+/* セクション別の背景画像最適化 */
+section.parallax {
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 各セクションの個別調整 */
+section.cta-section.parallax {
+  /* 最終CTAセクション用 */
+  min-height: 400px;
+}
+
 /* SVGパターン背景の互換性向上 */
-.uk-section-muted::before,
-.uk-section-primary::before {
+.cta-section::before {
   /* SVG背景画像の確実な表示 */
   background-size: 60px 60px;
   background-repeat: repeat;
@@ -511,11 +621,30 @@ select:focus {
 }
 
 /* ================================
+   Aboutページ専用の文字色修正
+================================ */
+.page-template-page-about * {
+  color: #333 !important;
+}
+
+/* 特定の要素の色は保持 */
+.page-template-page-about .uk-button,
+.page-template-page-about .uk-label,
+.page-template-page-about .uk-badge {
+  color: inherit !important;
+}
+
+.page-template-page-about .cta-section,
+.page-template-page-about .cta-section * {
+  color: white !important;
+}
+
+/* ================================
    印刷対応
 ================================ */
 @media print {
   .uk-navbar,
-  .uk-section-primary,
+  .cta-section,
   .skip-link {
     display: none;
   }

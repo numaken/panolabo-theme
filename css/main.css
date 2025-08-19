@@ -7,8 +7,9 @@
 
 /* Body Base */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "Òé®ÎÒ´ ProN W3", Hiragino Kaku Gothic ProN, Arial, "á¤êª", Meiryo, sans-serif;
-    color: #546E7A;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ï¿½ï¿½ï¿½Ò´ ProN W3", Hiragino Kaku Gothic ProN, Arial, "ï¿½ï¿½", Meiryo, sans-serif;
+    color: #37474F;
+    background-color: #FAFAFA;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -21,7 +22,7 @@ a {
 }
 
 a:hover {
-    color: #69ba64;
+    color: #4CAF50;
 }
 
 /* Headings */
@@ -76,12 +77,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Theme Colors */
-.uk-text-primary {
-    color: #69ba64;
-}
 
 .uk-background-primary {
-    background-color: #69ba64;
+    background-color: #4CAF50;
 }
 
 /* Grid */
