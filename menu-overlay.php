@@ -43,6 +43,7 @@
                 'aipostpilot-pro' => 'icon: social',
                 'chat2doc' => 'icon: comments',
                 'products' => 'icon: database',
+                'panolabo-ai-boost' => 'icon: future',
                 'portal' => 'icon: grid',
                 
                 // 企業情報
@@ -113,7 +114,7 @@
                     'wp-plugins' => [
                         'title' => 'WordPressプラグイン',
                         'icon' => 'icon: database',
-                        'pages' => ['products']
+                        'pages' => ['products', 'panolabo-ai-boost']
                     ]
                 ]
             ],

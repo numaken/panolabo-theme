@@ -89,7 +89,7 @@ function generate_structured_data() {
         ],
         "contactPoint" => [
             "@type" => "ContactPoint",
-            "telephone" => "+81-90-4749-5780",
+            "email" => "hello@panolabollc.com",
             "contactType" => "customer service",
             "areaServed" => "JP",
             "availableLanguage" => ["Japanese", "English"]

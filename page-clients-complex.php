@@ -42,7 +42,7 @@ if (empty($maps_api_key)) {
 
 <main class="numaken-clients-page">
     <!-- ヒーローセクション -->
-    <section class="uk-section uk-section-primary uk-section-small">
+    <section class="uk-section cta-section">
         <div class="uk-container">
             <div class="uk-text-center">
                 <h1 class="uk-heading-primary uk-margin-remove-bottom">Clients</h1>

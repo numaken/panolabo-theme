@@ -1,4 +1,4 @@
-<section id="inquiry" class="uk-section uk-section-primary uk-light">
+<section id="inquiry" class="uk-section ">
   <div class="uk-container uk-text-center">
 
     <h2 class="uk-heading-line"><span>お問い合わせ</span></h2>

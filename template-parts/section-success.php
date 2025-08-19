@@ -1,6 +1,6 @@
-<section class="uk-section uk-section-muted uk-background-cover uk-background-fixed parallax" style="background-image: url(<?php echo esc_url(get_template_directory_uri()); ?>/images/success-bg.jpg);">
+<section class="uk-section  uk-background-cover uk-background-fixed parallax" style="background-image: url(<?php echo esc_url(get_template_directory_uri()); ?>/images/success-bg.jpg);">
   <div class="uk-container">
-    <h2 class="uk-heading-line uk-text-center uk-animation-slide-bottom uk-text-primary uk-text-bold">
+    <h2 class="uk-heading-line uk-text-center uk-animation-slide-bottom  uk-text-bold">
       <span>全ての業種に適用！</span>
     </h2>
     <p class="uk-text-center uk-padding-remove-top uk-padding-remove-bottom">
@@ -14,7 +14,7 @@
     <div class="uk-child-width-1-3@m uk-grid-match uk-margin-large-top" uk-grid>
       <!-- 成功事例1 -->
       <div>
-        <div class="uk-card uk-card-primary uk-card-body uk-box-shadow-large">
+        <div class="uk-card  uk-card-body uk-box-shadow-large">
           <h3 class="uk-h4">飲食店のVR導入</h3>
           <p>VRによって店内雰囲気を訴求。オンライン予約率が50%アップ。</p>
         </div>
@@ -22,7 +22,7 @@
 
       <!-- 成功事例2 -->
       <div>
-        <div class="uk-card uk-card-primary uk-card-body uk-box-shadow-large">
+        <div class="uk-card  uk-card-body uk-box-shadow-large">
           <h3 class="uk-h4">美容室アプリ導入</h3>
           <p>アプリからクーポン配信＆リピート率向上。タイムセール活用も可能。</p>
         </div>
@@ -30,7 +30,7 @@
 
       <!-- 成功事例3 -->
       <div>
-        <div class="uk-card uk-card-primary uk-card-body uk-box-shadow-large">
+        <div class="uk-card  uk-card-body uk-box-shadow-large">
           <h3 class="uk-h4">不動産のVR内覧</h3>
           <p>遠方顧客へVRで物件案内。オンライン成約率が2倍に。</p>
         </div>

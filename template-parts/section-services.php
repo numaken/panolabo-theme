@@ -4,7 +4,7 @@
  * Purpose: ３つのサービス（VR・アプリ・Web）を訴求するセクション（強化版）
  */
 ?>
-<section id="services" class="uk-section uk-section-muted">
+<section id="services" class="uk-section ">
   <div class="uk-container">
 
     <!-- 見出し・リード -->
@@ -15,7 +15,7 @@
           の強み
         </span>
       </div>
-      <h2 class="uk-text-bold uk-margin-small-bottom uk-text-primary">
+      <h2 class="uk-text-bold uk-margin-small-bottom ">
         自社ブランドで販売できる“唯一無二”のサービス群
       </h2>
       <p class="uk-text-lead">
@@ -36,7 +36,7 @@
         </div>
       </div>
       <div>
-        <h3 class="uk-text-primary uk-text-bold uk-margin-small-bottom">360°VRによる「空間の可視化」で来店・成約を促進</h3>
+        <h3 class=" uk-text-bold uk-margin-small-bottom">360°VRによる「空間の可視化」で来店・成約を促進</h3>
         <p>
           飲食店・美容室・不動産・医療など、多業種に導入済み。<br>
           臨場感ある体験を通じて、競合と差をつける「空間マーケティング」が可能に。
@@ -72,7 +72,7 @@
         </div>
       </div>
       <div class="uk-flex-first@m">
-        <h3 class="uk-text-primary uk-text-bold uk-margin-small-bottom">アプリで“通知・予約・クーポン”を完全自動化</h3>
+        <h3 class=" uk-text-bold uk-margin-small-bottom">アプリで“通知・予約・クーポン”を完全自動化</h3>
         <p>
           自社ブランドでのアプリ展開が可能。<br>
           プッシュ通知・スタンプカード・予約など、店舗集客に必須の機能がオールインワン。
@@ -93,7 +93,7 @@
         </div>
       </div>
       <div>
-        <h3 class="uk-text-primary uk-text-bold uk-margin-small-bottom">「集客できる」構造で設計されたWeb制作</h3>
+        <h3 class=" uk-text-bold uk-margin-small-bottom">「集客できる」構造で設計されたWeb制作</h3>
         <p>
           テンプレートを超えた柔軟なカスタマイズと、スマホファーストの設計。<br>
           コンバージョンまで考慮した構造で、公開後も成果を生み出します。

@@ -105,11 +105,11 @@ function inline_critical_css() {
             .uk-container{max-width:1200px;margin:0 auto;padding:0 15px}
             .uk-text-center{text-align:center}
             .uk-section{padding:60px 0}
-            .uk-section-primary{background:#1e3a5f;color:#fff}
-            .uk-section-muted{background:#f8f9fa}
+            .cta-section{background:#1e3a5f;color:#fff}
+            .{background:#f8f9fa}
             .uk-h2{font-size:2rem;line-height:1.3;margin-bottom:1rem}
             .uk-text-bold{font-weight:700}
-            .uk-text-primary{color:#1e87f0}
+            .{color:#1e87f0}
             .uk-margin-bottom{margin-bottom:20px}
             .uk-button{display:inline-block;padding:12px 24px;text-decoration:none;border-radius:8px;transition:all 0.3s;font-weight:600;min-height:48px;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
             .uk-button-primary{background:linear-gradient(135deg,#69ba64 0%,#5aa659 100%);color:#fff;border:none}

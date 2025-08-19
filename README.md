@@ -1,6 +1,14 @@
-# Panolabo WordPress Theme
+# Panolabo WordPress Theme v2.0.0
 
-🚀 **1人で全部回す凄さ** - AI×VR×アプリ×Web×OEM総合制作代理店のWordPressテーマ
+🚀 **AI Boost営業支援機能搭載** - AI×VR×アプリ×Web×OEM総合制作代理店のWordPressテーマ
+
+## ✨ v2.0.0 NEW FEATURES
+
+### 🎯 Panolabo AI Boost プラグイン統合
+- **提案型事例表示機能**: 営業現場で効果を実演
+- **6業種対応**: 飲食・美容・製造・不動産・歯科・EC事例
+- **ショートコード**: `[future_case id="1" layout="full"]`
+- **成約率3倍向上**: 数値で示すAI導入効果
 
 ## 📋 概要
 

@@ -5,34 +5,34 @@
  */
 get_header(); ?>
 
-<main class="uk-section uk-section-default">
+<main class="uk-section ">
   
   <!-- Hero Section: 実績概要 -->
-  <section class="uk-section uk-section-primary uk-background-cover uk-background-center-center uk-background-norepeat" style="background-image: url('<?php bloginfo('template_directory'); ?>/images/hero-portfolio.jpg');">
+  <section class="uk-section uk-background-cover uk-background-center-center uk-background-norepeat" style="background-image: url('<?php bloginfo('template_directory'); ?>/images/hero-portfolio.jpg');">
     <div class="uk-container">
       <div class="uk-text-center" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
         <h1 class="uk-heading-primary uk-text-bold uk-margin-bottom">
           <span class="uk-text-emphasis">panolabo 実績紹介</span><br>
-          <span class="uk-text-warning uk-text-large">9年間で約3,000件の圧倒的実績</span>
+          <span class=" uk-text-large">9年間で約3,000件の圧倒的実績</span>
         </h1>
         <p class="uk-text-lead uk-margin-bottom">
           2015年の設立から現在まで、<strong>多業種・多規模</strong>のクライアント様と<br>
           <strong>VR・アプリ・Web制作</strong>で数々の成功事例を創出してきました
         </p>
         <div class="uk-grid-small uk-child-width-auto uk-flex-center uk-margin-top" uk-grid>
-          <div><span class="uk-label uk-label-warning uk-text-bold">9年の実績</span></div>
-          <div><span class="uk-label uk-label-success uk-text-bold">2,986案件</span></div>
-          <div><span class="uk-label uk-label-primary uk-text-bold">多業種対応</span></div>
+          <div><span class="uk-label  uk-text-bold">9年の実績</span></div>
+          <div><span class="uk-label  uk-text-bold">2,986案件</span></div>
+          <div><span class="uk-label  uk-text-bold">多業種対応</span></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- 数字で見る実績（API連動） -->
-  <section class="uk-section uk-section-default">
+  <section class="uk-section ">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
-        <h2 class="uk-heading-medium uk-text-bold uk-text-primary">
+        <h2 class="uk-heading-medium uk-text-bold ">
           <span uk-icon="icon: database; ratio: 1.5" class="uk-margin-small-right"></span>
           数字で見るpanolaboの実績
         </h2>
@@ -60,11 +60,11 @@ get_header(); ?>
         <!-- 総制作案件数（全実績合計） -->
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-text-center uk-box-shadow-medium uk-border-rounded">
-            <div class="uk-text-bold uk-heading-small uk-text-primary uk-margin-small-bottom" data-counter="<?php echo $total_projects; ?>">0</div>
+            <div class="uk-text-bold uk-heading-small  uk-margin-small-bottom" data-counter="<?php echo $total_projects; ?>">0</div>
             <div class="uk-text-bold uk-margin-small-bottom">総制作案件数</div>
             <p class="uk-text-small uk-text-muted">
               VR・アプリ・Web全分野での累計実績<br>
-              <span class="uk-text-success">2015年〜2025年</span>
+              <span class="">2015年〜2025年</span>
             </p>
           </div>
         </div>
@@ -72,7 +72,7 @@ get_header(); ?>
         <!-- VR実績（HP制作の一部） -->
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-text-center uk-box-shadow-medium uk-border-rounded">
-            <div class="uk-text-bold uk-heading-small uk-text-warning uk-margin-small-bottom" data-counter="<?php echo $vr_count; ?>">0</div>
+            <div class="uk-text-bold uk-heading-small  uk-margin-small-bottom" data-counter="<?php echo $vr_count; ?>">0</div>
             <div class="uk-text-bold uk-margin-small-bottom">VR/360°制作</div>
             <p class="uk-text-small uk-text-muted">飲食店・不動産・美容室など多業種</p>
           </div>
@@ -81,7 +81,7 @@ get_header(); ?>
         <!-- アプリ実績（CSVデータベース） -->
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-text-center uk-box-shadow-medium uk-border-rounded">
-            <div class="uk-text-bold uk-heading-small uk-text-success uk-margin-small-bottom" data-counter="<?php echo $app_count; ?>">0</div>
+            <div class="uk-text-bold uk-heading-small  uk-margin-small-bottom" data-counter="<?php echo $app_count; ?>">0</div>
             <div class="uk-text-bold uk-margin-small-bottom">アプリ開発</div>
             <p class="uk-text-small uk-text-muted">iOS・Android両対応のネイティブアプリ</p>
           </div>
@@ -90,7 +90,7 @@ get_header(); ?>
         <!-- Web・HP制作実績 -->
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-text-center uk-box-shadow-medium uk-border-rounded">
-            <div class="uk-text-bold uk-heading-small uk-text-danger uk-margin-small-bottom" data-counter="<?php echo $web_count; ?>">0</div>
+            <div class="uk-text-bold uk-heading-small  uk-margin-small-bottom" data-counter="<?php echo $web_count; ?>">0</div>
             <div class="uk-text-bold uk-margin-small-bottom">Web・HP制作</div>
             <p class="uk-text-small uk-text-muted">WordPress・カスタム開発サイト</p>
           </div>
@@ -134,16 +134,16 @@ get_header(); ?>
       <!-- 実績統計（シンプル表示） -->
       <div class="uk-margin-large-top">
         <div class="uk-text-center">
-          <h3 class="uk-text-bold uk-margin-bottom uk-text-primary">分野別実績</h3>
+          <h3 class="uk-text-bold uk-margin-bottom ">分野別実績</h3>
           <div class="uk-grid-small uk-child-width-1-3@m uk-text-center" uk-grid>
             <div>
-              <div class="uk-card uk-card-primary uk-card-body uk-padding-small">
+              <div class="uk-card  uk-card-body uk-padding-small">
                 <div class="uk-text-bold uk-heading-small">1,666件</div>
                 <div class="uk-text-small">VR/360°制作</div>
               </div>
             </div>
             <div>
-              <div class="uk-card uk-card-secondary uk-card-body uk-padding-small">
+              <div class="uk-card  uk-card-body uk-padding-small">
                 <div class="uk-text-bold uk-heading-small">537件</div>
                 <div class="uk-text-small">アプリ開発</div>
               </div>
@@ -156,7 +156,7 @@ get_header(); ?>
             </div>
           </div>
           <div class="uk-margin-top">
-            <div class="uk-text-bold uk-text-large uk-text-primary">2,986件</div>
+            <div class="uk-text-bold uk-text-large ">2,986件</div>
             <div class="uk-text-small">総制作実績（2015年〜2025年）</div>
           </div>
         </div>
@@ -165,10 +165,10 @@ get_header(); ?>
   </section>
 
   <!-- API連動：実績ギャラリー -->
-  <section class="uk-section uk-section-secondary">
+  <section class="uk-section ">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
-        <h2 class="uk-heading-medium uk-text-bold uk-text-primary">
+        <h2 class="uk-heading-medium uk-text-bold ">
           <span uk-icon="icon: thumbnails; ratio: 1.5" class="uk-margin-small-right"></span>
           実績ギャラリー（API連動）
         </h2>
@@ -233,10 +233,10 @@ get_header(); ?>
   </section>
 
   <!-- 代表的な成功事例 -->
-  <section class="uk-section uk-section-muted">
+  <section class="uk-section ">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
-        <h2 class="uk-heading-medium uk-text-bold uk-text-primary">
+        <h2 class="uk-heading-medium uk-text-bold ">
           <span uk-icon="icon: star; ratio: 1.5" class="uk-margin-small-right"></span>
           代表的な成功事例
         </h2>
@@ -254,15 +254,15 @@ get_header(); ?>
                 style="border-radius: 12px;">
               </iframe>
               <div class="uk-position-top-left uk-margin-small">
-                <span class="uk-label uk-label-success">VR制作</span>
+                <span class="uk-label ">VR制作</span>
               </div>
             </div>
           </div>
           <div>
-            <h3 class="uk-text-bold uk-text-primary uk-margin-bottom">飲食店 360°VRツアー制作</h3>
+            <h3 class="uk-text-bold  uk-margin-bottom">飲食店 360°VRツアー制作</h3>
             <div class="uk-margin-bottom">
-              <span class="uk-label uk-label-warning uk-margin-small-right">飲食店</span>
-              <span class="uk-label uk-label-primary">VR制作</span>
+              <span class="uk-label  uk-margin-small-right">飲食店</span>
+              <span class="uk-label ">VR制作</span>
             </div>
             <p class="uk-margin-bottom">
               <strong>課題：</strong>コロナ禍で来店前の不安解消と差別化が急務<br>
@@ -272,9 +272,9 @@ get_header(); ?>
               <div>
                 <h4 class="uk-text-bold uk-text-small uk-margin-small-bottom">成果・効果</h4>
                 <ul class="uk-list uk-text-small">
-                  <li>• 予約率 <strong class="uk-text-success">+40%</strong> 向上</li>
-                  <li>• Webサイト滞在時間 <strong class="uk-text-success">+65%</strong> 延長</li>
-                  <li>• 新規顧客獲得 <strong class="uk-text-success">+25%</strong> 増加</li>
+                  <li>• 予約率 <strong class="">+40%</strong> 向上</li>
+                  <li>• Webサイト滞在時間 <strong class="">+65%</strong> 延長</li>
+                  <li>• 新規顧客獲得 <strong class="">+25%</strong> 増加</li>
                 </ul>
               </div>
               <div>
@@ -305,15 +305,15 @@ get_header(); ?>
                 <iframe src="https://www.trattoria-haru-italian.com/recommend-app/" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
               </div>
               <div class="uk-position-top-right uk-margin-small">
-                <span class="uk-label uk-label-warning">アプリ開発</span>
+                <span class="uk-label ">アプリ開発</span>
               </div>
             </div>
           </div>
           <div class="uk-flex-first@m">
-            <h3 class="uk-text-bold uk-text-primary uk-margin-bottom">美容室 顧客管理アプリ開発</h3>
+            <h3 class="uk-text-bold  uk-margin-bottom">美容室 顧客管理アプリ開発</h3>
             <div class="uk-margin-bottom">
-              <span class="uk-label uk-label-warning uk-margin-small-right">美容室</span>
-              <span class="uk-label uk-label-primary">iOS・Android</span>
+              <span class="uk-label  uk-margin-small-right">美容室</span>
+              <span class="uk-label ">iOS・Android</span>
             </div>
             <p class="uk-margin-bottom">
               <strong>課題：</strong>リピート率低下と顧客との接点不足<br>
@@ -323,9 +323,9 @@ get_header(); ?>
               <div>
                 <h4 class="uk-text-bold uk-text-small uk-margin-small-bottom">成果・効果</h4>
                 <ul class="uk-list uk-text-small">
-                  <li>• リピート率 <strong class="uk-text-success">+55%</strong> 向上</li>
-                  <li>• 予約効率 <strong class="uk-text-success">+70%</strong> 改善</li>
-                  <li>• 顧客単価 <strong class="uk-text-success">+30%</strong> 増加</li>
+                  <li>• リピート率 <strong class="">+55%</strong> 向上</li>
+                  <li>• 予約効率 <strong class="">+70%</strong> 改善</li>
+                  <li>• 顧客単価 <strong class="">+30%</strong> 増加</li>
                 </ul>
               </div>
               <div>
@@ -360,15 +360,15 @@ get_header(); ?>
                 </iframe>
               </div>
               <div class="uk-position-top-left uk-margin-small">
-                <span class="uk-label uk-label-danger">Web制作</span>
+                <span class="uk-label ">Web制作</span>
               </div>
             </div>
           </div>
           <div>
-            <h3 class="uk-text-bold uk-text-primary uk-margin-bottom">製造業 企業サイトリニューアル</h3>
+            <h3 class="uk-text-bold  uk-margin-bottom">製造業 企業サイトリニューアル</h3>
             <div class="uk-margin-bottom">
-              <span class="uk-label uk-label-warning uk-margin-small-right">製造業</span>
-              <span class="uk-label uk-label-primary">WordPress</span>
+              <span class="uk-label  uk-margin-small-right">製造業</span>
+              <span class="uk-label ">WordPress</span>
             </div>
             <p class="uk-margin-bottom">
               <strong>課題：</strong>古いサイトでSEO順位低下、問い合わせ減少<br>
@@ -378,9 +378,9 @@ get_header(); ?>
               <div>
                 <h4 class="uk-text-bold uk-text-small uk-margin-small-bottom">成果・効果</h4>
                 <ul class="uk-list uk-text-small">
-                  <li>• 検索順位 <strong class="uk-text-success">TOP3</strong> 獲得</li>
-                  <li>• サイト速度 <strong class="uk-text-success">+80%</strong> 高速化</li>
-                  <li>• 問い合わせ <strong class="uk-text-success">+120%</strong> 増加</li>
+                  <li>• 検索順位 <strong class="">TOP3</strong> 獲得</li>
+                  <li>• サイト速度 <strong class="">+80%</strong> 高速化</li>
+                  <li>• 問い合わせ <strong class="">+120%</strong> 増加</li>
                 </ul>
               </div>
               <div>
@@ -404,10 +404,10 @@ get_header(); ?>
   </section>
 
   <!-- 品質保証の取り組み -->
-  <section class="uk-section uk-section-default">
+  <section class="uk-section ">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
-        <h2 class="uk-heading-medium uk-text-bold uk-text-primary">
+        <h2 class="uk-heading-medium uk-text-bold ">
           <span uk-icon="icon: check; ratio: 1.5" class="uk-margin-small-right"></span>
           品質保証の取り組み
         </h2>
@@ -420,7 +420,7 @@ get_header(); ?>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-text-center uk-box-shadow-medium uk-border-rounded uk-height-1-1">
             <div class="uk-margin-bottom">
-              <span uk-icon="icon: cog; ratio: 2.5" class="uk-text-success"></span>
+              <span uk-icon="icon: cog; ratio: 2.5" class=""></span>
             </div>
             <h3 class="uk-text-bold uk-margin-bottom">標準化された開発プロセス</h3>
             <p class="uk-text-small uk-margin-bottom">
@@ -428,7 +428,7 @@ get_header(); ?>
               要件定義から納品まで、品質を保証する仕組みを構築。
             </p>
             <div class="uk-margin-top">
-              <span class="uk-label uk-label-success">実績ベース</span>
+              <span class="uk-label ">実績ベース</span>
             </div>
           </div>
         </div>
@@ -437,7 +437,7 @@ get_header(); ?>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-text-center uk-box-shadow-medium uk-border-rounded uk-height-1-1">
             <div class="uk-margin-bottom">
-              <span uk-icon="icon: file-edit; ratio: 2.5" class="uk-text-warning"></span>
+              <span uk-icon="icon: file-edit; ratio: 2.5" class=""></span>
             </div>
             <h3 class="uk-text-bold uk-margin-bottom">徹底したコードレビュー</h3>
             <p class="uk-text-small uk-margin-bottom">
@@ -445,7 +445,7 @@ get_header(); ?>
               セキュリティ、パフォーマンス、保守性を徹底チェック。
             </p>
             <div class="uk-margin-top">
-              <span class="uk-label uk-label-warning">品質管理</span>
+              <span class="uk-label ">品質管理</span>
             </div>
           </div>
         </div>
@@ -454,7 +454,7 @@ get_header(); ?>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-text-center uk-box-shadow-medium uk-border-rounded uk-height-1-1">
             <div class="uk-margin-bottom">
-              <span uk-icon="icon: lock; ratio: 2.5" class="uk-text-primary"></span>
+              <span uk-icon="icon: lock; ratio: 2.5" class=""></span>
             </div>
             <h3 class="uk-text-bold uk-margin-bottom">セキュリティファースト</h3>
             <p class="uk-text-small uk-margin-bottom">
@@ -462,7 +462,7 @@ get_header(); ?>
               お客様のデータを守る多層防御体制。
             </p>
             <div class="uk-margin-top">
-              <span class="uk-label uk-label-primary">セキュリティ</span>
+              <span class="uk-label ">セキュリティ</span>
             </div>
           </div>
         </div>
@@ -473,19 +473,19 @@ get_header(); ?>
         <h3 class="uk-text-bold uk-text-center uk-margin-bottom">品質指標・実績データ</h3>
         <div class="uk-grid-large uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center" uk-grid>
           <div>
-            <div class="uk-text-bold uk-text-large uk-text-primary">99.8%</div>
+            <div class="uk-text-bold uk-text-large ">99.8%</div>
             <div class="uk-text-small">納期遵守率</div>
           </div>
           <div>
-            <div class="uk-text-bold uk-text-large uk-text-primary">0件</div>
+            <div class="uk-text-bold uk-text-large ">0件</div>
             <div class="uk-text-small">重大セキュリティ事故</div>
           </div>
           <div>
-            <div class="uk-text-bold uk-text-large uk-text-primary">24時間</div>
+            <div class="uk-text-bold uk-text-large ">24時間</div>
             <div class="uk-text-small">平均初回対応時間</div>
           </div>
           <div>
-            <div class="uk-text-bold uk-text-large uk-text-primary">95%</div>
+            <div class="uk-text-bold uk-text-large ">95%</div>
             <div class="uk-text-small">品質満足度</div>
           </div>
         </div>
@@ -494,7 +494,7 @@ get_header(); ?>
   </section>
 
   <!-- クライアント満足度 -->
-  <section class="uk-section uk-section-primary">
+  <section class="uk-section">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
         <h2 class="uk-heading-medium uk-text-bold">
@@ -510,7 +510,7 @@ get_header(); ?>
         
         <div>
           <div class="uk-text-center">
-            <div class="uk-text-bold uk-heading-small uk-text-warning uk-margin-small-bottom">95%</div>
+            <div class="uk-text-bold uk-heading-small  uk-margin-small-bottom">95%</div>
             <h3 class="uk-text-bold uk-margin-small-bottom">総合満足度</h3>
             <p class="uk-text-small">
               プロジェクト完了後のアンケートで、
@@ -521,7 +521,7 @@ get_header(); ?>
 
         <div>
           <div class="uk-text-center">
-            <div class="uk-text-bold uk-heading-small uk-text-warning uk-margin-small-bottom">85%</div>
+            <div class="uk-text-bold uk-heading-small  uk-margin-small-bottom">85%</div>
             <h3 class="uk-text-bold uk-margin-small-bottom">リピート率</h3>
             <p class="uk-text-small">
               85%のクライアント様が追加案件や
@@ -532,7 +532,7 @@ get_header(); ?>
 
         <div>
           <div class="uk-text-center">
-            <div class="uk-text-bold uk-heading-small uk-text-warning uk-margin-small-bottom">90%</div>
+            <div class="uk-text-bold uk-heading-small  uk-margin-small-bottom">90%</div>
             <h3 class="uk-text-bold uk-margin-small-bottom">紹介率</h3>
             <p class="uk-text-small">
               90%のクライアント様が知人・関連企業に
@@ -564,10 +564,10 @@ get_header(); ?>
   </section>
 
   <!-- 技術実績・スキル -->
-  <section class="uk-section uk-section-muted">
+  <section class="uk-section ">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
-        <h2 class="uk-heading-medium uk-text-bold uk-text-primary">
+        <h2 class="uk-heading-medium uk-text-bold ">
           <span uk-icon="icon: cog; ratio: 1.5" class="uk-margin-small-right"></span>
           技術実績・保有スキル
         </h2>
@@ -578,63 +578,63 @@ get_header(); ?>
         
         <!-- フロントエンド -->
         <div>
-          <h3 class="uk-text-bold uk-text-primary uk-margin-bottom">フロントエンド</h3>
+          <h3 class="uk-text-bold  uk-margin-bottom">フロントエンド</h3>
           <div class="uk-grid-small uk-child-width-auto" uk-grid>
-            <div><span class="uk-label uk-label-primary">HTML5</span></div>
-            <div><span class="uk-label uk-label-primary">CSS3</span></div>
-            <div><span class="uk-label uk-label-primary">JavaScript</span></div>
-            <div><span class="uk-label uk-label-primary">TypeScript</span></div>
-            <div><span class="uk-label uk-label-primary">React</span></div>
-            <div><span class="uk-label uk-label-primary">Vue.js</span></div>
-            <div><span class="uk-label uk-label-primary">UIKit</span></div>
-            <div><span class="uk-label uk-label-primary">Bootstrap</span></div>
+            <div><span class="uk-label ">HTML5</span></div>
+            <div><span class="uk-label ">CSS3</span></div>
+            <div><span class="uk-label ">JavaScript</span></div>
+            <div><span class="uk-label ">TypeScript</span></div>
+            <div><span class="uk-label ">React</span></div>
+            <div><span class="uk-label ">Vue.js</span></div>
+            <div><span class="uk-label ">UIKit</span></div>
+            <div><span class="uk-label ">Bootstrap</span></div>
           </div>
         </div>
 
         <!-- バックエンド -->
         <div>
-          <h3 class="uk-text-bold uk-text-primary uk-margin-bottom">バックエンド</h3>
+          <h3 class="uk-text-bold  uk-margin-bottom">バックエンド</h3>
           <div class="uk-grid-small uk-child-width-auto" uk-grid>
-            <div><span class="uk-label uk-label-warning">PHP</span></div>
-            <div><span class="uk-label uk-label-warning">WordPress</span></div>
-            <div><span class="uk-label uk-label-warning">Node.js</span></div>
-            <div><span class="uk-label uk-label-warning">Python</span></div>
-            <div><span class="uk-label uk-label-warning">MySQL</span></div>
-            <div><span class="uk-label uk-label-warning">PostgreSQL</span></div>
-            <div><span class="uk-label uk-label-warning">Redis</span></div>
-            <div><span class="uk-label uk-label-warning">API開発</span></div>
+            <div><span class="uk-label ">PHP</span></div>
+            <div><span class="uk-label ">WordPress</span></div>
+            <div><span class="uk-label ">Node.js</span></div>
+            <div><span class="uk-label ">Python</span></div>
+            <div><span class="uk-label ">MySQL</span></div>
+            <div><span class="uk-label ">PostgreSQL</span></div>
+            <div><span class="uk-label ">Redis</span></div>
+            <div><span class="uk-label ">API開発</span></div>
           </div>
         </div>
 
         <!-- モバイル・VR -->
         <div>
-          <h3 class="uk-text-bold uk-text-primary uk-margin-bottom">モバイル・VR</h3>
+          <h3 class="uk-text-bold  uk-margin-bottom">モバイル・VR</h3>
           <div class="uk-grid-small uk-child-width-auto" uk-grid>
-            <div><span class="uk-label uk-label-success">Swift</span></div>
-            <div><span class="uk-label uk-label-success">Kotlin</span></div>
-            <div><span class="uk-label uk-label-success">React Native</span></div>
-            <div><span class="uk-label uk-label-success">Unity</span></div>
-            <div><span class="uk-label uk-label-success">360°撮影</span></div>
-            <div><span class="uk-label uk-label-success">VR制作</span></div>
-            <div><span class="uk-label uk-label-success">A-Frame</span></div>
-            <div><span class="uk-label uk-label-success">Three.js</span></div>
+            <div><span class="uk-label ">Swift</span></div>
+            <div><span class="uk-label ">Kotlin</span></div>
+            <div><span class="uk-label ">React Native</span></div>
+            <div><span class="uk-label ">Unity</span></div>
+            <div><span class="uk-label ">360°撮影</span></div>
+            <div><span class="uk-label ">VR制作</span></div>
+            <div><span class="uk-label ">A-Frame</span></div>
+            <div><span class="uk-label ">Three.js</span></div>
           </div>
         </div>
       </div>
 
       <!-- AI・最新技術 -->
       <div class="uk-margin-large-top">
-        <h3 class="uk-text-bold uk-text-primary uk-text-center uk-margin-bottom">AI・最新技術</h3>
+        <h3 class="uk-text-bold  uk-text-center uk-margin-bottom">AI・最新技術</h3>
         <div class="uk-text-center">
           <div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid>
-            <div><span class="uk-label uk-label-danger">OpenAI API</span></div>
-            <div><span class="uk-label uk-label-danger">TensorFlow</span></div>
-            <div><span class="uk-label uk-label-danger">PyTorch</span></div>
-            <div><span class="uk-label uk-label-danger">機械学習</span></div>
-            <div><span class="uk-label uk-label-danger">自然言語処理</span></div>
-            <div><span class="uk-label uk-label-danger">画像認識</span></div>
-            <div><span class="uk-label uk-label-danger">データ分析</span></div>
-            <div><span class="uk-label uk-label-danger">予測モデル</span></div>
+            <div><span class="uk-label ">OpenAI API</span></div>
+            <div><span class="uk-label ">TensorFlow</span></div>
+            <div><span class="uk-label ">PyTorch</span></div>
+            <div><span class="uk-label ">機械学習</span></div>
+            <div><span class="uk-label ">自然言語処理</span></div>
+            <div><span class="uk-label ">画像認識</span></div>
+            <div><span class="uk-label ">データ分析</span></div>
+            <div><span class="uk-label ">予測モデル</span></div>
           </div>
         </div>
       </div>
@@ -642,10 +642,10 @@ get_header(); ?>
   </section>
 
   <!-- お問い合わせ CTA -->
-  <section class="uk-section uk-section-default">
+  <section class="uk-section ">
     <div class="uk-container">
       <div class="uk-text-center" uk-scrollspy="cls: uk-animation-scale-up; delay: 200;">
-        <h2 class="uk-heading-small uk-text-bold uk-text-primary uk-margin-bottom">
+        <h2 class="uk-heading-small uk-text-bold  uk-margin-bottom">
           あなたのプロジェクトも成功事例にしませんか？
         </h2>
         <p class="uk-text-lead uk-margin-bottom">
@@ -665,9 +665,9 @@ get_header(); ?>
 
         <div class="uk-margin-large-top">
           <div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid>
-            <div><span class="uk-label uk-label-success">無料相談実施中</span></div>
-            <div><span class="uk-label uk-label-warning">実績資料無料DL</span></div>
-            <div><span class="uk-label uk-label-primary">見積もり無料</span></div>
+            <div><span class="uk-label ">無料相談実施中</span></div>
+            <div><span class="uk-label ">実績資料無料DL</span></div>
+            <div><span class="uk-label ">見積もり無料</span></div>
           </div>
         </div>
       </div>

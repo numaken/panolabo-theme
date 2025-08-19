@@ -1,0 +1,511 @@
+/* Panolabo Theme Polish - 全体デザイン統一性向上 */
+
+/* ================================
+   カスタムプロパティ（CSS変数）
+================================ */
+:root {
+  /* Brand Colors */
+  --plb-primary: #316B3F;     /* Forest Green */
+  --plb-secondary: #2E86AB;   /* Blue */
+  --plb-accent: #FF6B35;      /* Orange Red */
+  --plb-warning: #FFC857;     /* Yellow */
+  --plb-dark: #1e1e1e;
+  --plb-light: #f8f9fa;
+  --plb-gray: #6c757d;
+  
+  /* Typography */
+  --plb-font-primary: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic Medium', 'Meiryo', -apple-system, BlinkMacSystemFont, sans-serif;
+  --plb-line-height: 1.6;
+  
+  /* Spacing */
+  --plb-spacing-xs: 0.5rem;
+  --plb-spacing-sm: 1rem;
+  --plb-spacing-md: 1.5rem;
+  --plb-spacing-lg: 2rem;
+  --plb-spacing-xl: 3rem;
+  
+  /* Shadows */
+  --plb-shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+  --plb-shadow-md: 0 4px 8px rgba(0,0,0,0.15);
+  --plb-shadow-lg: 0 10px 30px rgba(0,0,0,0.2);
+  
+  /* Transitions */
+  --plb-transition: all 0.3s ease;
+}
+
+/* ================================
+   グローバルスタイル調整
+================================ */
+body {
+  font-family: var(--plb-font-primary);
+  line-height: var(--plb-line-height);
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* セクション間の統一的なスペーシング */
+.uk-section {
+  padding: var(--plb-spacing-xl) 0;
+}
+
+.uk-section + .uk-section {
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+/* UIKit上書き - ブランドカラー統一 */
+.uk-button-primary {
+  background-color: var(--plb-primary);
+  border-color: var(--plb-primary);
+}
+
+.uk-button-primary:hover {
+  background-color: #255530;
+  border-color: #255530;
+}
+
+.uk-button-secondary {
+  background-color: var(--plb-secondary);
+  border-color: var(--plb-secondary);
+}
+
+.uk-button-default {
+  background-color: var(--plb-light);
+  color: var(--plb-dark);
+  border-color: var(--plb-gray);
+}
+
+.uk-label-warning {
+  background-color: var(--plb-warning);
+  color: var(--plb-dark);
+}
+
+.uk-label-danger {
+  background-color: var(--plb-accent);
+}
+
+/* ================================
+   セクション背景の視覚的階層
+================================ */
+/* セクション背景の基本スタイル */
+
+/* 最終CTAセクション - 強いコントラスト */
+.cta-section {
+  background: linear-gradient(135deg, var(--plb-dark) 0%, var(--plb-primary) 100%);
+  position: relative;
+}
+
+.plb-hero-thumb {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--plb-shadow-md);
+}
+
+/* ================================
+   カード統一デザイン
+================================ */
+.uk-card {
+  transition: var(--plb-transition);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--plb-shadow-sm);
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.uk-card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--plb-shadow-lg);
+  border-color: var(--plb-primary);
+}
+
+.uk-card-primary {
+  background: linear-gradient(135deg, var(--plb-primary) 0%, #255530 100%);
+  border: none;
+  color: white;
+}
+
+.uk-card-secondary {
+  background: linear-gradient(135deg, var(--plb-secondary) 0%, #236583 100%);
+  border: none;
+  color: white;
+}
+
+.uk-card-default {
+  background: white;
+  backdrop-filter: blur(10px);
+}
+
+/* カード内の統一的なスペーシング */
+.uk-card-body {
+  padding: var(--plb-spacing-lg);
+}
+
+.uk-card-title {
+  margin-bottom: var(--plb-spacing-md);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+/* ================================
+   三本柱セクション強化
+================================ */
+#business-pillars .uk-card {
+  position: relative;
+  min-height: 400px;
+}
+
+#business-pillars .uk-card-badge {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  z-index: 1;
+}
+
+/* ================================
+   FAQ アコーディオン改善
+================================ */
+.uk-accordion-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: var(--plb-spacing-md);
+  background: var(--plb-light);
+  border-radius: 4px;
+  margin-bottom: var(--plb-spacing-xs);
+}
+
+.uk-accordion-title:hover {
+  background: #e9ecef;
+}
+
+.uk-accordion-content {
+  padding: var(--plb-spacing-md);
+  background: white;
+  border-left: 4px solid var(--plb-primary);
+}
+
+/* ================================
+   CTAボタンの強化デザイン
+================================ */
+.uk-button {
+  border-radius: 25px;
+  font-weight: 600;
+  text-transform: none;
+  transition: var(--plb-transition);
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: 2px solid transparent;
+}
+
+.uk-button-primary {
+  background: linear-gradient(45deg, var(--plb-primary), var(--plb-secondary));
+  border: none;
+  color: white;
+  box-shadow: var(--plb-shadow-md);
+}
+
+.uk-button-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--plb-shadow-lg);
+  background: linear-gradient(45deg, #255530, #236583);
+}
+
+.uk-button-default {
+  background: white;
+  color: var(--plb-primary);
+  border-color: var(--plb-primary);
+}
+
+.uk-button-default:hover {
+  background: var(--plb-primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: var(--plb-shadow-md);
+}
+
+.uk-button-secondary {
+  background: var(--plb-accent);
+  color: white;
+  border: none;
+}
+
+.uk-button-secondary:hover {
+  background: #e55a2b;
+  transform: translateY(-2px);
+  box-shadow: var(--plb-shadow-md);
+}
+
+.uk-button-large {
+  padding: 16px 32px;
+  font-size: 1.125rem;
+}
+
+/* ================================
+   タイポグラフィの階層強化
+================================ */
+/* 全てのh2要素とUKitクラス見出しの統一カラー */
+h1, h2, h3, h4, h5, h6,
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6,
+.uk-heading-small, .uk-heading-medium, .uk-heading-large, 
+.uk-heading-xlarge, .uk-heading-2xlarge, .uk-heading-3xlarge {
+  color: var(--plb-dark) !important;
+}
+
+/* 暗い背景セクションでの白文字見出し */
+.uk-light h1, .uk-light h2, .uk-light h3, .uk-light h4, .uk-light h5, .uk-light h6,
+.uk-light .uk-heading-small, .uk-light .uk-heading-medium {
+  color: white !important;
+}
+
+/* UIKitの特定のクラスでの白文字強制 */
+.uk-card-primary h1, .uk-card-primary h2, .uk-card-primary h3,
+.uk-card-primary h4, .uk-card-primary h5, .uk-card-primary h6,
+.uk-card-secondary h1, .uk-card-secondary h2, .uk-card-secondary h3,
+.uk-card-secondary h4, .uk-card-secondary h5, .uk-card-secondary h6,
+.uk-background-primary h1, .uk-background-primary h2, .uk-background-primary h3,
+.uk-background-primary h4, .uk-background-primary h5, .uk-background-primary h6,
+.uk-background-secondary h1, .uk-background-secondary h2, .uk-background-secondary h3,
+.uk-background-secondary h4, .uk-background-secondary h5, .uk-background-secondary h6 {
+  color: white !important;
+}
+
+/* 白背景で誤って白文字になることを防ぐ */
+.uk-background-default h1, .uk-background-default h2, .uk-background-default h3,
+.uk-background-default h4, .uk-background-default h5, .uk-background-default h6,
+.uk-card-default h1, .uk-card-default h2, .uk-card-default h3,
+.uk-card-default h4, .uk-card-default h5, .uk-card-default h6 {
+  color: var(--plb-dark) !important;
+}
+
+.uk-heading-medium {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: var(--plb-spacing-md);
+}
+
+.uk-heading-line > span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--plb-primary);
+}
+
+.uk-text-lead {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: var(--plb-spacing-md);
+}
+
+.uk-heading-small {
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* ================================
+   最終CTAセクション
+================================ */
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+}
+
+/* ================================
+   レスポンシブ調整
+================================ */
+@media (max-width: 959px) {
+  /* セクションのパディング調整 */
+  .uk-section {
+    padding: var(--plb-spacing-lg) 0;
+  }
+  
+  /* タイポグラフィの調整 */
+  .uk-heading-medium {
+    font-size: 2rem !important;
+    line-height: 1.3;
+  }
+  
+  .uk-heading-line > span {
+    font-size: 1.5rem;
+  }
+  
+  .uk-text-lead {
+    font-size: 1.125rem;
+  }
+  
+  /* カードのスペーシング */
+  .uk-card {
+    margin-bottom: var(--plb-spacing-md);
+  }
+  
+  .uk-card-body {
+    padding: var(--plb-spacing-md);
+  }
+  
+  /* ボタンの調整 */
+  .uk-button-large {
+    padding: 14px 28px;
+    font-size: 1rem;
+  }
+  
+  /* ヒーローセクションの調整 */
+}
+
+@media (max-width: 640px) {
+  .uk-heading-medium {
+    font-size: 1.75rem !important;
+  }
+  
+  .uk-button {
+    width: 100%;
+    margin-bottom: var(--plb-spacing-sm);
+  }
+  
+  .uk-button + .uk-button {
+    margin-left: 0;
+  }
+}
+
+/* ================================
+   アクセシビリティ改善
+================================ */
+.skip-link:focus {
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  z-index: 9999;
+  padding: 1em;
+  background: var(--plb-dark);
+  color: white;
+  text-decoration: none;
+}
+
+/* フォーカスリング強化 */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--plb-primary);
+  outline-offset: 2px;
+}
+
+/* ================================
+   パフォーマンス最適化
+================================ */
+.lazy-load {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.lazy-load.loaded {
+  opacity: 1;
+}
+
+/* ================================
+   背景画像のクロスブラウザ対応
+================================ */
+/* 背景画像要素の基本設定 */
+[style*="background-image"],
+.uk-background-cover,
+.parallax,
+.cta-section {
+  /* iOS Safari & Chrome 両対応 */
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  
+  /* 背景位置の固定 */
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll !important; /* fixedをscrollに変更でモバイル対応 */
+  
+  /* GPU加速でパフォーマンス向上 */
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+  
+  /* モバイル WebKit の特別対応 */
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+/* モバイル専用の背景画像強制表示 */
+@media screen and (max-width: 768px) {
+  [style*="background-image"] {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    min-height: 400px;
+  }
+}
+
+/* 特定の背景要素の強化 */
+.uk-background-fixed {
+  /* モバイルでfixedが問題になる場合の対応 */
+  background-attachment: scroll;
+}
+
+/* セクション別の背景画像最適化 */
+section.parallax {
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 各セクションの個別調整 */
+section.cta-section.parallax {
+  /* 最終CTAセクション用 */
+  min-height: 400px;
+}
+
+/* SVGパターン背景の互換性向上 */
+.cta-section::before {
+  /* SVG背景画像の確実な表示 */
+  background-size: 60px 60px;
+  background-repeat: repeat;
+  opacity: 0.1;
+}
+
+/* ================================
+   Aboutページ専用の文字色修正
+================================ */
+.page-template-page-about * {
+  color: #333 !important;
+}
+
+/* 特定の要素の色は保持 */
+.page-template-page-about .uk-text-primary,
+.page-template-page-about .uk-text-warning,
+.page-template-page-about .uk-text-success {
+  color: inherit !important;
+}
+
+.page-template-page-about .cta-section,
+.page-template-page-about .cta-section * {
+  color: white !important;
+}
+
+/* ================================
+   印刷対応
+================================ */
+@media print {
+  .uk-navbar,
+  .cta-section,
+  .skip-link {
+    display: none;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+}

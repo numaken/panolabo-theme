@@ -6,7 +6,7 @@ get_header();
 ?>
 
 <!-- ヒーローセクション - numakenテーマカラー統合 -->
-<section class="uk-section uk-section-muted parallax" style="background: linear-gradient(135deg, #69ba64 0%, #5aa659 100%); min-height: 550px;">
+<section class="uk-section  parallax" style="background: linear-gradient(135deg, #69ba64 0%, #5aa659 100%); min-height: 550px;">
   <div class="uk-container">
     <div class="uk-grid uk-flex-middle" uk-grid>
       <div class="uk-width-1-2@m">
@@ -15,8 +15,8 @@ get_header();
           <h2 class="uk-margin-remove">ChatGPT・Claude・Geminiの膨大な会話を7つのカテゴリで瞬時に整理</h2>
           <div class="uk-grid-small uk-child-width-auto uk-flex-center uk-margin-small" uk-grid>
             <div><span class="uk-label" style="background: #69ba64;">🤖 AI自動構造化</span></div>
-            <div><span class="uk-label uk-label-success">📝 7カテゴリ分類</span></div>
-            <div><span class="uk-label uk-label-warning">🆓 完全無料</span></div>
+            <div><span class="uk-label ">📝 7カテゴリ分類</span></div>
+            <div><span class="uk-label ">🆓 完全無料</span></div>
           </div>
           <p class="uk-text-lead uk-margin-small">料金：<strong style="color: #69ba64;">完全無料</strong></p>
           <a href="https://chat2doc-beryl.vercel.app/app" class="uk-button uk-button-text" target="_blank">🚀 今すぐ無料で試す</a>
@@ -35,26 +35,26 @@ get_header();
 </section>
 
 <!-- 問題提起＆ベネフィット -->
-<section class="uk-section uk-section-default uk-padding-large">
+<section class="uk-section  uk-padding-large">
   <div class="uk-container">
     <h2 class="uk-text-center uk-text-bold uk-margin-bottom" style="color: #69ba64;">AI会話の管理、こんなお悩みありませんか？</h2>
     <div class="uk-grid-match uk-child-width-1-3@m uk-text-center" uk-grid>
       <div>
-        <div class="uk-card uk-card-body uk-background-muted">
+        <div class="uk-card uk-card-body ">
           <span uk-icon="icon: warning; ratio: 2" style="color: #69ba64;"></span>
           <h4 class="uk-text-bold">重要な会話が埋もれてしまう</h4>
           <p>ChatGPTやClaudeとの重要な議論が長い会話ログの中に埋もれて、後で見つけるのが大変です。</p>
         </div>
       </div>
       <div>
-        <div class="uk-card uk-card-body uk-background-muted">
+        <div class="uk-card uk-card-body ">
           <span uk-icon="icon: ban; ratio: 2" style="color: #69ba64;"></span>
           <h4 class="uk-text-bold">チーム共有が困難</h4>
           <p>AI会話の成果をチームメンバーと共有したいが、長文すぎて要点が伝わりません。</p>
         </div>
       </div>
       <div>
-        <div class="uk-card uk-card-body uk-background-muted">
+        <div class="uk-card uk-card-body ">
           <span uk-icon="icon: clock; ratio: 2" style="color: #69ba64;"></span>
           <h4 class="uk-text-bold">知識の蓄積ができない</h4>
           <p>プロジェクトごとの知見が散在して、過去の学習を活用できていません。</p>
@@ -65,27 +65,27 @@ get_header();
 </section>
 
 <!-- 解決策セクション -->
-<section class="uk-section uk-light uk-padding-large" style="background: linear-gradient(135deg, #69ba64 0%, #5aa659 100%);">
+<section class="uk-section  uk-padding-large" style="background: linear-gradient(135deg, #69ba64 0%, #5aa659 100%);">
   <div class="uk-container">
     <h2 class="uk-text-center uk-text-bold uk-margin-bottom">Chat2Docが全て解決します</h2>
     <div class="uk-grid-match uk-child-width-1-4@m uk-text-center" uk-grid>
       <div>
         <div class="uk-card uk-card-body" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);">
-          <span uk-icon="icon: bolt; ratio: 2" class="uk-text-warning"></span>
+          <span uk-icon="icon: bolt; ratio: 2" class=""></span>
           <h4 class="uk-text-bold">🤖 AI自動構造化</h4>
           <p>90,000文字超の会話も数秒で7つのカテゴリに自動分類</p>
         </div>
       </div>
       <div>
         <div class="uk-card uk-card-body" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);">
-          <span uk-icon="icon: happy; ratio: 2" class="uk-text-success"></span>
+          <span uk-icon="icon: happy; ratio: 2" class=""></span>
           <h4 class="uk-text-bold">📝 構造化出力</h4>
           <p>目的、課題、解決策、コードが整理されたMarkdown形式で出力</p>
         </div>
       </div>
       <div>
         <div class="uk-card uk-card-body" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);">
-          <span uk-icon="icon: lightning; ratio: 2" class="uk-text-warning"></span>
+          <span uk-icon="icon: lightning; ratio: 2" class=""></span>
           <h4 class="uk-text-bold">🔒 プライバシー保護</h4>
           <p>ローカルストレージ処理でデータ漏洩リスクゼロ</p>
         </div>
@@ -102,7 +102,7 @@ get_header();
 </section>
 
 <!-- 機能一覧セクション -->
-<section class="uk-section uk-section-default uk-padding-large">
+<section class="uk-section  uk-padding-large">
   <div class="uk-container">
     <h2 class="uk-heading-line uk-text-center uk-text-bold"><span style="color: #69ba64;">7つのカテゴリで完璧な構造化</span></h2>
     <div class="uk-grid-match uk-child-width-1-3@m uk-text-center uk-margin-large-top" uk-grid>
@@ -179,7 +179,7 @@ get_header();
 </section>
 
 <!-- 料金プランセクション -->
-<section class="uk-section uk-section-muted uk-padding-large">
+<section class="uk-section  uk-padding-large">
   <div class="uk-container">
     <h2 class="uk-heading-line uk-text-center uk-text-bold"><span style="color: #69ba64;">シンプルで分かりやすい料金プラン</span></h2>
     <div class="uk-text-center uk-margin-large-top">
@@ -210,7 +210,7 @@ get_header();
 </section>
 
 <!-- 対象ユーザーセクション -->
-<section class="uk-section uk-section-default uk-padding-large">
+<section class="uk-section  uk-padding-large">
   <div class="uk-container">
     <h2 class="uk-heading-line uk-text-center uk-text-bold"><span style="color: #69ba64;">こんな方におすすめ</span></h2>
     <div class="uk-grid-match uk-child-width-1-3@m uk-text-center uk-margin-large-top" uk-grid>
@@ -244,14 +244,14 @@ get_header();
 </section>
 
 <!-- 使い方セクション -->
-<section class="uk-section uk-section-default uk-padding-large">
+<section class="uk-section  uk-padding-large">
   <div class="uk-container">
     <h2 class="uk-heading-line uk-text-center uk-text-bold"><span style="color: #69ba64;">使い方は超簡単</span></h2>
     <div class="uk-grid-large uk-child-width-1-4@m uk-text-center uk-margin-large-top" uk-grid>
       
       <div>
         <div class="uk-text-center uk-margin-bottom">
-          <div class="uk-inline-block uk-padding-small uk-background-primary uk-light uk-border-circle" style="background: #69ba64 !important;">
+          <div class="uk-inline-block uk-padding-small   uk-border-circle" style="background: #69ba64 !important;">
             <span class="uk-text-bold uk-text-large">1</span>
           </div>
         </div>
@@ -261,7 +261,7 @@ get_header();
 
       <div>
         <div class="uk-text-center uk-margin-bottom">
-          <div class="uk-inline-block uk-padding-small uk-background-primary uk-light uk-border-circle" style="background: #69ba64 !important;">
+          <div class="uk-inline-block uk-padding-small   uk-border-circle" style="background: #69ba64 !important;">
             <span class="uk-text-bold uk-text-large">2</span>
           </div>
         </div>
@@ -271,7 +271,7 @@ get_header();
 
       <div>
         <div class="uk-text-center uk-margin-bottom">
-          <div class="uk-inline-block uk-padding-small uk-background-primary uk-light uk-border-circle" style="background: #69ba64 !important;">
+          <div class="uk-inline-block uk-padding-small   uk-border-circle" style="background: #69ba64 !important;">
             <span class="uk-text-bold uk-text-large">3</span>
           </div>
         </div>
@@ -281,7 +281,7 @@ get_header();
 
       <div>
         <div class="uk-text-center uk-margin-bottom">
-          <div class="uk-inline-block uk-padding-small uk-background-primary uk-light uk-border-circle" style="background: #69ba64 !important;">
+          <div class="uk-inline-block uk-padding-small   uk-border-circle" style="background: #69ba64 !important;">
             <span class="uk-text-bold uk-text-large">4</span>
           </div>
         </div>
@@ -294,7 +294,7 @@ get_header();
 </section>
 
 <!-- CTA -->
-<section class="uk-section uk-light uk-padding-large" style="background: linear-gradient(135deg, #69ba64 0%, #5aa659 100%);">
+<section class="uk-section  uk-padding-large" style="background: linear-gradient(135deg, #69ba64 0%, #5aa659 100%);">
   <div class="uk-container">
     <h2 class="uk-heading-line uk-text-center uk-text-bold"><span>今すぐChat2Docを試してみませんか？</span></h2>
     <p class="uk-text-center uk-text-lead">完全無料、アカウント登録不要で今すぐ利用開始できます</p>

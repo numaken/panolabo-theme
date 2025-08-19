@@ -6,34 +6,34 @@
  */
 get_header(); ?>
 
-<main class="uk-section uk-section-default">
+<main class="uk-section ">
   
   <!-- Hero Section: サービス概要 -->
-  <section class="uk-section uk-section-secondary uk-background-cover uk-background-center-center uk-background-norepeat" style="background-image: url('<?php bloginfo('template_directory'); ?>/images/hero-services.jpg');">
+  <section class="uk-section  uk-background-cover uk-background-center-center uk-background-norepeat" style="background-image: url('<?php bloginfo('template_directory'); ?>/images/hero-services.jpg');">
     <div class="uk-container">
       <div class="uk-text-center" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
         <h1 class="uk-heading-primary uk-text-bold uk-margin-bottom">
           <span class="uk-text-emphasis">panolaboのサービス</span><br>
-          <span class="uk-text-warning uk-text-large">実績×AI技術で、ビジネスを次の次元へ</span>
+          <span class=" uk-text-large">実績×AI技術で、ビジネスを次の次元へ</span>
         </h1>
         <p class="uk-text-lead uk-margin-bottom">
           <strong>VR・アプリ・Web制作</strong>の9年間の実績に、<br>
           AI技術を統合して「継続成長するビジネス」を実現
         </p>
         <div class="uk-grid-small uk-child-width-auto uk-flex-center uk-margin-top" uk-grid>
-          <div><span class="uk-label uk-label-warning uk-text-bold">基本制作</span></div>
-          <div><span class="uk-label uk-label-primary uk-text-bold">+ AI強化</span></div>
-          <div><span class="uk-label uk-label-success uk-text-bold">= 継続収益</span></div>
+          <div><span class="uk-label  uk-text-bold">基本制作</span></div>
+          <div><span class="uk-label  uk-text-bold">+ AI強化</span></div>
+          <div><span class="uk-label  uk-text-bold">= 継続収益</span></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- サービス目次ナビゲーション -->
-  <section class="uk-section uk-section-default uk-padding-remove-top">
+  <section class="uk-section  uk-padding-remove-top">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large">
-        <h2 class="uk-heading-small uk-text-bold uk-text-primary uk-margin-bottom">サービス一覧</h2>
+        <h2 class="uk-heading-small uk-text-bold  uk-margin-bottom">サービス一覧</h2>
         <nav class="uk-flex uk-flex-center uk-flex-wrap uk-margin-top">
           <a href="#vr-service" class="uk-button uk-button-text" uk-scroll>
             <span uk-icon="icon: world" class="uk-margin-small-right"></span>VR/360°制作
@@ -50,25 +50,28 @@ get_header(); ?>
           <a href="#plugin-service" class="uk-button uk-button-text" uk-scroll>
             <span uk-icon="icon: wordpress" class="uk-margin-small-right"></span>プラグイン
           </a>
+          <a href="/panolabo-ai-boost/" class="uk-button uk-button-text" uk-scroll>
+            <span uk-icon="icon: future" class="uk-margin-small-right"></span>AI Boost
+          </a>
         </nav>
       </div>
     </div>
   </section>
 
   <!-- 1. VR/360°制作サービス -->
-  <section id="vr-service" class="uk-section uk-section-muted">
+  <section id="vr-service" class="uk-section ">
     <div class="uk-container">
       <div class="uk-grid-large uk-child-width-1-2@m uk-flex-middle" uk-grid>
             <div>
-              <h2 class="uk-heading-small uk-text-bold uk-text-primary uk-margin-bottom">
+              <h2 class="uk-heading-small uk-text-bold  uk-margin-bottom">
                 <span uk-icon="icon: world" class="uk-margin-small-right"></span>
                 VR/360°制作サービス
               </h2>
               
               <div class="uk-margin-bottom">
-                <span class="uk-label uk-label-primary uk-margin-small-right">基本制作</span>
-                <span class="uk-label uk-label-warning">+ AI分析</span>
-                <span class="uk-label uk-label-success">= ROI向上</span>
+                <span class="uk-label  uk-margin-small-right">基本制作</span>
+                <span class="uk-label ">+ AI分析</span>
+                <span class="uk-label ">= ROI向上</span>
               </div>
 
               <p class="uk-text-lead uk-margin-bottom">
@@ -99,7 +102,7 @@ get_header(); ?>
               </div>
 
               <div class="uk-margin-bottom">
-                <h3 class="uk-text-bold uk-text-small uk-margin-small-bottom uk-text-warning">⚡ AI強化機能</h3>
+                <h3 class="uk-text-bold uk-text-small uk-margin-small-bottom ">⚡ AI強化機能</h3>
                 <ul class="uk-list uk-list-bullet uk-text-small">
                   <li><strong>AI視線解析：</strong>ユーザーの注目ポイント自動検出・ヒートマップ生成</li>
                   <li><strong>動的コンテンツ：</strong>訪問者属性に応じた表示最適化</li>
@@ -111,12 +114,12 @@ get_header(); ?>
               <div class="uk-margin-top">
                 <h3 class="uk-text-bold uk-text-small uk-margin-small-bottom">適用業界・事例</h3>
                 <div class="uk-grid-small uk-child-width-auto" uk-grid>
-                  <div><span class="uk-label uk-label-default">不動産</span></div>
-                  <div><span class="uk-label uk-label-default">飲食店</span></div>
-                  <div><span class="uk-label uk-label-default">美容室</span></div>
-                  <div><span class="uk-label uk-label-default">医療機関</span></div>
-                  <div><span class="uk-label uk-label-default">観光</span></div>
-                  <div><span class="uk-label uk-label-default">教育</span></div>
+                  <div><span class="uk-label ">不動産</span></div>
+                  <div><span class="uk-label ">飲食店</span></div>
+                  <div><span class="uk-label ">美容室</span></div>
+                  <div><span class="uk-label ">医療機関</span></div>
+                  <div><span class="uk-label ">観光</span></div>
+                  <div><span class="uk-label ">教育</span></div>
                 </div>
               </div>
             </div>
@@ -129,7 +132,7 @@ get_header(); ?>
                   style="border-radius: 12px;">
                 </iframe>
                 <div class="uk-position-top-right uk-margin-small">
-                  <span class="uk-label uk-label-warning">AI Powered</span>
+                  <span class="uk-label ">AI Powered</span>
                 </div>
               </div>
               
@@ -145,7 +148,7 @@ get_header(); ?>
   </section>
 
   <!-- 2. アプリ開発サービス -->
-  <section id="app-service" class="uk-section uk-section-default">
+  <section id="app-service" class="uk-section ">
     <div class="uk-container">
       <div class="uk-grid-large uk-child-width-1-2@m uk-flex-middle" uk-grid>
             <div class="uk-flex-last@m">
@@ -171,7 +174,7 @@ get_header(); ?>
                     <?php endforeach; ?>
                   </ul>
                   <div class="uk-position-top-right uk-margin-small">
-                    <span class="uk-label uk-label-warning">AI Native</span>
+                    <span class="uk-label ">AI Native</span>
                   </div>
                   <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
                   <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
@@ -186,15 +189,15 @@ get_header(); ?>
             </div>
             
             <div class="uk-flex-first@m">
-              <h2 class="uk-heading-small uk-text-bold uk-text-primary uk-margin-bottom">
+              <h2 class="uk-heading-small uk-text-bold  uk-margin-bottom">
                 <span uk-icon="icon: tablet" class="uk-margin-small-right"></span>
                 アプリ開発サービス
               </h2>
               
               <div class="uk-margin-bottom">
-                <span class="uk-label uk-label-primary uk-margin-small-right">iOS・Android</span>
-                <span class="uk-label uk-label-warning">+ AI予測</span>
-                <span class="uk-label uk-label-success">= LTV最大化</span>
+                <span class="uk-label  uk-margin-small-right">iOS・Android</span>
+                <span class="uk-label ">+ AI予測</span>
+                <span class="uk-label ">= LTV最大化</span>
               </div>
 
               <p class="uk-text-lead uk-margin-bottom">
@@ -225,7 +228,7 @@ get_header(); ?>
               </div>
 
               <div class="uk-margin-bottom">
-                <h3 class="uk-text-bold uk-text-small uk-margin-small-bottom uk-text-warning">⚡ AI強化機能</h3>
+                <h3 class="uk-text-bold uk-text-small uk-margin-small-bottom ">⚡ AI強化機能</h3>
                 <ul class="uk-list uk-list-bullet uk-text-small">
                   <li><strong>予測プッシュ：</strong>AI分析による最適タイミング通知（開封率2倍改善）</li>
                   <li><strong>動的UI：</strong>ユーザー行動学習による画面自動調整</li>
@@ -238,15 +241,15 @@ get_header(); ?>
                 <h3 class="uk-text-bold uk-text-small uk-margin-small-bottom">導入効果実績</h3>
                 <div class="uk-grid-small uk-child-width-1-3@s" uk-grid>
                   <div class="uk-text-center">
-                    <div class="uk-text-bold uk-text-large uk-text-primary">+35%</div>
+                    <div class="uk-text-bold uk-text-large ">+35%</div>
                     <div class="uk-text-small">リピート率改善</div>
                   </div>
                   <div class="uk-text-center">
-                    <div class="uk-text-bold uk-text-large uk-text-primary">+200%</div>
+                    <div class="uk-text-bold uk-text-large ">+200%</div>
                     <div class="uk-text-small">プッシュ開封率</div>
                   </div>
                   <div class="uk-text-center">
-                    <div class="uk-text-bold uk-text-large uk-text-primary">+45%</div>
+                    <div class="uk-text-bold uk-text-large ">+45%</div>
                     <div class="uk-text-small">顧客LTV向上</div>
                   </div>
                 </div>
@@ -258,19 +261,19 @@ get_header(); ?>
   </section>
 
   <!-- 3. Web制作サービス -->
-  <section id="web-service" class="uk-section uk-section-muted">
+  <section id="web-service" class="uk-section ">
     <div class="uk-container">
       <div class="uk-grid-large uk-child-width-1-2@m uk-flex-middle" uk-grid>
             <div>
-              <h2 class="uk-heading-small uk-text-bold uk-text-primary uk-margin-bottom">
+              <h2 class="uk-heading-small uk-text-bold  uk-margin-bottom">
                 <span uk-icon="icon: desktop" class="uk-margin-small-right"></span>
                 Web制作・開発サービス
               </h2>
               
               <div class="uk-margin-bottom">
-                <span class="uk-label uk-label-primary uk-margin-small-right">WordPress・カスタム</span>
-                <span class="uk-label uk-label-warning">+ AI最適化</span>
-                <span class="uk-label uk-label-success">= 継続成長</span>
+                <span class="uk-label  uk-margin-small-right">WordPress・カスタム</span>
+                <span class="uk-label ">+ AI最適化</span>
+                <span class="uk-label ">= 継続成長</span>
               </div>
 
               <p class="uk-text-lead uk-margin-bottom">
@@ -301,7 +304,7 @@ get_header(); ?>
               </div>
 
               <div class="uk-margin-bottom">
-                <h3 class="uk-text-bold uk-text-small uk-margin-small-bottom uk-text-warning">⚡ AI強化機能</h3>
+                <h3 class="uk-text-bold uk-text-small uk-margin-small-bottom ">⚡ AI強化機能</h3>
                 <ul class="uk-list uk-list-bullet uk-text-small">
                   <li><strong>A/Bテスト自動化：</strong>AIによる継続的コンバージョン改善</li>
                   <li><strong>コンテンツ最適化：</strong>SEO・ユーザビリティの自動調整</li>
@@ -313,13 +316,13 @@ get_header(); ?>
               <div class="uk-margin-top">
                 <h3 class="uk-text-bold uk-text-small uk-margin-small-bottom">技術スタック</h3>
                 <div class="uk-grid-small uk-child-width-auto" uk-grid>
-                  <div><span class="uk-label uk-label-primary">WordPress</span></div>
-                  <div><span class="uk-label uk-label-primary">PHP</span></div>
-                  <div><span class="uk-label uk-label-primary">JavaScript</span></div>
-                  <div><span class="uk-label uk-label-primary">React</span></div>
-                  <div><span class="uk-label uk-label-warning">Node.js</span></div>
-                  <div><span class="uk-label uk-label-warning">Python</span></div>
-                  <div><span class="uk-label uk-label-success">AI API</span></div>
+                  <div><span class="uk-label ">WordPress</span></div>
+                  <div><span class="uk-label ">PHP</span></div>
+                  <div><span class="uk-label ">JavaScript</span></div>
+                  <div><span class="uk-label ">React</span></div>
+                  <div><span class="uk-label ">Node.js</span></div>
+                  <div><span class="uk-label ">Python</span></div>
+                  <div><span class="uk-label ">AI API</span></div>
                 </div>
               </div>
             </div>
@@ -335,7 +338,7 @@ get_header(); ?>
                   </iframe>
                 </div>
                 <div class="uk-position-top-right uk-margin-small">
-                  <span class="uk-label uk-label-warning">AI Driven</span>
+                  <span class="uk-label ">AI Driven</span>
                 </div>
               </div>
               
@@ -351,10 +354,10 @@ get_header(); ?>
   </section>
 
   <!-- 4. AI統合ソリューション -->
-  <section id="ai-service" class="uk-section uk-section-default">
+  <section id="ai-service" class="uk-section ">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom">
-            <h2 class="uk-heading-medium uk-text-bold uk-text-primary">
+            <h2 class="uk-heading-medium uk-text-bold ">
               <span uk-icon="icon: future; ratio: 1.5" class="uk-margin-small-right"></span>
               AI統合ソリューション
             </h2>
@@ -369,7 +372,7 @@ get_header(); ?>
             <div>
               <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
                 <div class="uk-text-center uk-margin-bottom">
-                  <span uk-icon="icon: database; ratio: 2.5" class="uk-text-primary"></span>
+                  <span uk-icon="icon: database; ratio: 2.5" class=""></span>
                 </div>
                 <h3 class="uk-text-bold uk-text-center uk-margin-bottom">データ分析・予測</h3>
                 <ul class="uk-list uk-list-bullet uk-text-small">
@@ -386,7 +389,7 @@ get_header(); ?>
             <div>
               <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
                 <div class="uk-text-center uk-margin-bottom">
-                  <span uk-icon="icon: cog; ratio: 2.5" class="uk-text-warning"></span>
+                  <span uk-icon="icon: cog; ratio: 2.5" class=""></span>
                 </div>
                 <h3 class="uk-text-bold uk-text-center uk-margin-bottom">自動化・最適化</h3>
                 <ul class="uk-list uk-list-bullet uk-text-small">
@@ -403,7 +406,7 @@ get_header(); ?>
             <div>
               <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
                 <div class="uk-text-center uk-margin-bottom">
-                  <span uk-icon="icon: users; ratio: 2.5" class="uk-text-success"></span>
+                  <span uk-icon="icon: users; ratio: 2.5" class=""></span>
                 </div>
                 <h3 class="uk-text-bold uk-text-center uk-margin-bottom">パーソナライゼーション</h3>
                 <ul class="uk-list uk-list-bullet uk-text-small">
@@ -421,19 +424,19 @@ get_header(); ?>
             <h3 class="uk-text-bold uk-margin-bottom">AI統合による効果実績</h3>
             <div class="uk-grid-large uk-child-width-1-4@m" uk-grid>
               <div class="uk-text-center">
-                <div class="uk-text-bold uk-heading-small uk-text-primary">+150%</div>
+                <div class="uk-text-bold uk-heading-small ">+150%</div>
                 <div class="uk-text-small">コンバージョン率改善</div>
               </div>
               <div class="uk-text-center">
-                <div class="uk-text-bold uk-heading-small uk-text-primary">+80%</div>
+                <div class="uk-text-bold uk-heading-small ">+80%</div>
                 <div class="uk-text-small">運用効率化</div>
               </div>
               <div class="uk-text-center">
-                <div class="uk-text-bold uk-heading-small uk-text-primary">+200%</div>
+                <div class="uk-text-bold uk-heading-small ">+200%</div>
                 <div class="uk-text-small">リピート率向上</div>
               </div>
               <div class="uk-text-center">
-                <div class="uk-text-bold uk-heading-small uk-text-primary">+60%</div>
+                <div class="uk-text-bold uk-heading-small ">+60%</div>
                 <div class="uk-text-small">ROI改善</div>
               </div>
             </div>
@@ -443,10 +446,10 @@ get_header(); ?>
   </section>
 
   <!-- 5. WordPressプラグイン -->
-  <section id="plugin-service" class="uk-section uk-section-muted">
+  <section id="plugin-service" class="uk-section ">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom">
-            <h2 class="uk-heading-medium uk-text-bold uk-text-primary">
+            <h2 class="uk-heading-medium uk-text-bold ">
               <span uk-icon="icon: wordpress; ratio: 1.5" class="uk-margin-small-right"></span>
               WordPressプラグイン開発・販売
             </h2>
@@ -462,6 +465,23 @@ get_header(); ?>
               <h3 class="uk-text-bold uk-margin-bottom">開発プラグイン一覧</h3>
               
               <div class="uk-margin-bottom">
+                <div class="uk-card uk-card-primary uk-card-body uk-card-small">
+                  <h4 class="uk-text-bold uk-margin-small-bottom">
+                    <span uk-icon="icon: future" class="uk-margin-small-right"></span>
+                    🚀 Panolabo AI Boost <span class="uk-label uk-label-warning">NEW</span>
+                  </h4>
+                  <p class="uk-text-small uk-margin-small-bottom">
+                    <strong>営業支援プラグイン</strong> - AI導入効果を「提案型事例」で視覚化
+                  </p>
+                  <div class="uk-grid-small uk-child-width-auto uk-flex-wrap" uk-grid>
+                    <div><span class="uk-label uk-label-success uk-text-small">6業種対応</span></div>
+                    <div><span class="uk-label uk-label-success uk-text-small">ショートコード</span></div>
+                    <div><span class="uk-label uk-label-success uk-text-small">成約率UP</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="uk-margin-bottom">
                 <div class="uk-card uk-card-default uk-card-body uk-card-small">
                   <h4 class="uk-text-bold uk-margin-small-bottom">
                     <span uk-icon="icon: cart" class="uk-margin-small-right"></span>
@@ -469,9 +489,9 @@ get_header(); ?>
                   </h4>
                   <p class="uk-text-small uk-margin-small-bottom">受注・発注・請求管理プラグイン</p>
                   <div class="uk-grid-small uk-child-width-auto" uk-grid>
-                    <div><span class="uk-label uk-label-primary uk-text-small">受注管理</span></div>
-                    <div><span class="uk-label uk-label-primary uk-text-small">請求書生成</span></div>
-                    <div><span class="uk-label uk-label-warning uk-text-small">UI Kit対応</span></div>
+                    <div><span class="uk-label  uk-text-small">受注管理</span></div>
+                    <div><span class="uk-label  uk-text-small">請求書生成</span></div>
+                    <div><span class="uk-label  uk-text-small">UI Kit対応</span></div>
                   </div>
                 </div>
               </div>
@@ -484,9 +504,9 @@ get_header(); ?>
                   </h4>
                   <p class="uk-text-small uk-margin-small-bottom">App Store・Google Play分析ダッシュボード</p>
                   <div class="uk-grid-small uk-child-width-auto" uk-grid>
-                    <div><span class="uk-label uk-label-success uk-text-small">iOS分析</span></div>
-                    <div><span class="uk-label uk-label-success uk-text-small">Android分析</span></div>
-                    <div><span class="uk-label uk-label-warning uk-text-small">Chart.js</span></div>
+                    <div><span class="uk-label  uk-text-small">iOS分析</span></div>
+                    <div><span class="uk-label  uk-text-small">Android分析</span></div>
+                    <div><span class="uk-label  uk-text-small">Chart.js</span></div>
                   </div>
                 </div>
               </div>
@@ -499,9 +519,9 @@ get_header(); ?>
                   </h4>
                   <p class="uk-text-small uk-margin-small-bottom">AI自動SNS投稿・スケジュール管理</p>
                   <div class="uk-grid-small uk-child-width-auto" uk-grid>
-                    <div><span class="uk-label uk-label-primary uk-text-small">AI生成</span></div>
-                    <div><span class="uk-label uk-label-primary uk-text-small">自動投稿</span></div>
-                    <div><span class="uk-label uk-label-warning uk-text-small">多SNS対応</span></div>
+                    <div><span class="uk-label  uk-text-small">AI生成</span></div>
+                    <div><span class="uk-label  uk-text-small">自動投稿</span></div>
+                    <div><span class="uk-label  uk-text-small">多SNS対応</span></div>
                   </div>
                 </div>
               </div>
@@ -535,13 +555,13 @@ get_header(); ?>
                 <h4 class="uk-text-bold uk-text-small uk-margin-small-bottom">収益モデル</h4>
                 <div class="uk-grid-small uk-child-width-1-2@s" uk-grid>
                   <div>
-                    <div class="uk-card uk-card-primary uk-card-body uk-card-small uk-text-center">
+                    <div class="uk-card  uk-card-body uk-card-small uk-text-center">
                       <div class="uk-text-bold">単発販売</div>
                       <div class="uk-text-small">¥5,000-50,000</div>
                     </div>
                   </div>
                   <div>
-                    <div class="uk-card uk-card-secondary uk-card-body uk-card-small uk-text-center">
+                    <div class="uk-card  uk-card-body uk-card-small uk-text-center">
                       <div class="uk-text-bold">サブスクリプション</div>
                       <div class="uk-text-small">¥500-5,000/月</div>
                     </div>
@@ -562,11 +582,155 @@ get_header(); ?>
     </div>
   </section>
 
-  <!-- パートナーシップ・料金モデル -->
-  <section class="uk-section uk-section-default">
+  <!-- AI Boost 実演デモ -->
+  <section class="uk-section uk-section-muted">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom">
-        <h2 class="uk-heading-medium uk-text-bold uk-text-primary">
+        <h2 class="uk-heading-medium uk-text-bold">
+          <span uk-icon="icon: future; ratio: 1.5" class="uk-margin-small-right"></span>
+          🚀 AI Boost 実演デモ
+        </h2>
+        <p class="uk-text-lead">
+          「営業でどう見せるか」が一目瞭然。実際のプラグイン出力をご覧ください
+        </p>
+        <div class="uk-alert-primary" uk-alert>
+          <p><strong>💡 このセクションがPanolabo AI Boostプラグインで自動生成されています</strong></p>
+        </div>
+      </div>
+
+      <!-- 業種別事例表示 -->
+      <div class="uk-grid-large uk-child-width-1-2@m" uk-grid>
+        
+        <!-- 飲食店事例（ショートコード使用例） -->
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <h3 class="uk-text-bold uk-margin-small-bottom">
+              飲食店向け営業シーン
+            </h3>
+            <p class="uk-text-small uk-text-muted uk-margin-small-bottom">
+              コード：<code>[future_case id="1" layout="card"]</code>
+            </p>
+            
+            <!-- ここに実際のショートコード出力 -->
+            <div class="pab-future-case pab-layout-card">
+              <div class="pab-card">
+                <div class="pab-card-content">
+                  <h4 class="pab-card-title">
+                    <a href="#">都内イタリアンレストランの集客自動化事例</a>
+                  </h4>
+                  <div class="pab-card-meta" style="margin-bottom: 15px;">
+                    <span style="background: #316B3F; color: white; padding: 4px 8px; border-radius: 15px; font-size: 0.8rem;">飲食店</span>
+                    <span style="background: #2E86AB; color: white; padding: 4px 8px; border-radius: 15px; font-size: 0.8rem;">東京都渋谷区</span>
+                  </div>
+                  <p class="pab-card-excerpt">SNS自動投稿で来店予約率35%向上、運営工数50%削減を実現</p>
+                  
+                  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 15px 0; font-size: 0.9rem;">
+                    <div style="text-align: center; padding: 10px; background: #e8f5e8; border-radius: 6px;">
+                      <strong style="color: #316B3F;">+35%</strong><br>
+                      <span style="color: #666;">予約率向上</span>
+                    </div>
+                    <div style="text-align: center; padding: 10px; background: #e8f5e8; border-radius: 6px;">
+                      <strong style="color: #316B3F;">-50%</strong><br>
+                      <span style="color: #666;">運営工数</span>
+                    </div>
+                  </div>
+                  
+                  <div style="margin: 15px 0;">
+                    <span style="background: #2E86AB; color: white; padding: 4px 8px; border-radius: 15px; font-size: 0.8rem;">SNS自動投稿</span>
+                  </div>
+                  
+                  <a href="#" style="color: #316B3F; text-decoration: none; font-weight: 600; font-size: 0.9rem;">詳細を見る →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 美容室事例 -->
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <h3 class="uk-text-bold uk-margin-small-bottom">
+              美容室向け営業シーン
+            </h3>
+            <p class="uk-text-small uk-text-muted uk-margin-small-bottom">
+              コード：<code>[future_case id="2" layout="card"]</code>
+            </p>
+            
+            <div class="pab-future-case pab-layout-card">
+              <div class="pab-card">
+                <div class="pab-card-content">
+                  <h4 class="pab-card-title">
+                    <a href="#">原宿美容室のブログ自動化＋SNS連携事例</a>
+                  </h4>
+                  <div class="pab-card-meta" style="margin-bottom: 15px;">
+                    <span style="background: #316B3F; color: white; padding: 4px 8px; border-radius: 15px; font-size: 0.8rem;">美容室</span>
+                    <span style="background: #2E86AB; color: white; padding: 4px 8px; border-radius: 15px; font-size: 0.8rem;">東京都渋谷区</span>
+                  </div>
+                  <p class="pab-card-excerpt">AI記事生成とSNS自動投稿で新規客獲得率40%向上</p>
+                  
+                  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 15px 0; font-size: 0.9rem;">
+                    <div style="text-align: center; padding: 10px; background: #e8f5e8; border-radius: 6px;">
+                      <strong style="color: #316B3F;">+40%</strong><br>
+                      <span style="color: #666;">新規客獲得</span>
+                    </div>
+                    <div style="text-align: center; padding: 10px; background: #e8f5e8; border-radius: 6px;">
+                      <strong style="color: #316B3F;">-70%</strong><br>
+                      <span style="color: #666;">制作工数</span>
+                    </div>
+                  </div>
+                  
+                  <div style="margin: 15px 0;">
+                    <span style="background: #FF6B35; color: white; padding: 4px 8px; border-radius: 15px; font-size: 0.8rem;">AI加筆</span>
+                    <span style="background: #2E86AB; color: white; padding: 4px 8px; border-radius: 15px; font-size: 0.8rem;">SNS自動投稿</span>
+                  </div>
+                  
+                  <a href="#" style="color: #316B3F; text-decoration: none; font-weight: 600; font-size: 0.9rem;">詳細を見る →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 営業効果 -->
+      <div class="uk-text-center uk-margin-large-top">
+        <h3 class="uk-text-bold uk-margin-bottom">営業現場での効果</h3>
+        <div class="uk-grid-small uk-child-width-1-4@m uk-flex-center" uk-grid>
+          <div class="uk-text-center">
+            <div class="uk-text-bold uk-text-large uk-text-primary">3倍</div>
+            <div class="uk-text-small">成約率向上</div>
+          </div>
+          <div class="uk-text-center">
+            <div class="uk-text-bold uk-text-large uk-text-primary">90%</div>
+            <div class="uk-text-small">資料作成時間短縮</div>
+          </div>
+          <div class="uk-text-center">
+            <div class="uk-text-bold uk-text-large uk-text-primary">10秒</div>
+            <div class="uk-text-small">事例表示時間</div>
+          </div>
+          <div class="uk-text-center">
+            <div class="uk-text-bold uk-text-large uk-text-primary">6業種</div>
+            <div class="uk-text-small">対応事例データ</div>
+          </div>
+        </div>
+        
+        <div class="uk-margin-top">
+          <a href="/panolabo-ai-boost/sales-presentation.html" class="uk-button uk-button-primary uk-button-large">
+            <span uk-icon="icon: play" class="uk-margin-small-right"></span>
+            完全デモを見る
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- パートナーシップ・料金モデル -->
+  <section class="uk-section ">
+    <div class="uk-container">
+      <div class="uk-text-center uk-margin-large-bottom">
+        <h2 class="uk-heading-medium uk-text-bold ">
           <span uk-icon="icon: users; ratio: 1.5" class="uk-margin-small-right"></span>
           パートナーシップ・料金モデル
         </h2>
@@ -595,16 +759,16 @@ get_header(); ?>
               <li>納品・完了</li>
             </ul>
             <div class="uk-text-center uk-margin-top">
-              <span class="uk-label uk-label-default">短期完了型</span>
+              <span class="uk-label ">短期完了型</span>
             </div>
           </div>
         </div>
 
         <!-- AI統合モデル -->
         <div>
-          <div class="uk-card uk-card-primary uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
+          <div class="uk-card  uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
             <div class="uk-text-center uk-margin-bottom">
-              <span uk-icon="icon: future; ratio: 2.5" class="uk-text-warning"></span>
+              <span uk-icon="icon: future; ratio: 2.5" class=""></span>
             </div>
             <h3 class="uk-text-bold uk-text-center uk-margin-bottom">AI統合モデル</h3>
             <div class="uk-text-center uk-margin-bottom">
@@ -618,16 +782,16 @@ get_header(); ?>
               <li>月次レポート・相談</li>
             </ul>
             <div class="uk-text-center uk-margin-top">
-              <span class="uk-label uk-label-warning">継続改善型</span>
+              <span class="uk-label ">継続改善型</span>
             </div>
           </div>
         </div>
 
         <!-- パートナーシップモデル -->
         <div>
-          <div class="uk-card uk-card-secondary uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
+          <div class="uk-card  uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
             <div class="uk-text-center uk-margin-bottom">
-              <span uk-icon="icon: heart; ratio: 2.5" class="uk-text-success"></span>
+              <span uk-icon="icon: heart; ratio: 2.5" class=""></span>
             </div>
             <h3 class="uk-text-bold uk-text-center uk-margin-bottom">パートナーシップモデル</h3>
             <div class="uk-text-center uk-margin-bottom">
@@ -641,7 +805,7 @@ get_header(); ?>
               <li>共同事業展開</li>
             </ul>
             <div class="uk-text-center uk-margin-top">
-              <span class="uk-label uk-label-success">収益共有型</span>
+              <span class="uk-label ">収益共有型</span>
             </div>
           </div>
         </div>
@@ -650,7 +814,7 @@ get_header(); ?>
   </section>
 
   <!-- お問い合わせ・相談 CTA -->
-  <section class="uk-section uk-section-primary">
+  <section class="uk-section">
     <div class="uk-container">
       <div class="uk-text-center">
         <h2 class="uk-heading-small uk-text-bold uk-margin-bottom">
@@ -673,10 +837,10 @@ get_header(); ?>
 
         <div class="uk-margin-large-top">
           <div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid>
-            <div><span class="uk-label uk-label-success">初回相談無料</span></div>
-            <div><span class="uk-label uk-label-warning">オンライン対応</span></div>
-            <div><span class="uk-label uk-label-default">見積もり無料</span></div>
-            <div><span class="uk-label uk-label-primary">NDA対応</span></div>
+            <div><span class="uk-label ">初回相談無料</span></div>
+            <div><span class="uk-label ">オンライン対応</span></div>
+            <div><span class="uk-label ">見積もり無料</span></div>
+            <div><span class="uk-label ">NDA対応</span></div>
           </div>
         </div>
       </div>

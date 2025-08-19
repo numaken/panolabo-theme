@@ -3,7 +3,7 @@
 get_header();
 ?>
 
-<div class="uk-section uk-section-default">
+<div class="uk-section ">
     <div class="uk-container">
         <h1 class="uk-heading-line"><span>導入事例</span></h1>
         <p>弊社が提供したサービスを実際に導入いただいた企業様の成功事例をご紹介します。</p>

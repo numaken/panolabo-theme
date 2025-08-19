@@ -1,7 +1,7 @@
 
 <?php get_header(); ?>
 
-<main class="uk-section uk-section-default">
+<main class="uk-section ">
   <div class="uk-container">
 
     <!-- 投稿内容 -->
@@ -38,7 +38,7 @@
     <?php endwhile; endif; ?>
 
     <div class="uk-margin-top">
-      <a class="uk-button uk-button-text" href="/case-studies">← 導入事例一覧に戻る</a>
+      <a class="uk-button uk-button-primary uk-button-small" href="/case-studies">← 導入事例一覧に戻る</a>
     </div>
 
   </div>

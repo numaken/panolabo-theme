@@ -4,13 +4,13 @@
 get_header(); 
 ?>
 
-<main class="uk-section uk-section-default">
+<main class="uk-section ">
   <div class="uk-container">
 
     <!-- ヒーローセクション -->
     <div class="uk-text-center uk-margin-large-bottom">
       <h1 class="uk-heading-medium">技術とアイデアで、中小企業の未来をつくる</h1>
-      <a class="uk-button uk-button-text" href="/contact">お問い合わせはこちら</a>
+      <a class="uk-button uk-button-primary uk-button-small" href="/contact">お問い合わせはこちら</a>
     </div>
 
     <!-- 代表メッセージ -->
@@ -36,13 +36,13 @@ get_header();
     <!-- Mission & Vision -->
     <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
       <div>
-        <div class="uk-card uk-card-primary uk-card-body">
+        <div class="uk-card  uk-card-body">
           <h3 class="uk-card-title">Mission</h3>
           <p>技術をもっと身近に。現場で役立つものを最短距離で。</p>
         </div>
       </div>
       <div>
-        <div class="uk-card uk-card-secondary uk-card-body">
+        <div class="uk-card  uk-card-body">
           <h3 class="uk-card-title">Vision</h3>
           <p>地域企業に、全国レベルのデジタル力を。</p>
         </div>

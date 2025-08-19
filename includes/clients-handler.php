@@ -338,8 +338,8 @@ class Numaken_Clients_Handler {
      */
     public function get_default_coordinates() {
         return array(
-            'lat' => 35.681236, // 東京駅
-            'lng' => 139.767125
+            'lat' => 35.3056, // 愛知県一宮市
+            'lng' => 136.8006
         );
     }
 }

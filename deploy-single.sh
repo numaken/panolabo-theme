@@ -34,7 +34,7 @@ echo "🚀 単一ファイルデプロイを開始します: $FILENAME"
 lftp -c "
 set ftp:ssl-allow no
 open -u $PROD_FTP_USER,$PROD_FTP_PASS $PROD_FTP_HOST
-cd $PROD_FTP_PATH/wp-content/themes/numaken
+cd $PROD_FTP_PATH/wp-content/themes/Panolabo
 put $FILENAME
 quit
 "

@@ -13,12 +13,12 @@ get_header(); ?>
         <div class="wow fadeIn animated uk-padding">
 
                 <div class="uk-conatiner">
-                <div class="uk-background-primary uk-padding-large">
+                <div class=" uk-padding-large">
                     <span>合同会社panolabo（以下，「当社」といいます。）は、提供するサービス（以下,「本サービス」といいます。）におけるプライバシー情報の取扱いについて、以下のとおりプライバシーポリシー（以下，「本ポリシー」といいます。）を定め、個人情報保護の仕組みを構築し、全従業員に個人情報保護の重要性の認識と取組みを徹底させることにより、個人情報の保護を推進致します。</span>
                 </div>
                 </div>
 
-                <div class="uk-background-muted uk-padding uk-margin-top">
+                <div class=" uk-padding uk-margin-top">
                     <h2 class="uk-h4 uk-heading-divider sec-title"><span>個人情報の管理、取得、利用及び提供に関して</span></h2>
                         <h3 class="uk-h5 uk-heading-divider sec-title"><span>01 個人情報の管理</span></h3>
                         <ul class="uk-list">
@@ -47,28 +47,28 @@ get_header(); ?>
                         </ul>
                 </div>
 
-                <div class="uk-background-muted uk-padding uk-margin-top"> 
+                <div class=" uk-padding uk-margin-top"> 
                     <h2 class="uk-h4 uk-heading-divider sec-title"><span>法令等の遵守</span></h2>
                     <ul class="uk-list">
                         <li>個人情報の取扱いに関する法令、国が定める指針、その他規範を遵守します。</li>
                     </ul>
                 </div>
 
-                <div class="uk-background-muted uk-padding uk-margin-top"> 
+                <div class=" uk-padding uk-margin-top"> 
                     <h2 class="uk-h4 uk-heading-divider sec-title"><span>個人情報の管理、安全対策について</span></h2>
                     <ul class="uk-list">
                         <li>個人情報への不正アクセス、個人情報の滅失、き損、改ざんおよび漏えい等のリスクに対して適切な予防措置を講ずることにより、個人情報の安全性、正確性の確保を図ります。また、万が一、問題が発生した場合には、被害の最小限化に努めるとともに、速やかに是正措置を実施します。</li>
                     </ul>
                 </div>
 
-                <div class="uk-background-muted uk-padding uk-margin-top"> 
+                <div class=" uk-padding uk-margin-top"> 
                     <h2 class="uk-h4 uk-heading-divider sec-title"><span>個人情報保護マネジメントシステムの継続的改善</span></h2>
                     <ul class="uk-list">
                         <li>個人情報保護を適切に維持するために、個人情報保護マネジメントシステムを確立し、運用状況について定期的に監査を実施し、継続的な改善に努めます。</li>
                     </ul>
                 </div>
 
-                <div class="uk-background-muted uk-padding uk-margin-top"> 
+                <div class=" uk-padding uk-margin-top"> 
                     <h2 class="uk-h4 uk-heading-divider sec-title"><span>個人情報の苦情・相談への対応</span></h2>
                     <ul class="uk-list">
                         <li>個人情報の取扱いに関するご本人からの苦情及び相談について対応窓口を設置し､適切に対応します｡</li>

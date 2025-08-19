@@ -3,15 +3,15 @@
 get_header(); 
 ?>
 
-<main class="uk-section uk-section-default">
+<main class="uk-section ">
   <div class="uk-container">
     <h1 class="uk-heading-line"><span>About Panolabo LLC</span></h1>
-    <p>Panolabo LLC is a Tokyo-based creative tech company offering VR panorama production, smartphone app development, and WordPress-based web solutions.</p>
+    <p>Panolabo LLC is an Aichi-based creative tech company offering VR panorama production, smartphone app development, and WordPress-based web solutions.</p>
 
     <ul class="uk-list uk-list-divider">
       <li><strong>Company Name:</strong> Panolabo LLC</li>
-      <li><strong>CEO:</strong> Ken Numata</li>
-      <li><strong>Location:</strong> Takadanobaba, Shinjuku-ku, Tokyo, Japan</li>
+      <li><strong>Representative Partner:</strong> Ken Numata</li>
+      <li><strong>Location:</strong> Sanjo, Ichinomiya, Aichi, Japan</li>
       <li><strong>Services:</strong> VR content production / OEM mobile apps / Web production</li>
       <li><strong>Website:</strong> https://panolabollc.com</li>
     </ul>

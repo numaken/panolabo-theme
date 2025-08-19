@@ -5,26 +5,26 @@
  */
 get_header(); ?>
 
-<main class="uk-section uk-section-default">
+<main class="uk-section" style="color: #333 !important;">
   
   <!-- Hero Section: 会社概要 -->
-  <section class="uk-section uk-section-primary uk-background-cover uk-background-center-center uk-background-norepeat" style="background: linear-gradient(135deg, #316B3F 0%, #2E86AB 100%);">
+  <section class="uk-section uk-background-cover uk-background-center-center uk-background-norepeat" style="background: linear-gradient(135deg, #316B3F 0%, #2E86AB 100%); color: white;">
     <div class="uk-container">
       <div class="uk-grid-large uk-child-width-1-2@m uk-flex-middle" uk-grid>
         <div uk-scrollspy="cls: uk-animation-slide-left-small; delay: 200;">
           <h1 class="uk-heading-primary uk-text-bold uk-margin-bottom">
             <span class="uk-text-emphasis">About Panolabo</span><br>
-            <span class="uk-text-warning uk-text-large">小規模でも、AIを使えば会社規模を動かせる。</span>
+            <span class=" uk-text-large">小規模でも、AIを使えば会社規模を動かせる。</span>
           </h1>
           <p class="uk-text-lead uk-margin-bottom">
             <strong>AI・VR・アプリ・Web・OEM</strong>までを一貫して扱う<br>
-            <span class="uk-text-warning">クリエイティブラボ</span>として、<br>
+            <span class="">クリエイティブラボ</span>として、<br>
             「1人で会社規模のプロジェクトを動かす」を体現しています。
           </p>
           <div class="uk-grid-small uk-child-width-auto uk-margin-top" uk-grid>
-            <div><span class="uk-label uk-label-warning uk-text-bold">🏆 30年の実績</span></div>
-            <div><span class="uk-label uk-label-success uk-text-bold">🌟 大手100社超</span></div>
-            <div><span class="uk-label uk-label-primary uk-text-bold">🚀 AI活用先駆者</span></div>
+            <div><span class="uk-label  uk-text-bold">🏆 30年の実績</span></div>
+            <div><span class="uk-label  uk-text-bold">🌟 大手100社超</span></div>
+            <div><span class="uk-label  uk-text-bold">🚀 AI活用先駆者</span></div>
           </div>
         </div>
         <div class="uk-text-center" uk-scrollspy="cls: uk-animation-scale-up; delay: 400;">
@@ -37,10 +37,10 @@ get_header(); ?>
   </section>
 
   <!-- 代表メッセージ -->
-  <section class="uk-section uk-section-default">
+  <section class="uk-section " style="color: #333 !important;">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
-        <h2 class="uk-heading-medium uk-text-bold uk-text-primary">
+        <h2 class="uk-heading-medium uk-text-bold ">
           <span uk-icon="icon: user; ratio: 1.5" class="uk-margin-small-right"></span>
           代表メッセージ
         </h2>
@@ -50,13 +50,13 @@ get_header(); ?>
         <div class="uk-width-1-1@s uk-width-2-3@m">
           <div class="uk-card uk-card-default uk-card-body uk-box-shadow-large" uk-scrollspy="cls: uk-animation-slide-left-small; delay: 300;">
             <p class="uk-text-lead uk-margin-bottom">
-              Panolabo（合同会社panolabo）は、<strong>AI・VR・アプリ・Web・OEM</strong>までを一貫して扱う<span class="uk-text-primary">クリエイティブラボ</span>です。<br>
+              Panolabo（合同会社panolabo）は、<strong>AI・VR・アプリ・Web・OEM</strong>までを一貫して扱う<span class="">クリエイティブラボ</span>です。<br>
               「小規模でも、AIを活用すれば1人で会社規模のプロジェクトを動かせる」──それを体現してきたのがPanolaboです。
             </p>
             
             <p class="uk-margin-bottom">
-              代表の沼は、<strong>Web黎明期から30年</strong>、広告業界の国内最大手や外資系エージェンシー（<span class="uk-text-warning">ADK、JWT</span>など）のパートナーとして、<br>
-              <strong>NTTドコモやLVMH</strong>を含む<span class="uk-text-success">100社超のプロジェクト</span>に携わってきました。
+              代表の沼は、<strong>Web黎明期から30年</strong>、広告業界の国内最大手や外資系エージェンシー（<span class="">ADK、JWT</span>など）のパートナーとして、<br>
+              <strong>NTTドコモやLVMH</strong>を含む<span class="">100社超のプロジェクト</span>に携わってきました。
             </p>
             
             <p>
@@ -65,18 +65,18 @@ get_header(); ?>
             
             <!-- 実績バッジ -->
             <div class="uk-grid-small uk-child-width-auto uk-flex-left uk-margin-top" uk-grid>
-              <div><span class="uk-label uk-label-success">ADK</span></div>
-              <div><span class="uk-label uk-label-success">JWT</span></div>
-              <div><span class="uk-label uk-label-warning">NTTドコモ</span></div>
-              <div><span class="uk-label uk-label-warning">LVMH</span></div>
-              <div><span class="uk-label uk-label-primary">100社超</span></div>
+              <div><span class="uk-label ">ADK</span></div>
+              <div><span class="uk-label ">JWT</span></div>
+              <div><span class="uk-label ">NTTドコモ</span></div>
+              <div><span class="uk-label ">LVMH</span></div>
+              <div><span class="uk-label ">100社超</span></div>
             </div>
           </div>
         </div>
         
         <div class="uk-width-1-1@s uk-width-1-3@m uk-text-center">
           <div uk-scrollspy="cls: uk-animation-scale-up; delay: 500;">
-            <div class="uk-card uk-card-primary uk-card-body uk-text-center">
+            <div class="uk-card  uk-card-body uk-text-center">
               <h3 class="uk-card-title">30年の実績</h3>
               <div class="uk-grid-small uk-child-width-1-1" uk-grid>
                 <div><span class="uk-text-large uk-text-bold">🏆</span><br><span class="uk-text-small">Web黎明期から</span></div>
@@ -91,10 +91,10 @@ get_header(); ?>
   </section>
 
   <!-- Panolaboの特徴 -->
-  <section class="uk-section uk-section-muted">
+  <section class="uk-section " style="color: #333 !important;">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom">
-        <h2 class="uk-heading-medium uk-text-bold uk-text-primary">
+        <h2 class="uk-heading-medium uk-text-bold ">
           <span uk-icon="icon: star; ratio: 1.5" class="uk-margin-small-right"></span>
           Panolaboの特徴
         </h2>
@@ -104,36 +104,36 @@ get_header(); ?>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
             <div class="uk-text-center uk-margin-bottom">
-              <span uk-icon="icon: user; ratio: 2" class="uk-text-warning"></span>
+              <span uk-icon="icon: user; ratio: 2" class=""></span>
             </div>
             <h3 class="uk-text-bold uk-text-center uk-margin-bottom">1人総合制作代理店</h3>
             <p class="uk-text-center">
               <strong>営業・企画・開発・運用</strong>まで、すべて1人で完結。<br>
-              だから<span class="uk-text-primary">速く、柔軟で、実行力</span>があります。
+              だから<span class="">速く、柔軟で、実行力</span>があります。
             </p>
           </div>
         </div>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
             <div class="uk-text-center uk-margin-bottom">
-              <span uk-icon="icon: bolt; ratio: 2" class="uk-text-primary"></span>
+              <span uk-icon="icon: bolt; ratio: 2" class=""></span>
             </div>
             <h3 class="uk-text-bold uk-text-center uk-margin-bottom">AI活用でストック型ビジネスへ</h3>
             <p class="uk-text-center">
               「作って終わり」ではなく、<strong>AIを組み込んだ仕組み</strong>で<br>
-              <span class="uk-text-success">継続収益を生み出す設計</span>を提供します。
+              <span class="">継続収益を生み出す設計</span>を提供します。
             </p>
           </div>
         </div>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
             <div class="uk-text-center uk-margin-bottom">
-              <span uk-icon="icon: future; ratio: 2" class="uk-text-success"></span>
+              <span uk-icon="icon: future; ratio: 2" class=""></span>
             </div>
             <h3 class="uk-text-bold uk-text-center uk-margin-bottom">大手経験＋小規模機動力</h3>
             <p class="uk-text-center">
               <strong>大手案件で培った戦略思考</strong>と、<br>
-              小規模ならではの<span class="uk-text-success">スピード感</span>を両立。<br>
+              小規模ならではの<span class="">スピード感</span>を両立。<br>
               1人だからこそ、余計な部署調整なくプロジェクトを進められます。
             </p>
           </div>
@@ -143,10 +143,10 @@ get_header(); ?>
   </section>
 
   <!-- 事業領域 -->
-  <section class="uk-section uk-section-default">
+  <section class="uk-section " style="color: #333 !important;">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom">
-        <h2 class="uk-heading-medium uk-text-bold uk-text-primary">
+        <h2 class="uk-heading-medium uk-text-bold ">
           <span uk-icon="icon: cog; ratio: 1.5" class="uk-margin-small-right"></span>
           事業領域
         </h2>
@@ -158,7 +158,7 @@ get_header(); ?>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded">
             <div class="uk-flex uk-flex-middle uk-margin-bottom">
-              <span uk-icon="icon: camera; ratio: 2" class="uk-text-primary uk-margin-small-right"></span>
+              <span uk-icon="icon: camera; ratio: 2" class=" uk-margin-small-right"></span>
               <h3 class="uk-text-bold uk-margin-remove">VR制作</h3>
             </div>
             <p><strong>360°パノラマ</strong>で空間体験を可視化</p>
@@ -169,7 +169,7 @@ get_header(); ?>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded">
             <div class="uk-flex uk-flex-middle uk-margin-bottom">
-              <span uk-icon="icon: tablet; ratio: 2" class="uk-text-warning uk-margin-small-right"></span>
+              <span uk-icon="icon: tablet; ratio: 2" class=" uk-margin-small-right"></span>
               <h3 class="uk-text-bold uk-margin-remove">スマホアプリ</h3>
             </div>
             <p><strong>プッシュ通知・予約・クーポン</strong>等を搭載</p>
@@ -180,7 +180,7 @@ get_header(); ?>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded">
             <div class="uk-flex uk-flex-middle uk-margin-bottom">
-              <span uk-icon="icon: world; ratio: 2" class="uk-text-success uk-margin-small-right"></span>
+              <span uk-icon="icon: world; ratio: 2" class=" uk-margin-small-right"></span>
               <h3 class="uk-text-bold uk-margin-remove">Web制作</h3>
             </div>
             <p><strong>WordPress＋SEO</strong>で成果重視のサイト構築</p>
@@ -189,12 +189,12 @@ get_header(); ?>
         
         <!-- 自社SaaS & プラグイン -->
         <div>
-          <div class="uk-card uk-card-primary uk-card-body uk-box-shadow-medium uk-border-rounded">
+          <div class="uk-card  uk-card-body uk-box-shadow-medium uk-border-rounded">
             <div class="uk-flex uk-flex-middle uk-margin-bottom">
               <span uk-icon="icon: bolt; ratio: 2" class="uk-margin-small-right"></span>
-              <h3 class="uk-text-bold uk-margin-remove uk-light">自社SaaS & プラグイン</h3>
+              <h3 class="uk-text-bold uk-margin-remove ">自社SaaS & プラグイン</h3>
             </div>
-            <div class="uk-light">
+            <div class="">
               <p class="uk-margin-small">AI活用により生産性が飛躍的に向上した結果、</p>
               <ul class="uk-list uk-list-bullet uk-text-small">
                 <li><strong>AIを絡めたSaaSサービス</strong>（例：AiPostPilot Pro＝SNS自動化、Chat2Doc＝会話ドキュメント化）</li>
@@ -209,19 +209,19 @@ get_header(); ?>
       
       <!-- OEM・共同プロジェクト -->
       <div class="uk-text-center uk-margin-large-top">
-        <div class="uk-card uk-card-secondary uk-card-body uk-box-shadow-large uk-width-3-4@m uk-margin-auto" uk-scrollspy="cls: uk-animation-fade; delay: 500;">
+        <div class="uk-card  uk-card-body uk-box-shadow-large uk-width-3-4@m uk-margin-auto" uk-scrollspy="cls: uk-animation-fade; delay: 500;">
           <div class="uk-flex uk-flex-center uk-flex-middle uk-margin-bottom">
-            <span uk-icon="icon: users; ratio: 2" class="uk-light uk-margin-small-right"></span>
-            <h3 class="uk-text-bold uk-margin-remove uk-light">OEM・共同プロジェクト</h3>
+            <span uk-icon="icon: users; ratio: 2" class=" uk-margin-small-right"></span>
+            <h3 class="uk-text-bold uk-margin-remove ">OEM・共同プロジェクト</h3>
           </div>
-          <p class="uk-light"><strong>テンプレートや仕組み</strong>をホワイトラベル供給</p>
+          <p class=""><strong>テンプレートや仕組み</strong>をホワイトラベル供給</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Panolaboの約束 -->
-  <section class="uk-section uk-section-secondary uk-light">
+  <section class="uk-section  ">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom">
         <h2 class="uk-heading-medium uk-text-bold">
@@ -233,22 +233,22 @@ get_header(); ?>
       <div class="uk-grid-large uk-child-width-1-3@m uk-text-center" uk-grid uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-small; delay: 300;">
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded">
-            <span uk-icon="icon: check; ratio: 2" class="uk-text-success uk-margin-bottom"></span>
-            <p class="uk-text-bold uk-text-primary">「小規模でも大手水準の成果」を提供します。</p>
+            <span uk-icon="icon: check; ratio: 2" class=" uk-margin-bottom"></span>
+            <p class="uk-text-bold ">「小規模でも大手水準の成果」を提供します。</p>
           </div>
         </div>
         
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded">
-            <span uk-icon="icon: refresh; ratio: 2" class="uk-text-warning uk-margin-bottom"></span>
-            <p class="uk-text-bold uk-text-primary">「作って終わりではなく、仕組みで成果を持続」させます。</p>
+            <span uk-icon="icon: refresh; ratio: 2" class=" uk-margin-bottom"></span>
+            <p class="uk-text-bold ">「作って終わりではなく、仕組みで成果を持続」させます。</p>
           </div>
         </div>
         
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded">
-            <span uk-icon="icon: bolt; ratio: 2" class="uk-text-primary uk-margin-bottom"></span>
-            <p class="uk-text-bold uk-text-primary">「1人だからできる柔軟性とスピード感」を活かします。</p>
+            <span uk-icon="icon: bolt; ratio: 2" class=" uk-margin-bottom"></span>
+            <p class="uk-text-bold ">「1人だからできる柔軟性とスピード感」を活かします。</p>
           </div>
         </div>
       </div>
@@ -256,13 +256,13 @@ get_header(); ?>
   </section>
 
   <!-- 会社概要・代表者情報 -->
-  <section class="uk-section uk-section-muted">
+  <section class="uk-section " style="color: #333 !important;">
     <div class="uk-container">
       <div class="uk-grid-large uk-child-width-1-2@m uk-flex-middle" uk-grid>
         
         <!-- 会社概要 -->
         <div uk-scrollspy="cls: uk-animation-slide-left-small; delay: 200;">
-          <h2 class="uk-heading-small uk-text-bold uk-text-primary uk-margin-bottom">
+          <h2 class="uk-heading-small uk-text-bold  uk-margin-bottom">
             <span uk-icon="icon: home" class="uk-margin-small-right"></span>
             会社概要
           </h2>
@@ -279,7 +279,7 @@ get_header(); ?>
               </tr>
               <tr>
                 <td class="uk-text-bold">所在地</td>
-                <td>東京都（※詳細はお問い合わせ時にご案内）</td>
+                <td>愛知県一宮市三条</td>
               </tr>
               <tr>
                 <td class="uk-text-bold">事業内容</td>
@@ -308,7 +308,7 @@ get_header(); ?>
 
         <!-- 代表者情報 -->
         <div uk-scrollspy="cls: uk-animation-slide-right-small; delay: 400;">
-          <h2 class="uk-heading-small uk-text-bold uk-text-primary uk-margin-bottom">
+          <h2 class="uk-heading-small uk-text-bold  uk-margin-bottom">
             <span uk-icon="icon: user" class="uk-margin-small-right"></span>
             代表者プロフィール
           </h2>
@@ -316,7 +316,7 @@ get_header(); ?>
           <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded">
             <div class="uk-grid-small uk-flex-middle" uk-grid>
               <div class="uk-width-auto">
-                <div class="uk-border-circle uk-background-primary uk-flex uk-flex-center uk-flex-middle" 
+                <div class="uk-border-circle  uk-flex uk-flex-center uk-flex-middle" 
                      style="width: 80px; height: 80px; color: white; font-size: 32px; font-weight: bold;">
                      P
                 </div>
@@ -342,14 +342,14 @@ get_header(); ?>
             <div class="uk-margin-top">
               <h4 class="uk-text-bold uk-text-small uk-margin-small-bottom">技術スタック</h4>
               <div class="uk-grid-small uk-child-width-auto uk-flex-left" uk-grid>
-                <div><span class="uk-label uk-label-primary">PHP</span></div>
-                <div><span class="uk-label uk-label-primary">WordPress</span></div>
-                <div><span class="uk-label uk-label-primary">JavaScript</span></div>
-                <div><span class="uk-label uk-label-primary">Python</span></div>
-                <div><span class="uk-label uk-label-warning">Swift</span></div>
-                <div><span class="uk-label uk-label-warning">Kotlin</span></div>
-                <div><span class="uk-label uk-label-success">TensorFlow</span></div>
-                <div><span class="uk-label uk-label-success">OpenAI API</span></div>
+                <div><span class="uk-label ">PHP</span></div>
+                <div><span class="uk-label ">WordPress</span></div>
+                <div><span class="uk-label ">JavaScript</span></div>
+                <div><span class="uk-label ">Python</span></div>
+                <div><span class="uk-label ">Swift</span></div>
+                <div><span class="uk-label ">Kotlin</span></div>
+                <div><span class="uk-label ">TensorFlow</span></div>
+                <div><span class="uk-label ">OpenAI API</span></div>
               </div>
             </div>
           </div>
@@ -359,10 +359,10 @@ get_header(); ?>
   </section>
 
   <!-- 事業の変遷・成長 -->
-  <section class="uk-section uk-section-default">
+  <section class="uk-section " style="color: #333 !important;">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
-        <h2 class="uk-heading-medium uk-text-bold uk-text-primary">
+        <h2 class="uk-heading-medium uk-text-bold ">
           <span uk-icon="icon: trending-up; ratio: 1.5" class="uk-margin-small-right"></span>
           事業の変遷と成長
         </h2>
@@ -376,7 +376,7 @@ get_header(); ?>
           
           <!-- 2015-2017: 創業期 -->
           <div>
-            <div class="uk-card uk-card-primary uk-card-body uk-text-center uk-border-rounded">
+            <div class="uk-card  uk-card-body uk-text-center uk-border-rounded">
               <h3 class="uk-text-bold uk-margin-small-bottom">2015-2017</h3>
               <h4 class="uk-text-bold uk-margin-small-bottom">創業・基盤構築期</h4>
               <div class="uk-margin-bottom">
@@ -389,14 +389,14 @@ get_header(); ?>
                 <li>• 技術ノウハウ蓄積</li>
               </ul>
               <div class="uk-margin-top">
-                <span class="uk-label uk-label-warning">実績: 50案件</span>
+                <span class="uk-label ">実績: 50案件</span>
               </div>
             </div>
           </div>
 
           <!-- 2018-2020: 拡大期 -->
           <div>
-            <div class="uk-card uk-card-secondary uk-card-body uk-text-center uk-border-rounded">
+            <div class="uk-card  uk-card-body uk-text-center uk-border-rounded">
               <h3 class="uk-text-bold uk-margin-small-bottom">2018-2020</h3>
               <h4 class="uk-text-bold uk-margin-small-bottom">サービス拡大期</h4>
               <div class="uk-margin-bottom">
@@ -409,7 +409,7 @@ get_header(); ?>
                 <li>• 品質管理体制確立</li>
               </ul>
               <div class="uk-margin-top">
-                <span class="uk-label uk-label-warning">実績: 150案件</span>
+                <span class="uk-label ">実績: 150案件</span>
               </div>
             </div>
           </div>
@@ -429,7 +429,7 @@ get_header(); ?>
                 <li>• 運用・保守体制強化</li>
               </ul>
               <div class="uk-margin-top">
-                <span class="uk-label uk-label-warning">実績: 250案件</span>
+                <span class="uk-label ">実績: 250案件</span>
               </div>
             </div>
           </div>
@@ -449,7 +449,7 @@ get_header(); ?>
                 <li>• 次世代ソリューション提供</li>
               </ul>
               <div class="uk-margin-top">
-                <span class="uk-label uk-label-warning">実績: 300案件+</span>
+                <span class="uk-label ">実績: 300案件+</span>
               </div>
             </div>
           </div>
@@ -459,7 +459,7 @@ get_header(); ?>
   </section>
 
   <!-- 選ばれる理由 -->
-  <section class="uk-section uk-section-primary">
+  <section class="uk-section " style="background: linear-gradient(135deg, #316B3F 0%, #2E86AB 100%); color: white;">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
         <h2 class="uk-heading-medium uk-text-bold">
@@ -475,7 +475,7 @@ get_header(); ?>
         
         <div>
           <div class="uk-text-center uk-margin-bottom">
-            <span uk-icon="icon: cog; ratio: 3" class="uk-text-warning"></span>
+            <span uk-icon="icon: cog; ratio: 3" class=""></span>
           </div>
           <h3 class="uk-text-bold uk-text-center uk-margin-bottom">技術力 × 実績</h3>
           <p class="uk-text-center">
@@ -487,7 +487,7 @@ get_header(); ?>
 
         <div>
           <div class="uk-text-center uk-margin-bottom">
-            <span uk-icon="icon: users; ratio: 3" class="uk-text-warning"></span>
+            <span uk-icon="icon: users; ratio: 3" class=""></span>
           </div>
           <h3 class="uk-text-bold uk-text-center uk-margin-bottom">パートナーシップ思考</h3>
           <p class="uk-text-center">
@@ -499,7 +499,7 @@ get_header(); ?>
 
         <div>
           <div class="uk-text-center uk-margin-bottom">
-            <span uk-icon="icon: future; ratio: 3" class="uk-text-warning"></span>
+            <span uk-icon="icon: future; ratio: 3" class=""></span>
           </div>
           <h3 class="uk-text-bold uk-text-center uk-margin-bottom">継続改善・進化</h3>
           <p class="uk-text-center">
@@ -513,10 +513,10 @@ get_header(); ?>
   </section>
 
   <!-- お問い合わせ CTA -->
-  <section class="uk-section uk-section-default">
+  <section class="uk-section " style="color: #333 !important;">
     <div class="uk-container">
       <div class="uk-text-center" uk-scrollspy="cls: uk-animation-scale-up; delay: 200;">
-        <h2 class="uk-heading-small uk-text-bold uk-text-primary uk-margin-bottom">
+        <h2 class="uk-heading-small uk-text-bold  uk-margin-bottom">
           まずはお気軽にご相談ください
         </h2>
         <p class="uk-text-lead uk-margin-bottom">
@@ -525,20 +525,20 @@ get_header(); ?>
         
         <div class="uk-button-group uk-flex-center uk-margin-top">
           <a href="<?php echo esc_url(home_url('/contact')); ?>" 
-             class="uk-button uk-button-text">
+             class="uk-button uk-button-primary uk-button-small">
             <span uk-icon="icon: mail"></span> お問い合わせ
           </a>
           <a href="<?php echo esc_url(home_url('/services')); ?>" 
-             class="uk-button uk-button-text">
+             class="uk-button uk-button-primary uk-button-small">
             <span uk-icon="icon: thumbnails"></span> サービス詳細
           </a>
         </div>
 
         <div class="uk-margin-large-top">
           <div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid>
-            <div><span class="uk-label uk-label-success">初回相談無料</span></div>
-            <div><span class="uk-label uk-label-warning">オンライン対応可</span></div>
-            <div><span class="uk-label uk-label-primary">秘密保持契約対応</span></div>
+            <div><span class="uk-label ">初回相談無料</span></div>
+            <div><span class="uk-label ">オンライン対応可</span></div>
+            <div><span class="uk-label ">秘密保持契約対応</span></div>
           </div>
         </div>
       </div>

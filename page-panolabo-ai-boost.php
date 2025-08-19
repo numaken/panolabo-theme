@@ -32,11 +32,11 @@ get_header(); ?>
         
         <!-- CTA ボタン -->
         <div class="uk-margin-large-top">
-          <a href="#pricing" class="uk-button uk-button-primary uk-button-large uk-margin-right" uk-scroll>
+          <a href="#pricing" class="uk-button uk-button-primary uk-button-small uk-margin-right" uk-scroll>
             <span uk-icon="icon: credit-card" class="uk-margin-small-right"></span>
             今すぐ購入する
           </a>
-          <a href="#demo" class="uk-button uk-button-secondary uk-button-large" uk-scroll>
+          <a href="#demo" class="uk-button uk-button-primary uk-button-small" uk-scroll>
             <span uk-icon="icon: play" class="uk-margin-small-right"></span>
             デモを見る
           </a>
@@ -318,7 +318,7 @@ get_header(); ?>
               <li>✓ 基本ショートコード</li>
               <li>✓ コミュニティサポート</li>
             </ul>
-            <a href="#" class="uk-button uk-button-default uk-width-1-1 uk-margin-top">
+            <a href="#" class="uk-button uk-button-primary uk-button-small uk-width-1-1 uk-margin-top">
               無料で始める
             </a>
           </div>
@@ -338,7 +338,7 @@ get_header(); ?>
               <li>✓ 営業効果レポート</li>
               <li>✓ 優先サポート</li>
             </ul>
-            <a href="#" class="uk-button uk-button-secondary uk-width-1-1 uk-margin-top">
+            <a href="#" class="uk-button uk-button-primary uk-button-small uk-width-1-1 uk-margin-top">
               今すぐ購入
             </a>
           </div>
@@ -357,7 +357,7 @@ get_header(); ?>
               <li>✓ API連携機能</li>
               <li>✓ 専任サポート</li>
             </ul>
-            <a href="#" class="uk-button uk-button-default uk-width-1-1 uk-margin-top">
+            <a href="#" class="uk-button uk-button-primary uk-button-small uk-width-1-1 uk-margin-top">
               相談する
             </a>
           </div>
@@ -412,11 +412,11 @@ get_header(); ?>
           AI Boostで、あなたの営業プレゼンテーションを次のレベルへ
         </p>
         <div class="uk-margin-top">
-          <a href="#pricing" class="uk-button uk-button-secondary uk-button-large uk-margin-right" uk-scroll>
+          <a href="#pricing" class="uk-button uk-button-primary uk-button-small uk-margin-right" uk-scroll>
             <span uk-icon="icon: credit-card" class="uk-margin-small-right"></span>
             プランを選ぶ
           </a>
-          <a href="/panolabo-ai-boost/sales-presentation.html" class="uk-button uk-button-default uk-button-large">
+          <a href="/panolabo-ai-boost/sales-presentation.html" class="uk-button uk-button-primary uk-button-small">
             <span uk-icon="icon: download" class="uk-margin-small-right"></span>
             完全デモを見る
           </a>

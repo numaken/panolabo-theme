@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- About Us Section -->
-<section class="uk-section uk-section-muted">
+<section class="uk-section ">
     <div class="uk-container">
         <h2 class="uk-heading-line"><span>会社情報</span></h2>
         <p>私たちは、テクノロジーとクリエイティビティを融合させ、未来の顧客体験を創造します。ビジネスパートナーとして、共に成長し、社会に貢献することを目指しています。</p>

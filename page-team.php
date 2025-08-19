@@ -5,34 +5,34 @@
  */
 get_header(); ?>
 
-<main class="uk-section uk-section-default">
+<main class="uk-section ">
   
   <!-- Hero Section: 代表者紹介 -->
-  <section class="uk-section uk-section-primary uk-background-cover uk-background-center-center uk-background-norepeat" style="background-image: url('<?php bloginfo('template_directory'); ?>/images/hero-team.jpg');">
+  <section class="uk-section uk-background-cover uk-background-center-center uk-background-norepeat" style="background-image: url('<?php bloginfo('template_directory'); ?>/images/hero-team.jpg');">
     <div class="uk-container">
       <div class="uk-text-center" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
         <h1 class="uk-heading-primary uk-text-bold uk-margin-bottom">
           <span class="uk-text-emphasis">代表者・チーム紹介</span><br>
-          <span class="uk-text-warning uk-text-large">確かな技術力と豊富な経験で信頼をお届け</span>
+          <span class=" uk-text-large">確かな技術力と豊富な経験で信頼をお届け</span>
         </h1>
         <p class="uk-text-lead uk-margin-bottom">
           9年間で2,986件の制作実績を支える<strong>技術チーム</strong>と<br>
           <strong>代表者の経歴・実績</strong>をご紹介します
         </p>
         <div class="uk-grid-small uk-child-width-auto uk-flex-center uk-margin-top" uk-grid>
-          <div><span class="uk-label uk-label-warning uk-text-bold">技術力重視</span></div>
-          <div><span class="uk-label uk-label-success uk-text-bold">豊富な経験</span></div>
-          <div><span class="uk-label uk-label-primary uk-text-bold">継続改善</span></div>
+          <div><span class="uk-label  uk-text-bold">技術力重視</span></div>
+          <div><span class="uk-label  uk-text-bold">豊富な経験</span></div>
+          <div><span class="uk-label  uk-text-bold">継続改善</span></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- 代表者詳細プロフィール -->
-  <section class="uk-section uk-section-default">
+  <section class="uk-section ">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
-        <h2 class="uk-heading-medium uk-text-bold uk-text-primary">
+        <h2 class="uk-heading-medium uk-text-bold ">
           <span uk-icon="icon: user; ratio: 1.5" class="uk-margin-small-right"></span>
           代表者プロフィール
         </h2>
@@ -56,8 +56,8 @@ get_header(); ?>
             <p class="uk-text-meta uk-margin-small-bottom">合同会社panolabo 代表社員</p>
             <div class="uk-margin-top">
               <div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid>
-                <div><span class="uk-label uk-label-primary">システムエンジニア</span></div>
-                <div><span class="uk-label uk-label-success">AI統合スペシャリスト</span></div>
+                <div><span class="uk-label ">システムエンジニア</span></div>
+                <div><span class="uk-label ">AI統合スペシャリスト</span></div>
               </div>
             </div>
           </div>
@@ -66,7 +66,7 @@ get_header(); ?>
         <!-- 詳細経歴・実績 -->
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded">
-            <h3 class="uk-text-bold uk-text-primary uk-margin-bottom">
+            <h3 class="uk-text-bold  uk-margin-bottom">
               <span uk-icon="icon: history"></span> 経歴・実績サマリー
             </h3>
             
@@ -94,16 +94,16 @@ get_header(); ?>
               <h4 class="uk-text-bold uk-text-small uk-margin-small-bottom">🎯 特筆すべき成果</h4>
               <div class="uk-grid-small uk-child-width-1-2@s uk-text-small" uk-grid>
                 <div>
-                  <span class="uk-label uk-label-success">納期遵守率 99.8%</span>
+                  <span class="uk-label ">納期遵守率 99.8%</span>
                 </div>
                 <div>
-                  <span class="uk-label uk-label-warning">セキュリティ事故 0件</span>
+                  <span class="uk-label ">セキュリティ事故 0件</span>
                 </div>
                 <div>
-                  <span class="uk-label uk-label-primary">品質満足度 95%</span>
+                  <span class="uk-label ">品質満足度 95%</span>
                 </div>
                 <div>
-                  <span class="uk-label uk-label-default">平均対応 24時間以内</span>
+                  <span class="uk-label ">平均対応 24時間以内</span>
                 </div>
               </div>
             </div>
@@ -114,10 +114,10 @@ get_header(); ?>
   </section>
 
   <!-- 技術スタック・専門領域 -->
-  <section class="uk-section uk-section-muted">
+  <section class="uk-section ">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
-        <h2 class="uk-heading-medium uk-text-bold uk-text-primary">
+        <h2 class="uk-heading-medium uk-text-bold ">
           <span uk-icon="icon: code; ratio: 1.5" class="uk-margin-small-right"></span>
           技術スタック・専門領域
         </h2>
@@ -132,17 +132,17 @@ get_header(); ?>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-text-center uk-box-shadow-medium uk-border-rounded uk-height-1-1">
             <div class="uk-margin-bottom">
-              <span uk-icon="icon: laptop; ratio: 3" class="uk-text-primary"></span>
+              <span uk-icon="icon: laptop; ratio: 3" class=""></span>
             </div>
             <h3 class="uk-text-bold uk-margin-bottom">フロントエンド</h3>
             <div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid>
-              <div><span class="uk-label uk-label-primary">HTML5</span></div>
-              <div><span class="uk-label uk-label-primary">CSS3</span></div>
-              <div><span class="uk-label uk-label-primary">JavaScript</span></div>
-              <div><span class="uk-label uk-label-primary">TypeScript</span></div>
-              <div><span class="uk-label uk-label-primary">React</span></div>
-              <div><span class="uk-label uk-label-primary">Vue.js</span></div>
-              <div><span class="uk-label uk-label-primary">UIKit</span></div>
+              <div><span class="uk-label ">HTML5</span></div>
+              <div><span class="uk-label ">CSS3</span></div>
+              <div><span class="uk-label ">JavaScript</span></div>
+              <div><span class="uk-label ">TypeScript</span></div>
+              <div><span class="uk-label ">React</span></div>
+              <div><span class="uk-label ">Vue.js</span></div>
+              <div><span class="uk-label ">UIKit</span></div>
             </div>
           </div>
         </div>
@@ -151,17 +151,17 @@ get_header(); ?>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-text-center uk-box-shadow-medium uk-border-rounded uk-height-1-1">
             <div class="uk-margin-bottom">
-              <span uk-icon="icon: database; ratio: 3" class="uk-text-warning"></span>
+              <span uk-icon="icon: database; ratio: 3" class=""></span>
             </div>
             <h3 class="uk-text-bold uk-margin-bottom">バックエンド</h3>
             <div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid>
-              <div><span class="uk-label uk-label-warning">PHP</span></div>
-              <div><span class="uk-label uk-label-warning">WordPress</span></div>
-              <div><span class="uk-label uk-label-warning">Node.js</span></div>
-              <div><span class="uk-label uk-label-warning">Python</span></div>
-              <div><span class="uk-label uk-label-warning">MySQL</span></div>
-              <div><span class="uk-label uk-label-warning">PostgreSQL</span></div>
-              <div><span class="uk-label uk-label-warning">API設計</span></div>
+              <div><span class="uk-label ">PHP</span></div>
+              <div><span class="uk-label ">WordPress</span></div>
+              <div><span class="uk-label ">Node.js</span></div>
+              <div><span class="uk-label ">Python</span></div>
+              <div><span class="uk-label ">MySQL</span></div>
+              <div><span class="uk-label ">PostgreSQL</span></div>
+              <div><span class="uk-label ">API設計</span></div>
             </div>
           </div>
         </div>
@@ -170,17 +170,17 @@ get_header(); ?>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-text-center uk-box-shadow-medium uk-border-rounded uk-height-1-1">
             <div class="uk-margin-bottom">
-              <span uk-icon="icon: tablet; ratio: 3" class="uk-text-success"></span>
+              <span uk-icon="icon: tablet; ratio: 3" class=""></span>
             </div>
             <h3 class="uk-text-bold uk-margin-bottom">モバイル・VR</h3>
             <div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid>
-              <div><span class="uk-label uk-label-success">Swift</span></div>
-              <div><span class="uk-label uk-label-success">Kotlin</span></div>
-              <div><span class="uk-label uk-label-success">React Native</span></div>
-              <div><span class="uk-label uk-label-success">Unity</span></div>
-              <div><span class="uk-label uk-label-success">360°撮影</span></div>
-              <div><span class="uk-label uk-label-success">VR制作</span></div>
-              <div><span class="uk-label uk-label-success">A-Frame</span></div>
+              <div><span class="uk-label ">Swift</span></div>
+              <div><span class="uk-label ">Kotlin</span></div>
+              <div><span class="uk-label ">React Native</span></div>
+              <div><span class="uk-label ">Unity</span></div>
+              <div><span class="uk-label ">360°撮影</span></div>
+              <div><span class="uk-label ">VR制作</span></div>
+              <div><span class="uk-label ">A-Frame</span></div>
             </div>
           </div>
         </div>
@@ -189,17 +189,17 @@ get_header(); ?>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-text-center uk-box-shadow-medium uk-border-rounded uk-height-1-1">
             <div class="uk-margin-bottom">
-              <span uk-icon="icon: future; ratio: 3" class="uk-text-danger"></span>
+              <span uk-icon="icon: future; ratio: 3" class=""></span>
             </div>
             <h3 class="uk-text-bold uk-margin-bottom">AI・最新技術</h3>
             <div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid>
-              <div><span class="uk-label uk-label-danger">OpenAI API</span></div>
-              <div><span class="uk-label uk-label-danger">TensorFlow</span></div>
-              <div><span class="uk-label uk-label-danger">PyTorch</span></div>
-              <div><span class="uk-label uk-label-danger">機械学習</span></div>
-              <div><span class="uk-label uk-label-danger">自然言語処理</span></div>
-              <div><span class="uk-label uk-label-danger">画像認識</span></div>
-              <div><span class="uk-label uk-label-danger">データ分析</span></div>
+              <div><span class="uk-label ">OpenAI API</span></div>
+              <div><span class="uk-label ">TensorFlow</span></div>
+              <div><span class="uk-label ">PyTorch</span></div>
+              <div><span class="uk-label ">機械学習</span></div>
+              <div><span class="uk-label ">自然言語処理</span></div>
+              <div><span class="uk-label ">画像認識</span></div>
+              <div><span class="uk-label ">データ分析</span></div>
             </div>
           </div>
         </div>
@@ -208,10 +208,10 @@ get_header(); ?>
   </section>
 
   <!-- 開発フィロソフィー・品質方針 -->
-  <section class="uk-section uk-section-default">
+  <section class="uk-section ">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
-        <h2 class="uk-heading-medium uk-text-bold uk-text-primary">
+        <h2 class="uk-heading-medium uk-text-bold ">
           <span uk-icon="icon: bolt; ratio: 1.5" class="uk-margin-small-right"></span>
           開発フィロソフィー・品質方針
         </h2>
@@ -223,7 +223,7 @@ get_header(); ?>
       <div class="uk-grid-large uk-child-width-1-3@m" uk-grid uk-scrollspy="target: > div; cls: uk-animation-scale-up; delay: 300;">
         
         <div>
-          <div class="uk-card uk-card-primary uk-card-body uk-text-center uk-border-rounded uk-height-1-1">
+          <div class="uk-card  uk-card-body uk-text-center uk-border-rounded uk-height-1-1">
             <div class="uk-margin-bottom">
               <span uk-icon="icon: check; ratio: 3"></span>
             </div>
@@ -237,7 +237,7 @@ get_header(); ?>
         </div>
 
         <div>
-          <div class="uk-card uk-card-secondary uk-card-body uk-text-center uk-border-rounded uk-height-1-1">
+          <div class="uk-card  uk-card-body uk-text-center uk-border-rounded uk-height-1-1">
             <div class="uk-margin-bottom">
               <span uk-icon="icon: users; ratio: 3"></span>
             </div>
@@ -253,7 +253,7 @@ get_header(); ?>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-text-center uk-border-rounded uk-height-1-1">
             <div class="uk-margin-bottom">
-              <span uk-icon="icon: refresh; ratio: 3" class="uk-text-primary"></span>
+              <span uk-icon="icon: refresh; ratio: 3" class=""></span>
             </div>
             <h3 class="uk-text-bold uk-margin-bottom">継続改善・技術革新</h3>
             <p class="uk-text-small">
@@ -268,7 +268,7 @@ get_header(); ?>
   </section>
 
   <!-- チーム体制・サポート -->
-  <section class="uk-section uk-section-primary">
+  <section class="uk-section">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
         <h2 class="uk-heading-medium uk-text-bold">
@@ -284,7 +284,7 @@ get_header(); ?>
         
         <div>
           <div class="uk-text-center">
-            <span uk-icon="icon: clock; ratio: 4" class="uk-text-warning uk-margin-bottom"></span>
+            <span uk-icon="icon: clock; ratio: 4" class=" uk-margin-bottom"></span>
             <h3 class="uk-text-bold uk-margin-bottom">24時間以内の初回対応</h3>
             <p>
               お問い合わせから<strong>24時間以内</strong>の初回対応を徹底。<br>
@@ -295,7 +295,7 @@ get_header(); ?>
 
         <div>
           <div class="uk-text-center">
-            <span uk-icon="icon: shield; ratio: 4" class="uk-text-warning uk-margin-bottom"></span>
+            <span uk-icon="icon: shield; ratio: 4" class=" uk-margin-bottom"></span>
             <h3 class="uk-text-bold uk-margin-bottom">セキュリティ事故 0件</h3>
             <p>
               9年間で<strong>重大セキュリティ事故 0件</strong>の実績。<br>
@@ -314,21 +314,21 @@ get_header(); ?>
         
         <div class="uk-button-group uk-flex-center uk-margin-top">
           <a href="<?php echo esc_url(home_url('/contact')); ?>" 
-             class="uk-button uk-button-text">
+             class="uk-button uk-button-primary uk-button-small">
             <span uk-icon="icon: mail"></span> 技術相談・お問い合わせ
           </a>
           <a href="<?php echo esc_url(home_url('/portfolio-achievements')); ?>" 
-             class="uk-button uk-button-text">
+             class="uk-button uk-button-primary uk-button-small">
             <span uk-icon="icon: thumbnails"></span> 実績・ポートフォリオ
           </a>
         </div>
 
         <div class="uk-margin-top">
           <div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid>
-            <div><span class="uk-label uk-label-success">初回相談無料</span></div>
-            <div><span class="uk-label uk-label-warning">オンライン対応可</span></div>
-            <div><span class="uk-label uk-label-default">秘密保持契約対応</span></div>
-            <div><span class="uk-label uk-label-primary">技術選定支援</span></div>
+            <div><span class="uk-label ">初回相談無料</span></div>
+            <div><span class="uk-label ">オンライン対応可</span></div>
+            <div><span class="uk-label ">秘密保持契約対応</span></div>
+            <div><span class="uk-label ">技術選定支援</span></div>
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ get_header();
 ?>
 
 <!-- ヒーローセクション - numakenテーマカラー統合 -->
-<section class="uk-section uk-section-muted parallax" style="background: linear-gradient(135deg, #69ba64 0%, #5aa659 100%); min-height: 550px;">
+<section class="uk-section  parallax" style="background: linear-gradient(135deg, #69ba64 0%, #5aa659 100%); min-height: 550px;">
   <div class="uk-container">
     <div class="uk-grid-medium uk-flex-middle" uk-grid>
       <div class="uk-width-1-1 uk-width-1-2@m">
@@ -15,8 +15,8 @@ get_header();
           <h2 class="uk-margin-remove uk-text-responsive">APIキー設定一切不要！1クリックでGrade A品質のAI投稿生成</h2>
           <div class="uk-grid-small uk-child-width-auto uk-flex-center uk-flex-left@s uk-margin-small" uk-grid>
             <div><span class="uk-label" style="background: #69ba64;">🚀 設定時間0秒</span></div>
-            <div><span class="uk-label uk-label-success">🎯 Grade A品質</span></div>
-            <div><span class="uk-label uk-label-warning">💰 月額¥980</span></div>
+            <div><span class="uk-label ">🎯 Grade A品質</span></div>
+            <div><span class="uk-label ">💰 月額¥980</span></div>
           </div>
           <p class="uk-text-lead uk-margin-small">料金：<strong style="color: #69ba64;">月額¥980〜</strong></p>
           <div class="uk-margin-top">
@@ -37,26 +37,26 @@ get_header();
 </section>
 
 <!-- 問題提起＆ベネフィット -->
-<section class="uk-section uk-section-default uk-padding-large">
+<section class="uk-section  uk-padding-large">
   <div class="uk-container">
     <h2 class="uk-text-center uk-text-bold uk-margin-bottom" style="color: #69ba64;">SNS運用、こんなお悩みありませんか？</h2>
     <div class="uk-grid-match uk-child-width-1-3@m uk-text-center" uk-grid>
       <div>
-        <div class="uk-card uk-card-body uk-background-muted">
+        <div class="uk-card uk-card-body ">
           <span uk-icon="icon: warning; ratio: 2" style="color: #69ba64;"></span>
           <h4 class="uk-text-bold">APIキー設定が複雑すぎる</h4>
           <p>OpenAIアカウント作成、クレジットカード登録、APIキー取得...30分の設定作業でほとんどの人が離脱してしまいます。</p>
         </div>
       </div>
       <div>
-        <div class="uk-card uk-card-body uk-background-muted">
+        <div class="uk-card uk-card-body ">
           <span uk-icon="icon: ban; ratio: 2" style="color: #69ba64;"></span>
           <h4 class="uk-text-bold">競合ツールが高すぎる</h4>
           <p>月額¥3,000-5,000の高額サービスばかり。個人事業主や中小企業には手が届かない価格設定です。</p>
         </div>
       </div>
       <div>
-        <div class="uk-card uk-card-body uk-background-muted">
+        <div class="uk-card uk-card-body ">
           <span uk-icon="icon: clock; ratio: 2" style="color: #69ba64;"></span>
           <h4 class="uk-text-bold">投稿作成に時間がかかる</h4>
           <p>毎日のSNS投稿作成に1-2時間も費やしている。本業に集中できず、ビジネス成長の機会を逃しています。</p>
@@ -67,27 +67,27 @@ get_header();
 </section>
 
 <!-- 解決策セクション -->
-<section class="uk-section uk-light uk-padding-large" style="background: linear-gradient(135deg, #69ba64 0%, #5aa659 100%);">
+<section class="uk-section  uk-padding-large" style="background: linear-gradient(135deg, #69ba64 0%, #5aa659 100%);">
   <div class="uk-container">
     <h2 class="uk-text-center uk-text-bold uk-margin-bottom">PostPilot Proが全て解決します</h2>
     <div class="uk-grid-match uk-child-width-1-4@m uk-text-center" uk-grid>
       <div>
         <div class="uk-card uk-card-body" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);">
-          <span uk-icon="icon: bolt; ratio: 2" class="uk-text-warning"></span>
+          <span uk-icon="icon: bolt; ratio: 2" class=""></span>
           <h4 class="uk-text-bold">🚀 設定時間0秒</h4>
           <p>ブラウザを開くだけで即座に利用開始。APIキー設定一切不要の革命的システム</p>
         </div>
       </div>
       <div>
         <div class="uk-card uk-card-body" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);">
-          <span uk-icon="icon: happy; ratio: 2" class="uk-text-success"></span>
+          <span uk-icon="icon: happy; ratio: 2" class=""></span>
           <h4 class="uk-text-bold">💰 業界最安¥980/月</h4>
           <p>競合サービスの1/3-1/5の価格。個人事業主でも続けやすい料金設定</p>
         </div>
       </div>
       <div>
         <div class="uk-card uk-card-body" style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);">
-          <span uk-icon="icon: lightning; ratio: 2" class="uk-text-warning"></span>
+          <span uk-icon="icon: lightning; ratio: 2" class=""></span>
           <h4 class="uk-text-bold">⚡ 1.6秒でAI生成</h4>
           <p>Grade A品質の投稿を瞬時生成。今まで2時間かかった作業が2秒で完了</p>
         </div>
@@ -104,7 +104,7 @@ get_header();
 </section>
 
 <!-- 機能一覧セクション -->
-<section class="uk-section uk-section-default uk-padding-large">
+<section class="uk-section  uk-padding-large">
   <div class="uk-container">
     <h2 class="uk-heading-line uk-text-center uk-text-bold"><span style="color: #69ba64;">圧倒的な機能と品質</span></h2>
     <div class="uk-grid-match uk-child-width-1-3@m uk-text-center uk-margin-large-top" uk-grid>
@@ -172,7 +172,7 @@ get_header();
 </section>
 
 <!-- 料金プランセクション -->
-<section class="uk-section uk-section-muted uk-padding-large">
+<section class="uk-section  uk-padding-large">
   <div class="uk-container">
     <h2 class="uk-heading-line uk-text-center uk-text-bold"><span style="color: #69ba64;">シンプルで分かりやすい料金プラン</span></h2>
     <div class="uk-grid-match uk-child-width-1-3@m uk-text-center uk-margin-large-top" uk-grid>
@@ -198,7 +198,7 @@ get_header();
 
       <!-- プレミアムプラン（人気） -->
       <div>
-        <div class="uk-card uk-card-body uk-light postpilot-pricing-featured" style="background: linear-gradient(135deg, #69ba64 0%, #5aa659 100%); transform: scale(1.05); position: relative;">
+        <div class="uk-card uk-card-body  postpilot-pricing-featured" style="background: linear-gradient(135deg, #69ba64 0%, #5aa659 100%); transform: scale(1.05); position: relative;">
           <div class="uk-label" style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: #f0506e;">🔥 人気No.1</div>
           <h3 class="uk-text-bold uk-margin-top">プレミアムプラン</h3>
           <div style="font-size: 2.5rem; font-weight: bold; margin: 1rem 0;">
@@ -248,7 +248,7 @@ get_header();
 </section>
 
 <!-- お客様の声セクション -->
-<section class="uk-section uk-section-default uk-padding-large">
+<section class="uk-section  uk-padding-large">
   <div class="uk-container">
     <h2 class="uk-heading-line uk-text-center uk-text-bold"><span style="color: #69ba64;">早期ユーザーの声</span></h2>
     <div class="uk-grid-match uk-child-width-1-3@m uk-text-center uk-margin-large-top" uk-grid>
@@ -282,7 +282,7 @@ get_header();
 </section>
 
 <!-- CTA -->
-<section class="uk-section uk-light uk-padding-large" style="background: linear-gradient(135deg, #69ba64 0%, #5aa659 100%);">
+<section class="uk-section  uk-padding-large" style="background: linear-gradient(135deg, #69ba64 0%, #5aa659 100%);">
   <div class="uk-container">
     <h2 class="uk-heading-line uk-text-center uk-text-bold"><span>今すぐPostPilot Proを始めませんか？</span></h2>
     <p class="uk-text-center uk-text-lead">設定不要、初月無料でリスクゼロ。あなたのSNS運用を革命的に変える体験を</p>

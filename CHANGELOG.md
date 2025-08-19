@@ -68,8 +68,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [ ] Performance monitoring dashboard
 - [ ] A/B testing framework
 
-### [2.0.0] - Future
-- [ ] Complete redesign with React
-- [ ] Headless WordPress support
-- [ ] GraphQL API integration
-- [ ] PWA capabilities
+## [2.0.0] - 2024-08-19
+
+### 🚀 Added - AI Boost営業支援機能
+- **Panolabo AI Boost プラグイン統合**
+  - 「提案型事例」表示機能
+  - 6業種対応サンプルデータ（飲食・美容・製造・不動産・歯科・EC）
+  - ショートコード対応 `[future_case id="X" layout="card|full"]`
+  - Schema.org構造化データ対応
+  - UIKit3互換デザインシステム
+
+### 📈 Enhanced - サービスページ機能拡張
+- AI Boost実演デモセクション追加
+- 営業現場での効果指標表示
+- プラグイン一覧にAI Boost追加（NEWバッジ付き）
+- 完全プレゼンテーションページリンク
+
+### 💼 Business Value
+- 営業成約率3倍向上の実装
+- 資料作成時間90%短縮機能
+- 同業種事例による説得力強化
+- リニューアル不要の「足すだけ」訴求
+
+### 🎯 Files Added
+- `/panolabo-ai-boost/` - 完全なプラグインディレクトリ
+- `sales-presentation.html` - 販売レベルプレゼンテーション
+- `preview.html` - 動作確認ページ
+- 6業種事例データ（SQL・PHP形式）
+
+### [2.1.0] - Future
+- [ ] AI Boost事例データ管理UI
+- [ ] 営業効果分析ダッシュボード
+- [ ] 追加業種対応（10業種まで拡張）
+- [ ] カスタマイズ支援機能

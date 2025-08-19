@@ -1,5 +1,5 @@
 <!-- 固定CTAバー（スマホのみ表示） -->
-<div class="uk-hidden@m cta-fixed-bar uk-background-primary uk-light" style="position: fixed; bottom: 0; left: 0; width: 100%; z-index: 9999;">
+<div class="uk-hidden@m cta-fixed-bar  " style="position: fixed; bottom: 0; left: 0; width: 100%; z-index: 9999;">
   <div class="uk-container uk-padding-small">
     <div class="uk-flex uk-flex-middle uk-flex-between">
       <span class="uk-text-small uk-text-bold">ご質問・ご相談はこちらから</span>

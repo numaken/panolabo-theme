@@ -5,7 +5,7 @@
  */
 ?>
 
-<section class="uk-section uk-section-primary uk-light parallax" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/hero-bg.jpg'); background-size: cover; background-position: center;">
+<section class="uk-section  parallax" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/hero-bg.jpg'); background-size: cover; background-position: center;">
   <div class="uk-container">
     <div class="uk-grid uk-child-width-1-2@m uk-padding" uk-grid>
 
@@ -26,7 +26,7 @@
 
       <!-- Right Column (Slideshow) -->
       <div class="uk-animation-slide-right">
-        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: scale; autoplay: true; autoplay-interval: 5000; max-height: 480;">
+        <div class="uk-position-relative uk-visible-toggle " tabindex="-1" uk-slideshow="animation: scale; autoplay: true; autoplay-interval: 5000; max-height: 480;">
 
           <ul class="uk-slideshow-items" style="max-height: 480px;">
             <li>

@@ -114,7 +114,7 @@ wp_head();
     "logo": "https://panolabollc.com/img/panolabo_logo.png",
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+81-90-4749-5780",
+      "email": "hello@panolabollc.com",
       "contactType": "customer service",
       "areaServed": "JP",
       "availableLanguage": ["Japanese", "English"]

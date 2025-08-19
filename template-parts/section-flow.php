@@ -1,9 +1,9 @@
-<section id="flow" class="uk-section uk-section-default">
+<section id="flow" class="uk-section ">
   <div class="uk-container">
 
     <!-- タイトル -->
     <div class="uk-text-center uk-margin-large-bottom">
-      <h2 class="uk-heading-line uk-text-primary uk-text-bold">
+      <h2 class="uk-heading-line  uk-text-bold">
         <span>「シンプルで分かりやすい、導入までの5ステップ」</span>
       </h2>
       <p class="uk-text-lead">
@@ -29,12 +29,12 @@
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded uk-text-center uk-transition-toggle">
             <div class="uk-flex uk-flex-center uk-margin-bottom">
-              <div class="uk-border-circle uk-background-primary uk-text-white uk-flex uk-flex-middle uk-flex-center uk-transition-scale-up"
+              <div class="uk-border-circle  uk-text-white uk-flex uk-flex-middle uk-flex-center uk-transition-scale-up"
                    style="width: 60px; height: 60px; font-weight: bold; font-size: 18px;">
                 STEP<?= $step_num ?>
               </div>
             </div>
-            <h4 class="uk-text-bold uk-text-primary"><?= esc_html($step['title']) ?></h4>
+            <h4 class="uk-text-bold "><?= esc_html($step['title']) ?></h4>
             <p class="uk-text-small"><?= esc_html($step['desc']) ?></p>
           </div>
         </div>

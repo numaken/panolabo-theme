@@ -24,14 +24,14 @@ $obj = ($json !== false) ? json_decode($json, true) : [];
 ?>
 
 <!-- ヒーローセクション -->
-<section class="uk-section uk-section-muted uk-dark parallax"
+<section class="uk-section   parallax"
   style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/frontpage/hero-bg.jpg'); background-size: cover; background-position: center;"
   data-bg-mobile="<?php echo get_template_directory_uri(); ?>/images/frontpage/hero-bg.jpg">
   <div class="uk-container">
     <div class="uk-padding">
       <div class="uk-grid uk-child-width-1-2@m" uk-grid>
         <div class="uk-animation-slide-left">
-          <h1 class="hero-title uk-text-primary uk-text-bold">VRで「空間」の魅力を最大限に伝える</h1>
+          <h1 class="hero-title  uk-text-bold">VRで「空間」の魅力を最大限に伝える</h1>
           <h3 class="uk-text-bold"><span>全方位を伝える — それがパノラマの真髄</span></h3>
           <p>通常の写真や動画では、カメラのフレーム内に「見せたいもの」だけを収めます。しかし、パノラマ撮影ではフレームという概念が存在しません。すべての方向を映し出し、視聴者が自由に視点を選ぶことができます。</p>
 
@@ -62,7 +62,7 @@ $obj = ($json !== false) ? json_decode($json, true) : [];
 </section>
 
 <!-- パノラマの特性 -->
-<section class="uk-section uk-section-default uk-padding-large">
+<section class="uk-section  uk-padding-large">
   <div class="uk-container">
     <p class="uk-text-center">だからこそ、パノラマ撮影には特別な技術や構図のセンスは必要ありません。</p>
     <ul class="uk-list uk-list-bullet">
@@ -85,10 +85,10 @@ $obj = ($json !== false) ? json_decode($json, true) : [];
 </section>
 
 <!-- Googleマップセクション -->
-<section class="uk-section uk-section-muted uk-dark uk-background-cover parallax" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/success-bg.jpg');"
+<section class="uk-section   uk-background-cover parallax" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/success-bg.jpg');"
   data-bg-mobile="<?php echo get_template_directory_uri(); ?>/images/success-bg.jpg">
     <div class="uk-container">
-        <h2 class="uk-heading-line uk-text-center uk-animation-slide-bottom uk-text-primary uk-text-bold"><span>全ての業種に適用！</span></h2>
+        <h2 class="uk-heading-line uk-text-center uk-animation-slide-bottom  uk-text-bold"><span>全ての業種に適用！</span></h2>
         <p class="uk-text-center uk-padding uk-padding-remove-bottom">飲食店、エステ、美容院、コーポレイト、ECサイト、学校、病院、ホテル、旅行社、工務店、アーティスト、アスリート、個人、<br>デザインやメニュー名なども自由に変更ができます。</p>
         <div class="uk-text-center">
             <h1>Clients</h1>
@@ -103,9 +103,9 @@ $obj = ($json !== false) ? json_decode($json, true) : [];
         $categories = $wpdb->get_col("SELECT DISTINCT main_category FROM wp_panolabo_contents ORDER BY main_category ASC");
 
 
-        // デフォルト位置（例: 東京駅）
-        $default_lat = 35.681236;
-        $default_lng = 139.767125;
+        // デフォルト位置（愛知県一宮市）
+        $default_lat = 35.3056;
+        $default_lng = 136.8006;
 
         ?>
 
@@ -145,7 +145,7 @@ $obj = ($json !== false) ? json_decode($json, true) : [];
 </div>
 
 <!-- 提供機能 -->
-<section class="uk-section uk-section-muted uk-padding-large">
+<section class="uk-section  uk-padding-large">
   <div class="uk-container">
     <h2 class="uk-heading-line uk-text-center"><span>提供機能</span></h2>
     <ul class="uk-list uk-list-decimal uk-list-large" uk-scrollspy="target: > li; cls: uk-animation-slide-left; delay: 300;">
@@ -158,7 +158,7 @@ $obj = ($json !== false) ? json_decode($json, true) : [];
 </section>
 
 <!-- コンタクト -->
-<section id="contact" class="uk-section uk-section-primary uk-light uk-padding-large">
+<section id="contact" class="uk-section  uk-padding-large" style="background: linear-gradient(135deg, #316B3F 0%, #2E86AB 100%); color: white;">
   <div class="uk-container uk-text-center">
     <h2 class="uk-heading-line"><span>お問い合わせ</span></h2>
     <p>あなたの空間を、ストーリーのあるパノラマコンテンツにしませんか？今なら無料相談を受け付けています。お気軽にお問い合わせください。</p>
@@ -197,7 +197,7 @@ function initMap() {
 
 // 位置情報取得エラー時
 function handleLocationError(browserHasGeolocation) {
-    var defaultLatLng = { lat: 35.681236, lng: 139.767125 }; // 東京駅
+    var defaultLatLng = { lat: 35.3056, lng: 136.8006 }; // 愛知県一宮市
     if (browserHasGeolocation) {
         alert("現在地を取得できませんでした。ブラウザの位置情報設定を確認してください。");
     } else {

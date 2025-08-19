@@ -1,0 +1,29 @@
+# Cache Control Headers for Panolabo Theme Updates
+# Add these rules to your main .htaccess file
+
+<IfModule mod_headers.c>
+    # Disable caching for HTML files
+    <FilesMatch "\.(html|htm|php)$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires "0"
+    </FilesMatch>
+    
+    # Disable caching for CSS and JS files temporarily
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires "0"
+    </FilesMatch>
+    
+    # Add timestamp to force reload
+    Header add X-Cache-Control-Updated "2025-08-17-13-50"
+</IfModule>
+
+# Alternative method using mod_expires
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/html "access plus 0 seconds"
+    ExpiresByType text/css "access plus 0 seconds"
+    ExpiresByType application/javascript "access plus 0 seconds"
+</IfModule>

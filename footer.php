@@ -1,5 +1,5 @@
 <!-- 固定CTAバー（スマホのみ表示）
-<div class="uk-hidden@s uk-hidden@m cta-fixed-bar uk-background-primary uk-light" style="position: fixed; bottom: 0; left: 0; width: 100%; z-index: 9999;">
+<div class="uk-hidden@s uk-hidden@m cta-fixed-bar  " style="position: fixed; bottom: 0; left: 0; width: 100%; z-index: 9999;">
   <div class="uk-container uk-padding-small">
     <div class="uk-flex uk-flex-middle uk-flex-between">
       <span class="uk-text-small uk-text-bold">ご質問・ご相談はこちらから</span>
@@ -19,7 +19,7 @@
 <!-- =============================
       Footer Section
 ============================= -->
-<footer class="uk-section uk-section-default uk-dark uk-padding-remove">
+<footer class="uk-section   uk-padding-remove">
 
     <div class="uk-width-1-1@m">
         <div class="uk-container-expand">
@@ -32,8 +32,8 @@
                                 <i class="far fa-envelope"></i>
                             </div>
                             <div class="footer-text">
-                                <span class="uk-light">お気軽にお問合わせください</span>
-                                <h3 class="uk-light uk-margin-remove">Contact Us</h3>
+                                <span class="">お気軽にお問合わせください</span>
+                                <h3 class=" uk-margin-remove">Contact Us</h3>
                             </div>
                         </div>
                     </a>
@@ -45,8 +45,8 @@
                                 <i class="far fa-paper-plane"></i>
                             </div>
                             <div class="footer-text">
-                                <span class="uk-light">仕事の準備はできています！</span>
-                                <h3 class="uk-light uk-margin-remove">Start A Project</h3>
+                                <span class="">仕事の準備はできています！</span>
+                                <h3 class=" uk-margin-remove">Start A Project</h3>
                             </div>
                         </div>
                     </a>
@@ -91,10 +91,8 @@
                         <li>
                             <a href="mailto:hello@panolabollc.com">hello@panolabollc.com</a>
                         </li>
-                        <li>
-                            <a href="tel:+81-90-4749-5780">+81.90.4749.5780</a>
-                        </li>
                         <li><a href="<?php echo home_url('/privacy'); ?>">プライバシーポリシー</a></li>
+                        <li><a href="<?php echo home_url('/sitemap/'); ?>">サイトマップ</a></li>
                     </ul>
                 </div>
             </div>

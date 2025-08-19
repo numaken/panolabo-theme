@@ -1,9 +1,9 @@
-<section id="faq" class="uk-section uk-section-muted">
+<section id="faq" class="uk-section ">
   <div class="uk-container">
 
     <!-- タイトル -->
     <div class="uk-text-center uk-margin-large-bottom">
-      <h2 class="uk-heading-line uk-text-primary uk-text-bold">
+      <h2 class="uk-heading-line  uk-text-bold">
         <span>よくある質問（FAQ）</span>
       </h2>
       <p class="uk-text-lead">
@@ -40,7 +40,7 @@
       ];
 
       foreach ($faq_list as $faq) : ?>
-        <li class="uk-background-default uk-padding-small uk-margin-small-bottom uk-card uk-card-default uk-card-body">
+        <li class=" uk-padding-small uk-margin-small-bottom uk-card uk-card-default uk-card-body">
           <a class="uk-accordion-title uk-text-bold" href="#">
             Q：<?= esc_html($faq['q']) ?>
           </a>

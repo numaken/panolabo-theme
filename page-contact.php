@@ -7,7 +7,7 @@ get_header();
 ?>
 
 <!-- Contact Section お問い合わせページ -->
-<section id="contact" class="uk-section uk-section-primary uk-light" role="main" aria-label="お問い合わせフォーム">
+<section id="contact" class="uk-section " role="main" aria-label="お問い合わせフォーム">
 
     <div class="uk-container">
         <div class="uk-grid-large uk-grid-match" uk-grid>
@@ -29,7 +29,7 @@ get_header();
                     <?php endif; ?>
 
 
-                    <h2 class="uk-heading-line uk-text-bold uk-text-primary uk-text-center"><span>今すぐお問い合わせください！</span></h2>
+                    <h2 class="uk-heading-line uk-text-bold  uk-text-center"><span>今すぐお問い合わせください！</span></h2>
                     <p class="uk-text-center">「わくわくする未来」を一緒に創りましょう。お手軽に、でもしっかりとサポートいたします。以下のフォームからお気軽にどうぞ！</p>
 
                     <!-- フォームの送信先を指定 -->

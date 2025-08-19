@@ -273,8 +273,7 @@ function format_customer_email_message($data) {
             </div>
             
             <p>
-                内容を確認の上、<strong>24時間以内</strong>にご返答させていただきます。<br>
-                お急ぎの場合は、お電話（090-4749-5780）でもお受けしております。
+                内容を確認の上、<strong>24時間以内</strong>にご返答させていただきます。
             </p>
             
             <div style="border: 1px solid #ddd; padding: 15px; border-radius: 5px; margin: 20px 0;">
@@ -299,7 +298,6 @@ function format_customer_email_message($data) {
                 <p>
                     <strong>合同会社panolabo</strong><br>
                     Email: hello@panolabollc.com<br>
-                    Tel: 090-4749-5780<br>
                     Web: https://panolabollc.com/
                 </p>
                 <p style="font-size: 12px;">

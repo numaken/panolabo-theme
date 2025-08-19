@@ -5,12 +5,12 @@ Template Name: パートナーシップ
 get_header();
 ?>
 
-<section id="partnership" class="uk-section uk-section-default uk-padding-large">
+<section id="partnership" class="uk-section  uk-padding-large">
   <div class="uk-container">
 
     <!-- ヒーロー見出し -->
     <div class="uk-text-center uk-margin-large-bottom">
-      <h2 class="uk-heading-line uk-text-primary uk-text-bold"><span>一緒にビジネスを加速しませんか？</span></h2>
+      <h2 class="uk-heading-line  uk-text-bold"><span>一緒にビジネスを加速しませんか？</span></h2>
       <p class="uk-text-lead">
         自社ブランドでの展開、新しい収益源の確保、地域連携プロジェクトまで──<br class="uk-visible@m">
         Panolaboは、あなたの“営業力・構想力・ネットワーク”を収益に変える仕組みを提供します。
@@ -19,7 +19,7 @@ get_header();
 
     <!-- パートナー制度の魅力 -->
     <div class="uk-text-center uk-margin-large-bottom">
-      <h3 class="uk-text-bold uk-text-primary">なぜ今「パートナー制度」が選ばれるのか？</h3>
+      <h3 class="uk-text-bold ">なぜ今「パートナー制度」が選ばれるのか？</h3>
       <p>
         「360°VR × アプリ × Web制作」の統合パッケージは、今や多くの業種で引き合いの多い成長分野です。<br>
         Panolaboのパートナー制度では、<strong>“営業に専念できる仕組み”</strong>と、<strong>“継続的な収益設計”</strong>を組み合わせ、<br>
@@ -33,7 +33,7 @@ get_header();
       <!-- 営業パートナー -->
       <div>
         <div class="uk-card uk-card-default uk-card-hover uk-card-body">
-          <h3 class="uk-h4 uk-text-bold uk-card-title uk-text-primary">営業・販売パートナー<br>（紹介型）</h3>
+          <h3 class="uk-h4 uk-text-bold uk-card-title ">営業・販売パートナー<br>（紹介型）</h3>
           <p>
             提案だけで収益化可能。<br>
             制作・納品はPanolaboがすべて担当。
@@ -50,7 +50,7 @@ get_header();
       <!-- OEM/ODMパートナー -->
       <div>
         <div class="uk-card uk-card-default uk-card-hover uk-card-body">
-          <h3 class="uk-text-bold uk-card-title uk-text-primary">OEM / ODM パートナー<br>（再販／受託型）</h3>
+          <h3 class="uk-text-bold uk-card-title ">OEM / ODM パートナー<br>（再販／受託型）</h3>
           <p>
             自社ブランドで販売したい方に。<br>
             価格・営業方針はすべてお任せします。
@@ -67,7 +67,7 @@ get_header();
       <!-- 地域・行政パートナー -->
       <div>
         <div class="uk-card uk-card-default uk-card-hover uk-card-body">
-          <h3 class="uk-text-bold uk-card-title uk-text-primary">地域・行政プロジェクト<br>（共同提案型）</h3>
+          <h3 class="uk-text-bold uk-card-title ">地域・行政プロジェクト<br>（共同提案型）</h3>
           <p>
             自治体・大学・観光団体との提案・申請・実装まで。<br>
             プロジェクト単位での連携も大歓迎。
@@ -84,12 +84,12 @@ get_header();
 
     <!-- ステップ -->
     <div class="uk-margin-large-top uk-text-center">
-      <h3 class="uk-text-bold uk-text-primary">導入までの流れ</h3>
+      <h3 class="uk-text-bold ">導入までの流れ</h3>
       <div class="uk-child-width-1-4@m uk-grid-small uk-grid-match uk-margin-top" uk-grid>
-        <div><div class="uk-card uk-card-primary uk-card-body"><strong>STEP1</strong><br>お問い合わせ</div></div>
-        <div><div class="uk-card uk-card-primary uk-card-body"><strong>STEP2</strong><br>制度のご案内・個別相談</div></div>
-        <div><div class="uk-card uk-card-primary uk-card-body"><strong>STEP3</strong><br>契約・サポート開始</div></div>
-        <div><div class="uk-card uk-card-primary uk-card-body"><strong>STEP4</strong><br>営業活動・収益化</div></div>
+        <div><div class="uk-card  uk-card-body"><strong>STEP1</strong><br>お問い合わせ</div></div>
+        <div><div class="uk-card  uk-card-body"><strong>STEP2</strong><br>制度のご案内・個別相談</div></div>
+        <div><div class="uk-card  uk-card-body"><strong>STEP3</strong><br>契約・サポート開始</div></div>
+        <div><div class="uk-card  uk-card-body"><strong>STEP4</strong><br>営業活動・収益化</div></div>
       </div>
     </div>
 

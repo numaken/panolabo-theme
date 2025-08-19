@@ -1,0 +1,9 @@
+/* Main CSS for Numaken Theme */
+
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+}
+
+/* Body Base */
+body {

@@ -1,10 +1,10 @@
 <!-- ================================
       契約までのフロー Section
 =================================== -->
-<section id="process" class="uk-section uk-section-muted">
+<section id="process" class="uk-section ">
   <div class="uk-container">
     <div class="uk-text-center uk-margin-large-bottom">
-      <h2 class="uk-heading-line uk-text-primary uk-text-bold">
+      <h2 class="uk-heading-line  uk-text-bold">
         <span>契約までのフロー</span>
       </h2>
       <p>パートナーとしてご契約いただくまでの<br>大まかな流れを5ステップでご紹介します。</p>
@@ -42,7 +42,7 @@
           <div class="uk-flex uk-flex-middle">
             <img src="https://placehold.jp/69ba64/ffffff/60x60.png?text=STEP<?php echo $index + 1; ?>" alt="STEP<?php echo $index + 1; ?>" class="uk-margin-right">
             <div>
-              <h4 class="uk-text-bold uk-text-primary"><?php echo $step['title']; ?></h4>
+              <h4 class="uk-text-bold "><?php echo $step['title']; ?></h4>
               <p class="uk-margin-remove-top"><?php echo $step['desc']; ?></p>
             </div>
           </div>

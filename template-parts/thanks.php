@@ -3,7 +3,7 @@
 get_header(); 
 ?>
 
-<section class="uk-section uk-section-default">
+<section class="uk-section ">
     <div class="uk-container uk-text-center">
         <h2 class="uk-heading-line"><span>お問い合わせありがとうございます</span></h2>
         <p>メッセージを受け取りました。折り返しご連絡いたします。</p>

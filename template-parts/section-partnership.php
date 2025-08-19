@@ -4,17 +4,17 @@
  * Purpose: パートナーシップ・フィービジネスモデルの説明セクション
  */
 ?>
-<section id="partnership" class="uk-section uk-section-primary uk-light">
+<section id="partnership" class="uk-section ">
   <div class="uk-container">
 
     <!-- 見出し・リード -->
     <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:200;">
       <h2 class="uk-h1 uk-text-bold uk-margin-small-bottom">
-        <span uk-icon="icon: users; ratio: 1.5" class="uk-margin-small-right uk-text-warning"></span>
+        <span uk-icon="icon: users; ratio: 1.5" class="uk-margin-small-right "></span>
         パートナーシップモデル
       </h2>
       <p class="uk-text-large uk-width-3-4@m uk-margin-auto">
-        従来の受託制作から脱却し、<strong class="uk-text-warning">共に成長するビジネスパートナー</strong>として<br>
+        従来の受託制作から脱却し、<strong class="">共に成長するビジネスパートナー</strong>として<br>
         フィービジネス事業者様の持続的成長と収益安定化を支援します
       </p>
     </div>
@@ -26,7 +26,7 @@
       <div>
         <div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-box-shadow-large">
           <div class="uk-text-center uk-margin-bottom">
-            <span uk-icon="icon: cog; ratio: 4" class="uk-text-primary"></span>
+            <span uk-icon="icon: cog; ratio: 4" class=""></span>
           </div>
           <h3 class="uk-card-title uk-text-center uk-text-bold uk-text-emphasis">技術提供・運用サポート</h3>
           <p class="uk-text-small uk-text-muted">
@@ -46,7 +46,7 @@
       <div>
         <div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-box-shadow-large">
           <div class="uk-text-center uk-margin-bottom">
-            <span uk-icon="icon: trending-up; ratio: 4" class="uk-text-success"></span>
+            <span uk-icon="icon: trending-up; ratio: 4" class=""></span>
           </div>
           <h3 class="uk-card-title uk-text-center uk-text-bold uk-text-emphasis">レベニューシェアモデル</h3>
           <p class="uk-text-small uk-text-muted">
@@ -66,7 +66,7 @@
       <div>
         <div class="uk-card uk-card-default uk-card-body uk-border-rounded uk-box-shadow-large">
           <div class="uk-text-center uk-margin-bottom">
-            <span uk-icon="icon: bolt; ratio: 4" class="uk-text-warning"></span>
+            <span uk-icon="icon: bolt; ratio: 4" class=""></span>
           </div>
           <h3 class="uk-card-title uk-text-center uk-text-bold uk-text-emphasis">事業拡大の共同推進</h3>
           <p class="uk-text-small uk-text-muted">
@@ -140,7 +140,7 @@
       <div class="uk-grid-medium uk-child-width-1-2@m" uk-grid>
         <div>
           <div class="uk-card uk-card-default uk-card-body">
-            <h4 class="uk-text-bold uk-text-primary">フィービジネス事業者様</h4>
+            <h4 class="uk-text-bold ">フィービジネス事業者様</h4>
             <ul class="uk-list uk-list-bullet uk-text-small">
               <li>コンサルティング・士業事務所</li>
               <li>教育・研修サービス事業者</li>
@@ -151,7 +151,7 @@
         </div>
         <div>
           <div class="uk-card uk-card-default uk-card-body">
-            <h4 class="uk-text-bold uk-text-success">制作会社・代理店様</h4>
+            <h4 class="uk-text-bold ">制作会社・代理店様</h4>
             <ul class="uk-list uk-list-bullet uk-text-small">
               <li>Web制作・開発会社</li>
               <li>アプリ開発会社</li>

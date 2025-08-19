@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 
-<section class="uk-section uk-section-default">
+<section class="uk-section ">
   <div class="uk-container">
 
     <!-- パンくずリスト -->

@@ -41,7 +41,7 @@
                     </div> <!-- row end -->
                     <div class="uk-padding-large">
                         <div class="uk-width-1-1 text-center">
-                            <button class="uk-button uk-button-text">Submit message</button>
+                            <button class="uk-button uk-button-primary uk-button-small">Submit message</button>
                         </div>
                     </div>
                 </form>

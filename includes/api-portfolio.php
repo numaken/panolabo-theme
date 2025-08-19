@@ -347,7 +347,7 @@ function generate_portfolio_gallery($contents, $title = '実績ギャラリー')
     ?>
     <div class="portfolio-gallery">
         <h3 class="uk-text-bold uk-text-center uk-margin-bottom"><?php echo esc_html($title); ?></h3>
-        <div class="uk-grid-small uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid uk-lightbox>
+        <div class="uk-grid-small uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid box>
             <?php foreach ($contents as $content): 
                 $id = isset($content['id']) ? $content['id'] : 0;
                 $data = isset($content['data']) ? $content['data'] : $content;
@@ -382,7 +382,7 @@ function generate_portfolio_gallery($contents, $title = '実績ギャラリー')
                                             style="border-radius: 8px; position: absolute; top: 0; left: 0;"></iframe>
                                 </div>
                                 <div class="uk-position-top-right uk-margin-small">
-                                    <span class="uk-label uk-label-warning">VR/360°</span>
+                                    <span class="uk-label ">VR/360°</span>
                                 </div>
                             <?php else: ?>
                                 <img src="<?php echo esc_url($display_image); ?>" 
@@ -390,7 +390,7 @@ function generate_portfolio_gallery($contents, $title = '実績ギャラリー')
                                      class="uk-width-1-1"
                                      style="height: 200px; object-fit: cover;">
                                 <div class="uk-position-top-right uk-margin-small">
-                                    <span class="uk-label uk-label-primary">VR/360°</span>
+                                    <span class="uk-label ">VR/360°</span>
                                 </div>
                             <?php endif; ?>
                         </div>
@@ -421,13 +421,13 @@ function get_portfolio_counter_widget() {
     <div class="portfolio-counter-widget">
         <div class="uk-grid-small uk-child-width-1-3@s uk-text-center" uk-grid>
             <div>
-                <div class="uk-card uk-card-primary uk-card-body uk-padding-small">
+                <div class="uk-card  uk-card-body uk-padding-small">
                     <div class="uk-text-bold uk-heading-small" data-counter="<?php echo $stats['total_count']; ?>">0</div>
                     <div class="uk-text-small">総制作実績</div>
                 </div>
             </div>
             <div>
-                <div class="uk-card uk-card-secondary uk-card-body uk-padding-small">
+                <div class="uk-card  uk-card-body uk-padding-small">
                     <div class="uk-text-bold uk-heading-small" data-counter="<?php echo $stats['active_count']; ?>">0</div>
                     <div class="uk-text-small">公開中案件</div>
                 </div>
@@ -601,7 +601,7 @@ add_shortcode('panolabo_comprehensive_stats', function($atts) {
         
         <!-- 総合数値 -->
         <div class="uk-text-center uk-margin-bottom">
-            <div class="uk-text-bold uk-heading-medium uk-text-primary"><?php echo $stats['grand_total']; ?>案件</div>
+            <div class="uk-text-bold uk-heading-medium "><?php echo $stats['grand_total']; ?>案件</div>
             <div class="uk-text-lead">総制作実績（2015年〜2025年）</div>
         </div>
         
@@ -610,7 +610,7 @@ add_shortcode('panolabo_comprehensive_stats', function($atts) {
             <?php foreach ($stats['by_category'] as $category => $count): ?>
                 <div>
                     <div class="uk-card uk-card-default uk-card-body uk-text-center uk-padding-small">
-                        <div class="uk-text-bold uk-heading-small uk-text-primary"><?php echo $count; ?></div>
+                        <div class="uk-text-bold uk-heading-small "><?php echo $count; ?></div>
                         <div class="uk-text-small"><?php echo esc_html($category); ?></div>
                     </div>
                 </div>
@@ -620,9 +620,9 @@ add_shortcode('panolabo_comprehensive_stats', function($atts) {
         <!-- データソース説明 -->
         <div class="uk-margin-top uk-text-center uk-text-small uk-text-muted">
             <div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid>
-                <div><span class="uk-label uk-label-primary">API実績: <?php echo $stats['api_total']; ?>件</span></div>
-                <div><span class="uk-label uk-label-warning">追加実績: <?php echo $stats['additional_projects']; ?>件</span></div>
-                <div><span class="uk-label uk-label-success">店舗アプリ特化: <?php echo $stats['store_apps_total']; ?>件</span></div>
+                <div><span class="uk-label ">API実績: <?php echo $stats['api_total']; ?>件</span></div>
+                <div><span class="uk-label ">追加実績: <?php echo $stats['additional_projects']; ?>件</span></div>
+                <div><span class="uk-label ">店舗アプリ特化: <?php echo $stats['store_apps_total']; ?>件</span></div>
             </div>
         </div>
     </div>
@@ -641,13 +641,13 @@ add_shortcode('panolabo_store_app_stats', function($atts) {
         
         <div class="uk-grid-small uk-child-width-1-3@m uk-text-center" uk-grid>
             <div>
-                <div class="uk-card uk-card-primary uk-card-body uk-padding-small">
+                <div class="uk-card  uk-card-body uk-padding-small">
                     <div class="uk-text-bold uk-heading-small"><?php echo $stats['total_vr_projects']; ?>件</div>
                     <div class="uk-text-small">VR/360°制作</div>
                 </div>
             </div>
             <div>
-                <div class="uk-card uk-card-secondary uk-card-body uk-padding-small">
+                <div class="uk-card  uk-card-body uk-padding-small">
                     <div class="uk-text-bold uk-heading-small"><?php echo $stats['total_store_apps']; ?>件</div>
                     <div class="uk-text-small">アプリ開発</div>
                 </div>
@@ -661,7 +661,7 @@ add_shortcode('panolabo_store_app_stats', function($atts) {
         </div>
         
         <div class="uk-margin-top uk-text-center">
-            <div class="uk-text-bold uk-text-large uk-text-primary"><?php echo $stats['total_projects']; ?>件</div>
+            <div class="uk-text-bold uk-text-large "><?php echo $stats['total_projects']; ?>件</div>
             <div class="uk-text-small">総制作実績（2015年〜2025年）</div>
         </div>
     </div>

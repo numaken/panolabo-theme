@@ -5,18 +5,18 @@
  */
 get_header(); ?>
 
-<main class="uk-section uk-section-default" role="main">
+<main class="uk-section " role="main">
   
   <!-- Hero Section: 404エラー -->
-  <section class="uk-section uk-section-primary uk-background-cover uk-background-center-center uk-background-norepeat">
+  <section class="uk-section uk-background-cover uk-background-center-center uk-background-norepeat">
     <div class="uk-container">
       <div class="uk-text-center" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
         <div class="uk-margin-large-bottom">
-          <span uk-icon="icon: search; ratio: 5" class="uk-text-warning"></span>
+          <span uk-icon="icon: search; ratio: 5" class=""></span>
         </div>
         <h1 class="uk-heading-primary uk-text-bold uk-margin-bottom">
           <span class="uk-text-emphasis">404</span><br>
-          <span class="uk-text-warning uk-text-large">ページが見つかりません</span>
+          <span class=" uk-text-large">ページが見つかりません</span>
         </h1>
         <p class="uk-text-lead uk-margin-bottom">
           申し訳ございません。お探しのページは<br>
@@ -27,10 +27,10 @@ get_header(); ?>
   </section>
 
   <!-- おすすめページ -->
-  <section class="uk-section uk-section-default">
+  <section class="uk-section ">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom">
-        <h2 class="uk-heading-medium uk-text-bold uk-text-primary">
+        <h2 class="uk-heading-medium uk-text-bold ">
           おすすめページ
         </h2>
       </div>
@@ -39,11 +39,11 @@ get_header(); ?>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-text-center uk-border-rounded uk-height-1-1">
             <h3 class="uk-text-bold uk-margin-bottom">
-              <span uk-icon="icon: home; ratio: 2" class="uk-text-primary"></span><br>
+              <span uk-icon="icon: home; ratio: 2" class=""></span><br>
               トップページ
             </h3>
             <p>panolaboの概要・最新情報をご覧いただけます</p>
-            <a href="<?php echo home_url(); ?>" class="uk-button uk-button-text">
+            <a href="<?php echo home_url(); ?>" class="uk-button uk-button-primary uk-button-small">
               ホームへ戻る
             </a>
           </div>
@@ -52,11 +52,11 @@ get_header(); ?>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-text-center uk-border-rounded uk-height-1-1">
             <h3 class="uk-text-bold uk-margin-bottom">
-              <span uk-icon="icon: mail; ratio: 2" class="uk-text-danger"></span><br>
+              <span uk-icon="icon: mail; ratio: 2" class=""></span><br>
               お問い合わせ
             </h3>
             <p>技術相談・プロジェクト相談承ります</p>
-            <a href="<?php echo home_url('/contact'); ?>" class="uk-button uk-button-text">
+            <a href="<?php echo home_url('/contact'); ?>" class="uk-button uk-button-primary uk-button-small">
               お問い合わせ
             </a>
           </div>

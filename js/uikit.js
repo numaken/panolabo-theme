@@ -4407,19 +4407,19 @@
         videoAutoplay: false,
         items: [],
         cls: "uk-open",
-        clsPage: "uk-lightbox-page",
-        clsFit: "uk-lightbox-items-fit",
-        clsZoom: "uk-lightbox-zoom",
-        attrItem: "uk-lightbox-item",
-        selList: ".uk-lightbox-items",
+        clsPage: "box-page",
+        clsFit: "box-items-fit",
+        clsZoom: "box-zoom",
+        attrItem: "box-item",
+        selList: ".box-items",
         selClose: ".uk-close-large",
-        selNav: ".uk-lightbox-thumbnav, .uk-lightbox-dotnav",
-        selCaption: ".uk-lightbox-caption",
-        selCounter: ".uk-lightbox-counter",
+        selNav: ".box-thumbnav, .box-dotnav",
+        selCaption: ".box-caption",
+        selCounter: ".box-counter",
         pauseOnHover: false,
         velocity: 2,
         Animations,
-        template: `<div class="uk-lightbox uk-overflow-hidden"> <div class="uk-lightbox-items"></div> <div class="uk-position-top-right uk-position-small uk-transition-fade" uk-inverse> <button class="uk-lightbox-close uk-close-large" type="button" uk-close></button> </div> <div class="uk-lightbox-slidenav uk-position-center-left uk-position-medium uk-transition-fade" uk-inverse> <a href uk-slidenav-previous uk-lightbox-item="previous"></a> </div> <div class="uk-lightbox-slidenav uk-position-center-right uk-position-medium uk-transition-fade" uk-inverse> <a href uk-slidenav-next uk-lightbox-item="next"></a> </div> <div class="uk-position-center-right uk-position-medium uk-transition-fade" uk-inverse style="max-height: 90vh; overflow: auto;"> <ul class="uk-lightbox-thumbnav uk-lightbox-thumbnav-vertical uk-thumbnav uk-thumbnav-vertical"></ul> <ul class="uk-lightbox-dotnav uk-dotnav uk-dotnav-vertical"></ul> </div> <div class="uk-lightbox-counter uk-text-large uk-position-top-left uk-position-small uk-transition-fade" uk-inverse></div> <div class="uk-lightbox-caption uk-position-bottom uk-text-center uk-transition-slide-bottom uk-transition-opaque"></div> </div>`
+        template: `<div class="box uk-overflow-hidden"> <div class="box-items"></div> <div class="uk-position-top-right uk-position-small uk-transition-fade" uk-inverse> <button class="box-close uk-close-large" type="button" uk-close></button> </div> <div class="box-slidenav uk-position-center-left uk-position-medium uk-transition-fade" uk-inverse> <a href uk-slidenav-previous box-item="previous"></a> </div> <div class="box-slidenav uk-position-center-right uk-position-medium uk-transition-fade" uk-inverse> <a href uk-slidenav-next box-item="next"></a> </div> <div class="uk-position-center-right uk-position-medium uk-transition-fade" uk-inverse style="max-height: 90vh; overflow: auto;"> <ul class="box-thumbnav box-thumbnav-vertical uk-thumbnav uk-thumbnav-vertical"></ul> <ul class="box-dotnav uk-dotnav uk-dotnav-vertical"></ul> </div> <div class="box-counter uk-text-large uk-position-top-left uk-position-small uk-transition-fade" uk-inverse></div> <div class="box-caption uk-position-bottom uk-text-center uk-transition-slide-bottom uk-transition-opaque"></div> </div>`
       }),
       created() {
         let $el = $(this.template);
@@ -4434,12 +4434,12 @@
           if (navType === "thumbnav") {
             wrapAll(
               toThumbnavItem(item, this.videoAutoplay),
-              append($(this.selNav, $el), `<li uk-lightbox-item="${i}"><a href></a></li>`)
+              append($(this.selNav, $el), `<li box-item="${i}"><a href></a></li>`)
             );
           }
         }
         if (!this.slidenav) {
-          remove$1($$(".uk-lightbox-slidenav", $el));
+          remove$1($$(".box-slidenav", $el));
         }
         if (!this.counter) {
           remove$1($(this.selCounter, $el));
@@ -4598,7 +4598,7 @@
                 createEl("iframe", {
                   src,
                   allowfullscreen: "",
-                  class: "uk-lightbox-iframe",
+                  class: "box-iframe",
                   ...attrs
                 })
               );
@@ -8459,7 +8459,7 @@
           for (const target of toNodes(this.target)) {
             let color = !this.selActive || matches(target, this.selActive) ? findTargetColor(target) : "";
             if (color !== false) {
-              replaceClass(target, "uk-light uk-dark", color);
+              replaceClass(target, " ", color);
             }
           }
         }

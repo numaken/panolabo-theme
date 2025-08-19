@@ -4,7 +4,7 @@
  * Purpose: AI技術で強化された3つのサービス（VR・アプリ・Web）を訴求するセクション
  */
 ?>
-<section id="ai-services" class="uk-section uk-section-default">
+<section id="ai-services" class="uk-section ">
   <div class="uk-container">
 
     <!-- 見出し・リード -->
@@ -15,8 +15,8 @@
           の3つのコアサービス
         </span>
       </div>
-      <h2 class="uk-text-bold uk-margin-small-bottom uk-text-primary">
-        <span class="uk-text-emphasis">実績ある制作技術</span> × <span class="uk-text-warning">AI強化</span>
+      <h2 class="uk-text-bold uk-margin-small-bottom ">
+        <span class="uk-text-emphasis">実績ある制作技術</span> × <span class="">AI強化</span>
       </h2>
       <p class="uk-text-lead">
         <strong>VR・アプリ・Web制作</strong>の豊富な実績と経験を基盤に、<br>
@@ -34,18 +34,18 @@
             style="border-radius: 12px;">
           </iframe>
           <div class="uk-position-top-right uk-margin-small">
-            <span class="uk-label uk-label-warning">AI Powered</span>
+            <span class="uk-label ">AI Powered</span>
           </div>
         </div>
       </div>
       <div>
-        <h3 class="uk-text-primary uk-text-bold uk-margin-small-bottom">
+        <h3 class=" uk-text-bold uk-margin-small-bottom">
           <span uk-icon="icon: world" class="uk-margin-small-right"></span>
           360°VR制作・撮影サービス
         </h3>
         <div class="uk-margin-bottom">
-          <span class="uk-label uk-label-primary uk-margin-small-right">基本サービス</span>
-          <span class="uk-label uk-label-warning">+ AI強化</span>
+          <span class="uk-label  uk-margin-small-right">基本サービス</span>
+          <span class="uk-label ">+ AI強化</span>
         </div>
         <p class="uk-margin-bottom">
           <strong>飲食店・美容室・不動産・医療</strong>など多業種での豊富な制作実績。<br>
@@ -63,7 +63,7 @@
         </div>
         
         <div class="uk-margin-bottom">
-          <h4 class="uk-text-bold uk-text-small uk-margin-small-bottom uk-text-warning">⚡ AI強化機能</h4>
+          <h4 class="uk-text-bold uk-text-small uk-margin-small-bottom ">⚡ AI強化機能</h4>
           <ul class="uk-list uk-list-bullet uk-text-small">
             <li><strong>AI視線解析：</strong>ユーザーの注目ポイント自動検出</li>
             <li><strong>動的コンテンツ：</strong>訪問者属性に応じた表示最適化</li>
@@ -73,7 +73,7 @@
         </div>
         
         <div class="uk-margin-top">
-          <span class="uk-label uk-label-success">継続収益モデル対応</span>
+          <span class="uk-label ">継続収益モデル対応</span>
         </div>
       </div>
     </div>
@@ -102,20 +102,20 @@
             <?php endforeach; ?>
           </ul>
           <div class="uk-position-top-right uk-margin-small">
-            <span class="uk-label uk-label-warning">AI Native</span>
+            <span class="uk-label ">AI Native</span>
           </div>
           <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
           <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
         </div>
       </div>
       <div class="uk-flex-first@m">
-        <h3 class="uk-text-primary uk-text-bold uk-margin-small-bottom">
+        <h3 class=" uk-text-bold uk-margin-small-bottom">
           <span uk-icon="icon: tablet" class="uk-margin-small-right"></span>
           スマートフォンアプリ開発
         </h3>
         <div class="uk-margin-bottom">
-          <span class="uk-label uk-label-primary uk-margin-small-right">基本サービス</span>
-          <span class="uk-label uk-label-warning">+ AI強化</span>
+          <span class="uk-label  uk-margin-small-right">基本サービス</span>
+          <span class="uk-label ">+ AI強化</span>
         </div>
         <p class="uk-margin-bottom">
           <strong>iOS・Android</strong>両対応のネイティブアプリ開発実績多数。<br>
@@ -134,7 +134,7 @@
         </div>
         
         <div class="uk-margin-bottom">
-          <h4 class="uk-text-bold uk-text-small uk-margin-small-bottom uk-text-warning">⚡ AI強化機能</h4>
+          <h4 class="uk-text-bold uk-text-small uk-margin-small-bottom ">⚡ AI強化機能</h4>
           <ul class="uk-list uk-list-bullet uk-text-small">
             <li><strong>予測プッシュ：</strong>AI分析による最適タイミング通知</li>
             <li><strong>動的UI：</strong>ユーザー行動学習による画面自動調整</li>
@@ -144,7 +144,7 @@
         </div>
         
         <div class="uk-margin-top">
-          <span class="uk-label uk-label-success">継続収益モデル対応</span>
+          <span class="uk-label ">継続収益モデル対応</span>
         </div>
       </div>
     </div>
@@ -161,17 +161,17 @@
           </iframe>
         </div>
         <div class="uk-position-top-right uk-margin-small">
-          <span class="uk-label uk-label-warning">AI Driven</span>
+          <span class="uk-label ">AI Driven</span>
         </div>
       </div>
       <div>
-        <h3 class="uk-text-primary uk-text-bold uk-margin-small-bottom">
+        <h3 class=" uk-text-bold uk-margin-small-bottom">
           <span uk-icon="icon: desktop" class="uk-margin-small-right"></span>
           Webサイト制作・開発
         </h3>
         <div class="uk-margin-bottom">
-          <span class="uk-label uk-label-primary uk-margin-small-right">基本サービス</span>
-          <span class="uk-label uk-label-warning">+ AI強化</span>
+          <span class="uk-label  uk-margin-small-right">基本サービス</span>
+          <span class="uk-label ">+ AI強化</span>
         </div>
         <p class="uk-margin-bottom">
           <strong>WordPress・カスタム開発</strong>による高品質なWebサイト制作実績。<br>
@@ -190,7 +190,7 @@
         </div>
         
         <div class="uk-margin-bottom">
-          <h4 class="uk-text-bold uk-text-small uk-margin-small-bottom uk-text-warning">⚡ AI強化機能</h4>
+          <h4 class="uk-text-bold uk-text-small uk-margin-small-bottom ">⚡ AI強化機能</h4>
           <ul class="uk-list uk-list-bullet uk-text-small">
             <li><strong>A/Bテスト自動化：</strong>AIによる継続的コンバージョン改善</li>
             <li><strong>コンテンツ最適化：</strong>SEO・ユーザビリティの自動調整</li>
@@ -200,7 +200,7 @@
         </div>
         
         <div class="uk-margin-top">
-          <span class="uk-label uk-label-success">継続収益モデル対応</span>
+          <span class="uk-label ">継続収益モデル対応</span>
         </div>
       </div>
     </div>

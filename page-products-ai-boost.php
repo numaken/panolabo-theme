@@ -98,7 +98,7 @@ get_header(); ?>
             <form action="https://www.panolabollc.com/products/" method="post" class="uk-margin-top">
               <input type="hidden" name="product_id" value="ai_boost_free">
               <input type="hidden" name="price" value="0">
-              <button type="submit" class="uk-button uk-button-default uk-width-1-1">
+              <button type="submit" class="uk-button uk-button-primary uk-button-small uk-width-1-1">
                 <span uk-icon="icon: download" class="uk-margin-small-right"></span>
                 無料ダウンロード
               </button>
@@ -117,7 +117,7 @@ get_header(); ?>
               <input type="hidden" name="product_id" value="ai_boost_premium">
               <input type="hidden" name="price" value="980">
               <input type="hidden" name="billing_cycle" value="monthly">
-              <button type="submit" class="uk-button uk-button-secondary uk-width-1-1">
+              <button type="submit" class="uk-button uk-button-primary uk-button-small uk-width-1-1">
                 <span uk-icon="icon: credit-card" class="uk-margin-small-right"></span>
                 今すぐ購入
               </button>
@@ -135,7 +135,7 @@ get_header(); ?>
               <input type="hidden" name="product_id" value="ai_boost_enterprise">
               <input type="hidden" name="price" value="4980">
               <input type="hidden" name="billing_cycle" value="monthly">
-              <button type="submit" class="uk-button uk-button-default uk-width-1-1">
+              <button type="submit" class="uk-button uk-button-primary uk-button-small uk-width-1-1">
                 <span uk-icon="icon: users" class="uk-margin-small-right"></span>
                 相談する
               </button>
@@ -251,11 +251,11 @@ get_header(); ?>
           まずは無料プランから始めてみませんか？
         </p>
         <div class="uk-margin-top">
-          <a href="#" class="uk-button uk-button-secondary uk-button-large uk-margin-right">
+          <a href="#" class="uk-button uk-button-primary uk-button-small uk-margin-right">
             <span uk-icon="icon: download" class="uk-margin-small-right"></span>
             無料で始める
           </a>
-          <a href="/panolabo-ai-boost/" class="uk-button uk-button-default uk-button-large">
+          <a href="/panolabo-ai-boost/" class="uk-button uk-button-primary uk-button-small">
             <span uk-icon="icon: info" class="uk-margin-small-right"></span>
             詳細を見る
           </a>
