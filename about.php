@@ -13,7 +13,7 @@
         <h3 class="uk-heading-bullet">ビジョン</h3>
         <p>テクノロジーの力を活用し、社会に新しい価値を提供することで、持続可能な未来を築いていきます。</p>
         
-        <a href="<?php echo home_url('/contact'); ?>" class="uk-button uk-button-text">お問い合わせ</a>
+        <a href="<?php echo home_url('/contact/'); ?>" class="uk-button uk-button-text">お問い合わせ</a>
     </div>
 </section>
 

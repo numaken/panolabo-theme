@@ -6,19 +6,19 @@ get_header();
 ?>
 
 <!-- ヒーローセクション - numakenテーマカラー統合 -->
-<section class="uk-section  parallax" style="background: linear-gradient(135deg, #69ba64 0%, #5aa659 100%); min-height: 550px;">
+<section class="uk-section  parallax" style="background: linear-gradient(135deg, #316B3F 0%, #2E86AB 100%); min-height: 550px;">
   <div class="uk-container">
     <div class="uk-grid-medium uk-flex-middle" uk-grid>
       <div class="uk-width-1-1 uk-width-1-2@m">
         <div class="uk-card uk-card-default uk-padding uk-box-shadow-large uk-animation-slide-left">
-          <h1 class="uk-text-bold uk-heading-responsive" style="color: #69ba64;">世界初「設定不要」AI SNS自動化ツール</h1>
+          <h1 class="uk-text-bold uk-heading-responsive" style="color: #316B3F;">世界初「設定不要」AI SNS自動化ツール</h1>
           <h2 class="uk-margin-remove uk-text-responsive">APIキー設定一切不要！1クリックでGrade A品質のAI投稿生成</h2>
           <div class="uk-grid-small uk-child-width-auto uk-flex-center uk-flex-left@s uk-margin-small" uk-grid>
-            <div><span class="uk-label" style="background: #69ba64;">🚀 設定時間0秒</span></div>
+            <div><span class="uk-label" style="background: #316B3F;">🚀 設定時間0秒</span></div>
             <div><span class="uk-label ">🎯 Grade A品質</span></div>
             <div><span class="uk-label ">💰 月額¥980</span></div>
           </div>
-          <p class="uk-text-lead uk-margin-small">料金：<strong style="color: #69ba64;">月額¥980〜</strong></p>
+          <p class="uk-text-lead uk-margin-small">料金：<strong style="color: #316B3F;">月額¥980〜</strong></p>
           <div class="uk-margin-top">
             <a href="https://sns-automation-pwa.vercel.app/" class="uk-button uk-button-text" target="_blank">🎉 今すぐ無料体験する</a>
           </div>
@@ -39,25 +39,25 @@ get_header();
 <!-- 問題提起＆ベネフィット -->
 <section class="uk-section  uk-padding-large">
   <div class="uk-container">
-    <h2 class="uk-text-center uk-text-bold uk-margin-bottom" style="color: #69ba64;">SNS運用、こんなお悩みありませんか？</h2>
+    <h2 class="uk-text-center uk-text-bold uk-margin-bottom" style="color: #316B3F;">SNS運用、こんなお悩みありませんか？</h2>
     <div class="uk-grid-match uk-child-width-1-3@m uk-text-center" uk-grid>
       <div>
         <div class="uk-card uk-card-body ">
-          <span uk-icon="icon: warning; ratio: 2" style="color: #69ba64;"></span>
+          <span uk-icon="icon: warning; ratio: 2" style="color: #316B3F;"></span>
           <h4 class="uk-text-bold">APIキー設定が複雑すぎる</h4>
           <p>OpenAIアカウント作成、クレジットカード登録、APIキー取得...30分の設定作業でほとんどの人が離脱してしまいます。</p>
         </div>
       </div>
       <div>
         <div class="uk-card uk-card-body ">
-          <span uk-icon="icon: ban; ratio: 2" style="color: #69ba64;"></span>
+          <span uk-icon="icon: ban; ratio: 2" style="color: #316B3F;"></span>
           <h4 class="uk-text-bold">競合ツールが高すぎる</h4>
           <p>月額¥3,000-5,000の高額サービスばかり。個人事業主や中小企業には手が届かない価格設定です。</p>
         </div>
       </div>
       <div>
         <div class="uk-card uk-card-body ">
-          <span uk-icon="icon: clock; ratio: 2" style="color: #69ba64;"></span>
+          <span uk-icon="icon: clock; ratio: 2" style="color: #316B3F;"></span>
           <h4 class="uk-text-bold">投稿作成に時間がかかる</h4>
           <p>毎日のSNS投稿作成に1-2時間も費やしている。本業に集中できず、ビジネス成長の機会を逃しています。</p>
         </div>
@@ -67,7 +67,7 @@ get_header();
 </section>
 
 <!-- 解決策セクション -->
-<section class="uk-section  uk-padding-large" style="background: linear-gradient(135deg, #69ba64 0%, #5aa659 100%);">
+<section class="uk-section  uk-padding-large" style="background: linear-gradient(135deg, #316B3F 0%, #2E86AB 100%);">
   <div class="uk-container">
     <h2 class="uk-text-center uk-text-bold uk-margin-bottom">PostPilot Proが全て解決します</h2>
     <div class="uk-grid-match uk-child-width-1-4@m uk-text-center" uk-grid>
@@ -106,59 +106,59 @@ get_header();
 <!-- 機能一覧セクション -->
 <section class="uk-section  uk-padding-large">
   <div class="uk-container">
-    <h2 class="uk-heading-line uk-text-center uk-text-bold"><span style="color: #69ba64;">圧倒的な機能と品質</span></h2>
+    <h2 class="uk-heading-line uk-text-center uk-text-bold"><span style="color: #316B3F;">圧倒的な機能と品質</span></h2>
     <div class="uk-grid-match uk-child-width-1-3@m uk-text-center uk-margin-large-top" uk-grid>
 
       <div>
         <div class="uk-card uk-card-default uk-card-body">
-          <span uk-icon="icon: cog; ratio: 3" style="color: #69ba64;"></span>
+          <span uk-icon="icon: cog; ratio: 3" style="color: #316B3F;"></span>
           <h3 class="uk-text-bold uk-margin-top">AI投稿生成</h3>
-          <p class="uk-text-bold" style="color: #69ba64;">GPT-3.5-turbo搭載でGrade A品質の投稿を生成。トーン調整も自由自在。</p>
+          <p class="uk-text-bold" style="color: #316B3F;">GPT-3.5-turbo搭載でGrade A品質の投稿を生成。トーン調整も自由自在。</p>
           <p>最新のAI技術を活用し、あなたのブランドに合わせた高品質な投稿を瞬時に生成。カジュアルからフォーマルまで、様々なトーンに対応します。</p>
         </div>
       </div>
 
       <div>
         <div class="uk-card uk-card-default uk-card-body">
-          <span uk-icon="icon: lock; ratio: 3" style="color: #69ba64;"></span>
+          <span uk-icon="icon: lock; ratio: 3" style="color: #316B3F;"></span>
           <h3 class="uk-text-bold uk-margin-top">OAuth認証</h3>
-          <p class="uk-text-bold" style="color: #69ba64;">Twitter・Threads公式認証対応。安全で確実な投稿システム。</p>
+          <p class="uk-text-bold" style="color: #316B3F;">Twitter・Threads公式認証対応。安全で確実な投稿システム。</p>
           <p>公式API認証により、安全性と信頼性を確保。あなたのアカウント情報は完全に保護されます。</p>
         </div>
       </div>
 
       <div>
         <div class="uk-card uk-card-default uk-card-body">
-          <span uk-icon="icon: database; ratio: 3" style="color: #69ba64;"></span>
+          <span uk-icon="icon: database; ratio: 3" style="color: #316B3F;"></span>
           <h3 class="uk-text-bold uk-margin-top">使用状況監視</h3>
-          <p class="uk-text-bold" style="color: #69ba64;">リアルタイムコスト監視で安心運用。緊急停止機能付き。</p>
+          <p class="uk-text-bold" style="color: #316B3F;">リアルタイムコスト監視で安心運用。緊急停止機能付き。</p>
           <p>透明性の高い使用状況監視により、予期しない課金を防止。安心してご利用いただけます。</p>
         </div>
       </div>
 
       <div>
         <div class="uk-card uk-card-default uk-card-body">
-          <span uk-icon="icon: star; ratio: 3" style="color: #69ba64;"></span>
+          <span uk-icon="icon: star; ratio: 3" style="color: #316B3F;"></span>
           <h3 class="uk-text-bold uk-margin-top">プレミアム機能</h3>
-          <p class="uk-text-bold" style="color: #69ba64;">無制限投稿生成、同時投稿、優先処理でビジネス加速。</p>
+          <p class="uk-text-bold" style="color: #316B3F;">無制限投稿生成、同時投稿、優先処理でビジネス加速。</p>
           <p>プレミアムプランでは制限なしで投稿生成が可能。複数SNSへの同時投稿でマーケティング効率を最大化します。</p>
         </div>
       </div>
 
       <div>
         <div class="uk-card uk-card-default uk-card-body">
-          <span uk-icon="icon: tablet; ratio: 3" style="color: #69ba64;"></span>
+          <span uk-icon="icon: tablet; ratio: 3" style="color: #316B3F;"></span>
           <h3 class="uk-text-bold uk-margin-top">PWA対応</h3>
-          <p class="uk-text-bold" style="color: #69ba64;">スマホアプリのような操作感。いつでもどこでも投稿管理。</p>
+          <p class="uk-text-bold" style="color: #316B3F;">スマホアプリのような操作感。いつでもどこでも投稿管理。</p>
           <p>Progressive Web Appにより、ネイティブアプリと同等の使いやすさを実現。オフライン機能も搭載。</p>
         </div>
       </div>
 
       <div>
         <div class="uk-card uk-card-default uk-card-body">
-          <span uk-icon="icon: cloud-upload; ratio: 3" style="color: #69ba64;"></span>
+          <span uk-icon="icon: cloud-upload; ratio: 3" style="color: #316B3F;"></span>
           <h3 class="uk-text-bold uk-margin-top">クラウド運用</h3>
-          <p class="uk-text-bold" style="color: #69ba64;">Vercel Serverless採用で高速・安定動作を実現。</p>
+          <p class="uk-text-bold" style="color: #316B3F;">Vercel Serverless採用で高速・安定動作を実現。</p>
           <p>最新のサーバーレス技術により、高速なレスポンスと99.9%の稼働率を保証します。</p>
         </div>
       </div>
@@ -174,7 +174,7 @@ get_header();
 <!-- 料金プランセクション -->
 <section class="uk-section  uk-padding-large">
   <div class="uk-container">
-    <h2 class="uk-heading-line uk-text-center uk-text-bold"><span style="color: #69ba64;">シンプルで分かりやすい料金プラン</span></h2>
+    <h2 class="uk-heading-line uk-text-center uk-text-bold"><span style="color: #316B3F;">シンプルで分かりやすい料金プラン</span></h2>
     <div class="uk-grid-match uk-child-width-1-3@m uk-text-center uk-margin-large-top" uk-grid>
 
       <!-- 無料プラン -->
@@ -198,7 +198,7 @@ get_header();
 
       <!-- プレミアムプラン（人気） -->
       <div>
-        <div class="uk-card uk-card-body  postpilot-pricing-featured" style="background: linear-gradient(135deg, #69ba64 0%, #5aa659 100%); transform: scale(1.05); position: relative;">
+        <div class="uk-card uk-card-body  postpilot-pricing-featured" style="background: linear-gradient(135deg, #316B3F 0%, #2E86AB 100%); transform: scale(1.05); position: relative;">
           <div class="uk-label" style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: #f0506e;">🔥 人気No.1</div>
           <h3 class="uk-text-bold uk-margin-top">プレミアムプラン</h3>
           <div style="font-size: 2.5rem; font-weight: bold; margin: 1rem 0;">
@@ -233,14 +233,14 @@ get_header();
             <li>✅ API提供</li>
             <li>✅ 専任サポート</li>
           </ul>
-          <a href="<?php echo home_url('/contact'); ?>" class="uk-button uk-button-text">お問い合わせ</a>
+          <a href="<?php echo home_url('/contact/'); ?>" class="uk-button uk-button-text">お問い合わせ</a>
         </div>
       </div>
 
     </div>
     
     <div class="uk-text-center uk-margin-large-top">
-      <p class="uk-text-lead" style="color: #69ba64;">
+      <p class="uk-text-lead" style="color: #316B3F;">
         <strong>クレジットカード登録不要で今すぐ体験開始</strong>
       </p>
     </div>
@@ -250,12 +250,12 @@ get_header();
 <!-- お客様の声セクション -->
 <section class="uk-section  uk-padding-large">
   <div class="uk-container">
-    <h2 class="uk-heading-line uk-text-center uk-text-bold"><span style="color: #69ba64;">早期ユーザーの声</span></h2>
+    <h2 class="uk-heading-line uk-text-center uk-text-bold"><span style="color: #316B3F;">早期ユーザーの声</span></h2>
     <div class="uk-grid-match uk-child-width-1-3@m uk-text-center uk-margin-large-top" uk-grid>
 
       <div>
         <div class="uk-card uk-card-default uk-card-body" style="border-left: 4px solid #69ba64;">
-          <span uk-icon="icon: quote-right; ratio: 2" style="color: #69ba64;"></span>
+          <span uk-icon="icon: quote-right; ratio: 2" style="color: #316B3F;"></span>
           <p class="uk-margin-top">"APIキー設定で挫折していましたが、PostPilot Proは本当に設定不要でした。5分で投稿自動化が完了！"</p>
           <strong>- フリーランスデザイナー Aさん</strong>
         </div>
@@ -263,7 +263,7 @@ get_header();
 
       <div>
         <div class="uk-card uk-card-default uk-card-body" style="border-left: 4px solid #69ba64;">
-          <span uk-icon="icon: quote-right; ratio: 2" style="color: #69ba64;"></span>
+          <span uk-icon="icon: quote-right; ratio: 2" style="color: #316B3F;"></span>
           <p class="uk-margin-top">"月額¥980でこの品質は破格です。競合サービスの1/5の価格で同等以上の機能。コスパ最高！"</p>
           <strong>- EC事業経営者 Bさん</strong>
         </div>
@@ -271,7 +271,7 @@ get_header();
 
       <div>
         <div class="uk-card uk-card-default uk-card-body" style="border-left: 4px solid #69ba64;">
-          <span uk-icon="icon: quote-right; ratio: 2" style="color: #69ba64;"></span>
+          <span uk-icon="icon: quote-right; ratio: 2" style="color: #316B3F;"></span>
           <p class="uk-margin-top">"SNS投稿作成時間が2時間→2秒になりました。本業に集中できるようになって売上20%向上！"</p>
           <strong>- コンサルタント Cさん</strong>
         </div>
@@ -282,7 +282,7 @@ get_header();
 </section>
 
 <!-- CTA -->
-<section class="uk-section  uk-padding-large" style="background: linear-gradient(135deg, #69ba64 0%, #5aa659 100%);">
+<section class="uk-section  uk-padding-large" style="background: linear-gradient(135deg, #316B3F 0%, #2E86AB 100%);">
   <div class="uk-container">
     <h2 class="uk-heading-line uk-text-center uk-text-bold"><span>今すぐPostPilot Proを始めませんか？</span></h2>
     <p class="uk-text-center uk-text-lead">設定不要、初月無料でリスクゼロ。あなたのSNS運用を革命的に変える体験を</p>
@@ -291,7 +291,7 @@ get_header();
         <a href="https://sns-automation-pwa.vercel.app/" class="uk-button uk-button-text" target="_blank">🚀 無料で体験開始</a>
       </div>
       <div class="uk-visible@s">
-        <a href="<?php echo home_url('/contact'); ?>" class="uk-button uk-button-text">📞 無料相談する</a>
+        <a href="<?php echo home_url('/contact/'); ?>" class="uk-button uk-button-text">📞 無料相談する</a>
       </div>
     </div>
     <p class="uk-text-center uk-margin-top" style="opacity: 0.8;">※クレジットカード登録不要・即座に利用開始</p>

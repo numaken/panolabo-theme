@@ -92,12 +92,15 @@ if (typeof UIkit !== 'undefined') {
 wp_head(); 
 ?>
 
-<!-- Parallax用の簡易CSS/JS（必要に応じて別ファイル化でもOK） -->
+<!-- パララックス無効化CSS -->
 <style>
     .parallax {
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
+        background-attachment: scroll !important;
+        background-size: cover !important;
+        background-position: center !important;
+        transform: none !important;
+        will-change: auto !important;
+        overflow: visible !important;
     }
 </style>
 
@@ -129,11 +132,19 @@ wp_head();
 
 
 <script>
-document.addEventListener("scroll", function() {
-    let scrolled = window.pageYOffset;
+// パララックス効果を一旦無効化
+// 将来的に再実装する場合のためにコメントアウト
+/*
+function updateParallax() {
+    // パララックス無効
+}
+*/
+
+// パララックスクラスのtransformをリセット
+document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.parallax').forEach(function(element) {
-        let offset = scrolled * 0.5;
-        element.style.backgroundPositionY = offset + "px";
+        element.style.transform = 'none';
+        element.style.willChange = 'auto';
     });
 });
 </script>
@@ -141,12 +152,34 @@ document.addEventListener("scroll", function() {
 </head>
 
 <body <?php body_class(); // bodyタグにWP標準のクラス付与 ?>>
+<style>
+@keyframes pikopiko {
+    0% { transform: scale(1); opacity: 0.7; }
+    50% { transform: scale(1.3); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.7; }
+}
+@keyframes textFade {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+.pikopiko-logo {
+    animation: pikopiko 0.6s ease-in-out infinite !important;
+    transform-origin: center !important;
+}
+.pikopiko-text {
+    animation: textFade 0.8s ease-in-out infinite !important;
+}
+</style>
+
 <div id="loadbox" class="loadbox-active">
     <div class="wrapper">
         <div class="inner uk-padding">
             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo/logo.png" 
-                 alt="panolabo. - 今、見（魅）せることで「思い込みのリセット」を。">
-            <span class="uk-text-bold uk-visible@s">
+                 alt="panolabo. - 今、見（魅）せることで「思い込みのリセット」を。"
+                 class="pikopiko-logo"
+                 style="width: 25% !important;">
+            <span class="uk-text-bold uk-visible@s pikopiko-text">
                 シンプルな発想でリアルビジネスに効くサービスを。
             </span>
         </div>
@@ -160,30 +193,18 @@ document.addEventListener("scroll", function() {
     document.addEventListener('DOMContentLoaded', function() {
         var loadbox = document.getElementById('loadbox');
         if (loadbox) {
-            // 500ms後にフェードアウト開始
+            console.log('LoadBox found, starting timer...');
+            
+            // 2000ms後に強制的に非表示
             setTimeout(function() {
-                loadbox.classList.remove('loadbox-active');
-                loadbox.classList.add('loadbox-hidden');
-                
-                // フェードアウト完了後に完全に非表示
-                setTimeout(function() {
-                    loadbox.style.display = 'none';
-                }, 400);
-            }, 500);
+                console.log('Hiding loadbox...');
+                loadbox.style.display = 'none';
+                loadbox.style.visibility = 'hidden';
+                loadbox.style.opacity = '0';
+                loadbox.remove(); // DOMから完全に削除
+            }, 2000);
         }
     });
-    
-    // 緊急用：5秒後に強制的に非表示（安全装置）
-    setTimeout(function() {
-        var loadbox = document.getElementById('loadbox');
-        if (loadbox && loadbox.style.display !== 'none') {
-            loadbox.classList.remove('loadbox-active');
-            loadbox.classList.add('loadbox-hidden');
-            setTimeout(function() {
-                loadbox.style.display = 'none';
-            }, 400);
-        }
-    }, 5000);
 })();
 </script>
 

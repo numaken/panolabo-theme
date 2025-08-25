@@ -67,4 +67,4 @@ coverage/
 .nyc_output/
 
 # Claude
-.claude/settings.local.json
+.claude/settings.local.json.env

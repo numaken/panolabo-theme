@@ -231,7 +231,7 @@
       <p class="uk-text-large uk-margin-bottom">
         AI技術とストックビジネスモデルで、安定した未来を築きませんか？
       </p>
-      <a href="<?php echo esc_url(home_url('/contact')); ?>"
+      <a href="<?php echo esc_url(home_url('/contact/')); ?>"
          class="uk-button uk-button-text"
          uk-scrollspy="cls: uk-animation-scale-up; delay: 500;">
          <span uk-icon="icon: trending-up"></span> ストックビジネス化の相談をする

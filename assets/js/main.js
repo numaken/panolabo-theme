@@ -1,7 +1,59 @@
 // Panolabo WordPress Theme - Main JavaScript
 // UIKitはCDNから読み込まれるので、window.UIkitを使用
 
+// LoadBoxアニメーション初期化
+function initLoadBox() {
+    const loadBox = document.getElementById('loadbox');
+    
+    if (loadBox) {
+        console.log('LoadBox found:', loadBox);
+        
+        // 初期状態で表示されていることを確認
+        loadBox.style.display = 'block';
+        loadBox.style.visibility = 'visible';
+        loadBox.style.opacity = '1';
+        loadBox.classList.add('loadbox-active');
+        loadBox.classList.remove('loadbox-hidden');
+        
+        console.log('LoadBox アニメーション開始');
+        
+        // ページが完全に読み込まれたら非表示
+        function hideLoadBox() {
+            console.log('LoadBox 非表示開始');
+            loadBox.classList.remove('loadbox-active');
+            loadBox.classList.add('loadbox-hidden');
+            
+            // CSS transition終了後に完全非表示
+            setTimeout(() => {
+                loadBox.style.display = 'none';
+                console.log('LoadBox アニメーション終了');
+            }, 600);
+        }
+        
+        // ぴこぴこアニメーションを見せるため3秒間表示
+        setTimeout(hideLoadBox, 3000); // 3秒間表示
+        
+        // ページ読み込み完了時にも非表示（どちらか早い方）
+        window.addEventListener('load', function() {
+            setTimeout(hideLoadBox, 1500);
+        });
+    } else {
+        console.error('LoadBox not found!');
+    }
+}
+
+// ページ読み込み開始時に即座実行
+initLoadBox();
+
+// DOM読み込み後の初期化
 document.addEventListener('DOMContentLoaded', function() {
+    // LoadBoxがまだある場合は再初期化
+    const loadBox = document.getElementById('loadbox');
+    if (loadBox && !loadBox.classList.contains('loadbox-hidden')) {
+        console.log('DOM読み込み後にLoadBox再初期化');
+        initLoadBox();
+    }
+    
     // UIKitが読み込まれるまで待機
     function waitForUIKit() {
         if (typeof UIkit !== 'undefined') {
@@ -18,8 +70,14 @@ function initializeTheme() {
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            // hrefが'#'だけや空の場合はスキップ
+            if (!href || href === '#' || href.length <= 1) {
+                return;
+            }
+            
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            const target = document.querySelector(href);
             if (target) {
                 target.scrollIntoView({
                     behavior: 'smooth',

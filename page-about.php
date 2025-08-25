@@ -41,7 +41,7 @@ get_header(); ?>
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
         <h2 class="uk-heading-medium uk-text-bold ">
-          <span uk-icon="icon: user; ratio: 1.5" class="uk-margin-small-right"></span>
+          <span uk-icon="icon: user; ratio: 2" class="uk-margin-small-right"></span>
           代表メッセージ
         </h2>
       </div>
@@ -95,7 +95,7 @@ get_header(); ?>
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom">
         <h2 class="uk-heading-medium uk-text-bold ">
-          <span uk-icon="icon: star; ratio: 1.5" class="uk-margin-small-right"></span>
+          <span uk-icon="icon: star; ratio: 2" class="uk-margin-small-right"></span>
           Panolaboの特徴
         </h2>
       </div>
@@ -147,7 +147,7 @@ get_header(); ?>
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom">
         <h2 class="uk-heading-medium uk-text-bold ">
-          <span uk-icon="icon: cog; ratio: 1.5" class="uk-margin-small-right"></span>
+          <span uk-icon="icon: cog; ratio: 2" class="uk-margin-small-right"></span>
           事業領域
         </h2>
       </div>
@@ -225,7 +225,7 @@ get_header(); ?>
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom">
         <h2 class="uk-heading-medium uk-text-bold">
-          <span uk-icon="icon: heart; ratio: 1.5" class="uk-margin-small-right"></span>
+          <span uk-icon="icon: heart; ratio: 2" class="uk-margin-small-right"></span>
           Panolaboの約束
         </h2>
       </div>
@@ -363,7 +363,7 @@ get_header(); ?>
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
         <h2 class="uk-heading-medium uk-text-bold ">
-          <span uk-icon="icon: trending-up; ratio: 1.5" class="uk-margin-small-right"></span>
+          <span uk-icon="icon: trending-up; ratio: 2" class="uk-margin-small-right"></span>
           事業の変遷と成長
         </h2>
         <p class="uk-text-lead">
@@ -463,7 +463,7 @@ get_header(); ?>
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
         <h2 class="uk-heading-medium uk-text-bold">
-          <span uk-icon="icon: star; ratio: 1.5" class="uk-margin-small-right"></span>
+          <span uk-icon="icon: star; ratio: 2" class="uk-margin-small-right"></span>
           panolaboが選ばれる理由
         </h2>
         <p class="uk-text-lead">
@@ -475,7 +475,7 @@ get_header(); ?>
         
         <div>
           <div class="uk-text-center uk-margin-bottom">
-            <span uk-icon="icon: cog; ratio: 3" class=""></span>
+            <span uk-icon="icon: cog; ratio: 2" class=""></span>
           </div>
           <h3 class="uk-text-bold uk-text-center uk-margin-bottom">技術力 × 実績</h3>
           <p class="uk-text-center">
@@ -487,7 +487,7 @@ get_header(); ?>
 
         <div>
           <div class="uk-text-center uk-margin-bottom">
-            <span uk-icon="icon: users; ratio: 3" class=""></span>
+            <span uk-icon="icon: users; ratio: 2" class=""></span>
           </div>
           <h3 class="uk-text-bold uk-text-center uk-margin-bottom">パートナーシップ思考</h3>
           <p class="uk-text-center">
@@ -499,7 +499,7 @@ get_header(); ?>
 
         <div>
           <div class="uk-text-center uk-margin-bottom">
-            <span uk-icon="icon: future; ratio: 3" class=""></span>
+            <span uk-icon="icon: future; ratio: 2" class=""></span>
           </div>
           <h3 class="uk-text-bold uk-text-center uk-margin-bottom">継続改善・進化</h3>
           <p class="uk-text-center">
@@ -524,7 +524,7 @@ get_header(); ?>
         </p>
         
         <div class="uk-button-group uk-flex-center uk-margin-top">
-          <a href="<?php echo esc_url(home_url('/contact')); ?>" 
+          <a href="<?php echo esc_url(home_url('/contact/')); ?>" 
              class="uk-button uk-button-primary uk-button-small">
             <span uk-icon="icon: mail"></span> お問い合わせ
           </a>

@@ -8,21 +8,21 @@ get_header(); ?>
 <main class="uk-section ">
   
   <!-- Hero Section: 実績概要 -->
-  <section class="uk-section uk-background-cover uk-background-center-center uk-background-norepeat" style="background-image: url('<?php bloginfo('template_directory'); ?>/images/hero-portfolio.jpg');">
+  <section class="uk-section uk-section-large parallax" style="background: linear-gradient(rgba(49, 107, 63, 0.9), rgba(46, 134, 171, 0.9)), url('<?php bloginfo('template_directory'); ?>/images/hero-portfolio.jpg'); background-size: cover; background-position: center center; background-attachment: scroll; color: white;">
     <div class="uk-container">
       <div class="uk-text-center" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
         <h1 class="uk-heading-primary uk-text-bold uk-margin-bottom">
-          <span class="uk-text-emphasis">panolabo 実績紹介</span><br>
-          <span class=" uk-text-large">9年間で約3,000件の圧倒的実績</span>
+          <span class="uk-text-emphasis">🚀 Panolabo 実績紹介</span><br>
+          <span class="uk-text-large">9年間で約3,000件の圧倒的実績</span>
         </h1>
         <p class="uk-text-lead uk-margin-bottom">
-          2015年の設立から現在まで、<strong>多業種・多規模</strong>のクライアント様と<br>
+          📝 2015年の設立から現在まで、<strong>多業種・多規模</strong>のクライアント様と<br>
           <strong>VR・アプリ・Web制作</strong>で数々の成功事例を創出してきました
         </p>
         <div class="uk-grid-small uk-child-width-auto uk-flex-center uk-margin-top" uk-grid>
-          <div><span class="uk-label  uk-text-bold">9年の実績</span></div>
-          <div><span class="uk-label  uk-text-bold">2,986案件</span></div>
-          <div><span class="uk-label  uk-text-bold">多業種対応</span></div>
+          <div><span class="uk-label uk-label-success uk-text-bold">9年の実績</span></div>
+          <div><span class="uk-label uk-label-warning uk-text-bold">2,986案件</span></div>
+          <div><span class="uk-label uk-label-primary uk-text-bold">多業種対応</span></div>
         </div>
       </div>
     </div>
@@ -33,7 +33,7 @@ get_header(); ?>
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
         <h2 class="uk-heading-medium uk-text-bold ">
-          <span uk-icon="icon: database; ratio: 1.5" class="uk-margin-small-right"></span>
+          <span uk-icon="icon: database; ratio: 2" class="uk-margin-small-right"></span>
           数字で見るpanolaboの実績
         </h2>
         <p class="uk-text-lead">API連動リアルタイムデータで証明する、確かな技術力と信頼性</p>
@@ -169,7 +169,7 @@ get_header(); ?>
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
         <h2 class="uk-heading-medium uk-text-bold ">
-          <span uk-icon="icon: thumbnails; ratio: 1.5" class="uk-margin-small-right"></span>
+          <span uk-icon="icon: thumbnails; ratio: 2" class="uk-margin-small-right"></span>
           実績ギャラリー（API連動）
         </h2>
         <p class="uk-text-lead">リアルタイムで更新される、実際の制作実績</p>
@@ -237,7 +237,7 @@ get_header(); ?>
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
         <h2 class="uk-heading-medium uk-text-bold ">
-          <span uk-icon="icon: star; ratio: 1.5" class="uk-margin-small-right"></span>
+          <span uk-icon="icon: star; ratio: 2" class="uk-margin-small-right"></span>
           代表的な成功事例
         </h2>
         <p class="uk-text-lead">クライアント様のビジネス成長に貢献した実例をご紹介</p>
@@ -408,7 +408,7 @@ get_header(); ?>
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
         <h2 class="uk-heading-medium uk-text-bold ">
-          <span uk-icon="icon: check; ratio: 1.5" class="uk-margin-small-right"></span>
+          <span uk-icon="icon: check; ratio: 2" class="uk-margin-small-right"></span>
           品質保証の取り組み
         </h2>
         <p class="uk-text-lead">9年間の経験で培った、独自の品質管理体制</p>
@@ -420,7 +420,7 @@ get_header(); ?>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-text-center uk-box-shadow-medium uk-border-rounded uk-height-1-1">
             <div class="uk-margin-bottom">
-              <span uk-icon="icon: cog; ratio: 2.5" class=""></span>
+              <span uk-icon="icon: cog; ratio: 2" class=""></span>
             </div>
             <h3 class="uk-text-bold uk-margin-bottom">標準化された開発プロセス</h3>
             <p class="uk-text-small uk-margin-bottom">
@@ -437,7 +437,7 @@ get_header(); ?>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-text-center uk-box-shadow-medium uk-border-rounded uk-height-1-1">
             <div class="uk-margin-bottom">
-              <span uk-icon="icon: file-edit; ratio: 2.5" class=""></span>
+              <span uk-icon="icon: file-edit; ratio: 2" class=""></span>
             </div>
             <h3 class="uk-text-bold uk-margin-bottom">徹底したコードレビュー</h3>
             <p class="uk-text-small uk-margin-bottom">
@@ -454,7 +454,7 @@ get_header(); ?>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-text-center uk-box-shadow-medium uk-border-rounded uk-height-1-1">
             <div class="uk-margin-bottom">
-              <span uk-icon="icon: lock; ratio: 2.5" class=""></span>
+              <span uk-icon="icon: lock; ratio: 2" class=""></span>
             </div>
             <h3 class="uk-text-bold uk-margin-bottom">セキュリティファースト</h3>
             <p class="uk-text-small uk-margin-bottom">
@@ -498,7 +498,7 @@ get_header(); ?>
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
         <h2 class="uk-heading-medium uk-text-bold">
-          <span uk-icon="icon: heart; ratio: 1.5" class="uk-margin-small-right"></span>
+          <span uk-icon="icon: heart; ratio: 2" class="uk-margin-small-right"></span>
           クライアント満足度
         </h2>
         <p class="uk-text-lead">
@@ -568,7 +568,7 @@ get_header(); ?>
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
         <h2 class="uk-heading-medium uk-text-bold ">
-          <span uk-icon="icon: cog; ratio: 1.5" class="uk-margin-small-right"></span>
+          <span uk-icon="icon: cog; ratio: 2" class="uk-margin-small-right"></span>
           技術実績・保有スキル
         </h2>
         <p class="uk-text-lead">300案件で培った、確かな技術力とノウハウ</p>
@@ -653,7 +653,7 @@ get_header(); ?>
         </p>
         
         <div class="uk-button-group uk-flex-center uk-margin-top">
-          <a href="<?php echo esc_url(home_url('/contact')); ?>" 
+          <a href="<?php echo esc_url(home_url('/contact/')); ?>" 
              class="uk-button uk-button-text">
             <span uk-icon="icon: mail"></span> お問い合わせ
           </a>

@@ -8,21 +8,21 @@ get_header(); ?>
 <main class="uk-section ">
   
   <!-- Hero Section: 代表者紹介 -->
-  <section class="uk-section uk-background-cover uk-background-center-center uk-background-norepeat" style="background-image: url('<?php bloginfo('template_directory'); ?>/images/hero-team.jpg');">
+  <section class="uk-section uk-section-large parallax" style="background: linear-gradient(rgba(49, 107, 63, 0.9), rgba(46, 134, 171, 0.9)), url('<?php bloginfo('template_directory'); ?>/images/hero-team.jpg'); background-size: cover; background-position: center center; background-attachment: scroll; color: white;">
     <div class="uk-container">
       <div class="uk-text-center" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
         <h1 class="uk-heading-primary uk-text-bold uk-margin-bottom">
           <span class="uk-text-emphasis">代表者・チーム紹介</span><br>
-          <span class=" uk-text-large">確かな技術力と豊富な経験で信頼をお届け</span>
+          <span class="uk-text-large">確かな技術力と豊富な経験で信頼をお届け</span>
         </h1>
         <p class="uk-text-lead uk-margin-bottom">
           9年間で2,986件の制作実績を支える<strong>技術チーム</strong>と<br>
           <strong>代表者の経歴・実績</strong>をご紹介します
         </p>
         <div class="uk-grid-small uk-child-width-auto uk-flex-center uk-margin-top" uk-grid>
-          <div><span class="uk-label  uk-text-bold">技術力重視</span></div>
-          <div><span class="uk-label  uk-text-bold">豊富な経験</span></div>
-          <div><span class="uk-label  uk-text-bold">継続改善</span></div>
+          <div><span class="uk-label uk-label-success uk-text-bold">技術力重視</span></div>
+          <div><span class="uk-label uk-label-warning uk-text-bold">豊富な経験</span></div>
+          <div><span class="uk-label uk-label-primary uk-text-bold">継続改善</span></div>
         </div>
       </div>
     </div>
@@ -33,7 +33,7 @@ get_header(); ?>
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
         <h2 class="uk-heading-medium uk-text-bold ">
-          <span uk-icon="icon: user; ratio: 1.5" class="uk-margin-small-right"></span>
+          <span uk-icon="icon: user; ratio: 2" class="uk-margin-small-right"></span>
           代表者プロフィール
         </h2>
         <p class="uk-text-lead">
@@ -118,7 +118,7 @@ get_header(); ?>
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
         <h2 class="uk-heading-medium uk-text-bold ">
-          <span uk-icon="icon: code; ratio: 1.5" class="uk-margin-small-right"></span>
+          <span uk-icon="icon: code; ratio: 2" class="uk-margin-small-right"></span>
           技術スタック・専門領域
         </h2>
         <p class="uk-text-lead">
@@ -132,7 +132,7 @@ get_header(); ?>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-text-center uk-box-shadow-medium uk-border-rounded uk-height-1-1">
             <div class="uk-margin-bottom">
-              <span uk-icon="icon: laptop; ratio: 3" class=""></span>
+              <span uk-icon="icon: laptop; ratio: 2" class=""></span>
             </div>
             <h3 class="uk-text-bold uk-margin-bottom">フロントエンド</h3>
             <div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid>
@@ -151,7 +151,7 @@ get_header(); ?>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-text-center uk-box-shadow-medium uk-border-rounded uk-height-1-1">
             <div class="uk-margin-bottom">
-              <span uk-icon="icon: database; ratio: 3" class=""></span>
+              <span uk-icon="icon: database; ratio: 2" class=""></span>
             </div>
             <h3 class="uk-text-bold uk-margin-bottom">バックエンド</h3>
             <div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid>
@@ -170,7 +170,7 @@ get_header(); ?>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-text-center uk-box-shadow-medium uk-border-rounded uk-height-1-1">
             <div class="uk-margin-bottom">
-              <span uk-icon="icon: tablet; ratio: 3" class=""></span>
+              <span uk-icon="icon: tablet; ratio: 2" class=""></span>
             </div>
             <h3 class="uk-text-bold uk-margin-bottom">モバイル・VR</h3>
             <div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid>
@@ -189,7 +189,7 @@ get_header(); ?>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-text-center uk-box-shadow-medium uk-border-rounded uk-height-1-1">
             <div class="uk-margin-bottom">
-              <span uk-icon="icon: future; ratio: 3" class=""></span>
+              <span uk-icon="icon: future; ratio: 2" class=""></span>
             </div>
             <h3 class="uk-text-bold uk-margin-bottom">AI・最新技術</h3>
             <div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid>
@@ -212,7 +212,7 @@ get_header(); ?>
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
         <h2 class="uk-heading-medium uk-text-bold ">
-          <span uk-icon="icon: bolt; ratio: 1.5" class="uk-margin-small-right"></span>
+          <span uk-icon="icon: bolt; ratio: 2" class="uk-margin-small-right"></span>
           開発フィロソフィー・品質方針
         </h2>
         <p class="uk-text-lead">
@@ -225,7 +225,7 @@ get_header(); ?>
         <div>
           <div class="uk-card  uk-card-body uk-text-center uk-border-rounded uk-height-1-1">
             <div class="uk-margin-bottom">
-              <span uk-icon="icon: check; ratio: 3"></span>
+              <span uk-icon="icon: check; ratio: 2"></span>
             </div>
             <h3 class="uk-text-bold uk-margin-bottom">品質ファースト</h3>
             <p class="uk-text-small">
@@ -239,7 +239,7 @@ get_header(); ?>
         <div>
           <div class="uk-card  uk-card-body uk-text-center uk-border-rounded uk-height-1-1">
             <div class="uk-margin-bottom">
-              <span uk-icon="icon: users; ratio: 3"></span>
+              <span uk-icon="icon: users; ratio: 2"></span>
             </div>
             <h3 class="uk-text-bold uk-margin-bottom">パートナーシップ重視</h3>
             <p class="uk-text-small">
@@ -253,7 +253,7 @@ get_header(); ?>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-text-center uk-border-rounded uk-height-1-1">
             <div class="uk-margin-bottom">
-              <span uk-icon="icon: refresh; ratio: 3" class=""></span>
+              <span uk-icon="icon: refresh; ratio: 2" class=""></span>
             </div>
             <h3 class="uk-text-bold uk-margin-bottom">継続改善・技術革新</h3>
             <p class="uk-text-small">
@@ -272,7 +272,7 @@ get_header(); ?>
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
         <h2 class="uk-heading-medium uk-text-bold">
-          <span uk-icon="icon: cog; ratio: 1.5" class="uk-margin-small-right"></span>
+          <span uk-icon="icon: cog; ratio: 2" class="uk-margin-small-right"></span>
           チーム体制・サポート体制
         </h2>
         <p class="uk-text-lead">
@@ -284,7 +284,7 @@ get_header(); ?>
         
         <div>
           <div class="uk-text-center">
-            <span uk-icon="icon: clock; ratio: 4" class=" uk-margin-bottom"></span>
+            <span uk-icon="icon: clock; ratio: 2" class=" uk-margin-bottom"></span>
             <h3 class="uk-text-bold uk-margin-bottom">24時間以内の初回対応</h3>
             <p>
               お問い合わせから<strong>24時間以内</strong>の初回対応を徹底。<br>
@@ -295,7 +295,7 @@ get_header(); ?>
 
         <div>
           <div class="uk-text-center">
-            <span uk-icon="icon: shield; ratio: 4" class=" uk-margin-bottom"></span>
+            <span uk-icon="icon: shield; ratio: 2" class=" uk-margin-bottom"></span>
             <h3 class="uk-text-bold uk-margin-bottom">セキュリティ事故 0件</h3>
             <p>
               9年間で<strong>重大セキュリティ事故 0件</strong>の実績。<br>
@@ -313,7 +313,7 @@ get_header(); ?>
         </p>
         
         <div class="uk-button-group uk-flex-center uk-margin-top">
-          <a href="<?php echo esc_url(home_url('/contact')); ?>" 
+          <a href="<?php echo esc_url(home_url('/contact/')); ?>" 
              class="uk-button uk-button-primary uk-button-small">
             <span uk-icon="icon: mail"></span> 技術相談・お問い合わせ
           </a>

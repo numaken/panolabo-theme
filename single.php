@@ -14,8 +14,8 @@ get_header();
       <div class="uk-margin-bottom">
         <?php yoast_breadcrumb( '<nav class="uk-breadcrumb">', '</nav>' ); ?>
       </div>
-    <?php else : ?>
-      <?php panolabo_breadcrumb(); ?>
+    <?php elseif ( function_exists( 'custom_breadcrumb' ) ) : ?>
+      <?php custom_breadcrumb(); ?>
     <?php endif; ?>
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

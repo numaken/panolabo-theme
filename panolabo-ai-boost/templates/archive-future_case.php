@@ -75,7 +75,7 @@ get_header(); ?>
             <h2><?php _e('あなたの業種でも、AIで進化できます', 'panolabo-ai-boost'); ?></h2>
             <p><?php _e('掲載されていない業種でも、AIプラグインの効果を最大化するご提案が可能です。', 'panolabo-ai-boost'); ?></p>
             <div class="pab-cta-buttons">
-                <a href="<?php echo home_url('/contact'); ?>" class="pab-btn pab-btn-primary">
+                <a href="<?php echo home_url('/contact/'); ?>" class="pab-btn pab-btn-primary">
                     <?php _e('無料相談を申し込む', 'panolabo-ai-boost'); ?>
                 </a>
                 <a href="<?php echo home_url('/services'); ?>" class="pab-btn pab-btn-secondary">

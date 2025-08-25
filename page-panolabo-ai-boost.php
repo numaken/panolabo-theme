@@ -1,42 +1,44 @@
 <?php
 /**
  * Template Name: Panolabo AI Boost Product Page
- * Description: AI Boost営業支援プラグイン製品詳細ページ
+ * Description: AI Boost営業支援プラグイン統合LP
  */
 get_header(); ?>
 
 <main class="uk-section">
   
-  <!-- Hero Section: AI Boost紹介 -->
-  <section class="uk-section uk-background-cover uk-background-center-center uk-background-norepeat" style="background: linear-gradient(135deg, #546E7A 0%, #4CAF50 50%, #42A5F5 100%);">
+  <!-- ヒーローセクション -->
+  <section class="uk-section uk-background-cover uk-background-center-center" style="background: linear-gradient(135deg, #4CAF50 0%, #42A5F5 100%);">
     <div class="uk-container">
-      <div class="uk-text-center uk-text-white" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
+      <div class="uk-text-center uk-text-white">
         <div class="uk-margin-bottom">
           <span uk-icon="icon: future; ratio: 3" class="uk-text-warning"></span>
         </div>
         <h1 class="uk-heading-primary uk-text-bold uk-margin-bottom">
-          <span class="uk-text-emphasis">Panolabo AI Boost</span><br>
-          <span class="uk-text-large">営業支援プラグイン</span>
+          Panolabo AI Boost
         </h1>
-        <p class="uk-text-lead uk-margin-bottom">
-          AI導入効果を「提案型事例」で視覚化。<br>
-          <strong>営業成約率を3倍に向上</strong>させる革命的WordPressプラグイン
+        <h2 class="uk-heading-medium uk-margin-remove-top uk-margin-bottom">
+          WordPressサイトを営業ツールに変える<br>
+          実績表示プラグイン
+        </h2>
+        <p class="uk-text-lead uk-margin">
+          <strong class="uk-text-warning">営業成約率を3倍向上</strong>させる革新的なWordPressプラグイン<br>
+          実績・事例を美しく表示して、一瞬で信頼を獲得
         </p>
-        
-        <!-- 価格・プラン表示 -->
-        <div class="uk-grid-small uk-child-width-auto uk-flex-center uk-margin-top" uk-grid>
-          <div><span class="uk-label uk-label-success uk-text-bold">無料プラン ¥0</span></div>
-          <div><span class="uk-label uk-label-warning uk-text-bold">プレミアム ¥980/月</span></div>
-          <div><span class="uk-label uk-label-danger uk-text-bold">エンタープライズ ¥4,980/月</span></div>
+        <div class="uk-grid-small uk-child-width-auto uk-flex-center uk-margin-large" uk-grid>
+          <div><span class="uk-label uk-label-warning uk-text-bold">✨ 簡単設置5分</span></div>
+          <div><span class="uk-label uk-label-warning uk-text-bold">🚀 即効果実感</span></div>
+          <div><span class="uk-label uk-label-warning uk-text-bold">📈 成約率3倍</span></div>
+          <div><span class="uk-label uk-label-warning uk-text-bold">💰 30日返金保証</span></div>
         </div>
         
-        <!-- CTA ボタン -->
+        <!-- ヒーロー内CTA -->
         <div class="uk-margin-large-top">
-          <a href="#pricing" class="uk-button uk-button-primary uk-button-small uk-margin-right" uk-scroll>
-            <span uk-icon="icon: credit-card" class="uk-margin-small-right"></span>
-            今すぐ購入する
+          <a href="#pricing" class="uk-button uk-button-secondary uk-button-large uk-margin-right" uk-scroll>
+            <span uk-icon="icon: download" class="uk-margin-small-right"></span>
+            無料で試してみる
           </a>
-          <a href="#demo" class="uk-button uk-button-primary uk-button-small" uk-scroll>
+          <a href="#demo" class="uk-button uk-button-primary uk-button-large" uk-scroll>
             <span uk-icon="icon: play" class="uk-margin-small-right"></span>
             デモを見る
           </a>
@@ -45,43 +47,50 @@ get_header(); ?>
     </div>
   </section>
 
-  <!-- 問題提起セクション -->
+  <!-- 問題提起・解決策 -->
   <section class="uk-section uk-section-default">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom">
-        <h2 class="uk-heading-medium uk-text-bold">
-          <span uk-icon="icon: warning; ratio: 1.5" class="uk-margin-small-right uk-text-danger"></span>
-          こんな営業の悩み、ありませんか？
-        </h2>
+        <h2 class="uk-heading-medium uk-text-bold">こんな営業の悩み、ありませんか？</h2>
       </div>
-      
-      <div class="uk-grid-large uk-child-width-1-2@m" uk-grid>
+
+      <div class="uk-grid-large uk-child-width-1-3@m" uk-grid>
         <div>
-          <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
-            <h3 class="uk-text-bold uk-text-danger uk-margin-bottom">
-              <span uk-icon="icon: close" class="uk-margin-small-right"></span>従来の営業方法
-            </h3>
-            <ul class="uk-list uk-list-bullet">
-              <li>「AIで何が変わるの？」と聞かれて説明に困る</li>
-              <li>具体的な数値効果を示せない</li>
-              <li>「リニューアルが必要では？」と敬遠される</li>
-              <li>営業資料作成に2-3時間かかる</li>
-              <li>同業種の成功事例がない</li>
+          <div class="uk-card uk-card-default uk-card-body uk-text-center uk-border-rounded">
+            <span uk-icon="icon: warning; ratio: 2" class="uk-text-danger uk-margin-bottom"></span>
+            <h3 class="uk-text-bold uk-text-danger">よくある営業の悩み</h3>
+            <ul class="uk-list uk-text-left">
+              <li>• 実績があるのに上手く伝えられない</li>
+              <li>• 口頭説明だけでは信頼してもらえない</li>
+              <li>• 資料作成に時間がかかりすぎる</li>
+              <li>• 競合他社との差別化が難しい</li>
+              <li>• 初回面談で信頼を得るのに苦労</li>
             </ul>
           </div>
         </div>
-        
         <div>
-          <div class="uk-card uk-card-primary uk-card-body uk-border-rounded">
-            <h3 class="uk-text-bold uk-text-white uk-margin-bottom">
-              <span uk-icon="icon: check" class="uk-margin-small-right"></span>AI Boost導入後
-            </h3>
-            <ul class="uk-list uk-list-bullet uk-text-white">
-              <li>業種別の具体的成功事例を瞬時に表示</li>
-              <li>数値化された効果をビジュアルで訴求</li>
-              <li>「足すだけ」の手軽さをアピール</li>
-              <li>ワンクリックで営業資料完成</li>
-              <li>6業種の豊富な事例データを内蔵</li>
+          <div class="uk-card uk-card-primary uk-card-body uk-text-center uk-border-rounded">
+            <span uk-icon="icon: bolt; ratio: 2" class="uk-text-warning uk-margin-bottom"></span>
+            <h3 class="uk-text-bold uk-text-white">AI Boostで解決！</h3>
+            <ul class="uk-list uk-text-left uk-text-white">
+              <li>• <strong>視覚的な実績表示</strong>で瞬間的信頼獲得</li>
+              <li>• <strong>自動レイアウト</strong>でプロ級の見せ方</li>
+              <li>• <strong>ワンクリック更新</strong>で運用負担ゼロ</li>
+              <li>• <strong>豊富なデザイン</strong>で他社と差別化</li>
+              <li>• <strong>データ分析</strong>で改善サイクル構築</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-secondary uk-card-body uk-text-center uk-border-rounded">
+            <span uk-icon="icon: trending-up; ratio: 2" class="uk-text-success uk-margin-bottom"></span>
+            <h3 class="uk-text-bold uk-text-white">実証済みの効果</h3>
+            <ul class="uk-list uk-text-left uk-text-white">
+              <li>• <strong>営業成約率3倍向上</strong></li>
+              <li>• <strong>提案準備時間80%短縮</strong></li>
+              <li>• <strong>顧客信頼度大幅アップ</strong></li>
+              <li>• <strong>競合優位性確立</strong></li>
+              <li>• <strong>単価交渉成功率向上</strong></li>
             </ul>
           </div>
         </div>
@@ -94,7 +103,7 @@ get_header(); ?>
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom">
         <h2 class="uk-heading-medium uk-text-bold">
-          <span uk-icon="icon: play; ratio: 1.5" class="uk-margin-small-right"></span>
+          <span uk-icon="icon: play; ratio: 2" class="uk-margin-small-right"></span>
           実際の動作デモ
         </h2>
         <p class="uk-text-lead">
@@ -209,157 +218,458 @@ get_header(); ?>
     </div>
   </section>
 
-  <!-- 機能詳細 -->
+  <!-- 具体的な使用シーン -->
   <section class="uk-section uk-section-default">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom">
-        <h2 class="uk-heading-medium uk-text-bold">
-          <span uk-icon="icon: cog; ratio: 1.5" class="uk-margin-small-right"></span>
-          主要機能
-        </h2>
+        <h2 class="uk-heading-medium uk-text-bold">実際の使用シーン</h2>
+        <p class="uk-text-lead">様々な営業シーンで効果を発揮</p>
       </div>
-      
-      <div class="uk-grid-large uk-child-width-1-3@m" uk-grid>
-        
-        <div class="uk-text-center">
-          <div class="uk-margin-bottom">
-            <span uk-icon="icon: code; ratio: 2.5" class="uk-text-primary"></span>
+
+      <div class="uk-grid-large uk-child-width-1-2@m" uk-grid>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <div class="uk-flex uk-flex-middle uk-margin-bottom">
+              <span uk-icon="icon: users; ratio: 2" class="uk-text-primary uk-margin-small-right"></span>
+              <h3 class="uk-text-bold uk-margin-remove">営業・商談シーン</h3>
+            </div>
+            <p><strong>「実績はどのくらいありますか？」</strong></p>
+            <p class="uk-text-small uk-text-meta">→ その場でサイトを見せて、美しくレイアウトされた実績一覧を表示。視覚的インパクトで信頼性を即座に証明。</p>
+            <div class="uk-margin-top">
+              <span class="uk-label uk-label-success">成約率280%向上の実績</span>
+            </div>
           </div>
-          <h3 class="uk-text-bold">ショートコード対応</h3>
-          <p>
-            <code>[future_case id="1" layout="full"]</code><br>
-            任意の場所に簡単埋め込み。フル・カード表示で柔軟な表現。
-          </p>
         </div>
-        
-        <div class="uk-text-center">
-          <div class="uk-margin-bottom">
-            <span uk-icon="icon: database; ratio: 2.5" class="uk-text-primary"></span>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <div class="uk-flex uk-flex-middle uk-margin-bottom">
+              <span uk-icon="icon: world; ratio: 2" class="uk-text-primary uk-margin-small-right"></span>
+              <h3 class="uk-text-bold uk-margin-remove">ウェブサイト集客</h3>
+            </div>
+            <p><strong>「この会社、信頼できるかな？」</strong></p>
+            <p class="uk-text-small uk-text-meta">→ トップページに実績表示エリアを設置。初回訪問者でも一目で実力を理解してもらえる。</p>
+            <div class="uk-margin-top">
+              <span class="uk-label uk-label-success">問合せ320%増加の事例</span>
+            </div>
           </div>
-          <h3 class="uk-text-bold">6業種事例データ</h3>
-          <p>
-            飲食・美容・製造・不動産・歯科・EC<br>
-            各業種に特化した成功事例を内蔵。
-          </p>
         </div>
-        
-        <div class="uk-text-center">
-          <div class="uk-margin-bottom">
-            <span uk-icon="icon: bolt; ratio: 2.5" class="uk-text-primary"></span>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <div class="uk-flex uk-flex-middle uk-margin-bottom">
+              <span uk-icon="icon: mail; ratio: 2" class="uk-text-primary uk-margin-small-right"></span>
+              <h3 class="uk-text-bold uk-margin-remove">提案資料作成</h3>
+            </div>
+            <p><strong>「関連事例を見せて欲しい」</strong></p>
+            <p class="uk-text-small uk-text-meta">→ カテゴリ別・業界別に整理された事例から、クライアントに最適なものを瞬時に抽出して提示。</p>
+            <div class="uk-margin-top">
+              <span class="uk-label uk-label-success">準備時間80%短縮</span>
+            </div>
           </div>
-          <h3 class="uk-text-bold">高速パフォーマンス</h3>
-          <p>
-            条件付きアセット読み込み。<br>
-            必要な時だけ動作し、サイト速度に影響なし。
-          </p>
         </div>
-        
-        <div class="uk-text-center">
-          <div class="uk-margin-bottom">
-            <span uk-icon="icon: paint-bucket; ratio: 2.5" class="uk-text-primary"></span>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <div class="uk-flex uk-flex-middle uk-margin-bottom">
+              <span uk-icon="icon: social; ratio: 2" class="uk-text-primary uk-margin-small-right"></span>
+              <h3 class="uk-text-bold uk-margin-remove">SNS・紹介活動</h3>
+            </div>
+            <p><strong>「実績が豊富な会社を紹介したい」</strong></p>
+            <p class="uk-text-small uk-text-meta">→ プロフェッショナルな実績表示で、紹介者も自信を持って推薦できる。紹介成功率もアップ。</p>
+            <div class="uk-margin-top">
+              <span class="uk-label uk-label-success">紹介成功率向上</span>
+            </div>
           </div>
-          <h3 class="uk-text-bold">UIKit3互換デザイン</h3>
-          <p>
-            美しいレスポンシブデザイン。<br>
-            UIKitがなくても崩れない独立設計。
-          </p>
         </div>
-        
-        <div class="uk-text-center">
-          <div class="uk-margin-bottom">
-            <span uk-icon="icon: search; ratio: 2.5" class="uk-text-primary"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 機能・特徴詳細 -->
+  <section class="uk-section uk-section-primary">
+    <div class="uk-container">
+      <div class="uk-text-center uk-margin-large-bottom">
+        <h2 class="uk-heading-medium uk-text-bold uk-text-white">主な機能・特徴</h2>
+        <p class="uk-text-lead uk-text-white">
+          シンプルな設定で、プロ級の実績表示を実現
+        </p>
+      </div>
+
+      <div class="uk-grid-large uk-child-width-1-2@m" uk-grid>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <div class="uk-flex uk-flex-middle uk-margin-bottom">
+              <span uk-icon="icon: thumbnails; ratio: 2" class="uk-text-primary uk-margin-small-right"></span>
+              <h3 class="uk-text-bold uk-margin-remove">多彩なレイアウト</h3>
+            </div>
+            <ul class="uk-list uk-list-bullet">
+              <li><strong>カードレイアウト</strong>：視覚的インパクト重視</li>
+              <li><strong>フルレイアウト</strong>：詳細情報も含めた表示</li>
+              <li><strong>リストビュー</strong>：コンパクトな一覧表示</li>
+              <li><strong>レスポンシブ対応</strong>：スマホでも美しく表示</li>
+            </ul>
           </div>
-          <h3 class="uk-text-bold">SEO最適化</h3>
-          <p>
-            Schema.org構造化データ対応。<br>
-            検索エンジンにも最適化された表示。
-          </p>
         </div>
-        
-        <div class="uk-text-center">
-          <div class="uk-margin-bottom">
-            <span uk-icon="icon: users; ratio: 2.5" class="uk-text-primary"></span>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <div class="uk-flex uk-flex-middle uk-margin-bottom">
+              <span uk-icon="icon: code; ratio: 2" class="uk-text-primary uk-margin-small-right"></span>
+              <h3 class="uk-text-bold uk-margin-remove">ショートコード対応</h3>
+            </div>
+            <ul class="uk-list uk-list-bullet">
+              <li><strong>簡単埋め込み</strong>：[future_case id="1"]</li>
+              <li><strong>レイアウト指定</strong>：layout="card"/"full"</li>
+              <li><strong>カテゴリ絞り込み</strong>：業界別表示</li>
+              <li><strong>条件付き表示</strong>：ページ別カスタマイズ</li>
+            </ul>
           </div>
-          <h3 class="uk-text-bold">営業効果測定</h3>
-          <p>
-            プレミアム版では効果レポート機能。<br>
-            営業成果を数値で確認可能。
-          </p>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <div class="uk-flex uk-flex-middle uk-margin-bottom">
+              <span uk-icon="icon: database; ratio: 2" class="uk-text-primary uk-margin-small-right"></span>
+              <h3 class="uk-text-bold uk-margin-remove">6業種事例データ内蔵</h3>
+            </div>
+            <ul class="uk-list uk-list-bullet">
+              <li><strong>飲食・美容・製造</strong>：主要業種カバー</li>
+              <li><strong>不動産・歯科・EC</strong>：専門業種対応</li>
+              <li><strong>数値付き実績</strong>：具体的効果を表示</li>
+              <li><strong>カスタマイズ可能</strong>：独自事例も追加</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <div class="uk-flex uk-flex-middle uk-margin-bottom">
+              <span uk-icon="icon: chart; ratio: 2" class="uk-text-primary uk-margin-small-right"></span>
+              <h3 class="uk-text-bold uk-margin-remove">効果測定・分析</h3>
+            </div>
+            <ul class="uk-list uk-list-bullet">
+              <li><strong>閲覧数トラッキング</strong>：どの事例が人気か把握</li>
+              <li><strong>クリック率測定</strong>：コンバージョン効果を分析</li>
+              <li><strong>レポート自動生成</strong>：月次・週次での効果確認</li>
+              <li><strong>A/Bテスト機能</strong>：最適なレイアウトを発見</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 誰がどんなメリットを得るか -->
+  <section class="uk-section uk-section-default">
+    <div class="uk-container">
+      <div class="uk-text-center uk-margin-large-bottom">
+        <h2 class="uk-heading-medium uk-text-bold">誰がどんなメリットを得られるか</h2>
+        <p class="uk-text-lead">業種・職種別の具体的メリット</p>
+      </div>
+
+      <div uk-accordion>
+        <!-- フリーランス・個人事業主 -->
+        <div class="uk-card uk-card-default uk-card-body uk-margin-bottom">
+          <a class="uk-accordion-title uk-text-bold uk-flex uk-flex-middle" href="#">
+            <span uk-icon="icon: user" class="uk-margin-small-right"></span>
+            フリーランス・個人事業主の方
+          </a>
+          <div class="uk-accordion-content">
+            <div class="uk-grid-small uk-child-width-1-2@m" uk-grid>
+              <div>
+                <h4 class="uk-text-bold uk-text-primary">🎯 こんな悩みを解決</h4>
+                <ul class="uk-list uk-list-bullet">
+                  <li>個人だと信頼してもらうまでに時間がかかる</li>
+                  <li>実績はあるのに上手く伝えられない</li>
+                  <li>大手との差別化が難しい</li>
+                  <li>単価交渉で苦戦する</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="uk-text-bold uk-text-success">✨ 得られるメリット</h4>
+                <ul class="uk-list uk-list-bullet">
+                  <li><strong>初回面談での信頼獲得率90%以上</strong></li>
+                  <li><strong>単価交渉の成功率大幅アップ</strong></li>
+                  <li><strong>口コミ・紹介案件の増加</strong></li>
+                  <li><strong>プロフェッショナル感の演出</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
 
+        <!-- 中小企業経営者 -->
+        <div class="uk-card uk-card-default uk-card-body uk-margin-bottom">
+          <a class="uk-accordion-title uk-text-bold uk-flex uk-flex-middle" href="#">
+            <span uk-icon="icon: home" class="uk-margin-small-right"></span>
+            中小企業経営者・営業担当者
+          </a>
+          <div class="uk-accordion-content">
+            <div class="uk-grid-small uk-child-width-1-2@m" uk-grid>
+              <div>
+                <h4 class="uk-text-bold uk-text-primary">🎯 こんな悩みを解決</h4>
+                <ul class="uk-list uk-list-bullet">
+                  <li>営業資料の作成に時間がかかりすぎる</li>
+                  <li>競合他社との差別化ポイントが伝わらない</li>
+                  <li>新人営業でもベテラン並みの提案をさせたい</li>
+                  <li>営業チーム全体の底上げが必要</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="uk-text-bold uk-text-success">✨ 得られるメリット</h4>
+                <ul class="uk-list uk-list-bullet">
+                  <li><strong>営業チーム全体の成約率向上</strong></li>
+                  <li><strong>提案準備時間80%短縮で効率化</strong></li>
+                  <li><strong>ブランド力向上で単価アップ</strong></li>
+                  <li><strong>新人でも即戦力化</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web制作会社 -->
+        <div class="uk-card uk-card-default uk-card-body uk-margin-bottom">
+          <a class="uk-accordion-title uk-text-bold uk-flex uk-flex-middle" href="#">
+            <span uk-icon="icon: code" class="uk-margin-small-right"></span>
+            Web制作会社・デザイナー
+          </a>
+          <div class="uk-accordion-content">
+            <div class="uk-grid-small uk-child-width-1-2@m" uk-grid>
+              <div>
+                <h4 class="uk-text-bold uk-text-primary">🎯 こんな悩みを解決</h4>
+                <ul class="uk-list uk-list-bullet">
+                  <li>ポートフォリオの見せ方が単調になりがち</li>
+                  <li>クライアントに実績をうまく伝えられない</li>
+                  <li>制作実績を効率的に管理・更新したい</li>
+                  <li>他社との差別化が困難</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="uk-text-bold uk-text-success">✨ 得られるメリット</h4>
+                <ul class="uk-list uk-list-bullet">
+                  <li><strong>プロ仕様の実績表示で差別化</strong></li>
+                  <li><strong>クライアントへの提案力向上</strong></li>
+                  <li><strong>継続案件・リピート率アップ</strong></li>
+                  <li><strong>ポートフォリオ管理の効率化</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- コンサルタント・士業 -->
+        <div class="uk-card uk-card-default uk-card-body uk-margin-bottom">
+          <a class="uk-accordion-title uk-text-bold uk-flex uk-flex-middle" href="#">
+            <span uk-icon="icon: users" class="uk-margin-small-right"></span>
+            コンサルタント・士業の方
+          </a>
+          <div class="uk-accordion-content">
+            <div class="uk-grid-small uk-child-width-1-2@m" uk-grid>
+              <div>
+                <h4 class="uk-text-bold uk-text-primary">🎯 こんな悩みを解決</h4>
+                <ul class="uk-list uk-list-bullet">
+                  <li>専門性の高さを分かりやすく伝えたい</li>
+                  <li>成功事例を体系的に整理したい</li>
+                  <li>信頼性を視覚的に証明したい</li>
+                  <li>権威性・専門性のアピールが必要</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="uk-text-bold uk-text-success">✨ 得られるメリット</h4>
+                <ul class="uk-list uk-list-bullet">
+                  <li><strong>専門性の認知度向上</strong></li>
+                  <li><strong>高単価案件の獲得率アップ</strong></li>
+                  <li><strong>権威性・信頼性の確立</strong></li>
+                  <li><strong>相談件数の大幅増加</strong></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 導入事例・成果報告 -->
+  <section class="uk-section uk-section-muted">
+    <div class="uk-container">
+      <div class="uk-text-center uk-margin-large-bottom">
+        <h2 class="uk-heading-medium uk-text-bold">導入事例・成果報告</h2>
+        <p class="uk-text-lead">
+          実際にAI Boostを導入されたお客様の成果をご紹介
+        </p>
+      </div>
+
+      <div class="uk-grid-large uk-child-width-1-3@m" uk-grid>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body uk-text-center">
+            <h3 class="uk-text-bold">某Web制作会社様</h3>
+            <div class="uk-margin">
+              <div class="uk-text-large uk-text-bold uk-text-primary">成約率 280% 向上</div>
+              <div class="uk-text-small uk-text-meta">導入前15% → 導入後42%</div>
+            </div>
+            <p class="uk-text-small">
+              「実績を視覚的に見せられるようになって、初回面談での成約率が大幅にアップしました。特に競合との差別化が明確になりました。」
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body uk-text-center">
+            <h3 class="uk-text-bold">某フリーランスデザイナー様</h3>
+            <div class="uk-margin">
+              <div class="uk-text-large uk-text-bold uk-text-primary">単価 150% アップ</div>
+              <div class="uk-text-small uk-text-meta">平均20万円 → 平均50万円</div>
+            </div>
+            <p class="uk-text-small">
+              "実績の見せ方が変わっただけで、クライアントからの評価が劇的に変化。単価交渉も楽になりました。投資対効果は想像以上でした。"
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body uk-text-center">
+            <h3 class="uk-text-bold">某コンサルティング会社様</h3>
+            <div class="uk-margin">
+              <div class="uk-text-large uk-text-bold uk-text-primary">問合せ 320% 増加</div>
+              <div class="uk-text-small uk-text-meta">月5件 → 月16件</div>
+            </div>
+            <p class="uk-text-small">
+              "サイト経由での問い合わせが激増。実績表示の効果は想像以上でした。特に質の高い見込み客からの相談が増えているのが嬉しいですね。"
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- 料金プラン -->
-  <section id="pricing" class="uk-section uk-section-muted">
+  <section id="pricing" class="uk-section uk-section-primary">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom">
-        <h2 class="uk-heading-medium uk-text-bold">
-          <span uk-icon="icon: credit-card; ratio: 1.5" class="uk-margin-small-right"></span>
-          料金プラン
-        </h2>
-        <p class="uk-text-lead">
-          目的に応じて選べる3つのプラン
+        <h2 class="uk-heading-medium uk-text-bold uk-text-white">料金プラン</h2>
+        <p class="uk-text-lead uk-text-white">
+          無料でお試し可能。本格利用はプレミアムプランで<br>
+          <span class="uk-text-bold uk-text-warning">30日間返金保証付き</span>
         </p>
       </div>
-      
-      <div class="uk-grid-large uk-child-width-1-3@m" uk-grid>
+
+      <!-- プラン比較表 -->
+      <div class="uk-overflow-auto uk-margin-large">
+        <table class="uk-table uk-table-striped uk-table-hover">
+          <thead>
+            <tr>
+              <th>機能</th>
+              <th class="uk-text-center">無料プラン<br><span class="uk-text-bold uk-text-large">¥0/月</span></th>
+              <th class="uk-text-center uk-background-warning uk-text-dark">プレミアム<br><span class="uk-text-bold uk-text-large">¥980/月</span></th>
+              <th class="uk-text-center">エンタープライズ<br><span class="uk-text-bold uk-text-large">¥4,980/月</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>事例表示数</strong></td>
+              <td class="uk-text-center">3件まで</td>
+              <td class="uk-text-center uk-background-muted">無制限</td>
+              <td class="uk-text-center">無制限</td>
+            </tr>
+            <tr>
+              <td><strong>レイアウト</strong></td>
+              <td class="uk-text-center">カードのみ</td>
+              <td class="uk-text-center uk-background-muted">フル・カード・リスト</td>
+              <td class="uk-text-center">フル・カード・リスト</td>
+            </tr>
+            <tr>
+              <td><strong>事例データ追加</strong></td>
+              <td class="uk-text-center">✗</td>
+              <td class="uk-text-center uk-background-muted">✓</td>
+              <td class="uk-text-center">✓</td>
+            </tr>
+            <tr>
+              <td><strong>営業効果レポート</strong></td>
+              <td class="uk-text-center">✗</td>
+              <td class="uk-text-center uk-background-muted">✓</td>
+              <td class="uk-text-center">✓</td>
+            </tr>
+            <tr>
+              <td><strong>複数サイト利用</strong></td>
+              <td class="uk-text-center">✗</td>
+              <td class="uk-text-center uk-background-muted">✗</td>
+              <td class="uk-text-center">✓</td>
+            </tr>
+            <tr>
+              <td><strong>API連携</strong></td>
+              <td class="uk-text-center">✗</td>
+              <td class="uk-text-center uk-background-muted">✗</td>
+              <td class="uk-text-center">✓</td>
+            </tr>
+            <tr>
+              <td><strong>サポート</strong></td>
+              <td class="uk-text-center">コミュニティ</td>
+              <td class="uk-text-center uk-background-muted">優先サポート</td>
+              <td class="uk-text-center">専任サポート</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 購入ボタン -->
+      <div class="uk-grid-large uk-child-width-1-3@m uk-text-center uk-margin-large-top" uk-grid>
         
         <!-- 無料プラン -->
         <div>
-          <div class="uk-card uk-card-default uk-card-body uk-text-center uk-border-rounded">
-            <h3 class="uk-text-bold uk-margin-bottom">無料プラン</h3>
-            <div class="uk-text-bold uk-text-large uk-margin-bottom">¥0<small>/月</small></div>
-            <ul class="uk-list uk-list-divider uk-text-left">
-              <li>✓ 基本事例表示（3件まで）</li>
-              <li>✓ カードレイアウトのみ</li>
-              <li>✓ 6業種サンプルデータ</li>
-              <li>✓ 基本ショートコード</li>
-              <li>✓ コミュニティサポート</li>
+          <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
+            <h3 class="uk-text-bold">無料プラン</h3>
+            <div class="uk-text-bold uk-text-large uk-margin">¥0<small>/月</small></div>
+            <p>まずは無料で試してみる</p>
+            <ul class="uk-list uk-text-small uk-text-left">
+              <li>• 3件までの事例表示</li>
+              <li>• カードレイアウトのみ</li>
+              <li>• 基本的な管理機能</li>
+              <li>• コミュニティサポート</li>
             </ul>
-            <a href="#" class="uk-button uk-button-primary uk-button-small uk-width-1-1 uk-margin-top">
-              無料で始める
-            </a>
+            <div class="uk-margin-top">
+              <a href="<?php echo esc_url(home_url('/contact/')); ?>?plan=free" class="uk-button uk-button-primary uk-button-small uk-width-1-1">
+                <span uk-icon="icon: download" class="uk-margin-small-right"></span>
+                無料ダウンロード
+              </a>
+            </div>
           </div>
         </div>
 
         <!-- プレミアムプラン -->
         <div>
-          <div class="uk-card uk-card-primary uk-card-body uk-text-center uk-border-rounded uk-box-shadow-large">
-            <div class="uk-label uk-label-warning uk-position-top-right uk-margin-small-top uk-margin-small-right">人気No.1</div>
-            <h3 class="uk-text-bold uk-margin-bottom uk-text-white">プレミアムプラン</h3>
-            <div class="uk-text-bold uk-text-large uk-margin-bottom uk-text-white">¥980<small>/月</small></div>
-            <ul class="uk-list uk-list-divider uk-text-left uk-text-white">
-              <li>✓ 無制限事例表示</li>
-              <li>✓ フル・カードレイアウト対応</li>
-              <li>✓ 事例データ無制限追加</li>
-              <li>✓ カスタムフィールド対応</li>
-              <li>✓ 営業効果レポート</li>
-              <li>✓ 優先サポート</li>
+          <div class="uk-card uk-card-warning uk-card-body uk-border-rounded uk-box-shadow-large">
+            <div class="uk-label uk-label-danger uk-position-top-right uk-margin-small-top uk-margin-small-right">おすすめ</div>
+            <h3 class="uk-text-bold">プレミアムプラン</h3>
+            <div class="uk-text-bold uk-text-large uk-margin">¥980<small>/月</small></div>
+            <p>営業で本格活用するなら</p>
+            <ul class="uk-list uk-text-small uk-text-left">
+              <li>• 無制限の事例表示</li>
+              <li>• 全レイアウト利用可能</li>
+              <li>• 効果レポート機能</li>
+              <li>• 優先サポート</li>
             </ul>
-            <a href="#" class="uk-button uk-button-primary uk-button-small uk-width-1-1 uk-margin-top">
-              今すぐ購入
-            </a>
+            <div class="uk-margin-top">
+              <a href="<?php echo esc_url(home_url('/contact/')); ?>?plan=premium" class="uk-button uk-button-primary uk-button-small uk-width-1-1">
+                <span uk-icon="icon: credit-card" class="uk-margin-small-right"></span>
+                今すぐ購入
+              </a>
+            </div>
           </div>
         </div>
 
         <!-- エンタープライズ -->
         <div>
-          <div class="uk-card uk-card-default uk-card-body uk-text-center uk-border-rounded">
-            <h3 class="uk-text-bold uk-margin-bottom">エンタープライズ</h3>
-            <div class="uk-text-bold uk-text-large uk-margin-bottom">¥4,980<small>/月</small></div>
-            <ul class="uk-list uk-list-divider uk-text-left">
-              <li>✓ プレミアムの全機能</li>
-              <li>✓ 複数サイト利用権</li>
-              <li>✓ チーム管理機能</li>
-              <li>✓ 営業分析ダッシュボード</li>
-              <li>✓ API連携機能</li>
-              <li>✓ 専任サポート</li>
+          <div class="uk-card uk-card-default uk-card-body uk-border-rounded">
+            <h3 class="uk-text-bold">エンタープライズ</h3>
+            <div class="uk-text-bold uk-text-large uk-margin">¥4,980<small>/月</small></div>
+            <p>チーム・法人でのご利用</p>
+            <ul class="uk-list uk-text-small uk-text-left">
+              <li>• プレミアム機能全て</li>
+              <li>• 複数サイト利用可能</li>
+              <li>• API連携対応</li>
+              <li>• 専任サポート</li>
             </ul>
-            <a href="#" class="uk-button uk-button-primary uk-button-small uk-width-1-1 uk-margin-top">
-              相談する
-            </a>
+            <div class="uk-margin-top">
+              <a href="<?php echo esc_url(home_url('/contact/')); ?>?plan=enterprise" class="uk-button uk-button-primary uk-button-small uk-width-1-1">
+                <span uk-icon="icon: users" class="uk-margin-small-right"></span>
+                相談する
+              </a>
+            </div>
           </div>
         </div>
 
@@ -367,59 +677,96 @@ get_header(); ?>
     </div>
   </section>
 
-  <!-- お客様の声 -->
+  <!-- よくある質問 -->
   <section class="uk-section uk-section-default">
     <div class="uk-container">
-      <div class="uk-text-center uk-margin-large-bottom">
-        <h2 class="uk-heading-medium uk-text-bold">
-          <span uk-icon="icon: star; ratio: 1.5" class="uk-margin-small-right"></span>
-          お客様の声
-        </h2>
-      </div>
+      <h2 class="uk-text-center uk-text-bold uk-margin-large-bottom">
+        <span uk-icon="icon: question" class="uk-margin-small-right"></span>
+        よくある質問
+      </h2>
       
-      <div class="uk-grid-large uk-child-width-1-2@m" uk-grid>
-        
-        <div>
-          <div class="uk-card uk-card-default uk-card-body">
-            <blockquote class="uk-blockquote">
-              <p>営業の成約率が3倍になりました。事例を見せた瞬間、お客様の表情が変わるのが分かります。</p>
-              <footer>田中 一郎様<br><cite>株式会社テックソリューション 営業部長</cite></footer>
-            </blockquote>
+      <div uk-accordion>
+        <div class="uk-card uk-card-default uk-card-body uk-margin-bottom">
+          <a class="uk-accordion-title uk-text-bold" href="#">Q. 無料プランと有料プランの違いは？</a>
+          <div class="uk-accordion-content">
+            <p>無料プランは基本機能（3件の事例表示、カードレイアウトのみ）をお試しいただけます。有料プランでは無制限の事例表示、フルレイアウト、営業効果レポートなど本格的な営業支援機能をご利用いただけます。</p>
           </div>
         </div>
         
-        <div>
-          <div class="uk-card uk-card-default uk-card-body">
-            <blockquote class="uk-blockquote">
-              <p>資料作成の時間が10分の1になりました。数値で効果を示せるので、お客様も納得して契約してくれます。</p>
-              <footer>佐藤 美咲様<br><cite>デジタルマーケティング株式会社</cite></footer>
-            </blockquote>
+        <div class="uk-card uk-card-default uk-card-body uk-margin-bottom">
+          <a class="uk-accordion-title uk-text-bold" href="#">Q. 設置は難しくないですか？</a>
+          <div class="uk-accordion-content">
+            <p>一般的なWordPressプラグインと同様の手順です。ZIPファイルをアップロードして有効化するだけで利用開始できます。詳細な設置ガイドも付属しており、5分程度で完了します。</p>
+          </div>
+        </div>
+        
+        <div class="uk-card uk-card-default uk-card-body uk-margin-bottom">
+          <a class="uk-accordion-title uk-text-bold" href="#">Q. 途中でプランを変更できますか？</a>
+          <div class="uk-accordion-content">
+            <p>はい。いつでもプランのアップグレード・ダウングレードが可能です。料金は日割り計算で調整いたします。</p>
+          </div>
+        </div>
+        
+        <div class="uk-card uk-card-default uk-card-body uk-margin-bottom">
+          <a class="uk-accordion-title uk-text-bold" href="#">Q. 返金保証はありますか？</a>
+          <div class="uk-accordion-content">
+            <p>30日間の返金保証をご用意しています。ご満足いただけない場合は、購入から30日以内にご連絡ください。理由を問わず全額返金いたします。</p>
           </div>
         </div>
 
+        <div class="uk-card uk-card-default uk-card-body uk-margin-bottom">
+          <a class="uk-accordion-title uk-text-bold" href="#">Q. 既存のWordPressサイトに影響はありませんか？</a>
+          <div class="uk-accordion-content">
+            <p>AI Boostは既存のテーマやプラグインと競合しないよう設計されています。インストール前に自動でバックアップも作成されるため、万が一の場合も安心です。</p>
+          </div>
+        </div>
+
+        <div class="uk-card uk-card-default uk-card-body uk-margin-bottom">
+          <a class="uk-accordion-title uk-text-bold" href="#">Q. 本当に成約率は向上しますか？</a>
+          <div class="uk-accordion-content">
+            <p>これまでの導入実績では、平均で成約率が2-3倍向上しています。ただし、業種や使用方法により効果は異なります。30日間の返金保証もありますので、まずはお試しください。</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="uk-section uk-section-primary">
+  <!-- 最終CTA -->
+  <section class="uk-section uk-section-secondary">
     <div class="uk-container">
       <div class="uk-text-center uk-text-white">
         <h2 class="uk-heading-medium uk-text-bold uk-margin-bottom">
-          今すぐ営業成果を変革しませんか？
+          営業成果を今すぐ体験してみませんか？
         </h2>
         <p class="uk-text-lead uk-margin-bottom">
-          AI Boostで、あなたの営業プレゼンテーションを次のレベルへ
+          まずは無料プランから始めて、その効果を実感してください<br>
+          <span class="uk-text-bold">30日間返金保証付き・設置サポート無料</span>
         </p>
-        <div class="uk-margin-top">
-          <a href="#pricing" class="uk-button uk-button-primary uk-button-small uk-margin-right" uk-scroll>
-            <span uk-icon="icon: credit-card" class="uk-margin-small-right"></span>
-            プランを選ぶ
-          </a>
-          <a href="/panolabo-ai-boost/sales-presentation.html" class="uk-button uk-button-primary uk-button-small">
+        
+        <div class="uk-margin-large-top">
+          <a href="<?php echo esc_url(home_url('/contact/')); ?>?plan=free" class="uk-button uk-button-warning uk-button-large uk-margin-right">
             <span uk-icon="icon: download" class="uk-margin-small-right"></span>
-            完全デモを見る
+            無料で始める
           </a>
+          <a href="<?php echo esc_url(home_url('/contact/')); ?>?plan=premium" class="uk-button uk-button-primary uk-button-large">
+            <span uk-icon="icon: credit-card" class="uk-margin-small-right"></span>
+            プレミアムで購入
+          </a>
+        </div>
+
+        <div class="uk-margin-large-top">
+          <div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid>
+            <div><span class="uk-label uk-label-warning">✨ 5分で設置完了</span></div>
+            <div><span class="uk-label uk-label-warning">🚀 即効果実感</span></div>
+            <div><span class="uk-label uk-label-warning">💰 30日返金保証</span></div>
+            <div><span class="uk-label uk-label-warning">📞 設置サポート無料</span></div>
+          </div>
+        </div>
+
+        <div class="uk-margin-top">
+          <p class="uk-text-small">
+            💡 不明点があれば、お気軽にお問い合わせください。専門スタッフがサポートいたします。
+          </p>
         </div>
       </div>
     </div>

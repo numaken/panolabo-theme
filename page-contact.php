@@ -79,23 +79,25 @@ get_header();
 
                             <!-- どこでお知りになりましたか？ -->
                             <div class="uk-margin">
-                                <label class="uk-form-label" for="form-how">どこでお知りになりましたか？（必須）</label>
+                                <label class="uk-form-label" for="form-how">どこでお知りになりましたか？</label>
                                 <div class="uk-form-controls">
-                                    <select class="uk-select uk-form-width-large" id="form-how" name="how_did_you_find_us" required>
+                                    <select class="uk-select uk-form-width-large" id="form-how" name="how_did_you_find_us">
                                         <option value="">選択してください</option>
                                         <option value="Google">Google</option>
                                         <option value="Yahoo">Yahoo</option>
                                         <option value="ダイレクトメール">ダイレクトメール</option>
+                                        <option value="その他">その他</option>
                                     </select>
                                 </div>
                             </div>
 
                             <!-- 販売パートナーに関心がありますか？ -->
                             <div class="uk-margin">
-                                <label class="uk-form-label" for="form-partner">販売パートナーに関心がありますか？（必須）</label>
+                                <label class="uk-form-label" for="form-partner">販売パートナーに関心がありますか？</label>
                                 <div class="uk-form-controls">
-                                    <label><input class="uk-radio" type="radio" name="interested_in_partner" value="はい" required> はい</label>
-                                    <label><input class="uk-radio" type="radio" name="interested_in_partner" value="いいえ" required> いいえ</label>
+                                    <label><input class="uk-radio" type="radio" name="interested_in_partner" value="はい"> はい</label>
+                                    <label><input class="uk-radio" type="radio" name="interested_in_partner" value="いいえ"> いいえ</label>
+                                    <label><input class="uk-radio" type="radio" name="interested_in_partner" value="わからない"> わからない</label>
                                 </div>
                             </div>
 

@@ -77,13 +77,15 @@ add_action('wp_head', function () {
 add_action('wp_enqueue_scripts', function () {
     $ver = wp_get_theme()->get('Version') ?: '1.0.0';
     
-    // キャッシュバスティング用タイムスタンプ追加 (2025-08-17)
-    $cache_buster = '20250817-1350';
+    // キャッシュバスティング用タイムスタンプ追加 (2025-08-22)
+    $cache_buster = '20250822-2330';
     $ver_with_timestamp = $ver . '-' . $cache_buster;
     
-    // Theme styles only (UIKit is loaded directly in header.php)
+    // メインスタイルシートを復活
     wp_enqueue_style('theme-style', get_stylesheet_uri(), [], $ver_with_timestamp);
-    wp_enqueue_style('theme-polish', get_template_directory_uri() . '/assets/css/theme-polish.css', ['theme-style'], $ver_with_timestamp);
+    
+    // 追加でnuma.custom.cssも読み込み（UIKit is loaded directly in header.php）
+    wp_enqueue_style('numa-custom', get_template_directory_uri() . '/css/numa.custom.css', ['theme-style'], $ver_with_timestamp);
     
     // Theme JavaScript
     if (file_exists(get_template_directory() . '/dist/main.bundle.js')) {
@@ -360,17 +362,11 @@ function create_panolabo_ai_boost_pages() {
         wp_insert_post($page_data);
     }
     
-    // AI Boost購入ページ
-    if (!get_page_by_path('products-ai-boost')) {
-        $page_data = array(
-            'post_title' => 'Panolabo AI Boost - 購入',
-            'post_content' => '[AI Boost購入ページ - テンプレートが適用されます]',
-            'post_status' => 'publish',
-            'post_type' => 'page',
-            'post_name' => 'products-ai-boost'
-        );
-        wp_insert_post($page_data);
-    }
 }
 add_action('init', 'create_panolabo_ai_boost_pages');
+
+// お問い合わせフォームハンドラーの読み込み（シンプル版に変更）
+if (file_exists(get_template_directory() . '/includes/simple-contact-handler.php')) {
+    require_once get_template_directory() . '/includes/simple-contact-handler.php';
+}
 ?>

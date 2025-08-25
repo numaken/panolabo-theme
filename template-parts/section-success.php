@@ -38,7 +38,7 @@
     </div>
 
     <div class="uk-text-center uk-margin-large-top uk-animation-fade">
-      <a href="<?php echo esc_url(home_url('/contact')); ?>" class="uk-button uk-button-text" uk-scrollspy="cls: uk-animation-scale-up; delay: 500;">
+      <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="uk-button uk-button-text" uk-scrollspy="cls: uk-animation-scale-up; delay: 500;">
         成功事例の詳細を問い合わせる
       </a>
     </div>

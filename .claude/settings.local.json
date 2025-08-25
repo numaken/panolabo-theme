@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:docs.google.com)",
+      "WebFetch(domain:docs.google.com)",
+      "Bash(php:*)",
+      "Bash(awk:*)",
+      "WebFetch(domain:www.panolabollc.com)",
+      "Bash(curl:*)",
+      "Bash(brew install:*)",
+      "Bash(./deploy.sh:*)",
+      "Bash(lftp:*)",
+      "Bash(chmod:*)",
+      "Bash(./deploy-theme.sh:*)",
+      "Bash(rm:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(mv:*)",
+      "WebFetch(domain:chat2doc-beryl.vercel.app)",
+      "Bash(sed:*)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Bash(unzip:*)",
+      "Bash(cp:*)",
+      "Bash(mkdir:*)",
+      "Bash(./deploy-single.sh:*)",
+      "Bash(touch:*)",
+      "Bash(zip:*)",
+      "Bash(for file in index.php style.css functions.php header.php footer.php)",
+      "Bash(do if [ -f \"$file\" ])",
+      "Bash(then sed -i '' '1s/^\\xEF\\xBB\\xBF//' \"$file\")",
+      "Bash(true)",
+      "Bash(fi)",
+      "Bash(done)",
+      "Bash(./fix-theme.sh:*)",
+      "Bash(/Users/numaken/Development/wordpress/theme/deploy-production.sh:*)",
+      "Bash(./deploy-production.sh)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

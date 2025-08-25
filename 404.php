@@ -56,7 +56,7 @@ get_header(); ?>
               お問い合わせ
             </h3>
             <p>技術相談・プロジェクト相談承ります</p>
-            <a href="<?php echo home_url('/contact'); ?>" class="uk-button uk-button-primary uk-button-small">
+            <a href="<?php echo home_url('/contact/'); ?>" class="uk-button uk-button-primary uk-button-small">
               お問い合わせ
             </a>
           </div>

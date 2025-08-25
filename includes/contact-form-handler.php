@@ -8,6 +8,9 @@
  * お問い合わせフォーム送信処理（新版）
  */
 function panolabo_handle_contact_form_submission() {
+    // デバッグ用：送信されたデータをログに記録
+    error_log('Contact form submission received. POST data: ' . print_r($_POST, true));
+    
     // セキュリティチェック（新旧フォーム対応）
     $nonce_field = $_POST['_wpnonce'] ?? $_POST['contact_form_nonce_field'] ?? '';
     $nonce_action = 'panolabo_contact_form';
@@ -17,7 +20,11 @@ function panolabo_handle_contact_form_submission() {
         $nonce_action = 'contact_form_nonce';
     }
     
+    // デバッグ用：ナンス情報をログに記録
+    error_log('Nonce field: ' . $nonce_field . ', Action: ' . $nonce_action);
+    
     if (!$nonce_field || !wp_verify_nonce($nonce_field, $nonce_action)) {
+        error_log('Nonce verification failed');
         wp_die('セキュリティエラー: 不正なリクエストです。', 'Security Error', ['response' => 403]);
     }
     
@@ -53,9 +60,21 @@ function panolabo_handle_contact_form_submission() {
     ];
     
     // バリデーション
+    error_log('Form data for validation: ' . print_r($form_data, true));
     $validation_errors = validate_contact_form($form_data);
+    error_log('Validation errors: ' . print_r($validation_errors, true));
     
     if (!empty($validation_errors)) {
+        // 旧フォームの場合はリダイレクト処理
+        if (isset($_POST['contact_form_nonce_field'])) {
+            $redirect_url = add_query_arg([
+                'success' => 'false',
+                'errors' => urlencode(implode(', ', $validation_errors))
+            ], wp_get_referer());
+            wp_redirect($redirect_url);
+            exit;
+        }
+        
         wp_send_json_error([
             'message' => '入力内容に不備があります。',
             'errors' => $validation_errors
@@ -115,7 +134,7 @@ function validate_contact_form($data) {
     
     if (empty($data['type'])) {
         $errors['type'] = 'お問い合わせ種別を選択してください。';
-    } elseif (!in_array($data['type'], ['VR制作', 'アプリ開発', 'Web制作', 'AI統合', '技術相談', 'その他'])) {
+    } elseif (!in_array($data['type'], ['サービスについて', 'パートナーシップ', '採用について', 'VR制作', 'アプリ開発', 'Web制作', 'AI統合', '技術相談', 'その他'])) {
         $errors['type'] = '不正なお問い合わせ種別が選択されています。';
     }
     
@@ -127,9 +146,19 @@ function validate_contact_form($data) {
         $errors['message'] = 'お問い合わせ内容は2000文字以内で入力してください。';
     }
     
-    if ($data['privacy_consent'] !== 'はい') {
-        $errors['privacy_consent'] = 'プライバシーポリシーに同意してください。';
+    // 必須項目のチェック
+    if (empty($data['how_found'])) {
+        $errors['how_found'] = 'どこでお知りになったかを選択してください。';
     }
+    
+    if (empty($data['partner_interest'])) {
+        $errors['partner_interest'] = 'パートナーに関心があるかをお答えください。';
+    }
+    
+    // プライバシー同意チェック（任意項目として扱う）
+    // if ($data['privacy_consent'] !== 'はい') {
+    //     $errors['privacy_consent'] = 'プライバシーポリシーに同意してください。';
+    // }
     
     // 電話番号の形式チェック（任意項目）
     if (!empty($data['phone']) && !preg_match('/^[\d\-\(\)\+\s]+$/', $data['phone'])) {

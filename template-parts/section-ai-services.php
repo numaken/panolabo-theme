@@ -217,7 +217,7 @@
            uk-scrollspy="cls: uk-animation-scale-up; delay: 500;">
            <span uk-icon="icon: thumbnails"></span> 制作サービス詳細
         </a>
-        <a href="<?php echo esc_url(home_url('/contact')); ?>"
+        <a href="<?php echo esc_url(home_url('/contact/')); ?>"
            class="uk-button uk-button-text"
            uk-scrollspy="cls: uk-animation-scale-up; delay: 700;">
            <span uk-icon="icon: bolt"></span> AI導入の相談

@@ -10,7 +10,7 @@ get_header();
     <!-- ヒーローセクション -->
     <div class="uk-text-center uk-margin-large-bottom">
       <h1 class="uk-heading-medium">技術とアイデアで、中小企業の未来をつくる</h1>
-      <a class="uk-button uk-button-primary uk-button-small" href="/contact">お問い合わせはこちら</a>
+      <a class="uk-button uk-button-primary uk-button-small" href="<?php echo esc_url(home_url('/contact/')); ?>">お問い合わせはこちら</a>
     </div>
 
     <!-- 代表メッセージ -->

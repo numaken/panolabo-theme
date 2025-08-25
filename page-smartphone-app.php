@@ -170,7 +170,7 @@ get_header();
     </div>
     <p class="uk-text-center uk-margin-large-top uk-text-lead">必要な機能だけ選んで組み合わせる、<br class="uk-visible@s">オーダーメイド感覚のアプリ構築が可能です。</p>
     <div class="uk-text-center uk-margin-top">
-      <a href="<?php echo home_url('/contact'); ?>" class="uk-button uk-button-text">無料相談・資料請求はこちら</a>
+      <a href="<?php echo home_url('/contact/'); ?>" class="uk-button uk-button-text">無料相談・資料請求はこちら</a>
     </div>
   </div>
 </section>
@@ -181,7 +181,7 @@ get_header();
     <h2 class="uk-heading-line uk-text-center uk-text-bold"><span>今なら初期費用¥100,000〜！</span></h2>
     <p class="uk-text-center uk-text-lead">まずは無料相談。どんな業種でも対応可能です。</p>
     <div class="uk-text-center uk-margin-top">
-      <a href="<?php echo home_url('/contact'); ?>" class="uk-button uk-button-text">無料で相談してみる</a>
+      <a href="<?php echo home_url('/contact/'); ?>" class="uk-button uk-button-text">無料で相談してみる</a>
     </div>
   </div>
 </section>

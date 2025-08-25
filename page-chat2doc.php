@@ -303,7 +303,7 @@ get_header();
         <a href="https://chat2doc-beryl.vercel.app/app" class="uk-button uk-button-text" target="_blank">🚀 無料で試してみる</a>
       </div>
       <div class="uk-visible@s">
-        <a href="<?php echo home_url('/contact'); ?>" class="uk-button uk-button-text">📞 お問い合わせ</a>
+        <a href="<?php echo home_url('/contact/'); ?>" class="uk-button uk-button-text">📞 お問い合わせ</a>
       </div>
     </div>
     <p class="uk-text-center uk-margin-top" style="opacity: 0.8;">※アカウント登録不要・プライバシー完全保護</p>

@@ -16,7 +16,7 @@
         
         <h3 class="uk-heading-bullet">お問い合わせ</h3>
         <p>詳細については、お問い合わせフォームよりご連絡ください。</p>
-        <a href="<?php echo home_url('/contact'); ?>" class="uk-button uk-button-primary uk-button-small">お問い合わせ</a>
+        <a href="<?php echo home_url('/contact/'); ?>" class="uk-button uk-button-primary uk-button-small">お問い合わせ</a>
     </div>
 </section>
 

@@ -95,7 +95,7 @@ get_header();
 
     <!-- CTA -->
     <div class="uk-text-center uk-margin-large-top uk-animation-fade">
-      <a href="<?php echo esc_url(home_url('/contact')); ?>"
+      <a href="<?php echo esc_url(home_url('/contact/')); ?>"
          class="uk-button uk-button-text"
          uk-scrollspy="cls: uk-animation-scale-up; delay: 500;">
          パートナー制度について個別相談する

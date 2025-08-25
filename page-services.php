@@ -9,57 +9,57 @@ get_header(); ?>
 <main class="uk-section ">
   
   <!-- Hero Section: サービス概要 -->
-  <section class="uk-section  uk-background-cover uk-background-center-center uk-background-norepeat" style="background-image: url('<?php bloginfo('template_directory'); ?>/images/hero-services.jpg');">
+  <section class="uk-section uk-section-large parallax" style="background: linear-gradient(rgba(49, 107, 63, 0.9), rgba(46, 134, 171, 0.9)), url('<?php bloginfo('template_directory'); ?>/images/hero-services.jpg'); background-size: cover; background-position: center center; background-attachment: scroll; color: white;">
     <div class="uk-container">
       <div class="uk-text-center" uk-scrollspy="cls: uk-animation-fade; delay: 200;">
         <h1 class="uk-heading-primary uk-text-bold uk-margin-bottom">
-          <span class="uk-text-emphasis">panolaboのサービス</span><br>
-          <span class=" uk-text-large">実績×AI技術で、ビジネスを次の次元へ</span>
+          <span class="uk-text-emphasis">Panolaboのサービス</span><br>
+          <span class="uk-text-large">実績×AI技術で、ビジネスを次の次元へ</span>
         </h1>
         <p class="uk-text-lead uk-margin-bottom">
           <strong>VR・アプリ・Web制作</strong>の9年間の実績に、<br>
           AI技術を統合して「継続成長するビジネス」を実現
         </p>
         <div class="uk-grid-small uk-child-width-auto uk-flex-center uk-margin-top" uk-grid>
-          <div><span class="uk-label  uk-text-bold">基本制作</span></div>
-          <div><span class="uk-label  uk-text-bold">+ AI強化</span></div>
-          <div><span class="uk-label  uk-text-bold">= 継続収益</span></div>
+          <div><span class="uk-label uk-label-success uk-text-bold">基本制作</span></div>
+          <div><span class="uk-label uk-label-warning uk-text-bold">+ AI強化</span></div>
+          <div><span class="uk-label uk-label-primary uk-text-bold">= 継続収益</span></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- サービス目次ナビゲーション -->
-  <section class="uk-section  uk-padding-remove-top">
+  <section class="uk-section uk-section-muted">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large">
-        <h2 class="uk-heading-small uk-text-bold  uk-margin-bottom">サービス一覧</h2>
-        <nav class="uk-flex uk-flex-center uk-flex-wrap uk-margin-top">
-          <a href="#vr-service" class="uk-button uk-button-text" uk-scroll>
+        <h2 class="uk-heading-small uk-text-bold uk-margin-bottom">サービス一覧</h2>
+        <nav class="uk-flex uk-flex-center uk-flex-wrap uk-margin-top uk-grid-small" uk-grid>
+          <div><a href="#vr-service" class="uk-button uk-button-default uk-border-rounded" uk-scroll>
             <span uk-icon="icon: world" class="uk-margin-small-right"></span>VR/360°制作
-          </a>
-          <a href="#app-service" class="uk-button uk-button-text" uk-scroll>
+          </a></div>
+          <div><a href="#app-service" class="uk-button uk-button-default uk-border-rounded" uk-scroll>
             <span uk-icon="icon: tablet" class="uk-margin-small-right"></span>アプリ開発
-          </a>
-          <a href="#web-service" class="uk-button uk-button-text" uk-scroll>
+          </a></div>
+          <div><a href="#web-service" class="uk-button uk-button-default uk-border-rounded" uk-scroll>
             <span uk-icon="icon: desktop" class="uk-margin-small-right"></span>Web制作
-          </a>
-          <a href="#ai-service" class="uk-button uk-button-text" uk-scroll>
+          </a></div>
+          <div><a href="#saas-service" class="uk-button uk-button-primary uk-border-rounded" uk-scroll>
+            <span uk-icon="icon: cloud" class="uk-margin-small-right"></span>SaaSサービス
+          </a></div>
+          <div><a href="#ai-service" class="uk-button uk-button-secondary uk-border-rounded" uk-scroll>
             <span uk-icon="icon: future" class="uk-margin-small-right"></span>AI統合
-          </a>
-          <a href="#plugin-service" class="uk-button uk-button-text" uk-scroll>
+          </a></div>
+          <div><a href="#plugin-service" class="uk-button uk-button-default uk-border-rounded" uk-scroll>
             <span uk-icon="icon: wordpress" class="uk-margin-small-right"></span>プラグイン
-          </a>
-          <a href="/panolabo-ai-boost/" class="uk-button uk-button-text" uk-scroll>
-            <span uk-icon="icon: future" class="uk-margin-small-right"></span>AI Boost
-          </a>
+          </a></div>
         </nav>
       </div>
     </div>
   </section>
 
   <!-- 1. VR/360°制作サービス -->
-  <section id="vr-service" class="uk-section ">
+  <section id="vr-service" class="uk-section uk-section-default">
     <div class="uk-container">
       <div class="uk-grid-large uk-child-width-1-2@m uk-flex-middle" uk-grid>
             <div>
@@ -353,12 +353,138 @@ get_header(); ?>
     </div>
   </section>
 
-  <!-- 4. AI統合ソリューション -->
+  <!-- 4. SaaSサービス -->
+  <section id="saas-service" class="uk-section uk-section-primary uk-light">
+    <div class="uk-container">
+      <div class="uk-text-center uk-margin-large-bottom">
+        <h2 class="uk-heading-medium uk-text-bold uk-text-white">
+          <span uk-icon="icon: cloud; ratio: 2" class="uk-margin-small-right"></span>
+          自社SaaSプラットフォーム
+        </h2>
+        <p class="uk-text-lead uk-text-white">
+          受託開発で培った知見を活かし、継続的な価値提供を実現するSaaSサービス群
+        </p>
+      </div>
+
+      <div class="uk-grid-large uk-child-width-1-3@m" uk-grid>
+        
+        <!-- AiPostPilot Pro -->
+        <div>
+          <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
+            <div class="uk-text-center uk-margin-bottom">
+              <span uk-icon="icon: social; ratio: 2" class="uk-text-primary"></span>
+            </div>
+            <h3 class="uk-text-bold uk-text-center uk-margin-bottom">AiPostPilot Pro</h3>
+            <p class="uk-text-center uk-text-small uk-text-muted uk-margin-bottom">ゼロ設定でSNS自動投稿</p>
+            
+            <ul class="uk-list uk-list-bullet uk-text-small uk-margin-bottom">
+              <li>日次・週次の自動配信スケジュール</li>
+              <li>アカウント別の軽量KPI記録</li>
+              <li>WPや外部APIからの連携も拡張可</li>
+              <li>コンテンツ生成〜配信〜ログまで一気通貫</li>
+            </ul>
+            
+            <div class="uk-text-center uk-margin-top">
+              <div class="uk-margin-small-bottom">
+                <span class="uk-label uk-label-success">月額¥2,980〜</span>
+              </div>
+              <a href="<?php echo esc_url(home_url('/products/')); ?>" class="uk-button uk-button-primary uk-width-1-1">
+                詳細を見る
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chat2Doc -->
+        <div>
+          <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
+            <div class="uk-text-center uk-margin-bottom">
+              <span uk-icon="icon: file-text; ratio: 2" class="uk-text-secondary"></span>
+            </div>
+            <h3 class="uk-text-bold uk-text-center uk-margin-bottom">Chat2Doc</h3>
+            <p class="uk-text-center uk-text-small uk-text-muted uk-margin-bottom">AI会話の自動ドキュメント化</p>
+            
+            <ul class="uk-list uk-list-bullet uk-text-small uk-margin-bottom">
+              <li>会話→章立て → 版管理まで自動化</li>
+              <li>議事・要件・仕様書の一次生成</li>
+              <li>OEMで自社ブランド化も可能</li>
+              <li>チーム共有・履歴管理機能</li>
+            </ul>
+            
+            <div class="uk-text-center uk-margin-top">
+              <div class="uk-margin-small-bottom">
+                <span class="uk-label uk-label-warning">月額¥1,980〜</span>
+              </div>
+              <a href="<?php echo esc_url(home_url('/products/')); ?>" class="uk-button uk-button-secondary uk-width-1-1">
+                詳細を見る
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- App Vending -->
+        <div>
+          <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
+            <div class="uk-text-center uk-margin-bottom">
+              <span uk-icon="icon: mobile; ratio: 2" class="uk-text-success"></span>
+              <span class="uk-label uk-label-danger uk-margin-left">NEW</span>
+            </div>
+            <h3 class="uk-text-bold uk-text-center uk-margin-bottom">App Vending</h3>
+            <p class="uk-text-center uk-text-small uk-text-muted uk-margin-bottom">アプリ効率量産プラットフォーム</p>
+            
+            <ul class="uk-list uk-list-bullet uk-text-small uk-margin-bottom">
+              <li>テンプレートベースの高速開発</li>
+              <li>アプリストア最適化（ASO）</li>
+              <li>収益化戦略サポート</li>
+              <li>申請代行・運用サポート</li>
+            </ul>
+            
+            <div class="uk-text-center uk-margin-top">
+              <div class="uk-margin-small-bottom">
+                <span class="uk-label uk-label-primary">¥300k〜/案件</span>
+              </div>
+              <a href="https://app-vending.panolabollc.com/" target="_blank" class="uk-button uk-button-success uk-width-1-1">
+                <span uk-icon="external-link" class="uk-margin-small-right"></span>サービスを見る
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SaaS戦略 -->
+      <div class="uk-margin-large-top">
+        <div class="uk-text-center uk-margin-bottom">
+          <h3 class="uk-text-bold uk-text-white uk-margin-bottom">SaaS事業戦略</h3>
+        </div>
+        
+        <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
+          <div>
+            <div class="uk-card uk-card-default uk-card-body uk-text-center">
+              <h4 class="uk-text-bold uk-margin-bottom">
+                <span uk-icon="refresh" class="uk-margin-small-right"></span>継続収益モデル
+              </h4>
+              <p class="uk-text-small">一度の開発投資で継続的な収益を実現。月額課金モデルで安定したキャッシュフローを構築します。</p>
+            </div>
+          </div>
+          <div>
+            <div class="uk-card uk-card-default uk-card-body uk-text-center">
+              <h4 class="uk-text-bold uk-margin-bottom">
+                <span uk-icon="users" class="uk-margin-small-right"></span>スケーラブル展開
+              </h4>
+              <p class="uk-text-small">受託開発の知見を標準化し、より多くの顧客に価値提供。個別対応からプラットフォーム型へ進化。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. AI統合ソリューション -->
   <section id="ai-service" class="uk-section ">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom">
             <h2 class="uk-heading-medium uk-text-bold ">
-              <span uk-icon="icon: future; ratio: 1.5" class="uk-margin-small-right"></span>
+              <span uk-icon="icon: future; ratio: 2" class="uk-margin-small-right"></span>
               AI統合ソリューション
             </h2>
             <p class="uk-text-lead">
@@ -372,7 +498,7 @@ get_header(); ?>
             <div>
               <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
                 <div class="uk-text-center uk-margin-bottom">
-                  <span uk-icon="icon: database; ratio: 2.5" class=""></span>
+                  <span uk-icon="icon: database; ratio: 2" class=""></span>
                 </div>
                 <h3 class="uk-text-bold uk-text-center uk-margin-bottom">データ分析・予測</h3>
                 <ul class="uk-list uk-list-bullet uk-text-small">
@@ -389,7 +515,7 @@ get_header(); ?>
             <div>
               <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
                 <div class="uk-text-center uk-margin-bottom">
-                  <span uk-icon="icon: cog; ratio: 2.5" class=""></span>
+                  <span uk-icon="icon: cog; ratio: 2" class=""></span>
                 </div>
                 <h3 class="uk-text-bold uk-text-center uk-margin-bottom">自動化・最適化</h3>
                 <ul class="uk-list uk-list-bullet uk-text-small">
@@ -406,7 +532,7 @@ get_header(); ?>
             <div>
               <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
                 <div class="uk-text-center uk-margin-bottom">
-                  <span uk-icon="icon: users; ratio: 2.5" class=""></span>
+                  <span uk-icon="icon: users; ratio: 2" class=""></span>
                 </div>
                 <h3 class="uk-text-bold uk-text-center uk-margin-bottom">パーソナライゼーション</h3>
                 <ul class="uk-list uk-list-bullet uk-text-small">
@@ -450,7 +576,7 @@ get_header(); ?>
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom">
             <h2 class="uk-heading-medium uk-text-bold ">
-              <span uk-icon="icon: wordpress; ratio: 1.5" class="uk-margin-small-right"></span>
+              <span uk-icon="icon: wordpress; ratio: 2" class="uk-margin-small-right"></span>
               WordPressプラグイン開発・販売
             </h2>
             <p class="uk-text-lead">
@@ -473,10 +599,15 @@ get_header(); ?>
                   <p class="uk-text-small uk-margin-small-bottom">
                     <strong>営業支援プラグイン</strong> - AI導入効果を「提案型事例」で視覚化
                   </p>
-                  <div class="uk-grid-small uk-child-width-auto uk-flex-wrap" uk-grid>
+                  <div class="uk-grid-small uk-child-width-auto uk-flex-wrap uk-margin-small-bottom" uk-grid>
                     <div><span class="uk-label uk-label-success uk-text-small">6業種対応</span></div>
                     <div><span class="uk-label uk-label-success uk-text-small">ショートコード</span></div>
                     <div><span class="uk-label uk-label-success uk-text-small">成約率UP</span></div>
+                  </div>
+                  <div class="uk-text-center">
+                    <a href="<?php echo esc_url(home_url('/panolabo-ai-boost/')); ?>" class="uk-button uk-button-secondary uk-button-small">
+                      <span uk-icon="play" class="uk-margin-small-right"></span>実演デモを見る
+                    </a>
                   </div>
                 </div>
               </div>
@@ -582,156 +713,13 @@ get_header(); ?>
     </div>
   </section>
 
-  <!-- AI Boost 実演デモ -->
-  <section class="uk-section uk-section-muted">
-    <div class="uk-container">
-      <div class="uk-text-center uk-margin-large-bottom">
-        <h2 class="uk-heading-medium uk-text-bold">
-          <span uk-icon="icon: future; ratio: 1.5" class="uk-margin-small-right"></span>
-          🚀 AI Boost 実演デモ
-        </h2>
-        <p class="uk-text-lead">
-          「営業でどう見せるか」が一目瞭然。実際のプラグイン出力をご覧ください
-        </p>
-        <div class="uk-alert-primary" uk-alert>
-          <p><strong>💡 このセクションがPanolabo AI Boostプラグインで自動生成されています</strong></p>
-        </div>
-      </div>
-
-      <!-- 業種別事例表示 -->
-      <div class="uk-grid-large uk-child-width-1-2@m" uk-grid>
-        
-        <!-- 飲食店事例（ショートコード使用例） -->
-        <div>
-          <div class="uk-card uk-card-default uk-card-body">
-            <h3 class="uk-text-bold uk-margin-small-bottom">
-              飲食店向け営業シーン
-            </h3>
-            <p class="uk-text-small uk-text-muted uk-margin-small-bottom">
-              コード：<code>[future_case id="1" layout="card"]</code>
-            </p>
-            
-            <!-- ここに実際のショートコード出力 -->
-            <div class="pab-future-case pab-layout-card">
-              <div class="pab-card">
-                <div class="pab-card-content">
-                  <h4 class="pab-card-title">
-                    <a href="#">都内イタリアンレストランの集客自動化事例</a>
-                  </h4>
-                  <div class="pab-card-meta" style="margin-bottom: 15px;">
-                    <span style="background: #316B3F; color: white; padding: 4px 8px; border-radius: 15px; font-size: 0.8rem;">飲食店</span>
-                    <span style="background: #2E86AB; color: white; padding: 4px 8px; border-radius: 15px; font-size: 0.8rem;">東京都渋谷区</span>
-                  </div>
-                  <p class="pab-card-excerpt">SNS自動投稿で来店予約率35%向上、運営工数50%削減を実現</p>
-                  
-                  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 15px 0; font-size: 0.9rem;">
-                    <div style="text-align: center; padding: 10px; background: #e8f5e8; border-radius: 6px;">
-                      <strong style="color: #316B3F;">+35%</strong><br>
-                      <span style="color: #666;">予約率向上</span>
-                    </div>
-                    <div style="text-align: center; padding: 10px; background: #e8f5e8; border-radius: 6px;">
-                      <strong style="color: #316B3F;">-50%</strong><br>
-                      <span style="color: #666;">運営工数</span>
-                    </div>
-                  </div>
-                  
-                  <div style="margin: 15px 0;">
-                    <span style="background: #2E86AB; color: white; padding: 4px 8px; border-radius: 15px; font-size: 0.8rem;">SNS自動投稿</span>
-                  </div>
-                  
-                  <a href="#" style="color: #316B3F; text-decoration: none; font-weight: 600; font-size: 0.9rem;">詳細を見る →</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 美容室事例 -->
-        <div>
-          <div class="uk-card uk-card-default uk-card-body">
-            <h3 class="uk-text-bold uk-margin-small-bottom">
-              美容室向け営業シーン
-            </h3>
-            <p class="uk-text-small uk-text-muted uk-margin-small-bottom">
-              コード：<code>[future_case id="2" layout="card"]</code>
-            </p>
-            
-            <div class="pab-future-case pab-layout-card">
-              <div class="pab-card">
-                <div class="pab-card-content">
-                  <h4 class="pab-card-title">
-                    <a href="#">原宿美容室のブログ自動化＋SNS連携事例</a>
-                  </h4>
-                  <div class="pab-card-meta" style="margin-bottom: 15px;">
-                    <span style="background: #316B3F; color: white; padding: 4px 8px; border-radius: 15px; font-size: 0.8rem;">美容室</span>
-                    <span style="background: #2E86AB; color: white; padding: 4px 8px; border-radius: 15px; font-size: 0.8rem;">東京都渋谷区</span>
-                  </div>
-                  <p class="pab-card-excerpt">AI記事生成とSNS自動投稿で新規客獲得率40%向上</p>
-                  
-                  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 15px 0; font-size: 0.9rem;">
-                    <div style="text-align: center; padding: 10px; background: #e8f5e8; border-radius: 6px;">
-                      <strong style="color: #316B3F;">+40%</strong><br>
-                      <span style="color: #666;">新規客獲得</span>
-                    </div>
-                    <div style="text-align: center; padding: 10px; background: #e8f5e8; border-radius: 6px;">
-                      <strong style="color: #316B3F;">-70%</strong><br>
-                      <span style="color: #666;">制作工数</span>
-                    </div>
-                  </div>
-                  
-                  <div style="margin: 15px 0;">
-                    <span style="background: #FF6B35; color: white; padding: 4px 8px; border-radius: 15px; font-size: 0.8rem;">AI加筆</span>
-                    <span style="background: #2E86AB; color: white; padding: 4px 8px; border-radius: 15px; font-size: 0.8rem;">SNS自動投稿</span>
-                  </div>
-                  
-                  <a href="#" style="color: #316B3F; text-decoration: none; font-weight: 600; font-size: 0.9rem;">詳細を見る →</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- 営業効果 -->
-      <div class="uk-text-center uk-margin-large-top">
-        <h3 class="uk-text-bold uk-margin-bottom">営業現場での効果</h3>
-        <div class="uk-grid-small uk-child-width-1-4@m uk-flex-center" uk-grid>
-          <div class="uk-text-center">
-            <div class="uk-text-bold uk-text-large uk-text-primary">3倍</div>
-            <div class="uk-text-small">成約率向上</div>
-          </div>
-          <div class="uk-text-center">
-            <div class="uk-text-bold uk-text-large uk-text-primary">90%</div>
-            <div class="uk-text-small">資料作成時間短縮</div>
-          </div>
-          <div class="uk-text-center">
-            <div class="uk-text-bold uk-text-large uk-text-primary">10秒</div>
-            <div class="uk-text-small">事例表示時間</div>
-          </div>
-          <div class="uk-text-center">
-            <div class="uk-text-bold uk-text-large uk-text-primary">6業種</div>
-            <div class="uk-text-small">対応事例データ</div>
-          </div>
-        </div>
-        
-        <div class="uk-margin-top">
-          <a href="/panolabo-ai-boost/sales-presentation.html" class="uk-button uk-button-primary uk-button-large">
-            <span uk-icon="icon: play" class="uk-margin-small-right"></span>
-            完全デモを見る
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </section>
 
   <!-- パートナーシップ・料金モデル -->
   <section class="uk-section ">
     <div class="uk-container">
       <div class="uk-text-center uk-margin-large-bottom">
         <h2 class="uk-heading-medium uk-text-bold ">
-          <span uk-icon="icon: users; ratio: 1.5" class="uk-margin-small-right"></span>
+          <span uk-icon="icon: users; ratio: 2" class="uk-margin-small-right"></span>
           パートナーシップ・料金モデル
         </h2>
         <p class="uk-text-lead">
@@ -745,7 +733,7 @@ get_header(); ?>
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
             <div class="uk-text-center uk-margin-bottom">
-              <span uk-icon="icon: cog; ratio: 2.5" class="uk-text-muted"></span>
+              <span uk-icon="icon: cog; ratio: 2" class="uk-text-muted"></span>
             </div>
             <h3 class="uk-text-bold uk-text-center uk-margin-bottom">従来制作モデル</h3>
             <div class="uk-text-center uk-margin-bottom">
@@ -768,7 +756,7 @@ get_header(); ?>
         <div>
           <div class="uk-card  uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
             <div class="uk-text-center uk-margin-bottom">
-              <span uk-icon="icon: future; ratio: 2.5" class=""></span>
+              <span uk-icon="icon: future; ratio: 2" class=""></span>
             </div>
             <h3 class="uk-text-bold uk-text-center uk-margin-bottom">AI統合モデル</h3>
             <div class="uk-text-center uk-margin-bottom">
@@ -791,7 +779,7 @@ get_header(); ?>
         <div>
           <div class="uk-card  uk-card-body uk-box-shadow-medium uk-border-rounded uk-height-1-1">
             <div class="uk-text-center uk-margin-bottom">
-              <span uk-icon="icon: heart; ratio: 2.5" class=""></span>
+              <span uk-icon="icon: heart; ratio: 2" class=""></span>
             </div>
             <h3 class="uk-text-bold uk-text-center uk-margin-bottom">パートナーシップモデル</h3>
             <div class="uk-text-center uk-margin-bottom">
@@ -825,7 +813,7 @@ get_header(); ?>
         </p>
         
         <div class="uk-button-group uk-flex-center uk-margin-top">
-          <a href="<?php echo esc_url(home_url('/contact')); ?>" 
+          <a href="<?php echo esc_url(home_url('/contact/')); ?>" 
              class="uk-button uk-button-text">
             <span uk-icon="icon: mail"></span> 無料相談を申し込む
           </a>

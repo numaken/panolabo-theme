@@ -175,7 +175,7 @@
          <span uk-icon="icon: users"></span> パートナーシップ詳細を見る
       </a>
       <br><br>
-      <a href="<?php echo esc_url(home_url('/contact')); ?>"
+      <a href="<?php echo esc_url(home_url('/contact/')); ?>"
          class="uk-button uk-button-text">
          <span uk-icon="icon: commenting"></span> まずは相談してみる
       </a>

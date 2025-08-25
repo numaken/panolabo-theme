@@ -162,7 +162,7 @@ $obj = ($json !== false) ? json_decode($json, true) : [];
   <div class="uk-container uk-text-center">
     <h2 class="uk-heading-line"><span>お問い合わせ</span></h2>
     <p>あなたの空間を、ストーリーのあるパノラマコンテンツにしませんか？今なら無料相談を受け付けています。お気軽にお問い合わせください。</p>
-    <a href="<?php echo home_url('/contact'); ?>" class="uk-button uk-button-text">お問い合わせフォームへ</a>
+    <a href="<?php echo home_url('/contact/'); ?>" class="uk-button uk-button-text">お問い合わせフォームへ</a>
   </div>
 </section>
 

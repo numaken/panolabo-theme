@@ -1,176 +1,178 @@
-<!-- 固定CTAバー（スマホのみ表示）
-<div class="uk-hidden@s uk-hidden@m cta-fixed-bar  " style="position: fixed; bottom: 0; left: 0; width: 100%; z-index: 9999;">
-  <div class="uk-container uk-padding-small">
-    <div class="uk-flex uk-flex-middle uk-flex-between">
-      <span class="uk-text-small uk-text-bold">ご質問・ご相談はこちらから</span>
-      <div class="uk-flex">
-        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="uk-button uk-button-text">
-          無料相談
-        </a>
-        <a href="<?php echo esc_url(home_url('/docs')); ?>" class="uk-button uk-button-text">
-          資料DL
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
- -->
-
 <!-- =============================
-      Footer Section
+     統一フッター
 ============================= -->
-<footer class="uk-section   uk-padding-remove">
-
-    <div class="uk-width-1-1@m">
-        <div class="uk-container-expand">
-            <div class="uk-grid uk-margin uk-visible@m">
-                
-                <div class="uk-width-1-2@m footer-link">
-                    <a href="/contact">
-                        <div class="footer-link-inner uk-flex uk-flex-middle">
-                            <div class="footer-icons uk-margin-small-right">
-                                <i class="far fa-envelope"></i>
-                            </div>
-                            <div class="footer-text">
-                                <span class="">お気軽にお問合わせください</span>
-                                <h3 class=" uk-margin-remove">Contact Us</h3>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="uk-width-1-2@m footer-link">
-                    <a href="/contact">
-                        <div class="footer-link-inner uk-flex uk-flex-middle">
-                            <div class="footer-icons uk-margin-small-right">
-                                <i class="far fa-paper-plane"></i>
-                            </div>
-                            <div class="footer-text">
-                                <span class="">仕事の準備はできています！</span>
-                                <h3 class=" uk-margin-remove">Start A Project</h3>
-                            </div>
-                        </div>
-                    </a>
+<footer class="uk-section uk-section-default uk-padding">
+    <div class="uk-container">
+        <div class="uk-grid-match" uk-grid>
+            <!-- 会社情報 -->
+            <div class="uk-width-1-3@m">
+                <div class="uk-text-center uk-text-left@m">
+                    <img src="<?php bloginfo('template_directory'); ?>/images/logo/panolabo-logoBr.svg" alt="Panolabo Logo" style="height: 40px; margin-bottom: 15px;">
+                    <p class="uk-text-small uk-text-muted">
+                        AI・VR・アプリ・Web・OEMまで全部1人で回す<br>
+                        「1人総合制作代理店」
+                    </p>
+                    <p class="uk-text-small">
+                        <a href="mailto:hello@panolabollc.com" class="uk-link-muted">
+                            <span uk-icon="mail"></span> hello@panolabollc.com
+                        </a>
+                    </p>
                 </div>
             </div>
-
-            <div class="uk-grid uk-margin">
-                <div class="uk-width-1-1 text-center">
-                    <div class="footer-content uk-text-center">
-                        <ul class="uk-subnav uk-subnav-divider uk-flex-center footer-socail">
-                            <li>
-                                <a href="https://twitter.com/Panolabo360VR" target="_blank"><i class="fab fa-x fa-1x gray"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://facebook.com/panolabo" target="_blank"><i class="fab fa-facebook-f fa-1x gray"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="uk-grid uk-margin">
-                <div class="uk-width-1-1 uk-text-center">
-                    <ul class="uk-subnav uk-flex-center">
-                        <li>©
-                            <?php
-                            $then = 2015; // サイトの公開年
-                            $now = date('Y');
-                            if ($then < $now) {
-                                echo $then.'–'.$now;
-                            } else {
-                                echo $then;
-                            }
-                            ?>
-                        </li>
-                        <li>
-                            <i class="fa fa-heart"></i>
-                        </li>                         
-                        <li>
-                            <img src="<?php bloginfo('template_directory'); ?>/images/logo/panolabo-logoBr.svg" alt="panolabo Logo" style="height: 24px; vertical-align: middle;">
-                        </li>                        
-                        <li>
-                            <a href="mailto:hello@panolabollc.com">hello@panolabollc.com</a>
-                        </li>
-                        <li><a href="<?php echo home_url('/privacy'); ?>">プライバシーポリシー</a></li>
-                        <li><a href="<?php echo home_url('/sitemap/'); ?>">サイトマップ</a></li>
+            
+            <!-- サービスリンク -->
+            <div class="uk-width-1-3@m">
+                <div class="uk-text-center uk-text-left@m">
+                    <h4 class="uk-heading-bullet">サービス</h4>
+                    <ul class="uk-list uk-list-collapse">
+                        <li><a href="<?php echo home_url('/services/'); ?>" class="uk-link-muted">受託開発</a></li>
+                        <li><a href="<?php echo home_url('/products/'); ?>" class="uk-link-muted">自社プロダクト</a></li>
+                        <li><a href="<?php echo home_url('/oem/'); ?>" class="uk-link-muted">OEMパートナーシップ</a></li>
+                        <li><a href="<?php echo home_url('/contact/'); ?>" class="uk-link-muted">お問い合わせ</a></li>
                     </ul>
                 </div>
             </div>
-
+            
+            <!-- SNS・法的情報 -->
+            <div class="uk-width-1-3@m">
+                <div class="uk-text-center uk-text-left@m">
+                    <h4 class="uk-heading-bullet">フォロー</h4>
+                    <div class="uk-margin-small-bottom">
+                        <a href="https://twitter.com/Panolabo360VR" target="_blank" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+                        <a href="https://facebook.com/panolabo" target="_blank" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
+                        <a href="https://www.youtube.com/@panolabollc" target="_blank" class="uk-icon-button" uk-icon="youtube"></a>
+                    </div>
+                    <ul class="uk-list uk-list-collapse uk-text-small">
+                        <li><a href="<?php echo home_url('/privacy/'); ?>" class="uk-link-muted">プライバシーポリシー</a></li>
+                        <li><a href="<?php echo home_url('/sitemap/'); ?>" class="uk-link-muted">サイトマップ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <hr class="uk-divider-small uk-margin-medium">
+        
+        <!-- コピーライト -->
+        <div class="uk-text-center uk-text-small uk-text-muted">
+            <p>© <?php
+                $then = 2015;
+                $now = date('Y');
+                if ($then < $now) {
+                    echo $then.'–'.$now;
+                } else {
+                    echo $then;
+                }
+            ?> Panolabo LLC. All rights reserved.</p>
         </div>
     </div>
-</footer><!-- end footer -->
+</footer>
 
-<div id="back-top">
-    <a href="#" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
+<!-- トップに戻るボタン -->
+<div id="back-top" class="uk-hidden@s">
+    <a href="#" class="uk-icon-button uk-position-bottom-right uk-position-fixed uk-margin" uk-icon="chevron-up" uk-scroll></a>
 </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const menuTrigger = document.querySelector('.menu-trigger a');
-        const menu = document.querySelector('.menu');
-
-        if (menuTrigger && menu) {
-            menuTrigger.addEventListener('click', function(e) {
-                e.preventDefault();
-                if (menu.classList.contains('open')) {
-                    menu.classList.remove('open');
-                } else {
-                    menu.classList.add('open');
-                }
-            });
-        }
-    });
-</script>
-
-<!-- UIKit正式構文での初期化 -->
+<!-- UIKit初期化 -->
 <script>
 (function() {
     'use strict';
     
-    function waitForUIKit() {
-        if (typeof UIkit !== 'undefined' && window.UIKitReady) {
-            console.log('UIKit ready, using official syntax...');
-            initializeUIKitComponents();
-        } else {
-            setTimeout(waitForUIKit, 100);
-        }
-    }
-    
-    function initializeUIKitComponents() {
-        // UIKitの自動初期化を信頼（推奨方法）
-        // HTMLの uk-offcanvas 属性により自動的に初期化される
-        console.log('Trusting UIKit auto-initialization...');
-        
-        // 必要に応じて手動で更新
+    if (typeof UIkit !== 'undefined') {
         UIkit.update();
-        
-        // デバッグ用：offcanvasが正しく初期化されているか確認
-        var offcanvasElement = document.getElementById('offcanvas-nav');
-        if (offcanvasElement) {
-            // UIKitコンポーネントが既に初期化されているか確認
-            if (UIkit.getComponent(offcanvasElement, 'offcanvas')) {
-                console.log('Offcanvas component auto-initialized successfully');
-            } else {
-                console.log('Manual offcanvas initialization...');
-                UIkit.offcanvas(offcanvasElement);
-            }
-        }
-        
-        // uk-toggle属性による自動動作を確認
-        var toggleButton = document.querySelector('[uk-toggle]');
-        if (toggleButton) {
-            console.log('Toggle button found with uk-toggle attribute');
-        }
     }
     
-    // DOMとUIKitの準備完了を待つ
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', waitForUIKit);
-    } else {
-        waitForUIKit();
-    }
+    // スムーススクロールの初期化
+    document.addEventListener('DOMContentLoaded', function() {
+        // トップに戻るボタンの表示制御
+        const backTop = document.getElementById('back-top');
+        if (backTop) {
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backTop.style.display = 'block';
+                } else {
+                    backTop.style.display = 'none';
+                }
+            });
+        }
+    });
 })();
+
+// 黒字転換（損益分岐点）シミュレーター（OEMページ用）
+if (document.getElementById('breakeven')) {
+  const Y = n => '¥' + (Math.round(n)||0).toLocaleString();
+
+  window.setScenario = function(sellMonthly, mgmt){
+    document.getElementById('sell_monthly2').value = sellMonthly;
+    document.getElementById('mgmt_fee2').value = mgmt;
+    calcBreakeven();
+  };
+
+  window.calcBreakeven = function(){
+    const fixed   = parseInt(document.getElementById('sys_fee2').value,10) || 0;     // 固定5万円など
+    const mgmt    = parseInt(document.getElementById('mgmt_fee2').value,10) || 0;    // 管理/店舗
+    const sellM   = parseInt(document.getElementById('sell_monthly2').value,10) || 0;// 販売月額
+    const active  = parseInt(document.getElementById('active_stores2').value,10) || 0;
+
+    const unitMrr = sellM - mgmt; // 1店舗あたり月次粗利
+    if (unitMrr <= 0){
+      document.getElementById('be_out').innerHTML =
+        `<div class="uk-alert-danger" uk-alert><p>⚠️ 販売月額 ≤ 管理費 のため、店舗が増えるほど赤字です。価格を見直してください。</p></div>`;
+      return;
+    }
+
+    const be = Math.ceil(fixed / unitMrr); // 損益分岐点（店舗数）
+    const monthlyNet = (unitMrr * active) - fixed; // 現在の月次最終（固定控除後）
+    const remain = Math.max(0, be - active);
+    const pct = Math.min(100, Math.round((active / be) * 100));
+
+    document.getElementById('be_out').innerHTML = `
+      <div class="uk-grid-small uk-child-width-1-2@m" uk-grid>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body uk-text-center">
+            <div class="uk-text-meta">この設定の損益分岐点</div>
+            <div class="uk-heading-medium uk-margin-small">あと <span class="uk-text-primary">${remain}</span> 店で黒字</div>
+            <p class="uk-margin-remove">必要店舗数：<strong>${be}</strong> 店 ／ 現在：<strong>${active}</strong> 店</p>
+            <progress class="uk-progress" value="${pct}" max="100"></progress>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <ul class="uk-list uk-list-divider uk-margin-remove">
+              <li><strong>1店舗あたり月次粗利：</strong> ${Y(unitMrr)} <span class="uk-text-meta">（${Y(sellM)} − ${Y(mgmt)}）</span></li>
+              <li><strong>現在の月次最終：</strong> ${Y(monthlyNet)} <span class="uk-text-meta">（${Y(unitMrr)}×${active} − 固定 ${Y(fixed)}）</span></li>
+            </ul>
+            <p class="uk-margin-small uk-text-meta">※ 黒字化後は、<strong>1店舗増えるごとに ${Y(unitMrr)}</strong> の純増。</p>
+          </div>
+        </div>
+      </div>
+    `;
+  };
+
+  window.calcInitBoost = function(){
+    const sellInit = parseInt(document.getElementById('sell_init2').value,10) || 0;
+    const setup    = parseInt(document.getElementById('setup_cost2').value,10) || 0;
+    const vradd    = parseInt(document.getElementById('vr_add2').value,10) || 0;
+    const deals    = parseInt(document.getElementById('new_deals2').value,10) || 0;
+
+    const unitInit = (sellInit - (setup + vradd));
+    const total    = unitInit * deals;
+
+    const warn = unitInit < 0 ? `<div class="uk-alert-danger" uk-alert><p>⚠️ 初期販売が仕入を下回っています（1件あたり ${Y(unitInit)}）。</p></div>` : '';
+
+    document.getElementById('init_out').innerHTML = `
+      ${warn}
+      <ul class="uk-list uk-list-divider">
+        <li><strong>1件あたり初期粗利：</strong> ${Y(unitInit)} <span class="uk-text-meta">（${Y(sellInit)} − ${Y(setup)}${vradd?` − VR加算 ${Y(vradd)}`:''}）</span></li>
+        <li><strong>今月の初期粗利合計：</strong> ${Y(total)} <span class="uk-text-meta">（×${deals}件）</span></li>
+      </ul>
+      <p class="uk-text-meta uk-margin-small">※ 初期粗利は「受注月のブースト」。翌月以降は月次で積み上げます。</p>
+    `;
+  };
+
+  // 初期計算
+  calcBreakeven();
+  calcInitBoost();
+}
 </script>
 
 <?php wp_footer(); ?>

@@ -168,7 +168,7 @@ class PAB_Render {
                 <h3 class="pab-cta-title"><?php _e('あなたのWordPressにも"足すだけ"でOK', 'panolabo-ai-boost'); ?></h3>
                 <p class="pab-cta-text"><?php _e('今のWordPressに"足すだけ"で、集客と運用が進化します。乗り換え不要のAIブースト。', 'panolabo-ai-boost'); ?></p>
                 <div class="pab-cta-buttons">
-                    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="pab-btn pab-btn-primary">
+                    <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="pab-btn pab-btn-primary">
                         <?php _e('プラグイン導入相談', 'panolabo-ai-boost'); ?>
                     </a>
                     <a href="<?php echo esc_url(home_url('/services')); ?>" class="pab-btn pab-btn-secondary">

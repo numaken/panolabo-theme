@@ -9,8 +9,8 @@ get_header();
 <!-- =========================
      Hero
 ========================== -->
-<section class="uk-section  uk-padding-large parallax"
-  style="background-image: linear-gradient(rgba(76, 175, 80, 0.7), rgba(66, 165, 245, 0.7)), url('<?php echo get_template_directory_uri(); ?>/images/panolabo_paralax.jpg'); background-size: cover; background-position: center center; background-attachment: scroll;"
+<section class="uk-section uk-section-muted uk-padding-large parallax"
+  style="background-image: linear-gradient(rgba(49, 107, 63, 0.8), rgba(46, 134, 171, 0.8)), url('<?php echo get_template_directory_uri(); ?>/images/panolabo_paralax.jpg'); background-size: cover; background-position: center center; background-attachment: scroll;"
   data-bg-mobile="<?php echo get_template_directory_uri(); ?>/images/panolabo_paralax.jpg">
   <div class="uk-container">
     <div class="uk-grid-large" uk-grid>
@@ -28,21 +28,22 @@ get_header();
           「作って終わり」をやめ、<strong>集客と収益を"仕組み化"</strong>します。
         </p>
         <div class="uk-margin">
-          <a class="uk-button uk-button-primary uk-button-small" href="<?php echo esc_url(home_url('/contact/')); ?>">
+          <a class="uk-button uk-button-primary uk-button-large" href="<?php echo esc_url(home_url('/contact/')); ?>">
             まずは相談する
           </a>
-          <a class="uk-button uk-button-primary uk-button-small uk-margin-small-left" href="<?php echo esc_url(home_url('/oem/')); ?>">
+          <a class="uk-button uk-button-default uk-button-large uk-margin-small-left" href="<?php echo esc_url(home_url('/oem/')); ?>">
             OEMパートナーを見る
           </a>
         </div>
       </div>
       <div class="uk-width-1-3@m uk-flex uk-flex-middle uk-flex-center">
-        <div class="uk-card uk-card-body uk-text-center" style="background: linear-gradient(135deg, #4CAF50 0%, #42A5F5 100%); border: none; border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); color: white;">
-          <div style="padding: 40px 20px;">
-            <div style="font-size: 48px; margin-bottom: 20px;">🚀</div>
-            <h3 class="uk-h4 uk-margin-small-bottom" style="color: white;">AI・デジタル変革</h3>
-            <p class="uk-text-small uk-margin-remove" style="color: rgba(255,255,255,0.9);">テクノロジーで<br>ビジネスを加速</p>
+        <div class="uk-card uk-card-default uk-card-body uk-text-center">
+          <!-- LCP画像：固定比でCLS回避 -->
+          <div class="plb-hero-thumb" style="aspect-ratio: 4 / 3; width:100%; background:#eee; display:flex; align-items:center; justify-content:center;">
+            <img src="<?php echo esc_url( get_theme_file_uri('/assets/img/hero-placeholder.webp') ); ?>"
+                 alt="Panolabo Hero" style="max-width:100%; height:auto;" loading="eager" />
           </div>
+          <small class="uk-text-muted">※ダミー画像。差し替え推奨</small>
         </div>
       </div>
     </div>
@@ -52,7 +53,7 @@ get_header();
 <!-- =========================
      三本柱
 ========================== -->
-<section class="uk-section  parallax"
+<section class="uk-section uk-section-default parallax"
   style="background: linear-gradient(rgba(248, 249, 250, 0.95), rgba(255, 255, 255, 0.9)), url('<?php echo get_template_directory_uri(); ?>/images/bg/features-bg.jpg'); background-size: cover; background-position: center center; background-attachment: scroll;"
   data-bg-mobile="<?php echo get_template_directory_uri(); ?>/images/bg/features-bg.jpg">
   <div class="uk-container">
@@ -69,7 +70,7 @@ get_header();
             <li><strong>アプリ：</strong>WebView連動で更新を一元化、運用コストを最小化</li>
             <li><strong>VR：</strong>現状低稼働だが資産あり。AI連携で再展開余地</li>
           </ul>
-          <a class="uk-button uk-button-primary uk-button-small" href="<?php echo esc_url(home_url('/service/')); ?>">サービスを見る</a>
+          <a class="uk-button uk-button-text" href="<?php echo esc_url(home_url('/service/')); ?>">サービスを見る</a>
         </div>
       </div>
 
@@ -83,7 +84,7 @@ get_header();
             <li><em>Chat2Doc：</em> AI会話の自動ドキュメント化</li>
             <li><strong>WPプラグイン：</strong> 加筆支援・自動記事投稿・SNS連携 等</li>
           </ul>
-          <a class="uk-button uk-button-primary uk-button-small" href="<?php echo esc_url(home_url('/products/')); ?>">プロダクト一覧</a>
+          <a class="uk-button uk-button-text" href="<?php echo esc_url(home_url('/products/')); ?>">プロダクト一覧</a>
         </div>
       </div>
 
@@ -97,7 +98,7 @@ get_header();
             <li>値付けは自由。Panolaboは<strong>パートナーフィー＋制作費のみ</strong></li>
             <li>利益を最大化しつつ、強い商材を即保有</li>
           </ul>
-          <a class="uk-button uk-button-primary uk-button-small" href="<?php echo esc_url(home_url('/oem/')); ?>">OEMの仕組みを見る</a>
+          <a class="uk-button uk-button-text" href="<?php echo esc_url(home_url('/oem/')); ?>">OEMの仕組みを見る</a>
         </div>
       </div>
     </div>
@@ -105,15 +106,14 @@ get_header();
 </section>
 
 <!-- =========================
-     自社SaaS / プラグイン
+     自社SaaSプラットフォーム
 ========================== -->
-<section class="uk-section  parallax"
-  style="background: linear-gradient(rgba(46, 134, 171, 0.9), rgba(49, 107, 63, 0.9)), url('<?php echo get_template_directory_uri(); ?>/images/bg/saas-bg.jpg'); background-size: cover; background-position: center center; background-attachment: scroll;"
-  data-bg-mobile="<?php echo get_template_directory_uri(); ?>/images/bg/saas-bg.jpg">
+<section class="uk-section uk-section-muted parallax"
+  style="background: linear-gradient(rgba(46, 134, 171, 0.9), rgba(49, 107, 63, 0.9)); background-size: cover; background-position: center center; background-attachment: scroll;">
   <div class="uk-container">
-    <h2 class="uk-heading-line"><span>自社SaaS / プラグイン</span></h2>
+    <h2 class="uk-heading-line"><span>自社SaaSプラットフォーム</span></h2>
 
-    <div class="uk-grid-large uk-child-width-1-2@m" uk-grid>
+    <div class="uk-grid-large uk-child-width-1-3@m" uk-grid>
       <div>
         <div class="uk-card uk-card-default uk-card-body">
           <h3 class="uk-card-title">AiPostPilot Pro</h3>
@@ -123,7 +123,7 @@ get_header();
             <li>アカウント別の軽量KPI記録</li>
             <li>WPや外部APIからの連携も拡張可</li>
           </ul>
-          <a class="uk-button uk-button-primary uk-button-small" href="<?php echo esc_url(home_url('/products/')); ?>">詳細を見る</a>
+          <a class="uk-button uk-button-default" href="<?php echo esc_url(home_url('/products/')); ?>">詳細を見る</a>
         </div>
       </div>
       <div>
@@ -135,21 +135,80 @@ get_header();
             <li>議事・要件・仕様書の一次生成</li>
             <li>OEMで自社ブランド化も可能</li>
           </ul>
-          <a class="uk-button uk-button-primary uk-button-small" href="<?php echo esc_url(home_url('/products/')); ?>">詳細を見る</a>
+          <a class="uk-button uk-button-default" href="<?php echo esc_url(home_url('/products/')); ?>">詳細を見る</a>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-primary uk-card-body uk-light">
+          <h3 class="uk-card-title"><span uk-icon="star"></span> App Vending</h3>
+          <p>アプリストア向けアプリを効率的に量産・販売するプラットフォーム。テンプレート化で短期間リリースを実現。</p>
+          <ul class="uk-list uk-list-bullet">
+            <li>テンプレートベースの高速開発</li>
+            <li>アプリストア最適化（ASO）</li>
+            <li>収益化戦略サポート</li>
+          </ul>
+          <a class="uk-button uk-button-secondary" href="https://app-vending.panolabollc.com/" target="_blank">
+            <span uk-icon="external-link"></span> サービスを見る
+          </a>
         </div>
       </div>
     </div>
 
-    <div class="uk-margin-large-top">
-      <article class="uk-article">
-        <h3 class="uk-article-title">WordPressプラグイン群</h3>
-        <p class="uk-text-muted uk-margin-remove">"素人では続かないブログ運用"をAIで支える。</p>
-        <ul class="uk-list uk-list-striped">
-          <li>AI加筆支援（下書きの質を底上げ／誤字補正）</li>
-          <li>自動記事投稿（指定頻度・カテゴリ・下書き→公開フロー）</li>
-          <li>SNS自動シェア（X/Threads/Instagram*）<br><small>*API仕様により要審査・代替フローあり</small></li>
-        </ul>
-      </article>
+  </div>
+</section>
+
+<!-- =========================
+     WordPressプラグイン群
+========================== -->
+<section class="uk-section uk-section-default">
+  <div class="uk-container">
+    <h2 class="uk-heading-line"><span>WordPressプラグイン群</span></h2>
+    <p class="uk-text-lead uk-text-center">"素人では続かないブログ運用"をAIで支える専用プラグイン</p>
+    
+    <div class="uk-grid-match uk-child-width-1-3@m uk-grid-small" uk-grid>
+      <div>
+        <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+          <span uk-icon="icon: pencil; ratio: 2" class="uk-text-warning"></span>
+          <h3 class="uk-card-title">AI加筆支援</h3>
+          <p>下書きの質を自動で底上げ。誤字脱字の修正から文章の改善まで、AIが執筆をサポートします。</p>
+          <ul class="uk-list uk-list-bullet uk-text-small">
+            <li>文章校正・誤字補正</li>
+            <li>読みやすさ改善</li>
+            <li>SEO最適化提案</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+          <span uk-icon="icon: clock; ratio: 2" class="uk-text-success"></span>
+          <h3 class="uk-card-title">自動記事投稿</h3>
+          <p>指定した頻度とカテゴリで記事を自動投稿。下書きから公開までのフローを完全自動化します。</p>
+          <ul class="uk-list uk-list-bullet uk-text-small">
+            <li>スケジュール投稿</li>
+            <li>カテゴリ別管理</li>
+            <li>下書き→公開フロー</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+          <span uk-icon="icon: social; ratio: 2" class="uk-text-primary"></span>
+          <h3 class="uk-card-title">SNS自動シェア</h3>
+          <p>記事公開と同時にSNSへ自動投稿。X（Twitter）、Threads、Instagramに対応しています。</p>
+          <ul class="uk-list uk-list-bullet uk-text-small">
+            <li>X（Twitter）連携</li>
+            <li>Threads対応</li>
+            <li>Instagram連携*</li>
+          </ul>
+          <small class="uk-text-muted">*API仕様により要審査・代替フローあり</small>
+        </div>
+      </div>
+    </div>
+    
+    <div class="uk-text-center uk-margin-large-top">
+      <a class="uk-button uk-button-primary uk-button-large" href="<?php echo esc_url(home_url('/products/')); ?>">
+        プラグイン詳細を見る
+      </a>
     </div>
   </div>
 </section>
@@ -157,9 +216,8 @@ get_header();
 <!-- =========================
      FAQ（構造化データ対応）
 ========================== -->
-<section class="uk-section  parallax"
-  style="background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(248, 249, 250, 0.9)), url('<?php echo get_template_directory_uri(); ?>/images/bg/faq-bg.jpg'); background-size: cover; background-position: center center; background-attachment: scroll;"
-  data-bg-mobile="<?php echo get_template_directory_uri(); ?>/images/bg/faq-bg.jpg">
+<section class="uk-section uk-section-default parallax"
+  style="background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(248, 249, 250, 0.9)); background-size: cover; background-position: center center; background-attachment: scroll;">
   <div class="uk-container">
     <h2 class="uk-heading-line"><span>よくある質問</span></h2>
     <ul uk-accordion>
@@ -188,17 +246,16 @@ get_header();
 <!-- =========================
      最終CTA
 ========================== -->
-<section class="uk-section  parallax"
-  style="background: linear-gradient(rgba(30, 30, 30, 0.9), rgba(49, 107, 63, 0.8)), url('<?php echo get_template_directory_uri(); ?>/images/bg/cta-bg.jpg'); background-size: cover; background-position: center center; background-attachment: scroll;"
-  data-bg-mobile="<?php echo get_template_directory_uri(); ?>/images/bg/cta-bg.jpg">
+<section class="uk-section uk-light uk-padding-large"
+  style="background: linear-gradient(135deg, #316B3F 0%, #2E86AB 100%); color: white;">
   <div class="uk-container uk-text-center">
-    <h2 class="uk-heading-small">「作って終わり」をやめて、仕組みで成果を。</h2>
-    <p class="uk-text-lead">小規模でも、AIを使えば会社規模を動かせる。その設計から一緒に。</p>
+    <h2 class="uk-heading-small uk-text-white">「作って終わり」をやめて、仕組みで成果を。</h2>
+    <p class="uk-text-lead uk-text-white">小規模でも、AIを使えば会社規模を動かせる。その設計から一緒に。</p>
     <div class="uk-margin">
-      <a class="uk-button uk-button-primary uk-button-small uk-margin-small-right" href="<?php echo esc_url(home_url('/contact/')); ?>">
+      <a class="uk-button uk-button-default uk-button-large uk-margin-small-right" href="<?php echo esc_url(home_url('/contact/')); ?>">
         相談する
       </a>
-      <a class="uk-button uk-button-primary uk-button-small" href="<?php echo esc_url(home_url('/oem/')); ?>">
+      <a class="uk-button uk-button-secondary uk-button-large" href="<?php echo esc_url(home_url('/oem/')); ?>">
         OEMを検討する
       </a>
     </div>

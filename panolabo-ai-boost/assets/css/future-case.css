@@ -38,7 +38,7 @@
     font-size: 1.8rem;
     font-weight: 700;
     margin: 0 0 15px 0;
-    color: #2c3e50;
+    color: #00142B;
 }
 
 .pab-hero-subtitle {
@@ -58,7 +58,7 @@
 
 .pab-client,
 .pab-region {
-    background: #316B3F;
+    background: #06AFAA;
     color: white;
     padding: 6px 12px;
     border-radius: 20px;
@@ -90,7 +90,7 @@
 
 .pab-after {
     background: linear-gradient(135deg, #e8f5e8 0%, #f0f8f0 100%);
-    border-left-color: #316B3F;
+    border-left-color: #06AFAA;
     position: relative;
 }
 
@@ -99,7 +99,7 @@
     position: absolute;
     top: 15px;
     right: 20px;
-    color: #316B3F;
+    color: #06AFAA;
     font-size: 1.5rem;
 }
 
@@ -107,11 +107,11 @@
     font-size: 1.3rem;
     font-weight: 700;
     margin: 0 0 15px 0;
-    color: #2c3e50;
+    color: #00142B;
 }
 
 .pab-featured {
-    color: #316B3F;
+    color: #06AFAA;
 }
 
 .pab-content {
@@ -153,7 +153,7 @@
 .pab-kpi-value {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #316B3F;
+    color: #06AFAA;
     margin-bottom: 8px;
 }
 
@@ -193,7 +193,7 @@
 }
 
 .pab-plugin-chat2doc {
-    background: #316B3F;
+    background: #06AFAA;
 }
 
 .pab-plugin-other {
@@ -235,7 +235,7 @@
 
 /* CTA */
 .pab-cta {
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    background: linear-gradient(135deg, #00142B 0%, #001e3d 100%);
     color: white;
     padding: 40px 30px;
     border-radius: 8px;
@@ -276,12 +276,12 @@
 }
 
 .pab-btn-primary {
-    background: #316B3F;
+    background: #06AFAA;
     color: white;
 }
 
 .pab-btn-primary:hover {
-    background: #255530;
+    background: #059a95;
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(49, 107, 63, 0.3);
 }
@@ -294,7 +294,7 @@
 
 .pab-btn-secondary:hover {
     background: white;
-    color: #2c3e50;
+    color: #00142B;
 }
 
 /* Card Layout */
@@ -329,12 +329,12 @@
 }
 
 .pab-card-title a {
-    color: #2c3e50;
+    color: #00142B;
     text-decoration: none;
 }
 
 .pab-card-title a:hover {
-    color: #316B3F;
+    color: #06AFAA;
 }
 
 .pab-card-meta {
@@ -366,7 +366,7 @@
 }
 
 .pab-card-link {
-    color: #316B3F;
+    color: #06AFAA;
     text-decoration: none;
     font-weight: 600;
     font-size: 0.9rem;

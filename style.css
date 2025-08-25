@@ -12,7 +12,7 @@ License: Don't use.
 
 
 html {
-    overflow-x: hidden !important;
+    overflow-x: hidden;
     width: 100%;
     height: 100%;
     position: relative;
@@ -24,16 +24,18 @@ body {
     border: 0;
     margin: 0;
     padding: 0;
-    color: #607D8B;
-    font-size: 15px !important;
+    color: #333;
+    font-size: 15px;
     background: #fff;
-    line-height: 1.6 !important;
-
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 .uk-heading-divider {
     padding-bottom: calc(5px + 0.1em);
-    border-bottom: calc(0.2px + 0.05em) solid #4CAF50;
+    border-bottom: calc(0.2px + 0.05em) solid #316B3F;
 }
 
 /* 画像の高さを100%表示 */
@@ -77,8 +79,9 @@ a:visited {
 
 a:hover {
     text-decoration: none;
-    color: #4CAF50;
+    color: #316B3F;
     cursor: pointer;
+    transition: color 0.3s ease;
 }
 
 section {
@@ -114,11 +117,12 @@ a:focus {
 }
 
 a {
-    color: #555555;
+    color: #316B3F;
+    transition: color 0.3s ease;
 }
 
 a.read-more:hover {
-    color: #4CAF50;
+    color: #2E86AB;
 }
 
 ul {
@@ -151,7 +155,7 @@ ul {
 .breadcrumb li:first-child a:before {
     font-weight: normal;
     font-size: 1.1em;
-    color: #f3948f;
+    color: #FF6B35;
 }
 
 .breadcrumb li a:hover {
@@ -162,7 +166,7 @@ ul {
     font-family: 'Font Awesome 5 Free';
     content: '\f0da';
     padding: 0 8px;
-    color: silver;
+    color: #6c757d;
 }
 
 /* Typography
@@ -175,9 +179,10 @@ p {
 
 .uk-card-frontpage {
     background: #fff;
-    color: #666;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    background: rgba(34, 34, 34, 0.25);
+    color: #333;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .uk-overlay-panolabo {
@@ -200,7 +205,7 @@ p {
 }
 
 .sec-title span {
-    color: #4CAF50;
+    color: #316B3F;
 }
 
 .heading-inner p {
@@ -251,23 +256,35 @@ p {
     height: 100%;
     width: 100%;
     text-align: center;
-    background: #fff;
-    transition: opacity 0.4s ease;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+    backdrop-filter: blur(2px);
 }
 
 #loadbox.loadbox-active {
     display: block !important;
     opacity: 1;
+    visibility: visible;
 }
 
 #loadbox.loadbox-hidden {
-    opacity: 0;
-    pointer-events: none;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    display: none !important;
+}
+
+/* 初期状態で表示 */
+#loadbox {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 9999 !important;
 }
 
 /* JavaScript無効時の非表示制御 */
 .no-js #loadbox {
-    display: none !important;
+    display: none;
 }
 
 .wrapper {
@@ -283,8 +300,78 @@ p {
     vertical-align: middle;
 }
 
-.inner img {
+#loadbox .inner img {
     width: 25%;
+    animation: loadBoxPulse 1.5s ease-in-out infinite !important;
+    transform-origin: center;
+    will-change: transform, opacity;
+}
+
+/* ぴこぴこアニメーション */
+@-webkit-keyframes loadBoxPulse {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    50% {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0.7;
+    }
+}
+
+@keyframes loadBoxPulse {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    50% {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0.7;
+    }
+}
+
+/* 強制的にアニメーション適用 */
+#loadbox img {
+    animation: loadBoxPulse 1.5s ease-in-out infinite !important;
+    transform-origin: center !important;
+}
+
+/* テキストのフェードインアニメーション */
+#loadbox .inner .uk-text-bold {
+    animation: loadBoxFadeIn 2s ease-in-out infinite alternate !important;
+    will-change: opacity;
+}
+
+@-webkit-keyframes loadBoxFadeIn {
+    0% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes loadBoxFadeIn {
+    0% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .wrapper .animated {
@@ -295,12 +382,12 @@ p {
 }
 
 .loading .animated {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -ms-transition: none !important;
-    -o-transition: none !important;
-    -webkit-animation-delay: 60s !important;
-    animation-delay: 60s !important;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    -webkit-animation-delay: 60s;
+    animation-delay: 60s;
 }
 
 span a {
@@ -381,8 +468,9 @@ nav ul li:hover {
 nav ul li a {
     padding: 2% 0%;
     text-decoration: none;
-    color: #333;
+    color: #00142B;
     display: block;
+    transition: all 0.3s ease;
 }
 
 /* Portfolio
@@ -408,7 +496,7 @@ nav ul li a {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(105, 186, 100, .7);
+    background: linear-gradient(135deg, rgba(49, 107, 63, 0.9), rgba(6, 175, 170, 0.9));
     top: 800px;
     left: 0px;
     text-align: center;
@@ -458,7 +546,7 @@ nav ul li a {
 #benefit {
     position: relative;
     background-image: url("images/bg/features-bg.jpg");
-    background-attachment: fixed !important;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: repeat;
     color: #FFF;
@@ -479,7 +567,7 @@ nav ul li a {
     font-size: 50px;
     float: left;
     line-height: 50px;
-    color: #4CAF50;
+    color: #FFC857;
 }
 
 .item-list-left li .item-content {
@@ -546,59 +634,7 @@ nav ul li a {
     font-weight: 400;
 }
 
-.slider .btn-main {
-    background: transparent;
-    border-color: #fff;
-    color: #fff;
-    -webkit-transition: all .3s linear 0s;
-    -o-transition: all .3s linear 0s;
-    transition: all .3s linear 0s;
-    margin-top: 10px;
-}
-
-.slider .btn-main:hover {
-    background: #4CAF50;
-    border-color: #4CAF50;
-    color: #fff;
-}
-
-.slider .btn-default.featured {
-    background: #4CAF50;
-    border-color: #4CAF50;
-    color: #fff;
-}
-
-.slider .btn-default.featured:hover {
-    background: transparent;
-    color: #fff;
-}
-
-.btn-main.featured {
-    background: #4CAF50;
-    border-color: #4CAF50;
-    color: #fff;
-}
-
-.btn-main.featured:hover {
-    background: transparent;
-    color: #fff;
-}
-
-.btn-main.featured:focus,
-.btn-main.featured:active {
-    background: #4CAF50;
-    border-color: #4CAF50;
-    color: #fff;
-}
-
-.slider-btn {
-    padding: 13px 40px;
-    font-size: 15px;
-    border-radius: 25px;
-    -webkit-transition: all .3s linear 0s;
-    -o-transition: all .3s linear 0s;
-    transition: all .3s linear 0s;
-}
+/* 古いボタンスタイルは削除済み - uk-button系に統一 */
 
 .uk-grid-margin * {
     padding-left: 15px;
@@ -630,7 +666,7 @@ nav ul li a {
 }
 
 .slogan-title span {
-    color: #4CAF50;
+    color: #FFC857;
 }
 
 .slogan-title .slogan {
@@ -650,7 +686,7 @@ nav ul li a {
 }
 
 .section-title h2 span {
-    color: #4CAF50;
+    color: #316B3F;
 }
 
 /* Footer styles
@@ -667,26 +703,6 @@ nav ul li a {
 
 /* 既存のボタンスタイルは統一スタイルで上書き */
 
-.footer-link {
-    text-align: center;
-    background-color: #37474F;
-    color: #545454;
-    transition: background-color .3s;
-    margin-bottom: 1rem;
-}
-
-.footer-link:hover {
-    background-color: #4CAF50;
-    color: #ffffff;
-}
-
-.footer-link .footer-icons {
-    padding: 10px;
-}
-
-.footer-link .footer-text {
-    padding-bottom: 10px;
-}
 
 .list-inline {
     padding: 0;
@@ -703,7 +719,7 @@ nav ul li a {
 }
 
 .footer-content ul li a:hover {
-    color: #4CAF50;
+    color: #2E86AB;
 }
 
 .copyright li {
@@ -716,7 +732,7 @@ nav ul li a {
 }
 
 .copyright li a:hover {
-    color: #4CAF50;
+    color: #2E86AB;
 }
 
 /* Header Logo Styles
@@ -735,56 +751,162 @@ nav ul li a {
 /* モバイル専用：ヘッダーを固定 */
 @media (max-width: 959px) {
     .uk-navbar-container {
-        position: fixed !important;
-        top: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        z-index: 1000 !important;
-        background-color: rgba(255, 255, 255, 0.98) !important;
-        backdrop-filter: blur(10px) !important;
-        -webkit-backdrop-filter: blur(10px) !important;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
-        transition: all 0.3s ease !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;
+        border-bottom: 1px solid rgba(49, 107, 63, 0.1);
     }
     
     /* モバイル用のbody上部余白調整（サブタイトル非表示によりコンパクト化） */
     body {
-        padding-top: 70px !important;
+        padding-top: 70px;
     }
     
     /* ロゴサイズをモバイル用に調整 */
     .uk-navbar-container .uk-navbar-item img {
-        height: 50px !important;
-        width: auto !important;
-        max-width: none !important;
+        height: 50px;
+        width: auto;
+        max-width: none;
     }
     
     /* サブタイトルをモバイルで非表示 */
     .uk-navbar-container .uk-text-small {
-        display: none !important;
+        display: none;
     }
     
     /* メニューボタンのスタイル調整 */
     .uk-navbar-container .uk-navbar-toggle {
-        color: #333 !important;
-        padding: 10px !important;
+        color: #333;
+        padding: 10px;
     }
     
     .uk-navbar-container .uk-navbar-toggle:hover {
-        color: #4CAF50 !important;
+        color: #316B3F;
     }
+}
+
+/* ナビゲーションメニュー改善 */
+.uk-navbar-container {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.uk-navbar-container .uk-navbar-toggle {
+    color: #316B3F;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.uk-navbar-container .uk-navbar-toggle:hover {
+    color: #2E86AB;
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+/* オフキャンバスメニューのスタイル改善 */
+.uk-offcanvas-bar {
+    background: linear-gradient(135deg, #316B3F 0%, #2E86AB 100%);
+    color: white;
+    padding: 40px 30px;
+    width: 320px;
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* メニューリンクのスタイル */
+.uk-offcanvas-bar .uk-list a {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.uk-offcanvas-bar .uk-list a:hover {
+    color: #FFC857;
+    text-decoration: none;
+    transform: translateX(10px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* アイコンのスタイル */
+.uk-offcanvas-bar .uk-list a span[uk-icon] {
+    margin-right: 12px;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.uk-offcanvas-bar .uk-list a:hover span[uk-icon] {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* 閉じるボタンのスタイル */
+.uk-offcanvas-close {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+.uk-offcanvas-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+/* カテゴリ区切りのスタイル */
+.uk-offcanvas-bar .uk-divider-small {
+    border-color: rgba(255, 255, 255, 0.3);
+    margin: 20px 0;
+}
+
+.uk-offcanvas-bar .uk-text-muted {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+/* ロゴ下のサブタイトル */
+.uk-navbar-container .uk-text-small {
+    color: #6c757d;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.3;
+    opacity: 0.8;
+}
 }
 
 /* タブレット以下でのさらなる調整 */
 @media (max-width: 640px) {
     body {
-        padding-top: 65px !important;
+        padding-top: 65px;
     }
     
     .uk-navbar-container .uk-navbar-item img {
-        height: 45px !important;
-        width: auto !important;
-        max-width: none !important;
+        height: 45px;
+        width: auto;
+        max-width: none;
     }
 }
 
@@ -793,169 +915,169 @@ nav ul li a {
 
 /* ボタンの基本スタイル統一 */
 .uk-button {
-    border-radius: 8px !important;
-    font-weight: 600 !important;
-    font-size: 16px !important;
-    padding: 12px 24px !important;
-    transition: all 0.3s ease !important;
-    text-transform: none !important;
-    letter-spacing: 0.5px !important;
-    min-height: 48px !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-decoration: none !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+    text-transform: none;
+    letter-spacing: 0.5px;
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* プライマリーボタン（メイン） */
 .uk-button-primary {
-    background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%) !important;
-    border: none !important;
-    color: white !important;
+    background: linear-gradient(135deg, #316B3F 0%, #2E86AB 100%);
+    border: none;
+    color: white;
 }
 
 .uk-button-primary:hover {
-    background: linear-gradient(135deg, #66BB6A 0%, #5C6BC0 100%) !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 4px 16px rgba(105, 186, 100, 0.3) !important;
-    color: white !important;
+    background: linear-gradient(135deg, #2E86AB 0%, #06AFAA 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(49, 107, 63, 0.3);
+    color: white;
 }
 
 /* セカンダリーボタン */
 .uk-button-secondary {
-    background: white !important;
-    border: 2px solid #4CAF50 !important;
-    color: #4CAF50 !important;
+    background: white;
+    border: 2px solid #316B3F;
+    color: #316B3F;
 }
 
 .uk-button-secondary:hover {
-    background: #4CAF50 !important;
-    border-color: #4CAF50 !important;
-    color: white !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 4px 16px rgba(105, 186, 100, 0.2) !important;
+    background: #316B3F;
+    border-color: #316B3F;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(49, 107, 63, 0.2);
 }
 
 /* デフォルトボタン */
 .uk-button-default {
-    background: #f8f9fa !important;
-    border: 2px solid #e9ecef !important;
-    color: #495057 !important;
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    color: #495057;
 }
 
 .uk-button-default:hover {
-    background: #e9ecef !important;
-    border-color: #dee2e6 !important;
-    color: #495057 !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1) !important;
+    background: #e9ecef;
+    border-color: #dee2e6;
+    color: #495057;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
 /* 警告ボタン（アクション系） */
 .uk-button-warning {
-    background: linear-gradient(135deg, #ffc107 0%, #ffb300 100%) !important;
-    border: none !important;
-    color: #333 !important;
+    background: linear-gradient(135deg, #FFC857 0%, #FF6B35 100%);
+    border: none;
+    color: #00142B;
 }
 
 .uk-button-warning:hover {
-    background: linear-gradient(135deg, #ffb300 0%, #ffa000 100%) !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 4px 16px rgba(255, 193, 7, 0.3) !important;
-    color: #333 !important;
+    background: linear-gradient(135deg, #FF6B35 0%, #FFC857 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(255, 200, 87, 0.3);
+    color: #00142B;
 }
 
 /* 危険ボタン */
 .uk-button-danger {
-    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%) !important;
-    border: none !important;
-    color: white !important;
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+    border: none;
+    color: white;
 }
 
 .uk-button-danger:hover {
-    background: linear-gradient(135deg, #c82333 0%, #bd2130 100%) !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 4px 16px rgba(220, 53, 69, 0.3) !important;
-    color: white !important;
+    background: linear-gradient(135deg, #c82333 0%, #bd2130 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(220, 53, 69, 0.3);
+    color: white;
 }
 
 /* ボタンサイズバリエーション */
 .uk-button-small {
-    font-size: 14px !important;
-    padding: 8px 16px !important;
-    min-height: 36px !important;
+    font-size: 14px;
+    padding: 8px 16px;
+    min-height: 36px;
 }
 
 .uk-button-large {
-    font-size: 18px !important;
-    padding: 16px 32px !important;
-    min-height: 56px !important;
+    font-size: 18px;
+    padding: 16px 32px;
+    min-height: 56px;
 }
 
 /* アイコン付きボタンの調整 */
 .uk-button [uk-icon] {
-    margin-right: 8px !important;
+    margin-right: 8px;
 }
 
 .uk-button:last-child [uk-icon] {
-    margin-right: 0 !important;
-    margin-left: 8px !important;
+    margin-right: 0;
+    margin-left: 8px;
 }
 
 /* グループボタンの間隔調整 */
 .uk-button-group .uk-button {
-    margin-right: 8px !important;
+    margin-right: 8px;
 }
 
 .uk-button-group .uk-button:last-child {
-    margin-right: 0 !important;
+    margin-right: 0;
 }
 
 /* レスポンシブボタン */
 @media (max-width: 640px) {
     .uk-button {
-        font-size: 14px !important;
-        padding: 10px 20px !important;
-        min-height: 44px !important;
+        font-size: 14px;
+        padding: 10px 20px;
+        min-height: 44px;
     }
     
     .uk-button-large {
-        font-size: 16px !important;
-        padding: 12px 24px !important;
-        min-height: 48px !important;
+        font-size: 16px;
+        padding: 12px 24px;
+        min-height: 48px;
     }
     
     .uk-button-small {
-        font-size: 12px !important;
-        padding: 6px 12px !important;
-        min-height: 32px !important;
+        font-size: 12px;
+        padding: 6px 12px;
+        min-height: 32px;
     }
 }
 
 /* テキストボタン（リンクスタイル） */
 .uk-button-text {
-    background: transparent !important;
-    border: none !important;
-    color: #4CAF50 !important;
-    text-decoration: underline !important;
-    padding: 8px 16px !important;
-    min-height: auto !important;
-    box-shadow: none !important;
+    background: transparent;
+    border: none;
+    color: #316B3F;
+    text-decoration: underline;
+    padding: 8px 16px;
+    min-height: auto;
+    box-shadow: none;
 }
 
 .uk-button-text:hover {
-    background: rgba(105, 186, 100, 0.05) !important;
-    color: #66BB6A !important;
-    text-decoration: none !important;
-    transform: none !important;
-    box-shadow: none !important;
+    background: rgba(49, 107, 63, 0.05);
+    color: #2E86AB;
+    text-decoration: none;
+    transform: none;
+    box-shadow: none;
 }
 
 /* フォーカス時のアクセシビリティ */
 .uk-button:focus {
-    outline: 3px solid rgba(105, 186, 100, 0.3) !important;
-    outline-offset: 2px !important;
+    outline: 3px solid rgba(49, 107, 63, 0.3);
+    outline-offset: 2px;
 }
 
 /* サイドボーダー */
@@ -987,6 +1109,120 @@ nav ul li a {
     border-right: none;
 }
 
+/* UIKit Label Styles */
+.uk-label {
+    background: #316B3F;
+    color: white;
+    border-radius: 15px;
+    font-weight: 600;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+.uk-label-success {
+    background: #06AFAA;
+}
+
+.uk-label-warning {
+    background: #FFC857;
+    color: #00142B;
+}
+
+.uk-label-danger {
+    background: #FF6B35;
+}
+
+.uk-label:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(49, 107, 63, 0.3);
+}
+
+/* UIKit Card Styles */
+.uk-card {
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.uk-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.uk-card-primary {
+    background: linear-gradient(135deg, #316B3F 0%, #2E86AB 100%);
+    color: white;
+}
+
+.uk-card-secondary {
+    background: linear-gradient(135deg, #06AFAA 0%, #2E86AB 100%);
+    color: white;
+}
+
+/* UIKit Text Colors */
+.uk-text-primary {
+    color: #316B3F;
+}
+
+.uk-text-secondary {
+    color: #2E86AB;
+}
+
+.uk-text-success {
+    color: #06AFAA;
+}
+
+.uk-text-warning {
+    color: #FFC857;
+}
+
+.uk-text-danger {
+    color: #FF6B35;
+}
+
+.uk-text-emphasis {
+    color: #00142B;
+    font-weight: 700;
+}
+
+
+/* フッターはパララックス効果を無効化 */
+footer, footer * {
+    transform: none !important;
+    will-change: auto !important;
+}
+
+/* フッターの表示を確実にする */
+footer {
+    position: relative !important;
+    z-index: 1000 !important;
+    background: white !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin-top: 0 !important;
+    clear: both !important;
+}
+
+
+/* UIKit Background Colors */
+.uk-background-primary {
+    background: linear-gradient(135deg, #316B3F 0%, #2E86AB 100%);
+    color: white;
+}
+
+.uk-background-secondary {
+    background: #f8f9fa;
+    color: #333;
+}
+
+.uk-background-muted {
+    background: #e9ecef;
+    color: #6c757d;
+}
+
 .side-border > div {
     writing-mode: vertical-rl;
     text-orientation: mixed;
@@ -1006,9 +1242,9 @@ nav ul li a {
 .side-border img {
     transform: rotate(90deg);
     display: block;
-    width: 60px !important;
+    width: 60px;
     height: auto;
-    margin: 10px auto !important;
+    margin: 10px auto;
 }
 
 .right-side {
@@ -1033,6 +1269,14 @@ body {
     padding-top: 80px !important;
 }
 
+/* パララックス効果を無効化 */
+.parallax {
+    position: relative !important;
+    z-index: 1 !important;
+    transform: none !important;
+    will-change: auto !important;
+}
+
 /* ロゴサイズを50%縮小 */
 .uk-navbar-item img,
 .uk-logo img {
@@ -1047,31 +1291,183 @@ body {
     }
 }
 
-/* End of Style.css
+/* 黄金比デザインシステム
 ============================================================ */
 
-
-.home_right {
-    background-image: url('./images/top_ipad.png');
-    background-repeat: no-repeat;
-    height: 680px;
-    width: 500px;
-    /* 必要に応じて調整 */
-    position: relative;
-    background-size: contain;
-    background-position: center;
-    margin: 0 auto;
-    /* センターに配置 */
+:root {
+    /* 黄金比 φ = 1.618 */
+    --phi: 1.618;
+    --phi-inverse: 0.618; /* 1/φ */
+    
+    /* 黄金比ベースのスペーシング */
+    --space-xs: 0.618rem;     /* φ⁻¹ */
+    --space-sm: 1rem;         /* base */
+    --space-md: 1.618rem;     /* φ */
+    --space-lg: 2.618rem;     /* φ + 1 */
+    --space-xl: 4.236rem;     /* φ² */
+    --space-xxl: 6.854rem;    /* φ³ */
+    
+    /* 黄金比ベースのフォントサイズ */
+    --font-xs: 0.618rem;      /* 約10px */
+    --font-sm: 0.882rem;      /* 約14px */
+    --font-md: 1rem;          /* 16px base */
+    --font-lg: 1.618rem;      /* 約26px */
+    --font-xl: 2.618rem;      /* 約42px */
+    --font-xxl: 4.236rem;     /* 約68px */
+    
+    /* 黄金比ベースの幅 */
+    --width-narrow: 38.2%;    /* φ⁻¹ × 100 */
+    --width-wide: 61.8%;      /* φ⁻¹ × 100 */
 }
 
-#mieruka {
-    position: absolute;
-    top: 50%;
-    left: 50.5%;
-    width: 420px;
-    height: 555px;
-    transform: translate(-50%, -50%);
+/* コンテナの黄金比適用 */
+.uk-container {
+    max-width: calc(100vw * var(--phi-inverse)) !important;
 }
+
+/* セクション間の黄金比スペーシング */
+.uk-section {
+    padding-top: var(--space-lg) !important;
+    padding-bottom: var(--space-lg) !important;
+}
+
+.uk-section-large {
+    padding-top: var(--space-xl) !important;
+    padding-bottom: var(--space-xl) !important;
+}
+
+/* ヘッダー要素の黄金比 */
+h1, .uk-heading-medium {
+    font-size: var(--font-xxl) !important;
+    line-height: 1.2 !important;
+    margin-bottom: var(--space-lg) !important;
+}
+
+h2, .uk-heading-small {
+    font-size: var(--font-xl) !important;
+    line-height: 1.3 !important;
+    margin-bottom: var(--space-md) !important;
+}
+
+h3, .uk-card-title {
+    font-size: var(--font-lg) !important;
+    line-height: 1.4 !important;
+    margin-bottom: var(--space-sm) !important;
+}
+
+/* テキストのスペーシング */
+p, .uk-text-lead {
+    margin-bottom: var(--space-md) !important;
+    line-height: 1.618 !important;
+}
+
+.uk-text-lead {
+    font-size: calc(var(--font-md) * var(--phi)) !important;
+}
+
+/* カードレイアウトの黄金比 */
+.uk-card {
+    padding: var(--space-lg) !important;
+    margin-bottom: var(--space-md) !important;
+}
+
+/* グリッドの黄金比適用 */
+.golden-grid-2-3 {
+    display: grid !important;
+    grid-template-columns: var(--width-wide) var(--width-narrow) !important;
+    gap: var(--space-md) !important;
+}
+
+.golden-grid-3-2 {
+    display: grid !important;
+    grid-template-columns: var(--width-narrow) var(--width-wide) !important;
+    gap: var(--space-md) !important;
+}
+
+/* ボタンの黄金比 */
+.uk-button {
+    padding: var(--space-xs) var(--space-md) !important;
+    font-size: var(--font-md) !important;
+    border-radius: calc(var(--space-xs) * 0.5) !important;
+}
+
+.uk-button-large {
+    padding: var(--space-sm) var(--space-lg) !important;
+    font-size: var(--font-lg) !important;
+}
+
+/* Hero セクションの黄金比 */
+.hero-golden {
+    min-height: calc(100vh * var(--phi-inverse)) !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* マージンとパディングの黄金比 */
+.uk-margin {
+    margin-bottom: var(--space-md) !important;
+}
+
+.uk-margin-large {
+    margin-bottom: var(--space-lg) !important;
+}
+
+.uk-margin-small {
+    margin-bottom: var(--space-sm) !important;
+}
+
+.uk-padding {
+    padding: var(--space-md) !important;
+}
+
+.uk-padding-large {
+    padding: var(--space-lg) !important;
+}
+
+/* フッターの黄金比調整 */
+footer {
+    padding-top: var(--space-xl) !important;
+    padding-bottom: var(--space-lg) !important;
+}
+
+/* レスポンシブ調整 */
+@media (max-width: 960px) {
+    :root {
+        --space-xs: 0.5rem;
+        --space-sm: 0.8rem;
+        --space-md: 1.3rem;
+        --space-lg: 2.1rem;
+        --space-xl: 3.4rem;
+        --space-xxl: 5.5rem;
+        
+        --font-xs: 0.6rem;
+        --font-sm: 0.8rem;
+        --font-md: 1rem;
+        --font-lg: 1.3rem;
+        --font-xl: 2.1rem;
+        --font-xxl: 3.4rem;
+    }
+    
+    .uk-container {
+        max-width: 95% !important;
+    }
+    
+    .golden-grid-2-3,
+    .golden-grid-3-2 {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+@media (max-width: 640px) {
+    :root {
+        --font-xxl: 2.5rem;
+        --font-xl: 1.8rem;
+        --font-lg: 1.2rem;
+    }
+}
+
+/* End of Style.css
+============================================================ */
 
 
 

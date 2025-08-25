@@ -68,11 +68,14 @@ cp -r . /path/to/wordpress/wp-content/themes/panolabo
 ### 自動デプロイ（FTP）
 
 ```bash
-# ステージング環境へデプロイ
+# 本番環境へデプロイ
 ./deploy.sh production
 
-# 本番環境へデプロイ
+# ステージング環境へデプロイ
 ./deploy.sh staging
+
+# クイックデプロイ（特定ファイルのみ）
+./deploy-quick.sh "page-oem.php" production
 ```
 
 ### GitHub Actions（CI/CD）

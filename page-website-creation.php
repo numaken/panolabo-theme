@@ -15,7 +15,7 @@ get_header();
           <h2 class="uk-margin-remove">スマホ時代に最適化された洗練されたWebサイトを。</h2>
           <p class="uk-text-lead">デザイン、スピード、集客、アプリ展開までワンストップ。<br>成果を出すサイトを、確かな技術でご提供します。</p>
           <div class="uk-margin-large-top uk-animation-fade">
-            <a href="<?php echo esc_url(home_url('/contact')); ?>"
+            <a href="<?php echo esc_url(home_url('/contact/')); ?>"
                 class="uk-button uk-button-text"
                 uk-scrollspy="cls: uk-animation-scale-up; delay: 500;">
                 無料相談はこちら
@@ -182,7 +182,7 @@ get_header();
     <p class="uk-text-center">ウェブサイト制作に関するご相談やお見積もりはお気軽にどうぞ。</p>
     <!-- CTA -->
     <div class="uk-text-center uk-margin-large-top uk-animation-fade">
-      <a href="<?php echo esc_url(home_url('/contact')); ?>"
+      <a href="<?php echo esc_url(home_url('/contact/')); ?>"
          class="uk-button uk-button-text"
          uk-scrollspy="cls: uk-animation-scale-up; delay: 500;">
          お問い合わせフォームへ

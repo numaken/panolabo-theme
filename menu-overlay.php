@@ -93,50 +93,29 @@
         ]);
         
         // メニューから除外するページのスラッグ
-        $excluded_pages = ['addon-download', 'addon-purchase', 'cart', 'thanks', 'service-details', 'order-confirm', 'order-form', 'order-thanks'];
+        $excluded_pages = [
+            'addon-download', 'addon-purchase', 'cart', 'thanks', 'service-details', 
+            'order-confirm', 'order-form', 'order-thanks', 'about-career', 'about-en', 
+            'corp', 'subsidies', 'download-page', 'case-study', 'ws', 'portal', 
+            'dpe', 'legal-notice', 'recipe-suggestion', 'products-ai-boost'
+        ];
         
-        // ページカテゴリ定義（階層構造）
+        // ページカテゴリ定義（シンプル化）
         $page_categories = [
             'services' => [
                 'title' => 'サービス',
                 'icon' => 'icon: cog',
-                'pages' => ['app', 'smartphone-app', 'website-creation', 'vr-panoramic', 'ws', 'portal']
+                'pages' => ['smartphone-app', 'website-creation', 'vr-panoramic']
             ],
-            'ai-solutions' => [
-                'title' => 'AIソリューション',
+            'products' => [
+                'title' => 'プロダクト',
                 'icon' => 'icon: bolt',
-                'subcategories' => [
-                    'saas' => [
-                        'title' => 'SaaS',
-                        'icon' => 'icon: cloud',
-                        'pages' => ['aipostpilot-pro', 'chat2doc']
-                    ],
-                    'wp-plugins' => [
-                        'title' => 'WordPressプラグイン',
-                        'icon' => 'icon: database',
-                        'pages' => ['products', 'panolabo-ai-boost']
-                    ]
-                ]
+                'pages' => ['aipostpilot-pro', 'chat2doc', 'products', 'panolabo-ai-boost']
             ],
             'company' => [
                 'title' => '企業情報',
-                'icon' => 'icon: home',
-                'pages' => ['about-career', 'about-en', 'corp', 'partnership', 'subsidies']
-            ],
-            'portfolio' => [
-                'title' => '実績・事例',
-                'icon' => 'icon: image',
-                'pages' => ['case-study', 'clients', 'portfolio']
-            ],
-            'support' => [
-                'title' => 'サポート・ダウンロード',
-                'icon' => 'icon: download',
-                'pages' => ['download-page']
-            ],
-            'legal' => [
-                'title' => '法的情報',
-                'icon' => 'icon: file-text',
-                'pages' => ['privacy', 'term', 'tokushoho']
+                'icon' => 'icon: users',
+                'pages' => ['partnership', 'clients', 'portfolio']
             ]
         ];
         
@@ -154,37 +133,16 @@
             if (in_array($page->post_name, $priority_pages)) {
                 $priority_page_objects[$page->post_name] = $page;
             } else {
-                // カテゴリ分類（階層構造対応）
+                // カテゴリ分類（シンプル化）
                 $categorized = false;
                 foreach ($page_categories as $category_key => $category) {
-                    // 通常のpagesがある場合
-                    if (isset($category['pages']) && in_array($page->post_name, $category['pages'])) {
+                    if (in_array($page->post_name, $category['pages'])) {
                         if (!isset($categorized_pages[$category_key])) {
                             $categorized_pages[$category_key] = [];
                         }
                         $categorized_pages[$category_key][] = $page;
                         $categorized = true;
                         break;
-                    }
-                    
-                    // サブカテゴリがある場合
-                    if (isset($category['subcategories'])) {
-                        foreach ($category['subcategories'] as $subcat_key => $subcat) {
-                            if (in_array($page->post_name, $subcat['pages'])) {
-                                if (!isset($categorized_pages[$category_key])) {
-                                    $categorized_pages[$category_key] = [];
-                                }
-                                if (!isset($categorized_pages[$category_key]['subcategories'])) {
-                                    $categorized_pages[$category_key]['subcategories'] = [];
-                                }
-                                if (!isset($categorized_pages[$category_key]['subcategories'][$subcat_key])) {
-                                    $categorized_pages[$category_key]['subcategories'][$subcat_key] = [];
-                                }
-                                $categorized_pages[$category_key]['subcategories'][$subcat_key][] = $page;
-                                $categorized = true;
-                                break 2;
-                            }
-                        }
                     }
                 }
                 
@@ -212,11 +170,11 @@
                     </a></li>
             <?php endif; endforeach; ?>
             
-            <?php if (!empty($categorized_pages) || !empty($other_pages)): ?>
-                <!-- カテゴリ別ページ表示（階層構造対応） -->
+            <?php if (!empty($categorized_pages)): ?>
+                <!-- カテゴリ別ページ表示（シンプル化） -->
                 <?php foreach ($page_categories as $category_key => $category_info): ?>
                     <?php if (!empty($categorized_pages[$category_key])): ?>
-                        <!-- 大カテゴリ区切り線 -->
+                        <!-- カテゴリ区切り線 -->
                         <li class="uk-margin-small-top uk-margin-small-bottom">
                             <hr class="uk-divider-small">
                             <div class="uk-text-left uk-text-small uk-text-muted">
@@ -225,40 +183,13 @@
                             </div>
                         </li>
                         
-                        <?php if (isset($category_info['subcategories']) && isset($categorized_pages[$category_key]['subcategories'])): ?>
-                            <!-- サブカテゴリがある場合 -->
-                            <?php foreach ($category_info['subcategories'] as $subcat_key => $subcat_info): ?>
-                                <?php if (!empty($categorized_pages[$category_key]['subcategories'][$subcat_key])): ?>
-                                    <!-- 中カテゴリ表示 -->
-                                    <li class="uk-margin-small-top uk-margin-small-bottom">
-                                        <div class="uk-text-left uk-text-small uk-text-muted" style="margin-left: 20px; font-style: italic;">
-                                            <span uk-icon="<?php echo $subcat_info['icon']; ?>" class="uk-margin-small-right" aria-hidden="true"></span>
-                                            <?php echo $subcat_info['title']; ?>
-                                        </div>
-                                    </li>
-                                    
-                                    <!-- サブカテゴリ内ページ -->
-                                    <?php foreach ($categorized_pages[$category_key]['subcategories'][$subcat_key] as $page): ?>
-                                        <li role="none" style="margin-left: 30px;"><a href="<?php echo get_permalink($page->ID); ?>" class="uk-text-bold" role="menuitem">
-                                            <span uk-icon="<?php echo get_page_icon($page->post_name); ?>" class="uk-margin-small-right" aria-hidden="true"></span>
-                                            <?php echo esc_html($page->post_title); ?>
-                                        </a></li>
-                                    <?php endforeach; ?>
-                                <?php endif; ?>
-                            <?php endforeach; ?>
-                        <?php else: ?>
-                            <!-- 通常のカテゴリ内ページ -->
-                            <?php if (is_array($categorized_pages[$category_key])): ?>
-                                <?php foreach ($categorized_pages[$category_key] as $page): ?>
-                                    <?php if (is_object($page)): ?>
-                                        <li role="none"><a href="<?php echo get_permalink($page->ID); ?>" class="uk-text-bold" role="menuitem">
-                                            <span uk-icon="<?php echo get_page_icon($page->post_name); ?>" class="uk-margin-small-right" aria-hidden="true"></span>
-                                            <?php echo esc_html($page->post_title); ?>
-                                        </a></li>
-                                    <?php endif; ?>
-                                <?php endforeach; ?>
-                            <?php endif; ?>
-                        <?php endif; ?>
+                        <!-- カテゴリ内ページ -->
+                        <?php foreach ($categorized_pages[$category_key] as $page): ?>
+                            <li role="none"><a href="<?php echo get_permalink($page->ID); ?>" class="uk-text-bold" role="menuitem">
+                                <span uk-icon="<?php echo get_page_icon($page->post_name); ?>" class="uk-margin-small-right" aria-hidden="true"></span>
+                                <?php echo esc_html($page->post_title); ?>
+                            </a></li>
+                        <?php endforeach; ?>
                     <?php endif; ?>
                 <?php endforeach; ?>
                 
