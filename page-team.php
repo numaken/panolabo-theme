@@ -314,11 +314,11 @@ get_header(); ?>
         
         <div class="uk-button-group uk-flex-center uk-margin-top">
           <a href="<?php echo esc_url(home_url('/contact/')); ?>" 
-             class="uk-button uk-button-primary uk-button-small">
+             class="uk-button uk-button uk-button-text uk-button-small">
             <span uk-icon="icon: mail"></span> 技術相談・お問い合わせ
           </a>
           <a href="<?php echo esc_url(home_url('/portfolio-achievements')); ?>" 
-             class="uk-button uk-button-primary uk-button-small">
+             class="uk-button uk-button uk-button-text uk-button-small">
             <span uk-icon="icon: thumbnails"></span> 実績・ポートフォリオ
           </a>
         </div>

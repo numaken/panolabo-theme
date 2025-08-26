@@ -27,7 +27,7 @@ get_header();
       </p>
 
       <div class="uk-margin-top">
-        <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="uk-button uk-button-secondary uk-button-large">
+        <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="uk-button uk-button uk-button-text uk-button-large">
           パートナー相談する
         </a>
       </div>
@@ -205,7 +205,7 @@ get_header();
               <td class="uk-text-success">¥10,000/月</td>
               <td class="uk-text-meta">Webはアプリ契約に同梱0円</td>
               <td>
-                <button class="uk-button uk-button-default uk-button-small js-apply-sim"
+                <button class="uk-button uk-button uk-button-text uk-button-small js-apply-sim"
                   data-init="200000" data-mrr="15000">この条件で試算</button>
               </td>
             </tr>
@@ -219,7 +219,7 @@ get_header();
               <td class="uk-text-success">¥13,000/月</td>
               <td class="uk-text-meta">VR撮影は現地条件で変動</td>
               <td>
-                <button class="uk-button uk-button-default uk-button-small js-apply-sim"
+                <button class="uk-button uk-button uk-button-text uk-button-small js-apply-sim"
                   data-init="350000" data-mrr="18000">この条件で試算</button>
               </td>
             </tr>
@@ -233,7 +233,7 @@ get_header();
               <td>—</td>
               <td class="uk-text-meta">月額は通常なし／都度案件</td>
               <td>
-                <button class="uk-button uk-button-default uk-button-small js-apply-sim"
+                <button class="uk-button uk-button uk-button-text uk-button-small js-apply-sim"
                   data-init="200000" data-mrr="0">この条件で試算</button>
               </td>
             </tr>
@@ -244,7 +244,7 @@ get_header();
       <div class="uk-alert-primary uk-margin-top uk-alert" uk-alert>
         <h4 class="uk-alert-title">"同梱0円"で始めやすい</h4>
         <p>アプリ契約時は<strong>Web同梱0円</strong>で初期差益を確保。月額は<strong>あなたの設定 − ¥5,000</strong>が1店舗あたりの差益になります。VRは撮影実費が発生するため、別途見積となります。</p>
-        <p class="uk-margin-remove"><a href="#simple-sim" class="uk-button uk-button-primary uk-button-small">シミュレーターで確認する</a></p>
+        <p class="uk-margin-remove"><a href="#simple-sim" class="uk-button uk-button uk-button-text uk-button-small">シミュレーターで確認する</a></p>
       </div>
     </div>
   </section>
@@ -312,7 +312,7 @@ get_header();
         </div>
 
         <div class="uk-margin uk-text-center">
-          <button class="uk-button uk-button-primary uk-button-large" onclick="SIMPLE.calc()">一発計算</button>
+          <button class="uk-button uk-button uk-button-text uk-button-large" onclick="SIMPLE.calc()">一発計算</button>
         </div>
         <div id="s_warn" class="uk-margin-small"></div>
       </div>
@@ -444,8 +444,8 @@ get_header();
         </div>
 
         <div class="uk-margin">
-          <button class="uk-button uk-button-primary" onclick="TS.run()">計算する</button>
-          <button class="uk-button uk-button-default" onclick="TS.downloadCSV()">CSVダウンロード</button>
+          <button class="uk-button uk-button uk-button-text" onclick="TS.run()">計算する</button>
+          <button class="uk-button uk-button uk-button-text" onclick="TS.downloadCSV()">CSVダウンロード</button>
         </div>
         <div id="ts_warn" class="uk-margin-small"></div>
       </div>
@@ -564,8 +564,8 @@ get_header();
         技術は任せて、あなたは売るだけ。<br class="uk-visible@s">まずはどちらの参加形態が合うか相談しましょう。
       </p>
       <div class="uk-margin-top">
-        <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="uk-button uk-button-secondary uk-button-large uk-margin-small-right">パートナー相談する</a>
-        <a href="<?php echo esc_url(home_url('/products/')); ?>" class="uk-button uk-button-default uk-button-large">サービス詳細を見る</a>
+        <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="uk-button uk-button uk-button-text uk-button-large uk-margin-small-right">パートナー相談する</a>
+        <a href="<?php echo esc_url(home_url('/products/')); ?>" class="uk-button uk-button uk-button-text uk-button-large">サービス詳細を見る</a>
       </div>
     </div>
   </section>

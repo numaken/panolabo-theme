@@ -28,10 +28,10 @@ get_header();
           「作って終わり」をやめ、<strong>集客と収益を"仕組み化"</strong>します。
         </p>
         <div class="uk-margin">
-          <a class="uk-button uk-button-primary uk-button-large" href="<?php echo esc_url(home_url('/contact/')); ?>">
+          <a class="uk-button uk-button uk-button-text uk-button-large" href="<?php echo esc_url(home_url('/contact/')); ?>">
             まずは相談する
           </a>
-          <a class="uk-button uk-button-default uk-button-large uk-margin-small-left" href="<?php echo esc_url(home_url('/oem/')); ?>">
+          <a class="uk-button uk-button uk-button-text uk-button-large uk-margin-small-left" href="<?php echo esc_url(home_url('/oem/')); ?>">
             OEMパートナーを見る
           </a>
         </div>
@@ -132,7 +132,7 @@ get_header();
             <li>アカウント別の軽量KPI記録</li>
             <li>WPや外部APIからの連携も拡張可</li>
           </ul>
-          <a class="uk-button uk-button-default" href="<?php echo esc_url(home_url('/products/')); ?>">詳細を見る</a>
+          <a class="uk-button uk-button uk-button-text" href="<?php echo esc_url(home_url('/products/')); ?>">詳細を見る</a>
         </div>
       </div>
       <div>
@@ -144,7 +144,7 @@ get_header();
             <li>議事・要件・仕様書の一次生成</li>
             <li>OEMで自社ブランド化も可能</li>
           </ul>
-          <a class="uk-button uk-button-default" href="<?php echo esc_url(home_url('/products/')); ?>">詳細を見る</a>
+          <a class="uk-button uk-button uk-button-text" href="<?php echo esc_url(home_url('/products/')); ?>">詳細を見る</a>
         </div>
       </div>
       <div>
@@ -156,7 +156,7 @@ get_header();
             <li>アプリストア最適化（ASO）</li>
             <li>収益化戦略サポート</li>
           </ul>
-          <a class="uk-button uk-button-secondary" href="https://app-vending.panolabollc.com/" target="_blank">
+          <a class="uk-button uk-button uk-button-text" href="https://app-vending.panolabollc.com/" target="_blank">
             <span uk-icon="external-link"></span> サービスを見る
           </a>
         </div>
@@ -215,7 +215,7 @@ get_header();
     </div>
     
     <div class="uk-text-center uk-margin-large-top">
-      <a class="uk-button uk-button-primary uk-button-large" href="<?php echo esc_url(home_url('/products/')); ?>">
+      <a class="uk-button uk-button uk-button-text uk-button-large" href="<?php echo esc_url(home_url('/products/')); ?>">
         プラグイン詳細を見る
       </a>
     </div>
@@ -261,10 +261,10 @@ get_header();
     <h2 class="uk-heading-small uk-text-white">「作って終わり」をやめて、仕組みで成果を。</h2>
     <p class="uk-text-lead uk-text-white">小規模でも、AIを使えば会社規模を動かせる。その設計から一緒に。</p>
     <div class="uk-margin">
-      <a class="uk-button uk-button-default uk-button-large uk-margin-small-right" href="<?php echo esc_url(home_url('/contact/')); ?>">
+      <a class="uk-button uk-button uk-button-text uk-button-large uk-margin-small-right" href="<?php echo esc_url(home_url('/contact/')); ?>">
         相談する
       </a>
-      <a class="uk-button uk-button-secondary uk-button-large" href="<?php echo esc_url(home_url('/oem/')); ?>">
+      <a class="uk-button uk-button uk-button-text uk-button-large" href="<?php echo esc_url(home_url('/oem/')); ?>">
         OEMを検討する
       </a>
     </div>

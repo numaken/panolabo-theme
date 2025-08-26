@@ -525,11 +525,11 @@ get_header(); ?>
         
         <div class="uk-button-group uk-flex-center uk-margin-top">
           <a href="<?php echo esc_url(home_url('/contact/')); ?>" 
-             class="uk-button uk-button-primary uk-button-small">
+             class="uk-button uk-button uk-button-text uk-button-small">
             <span uk-icon="icon: mail"></span> お問い合わせ
           </a>
           <a href="<?php echo esc_url(home_url('/services')); ?>" 
-             class="uk-button uk-button-primary uk-button-small">
+             class="uk-button uk-button uk-button-text uk-button-small">
             <span uk-icon="icon: thumbnails"></span> サービス詳細
           </a>
         </div>

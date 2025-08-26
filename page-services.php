@@ -35,22 +35,22 @@ get_header(); ?>
       <div class="uk-text-center uk-margin-large">
         <h2 class="uk-heading-small uk-text-bold uk-margin-bottom">サービス一覧</h2>
         <nav class="uk-flex uk-flex-center uk-flex-wrap uk-margin-top uk-grid-small" uk-grid>
-          <div><a href="#vr-service" class="uk-button uk-button-default uk-border-rounded" uk-scroll>
+          <div><a href="#vr-service" class="uk-button uk-button uk-button-text uk-border-rounded" uk-scroll>
             <span uk-icon="icon: world" class="uk-margin-small-right"></span>VR/360°制作
           </a></div>
-          <div><a href="#app-service" class="uk-button uk-button-default uk-border-rounded" uk-scroll>
+          <div><a href="#app-service" class="uk-button uk-button uk-button-text uk-border-rounded" uk-scroll>
             <span uk-icon="icon: tablet" class="uk-margin-small-right"></span>アプリ開発
           </a></div>
-          <div><a href="#web-service" class="uk-button uk-button-default uk-border-rounded" uk-scroll>
+          <div><a href="#web-service" class="uk-button uk-button uk-button-text uk-border-rounded" uk-scroll>
             <span uk-icon="icon: desktop" class="uk-margin-small-right"></span>Web制作
           </a></div>
-          <div><a href="#saas-service" class="uk-button uk-button-primary uk-border-rounded" uk-scroll>
+          <div><a href="#saas-service" class="uk-button uk-button uk-button-text uk-border-rounded" uk-scroll>
             <span uk-icon="icon: cloud" class="uk-margin-small-right"></span>SaaSサービス
           </a></div>
-          <div><a href="#ai-service" class="uk-button uk-button-secondary uk-border-rounded" uk-scroll>
+          <div><a href="#ai-service" class="uk-button uk-button uk-button-text uk-border-rounded" uk-scroll>
             <span uk-icon="icon: future" class="uk-margin-small-right"></span>AI統合
           </a></div>
-          <div><a href="#plugin-service" class="uk-button uk-button-default uk-border-rounded" uk-scroll>
+          <div><a href="#plugin-service" class="uk-button uk-button uk-button-text uk-border-rounded" uk-scroll>
             <span uk-icon="icon: wordpress" class="uk-margin-small-right"></span>プラグイン
           </a></div>
         </nav>
@@ -388,7 +388,7 @@ get_header(); ?>
               <div class="uk-margin-small-bottom">
                 <span class="uk-label uk-label-success">月額¥2,980〜</span>
               </div>
-              <a href="<?php echo esc_url(home_url('/products/')); ?>" class="uk-button uk-button-primary uk-width-1-1">
+              <a href="<?php echo esc_url(home_url('/products/')); ?>" class="uk-button uk-button uk-button-text uk-width-1-1">
                 詳細を見る
               </a>
             </div>
@@ -415,7 +415,7 @@ get_header(); ?>
               <div class="uk-margin-small-bottom">
                 <span class="uk-label uk-label-warning">月額¥1,980〜</span>
               </div>
-              <a href="<?php echo esc_url(home_url('/products/')); ?>" class="uk-button uk-button-secondary uk-width-1-1">
+              <a href="<?php echo esc_url(home_url('/products/')); ?>" class="uk-button uk-button uk-button-text uk-width-1-1">
                 詳細を見る
               </a>
             </div>
@@ -605,7 +605,7 @@ get_header(); ?>
                     <div><span class="uk-label uk-label-success uk-text-small">成約率UP</span></div>
                   </div>
                   <div class="uk-text-center">
-                    <a href="<?php echo esc_url(home_url('/panolabo-ai-boost/')); ?>" class="uk-button uk-button-secondary uk-button-small">
+                    <a href="<?php echo esc_url(home_url('/panolabo-ai-boost/')); ?>" class="uk-button uk-button uk-button-text uk-button-small">
                       <span uk-icon="play" class="uk-margin-small-right"></span>実演デモを見る
                     </a>
                   </div>
