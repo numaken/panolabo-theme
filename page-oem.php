@@ -12,7 +12,7 @@ get_header();
        HERO
   =================================== -->
   <section class="uk-section uk-section-primary uk-light uk-text-center" style="background: linear-gradient(135deg, #316B3F 0%, #2E86AB 100%);">
-    <div class="uk-container uk-container-expand" style="max-width: 95vw; padding: 0 2.5vw;">
+    <div class="uk-container">
       <h1 class="uk-heading-large uk-margin-bottom">
         代理店は「売るだけ」。<br class="uk-visible@s">
         <span class="uk-text-warning">開発ゼロで新収益</span>
@@ -38,7 +38,7 @@ get_header();
        料金プラン（比較）
   =================================== -->
   <section class="uk-section uk-section-default">
-    <div class="uk-container uk-container-expand" style="max-width: 95vw; padding: 0 2.5vw;">
+    <div class="uk-container">
       <h2 class="uk-heading-line uk-text-center"><span>選べる2つの参加形態</span></h2>
 
       <div class="uk-child-width-1-2@m" uk-grid>
@@ -77,7 +77,7 @@ get_header();
        三者Win-Win
   =================================== -->
   <section class="uk-section uk-section-default">
-    <div class="uk-container uk-container-expand" style="max-width: 95vw; padding: 0 2.5vw;">
+    <div class="uk-container">
       <h2 class="uk-heading-line uk-text-center"><span>三者Win-Winの利益構造</span></h2>
 
       <div class="uk-grid-large uk-child-width-1-3@m" uk-grid>
@@ -129,7 +129,7 @@ get_header();
        ターゲット
   =================================== -->
   <section class="uk-section uk-section-muted">
-    <div class="uk-container uk-container-expand" style="max-width: 95vw; padding: 0 2.5vw;">
+    <div class="uk-container">
       <h2 class="uk-heading-line uk-text-center"><span>こんな方・企業に最適</span></h2>
 
       <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
@@ -160,7 +160,7 @@ get_header();
   </section>
 
   <section class="uk-section uk-section-default">
-    <div class="uk-container uk-container-expand" style="max-width: 95vw; padding: 0 2.5vw;">
+    <div class="uk-container">
       <h2 class="uk-heading-line uk-text-center"><span>価格と利益のカンタン目安</span></h2>
 
       <!-- 固定仕入（ロック表示） -->
@@ -273,7 +273,7 @@ get_header();
        超シンプル試算（直感表示版）
   ================================ -->
   <section id="simple-sim" class="uk-section uk-section-default">
-    <div class="uk-container uk-container-expand" style="max-width: 95vw; padding: 0 2.5vw;">
+    <div class="uk-container">
 
       <h2 class="uk-heading-medium uk-text-primary uk-text-bold uk-text-center">何件売ったら、いくら儲かる？</h2>
 
@@ -365,7 +365,7 @@ get_header();
        時系列シミュレーター（プラン切替対応）
   =================================== -->
   <section id="timeline-sim" class="uk-section uk-section-default">
-    <div class="uk-container uk-container-expand" style="max-width: 95vw; padding: 0 2.5vw;">
+    <div class="uk-container">
 
       <div class="uk-text-center uk-margin-large-bottom">
         <h2 class="uk-heading-medium uk-text-primary uk-text-bold">売上・利益の"積み上がり"を月ごとに可視化</h2>
@@ -487,7 +487,7 @@ get_header();
        実装フロー
   =================================== -->
   <section class="uk-section uk-section-muted">
-    <div class="uk-container uk-container-expand" style="max-width: 95vw; padding: 0 2.5vw;">
+    <div class="uk-container">
       <h2 class="uk-heading-line uk-text-center"><span>パートナー契約から実装まで</span></h2>
       <div class="uk-child-width-1-5@m uk-grid-match" uk-grid>
         <div class="uk-text-center">
@@ -523,7 +523,7 @@ get_header();
        FAQ（プラン対応）
   =================================== -->
   <section class="uk-section uk-section-default">
-    <div class="uk-container uk-container-expand" style="max-width: 95vw; padding: 0 2.5vw;">
+    <div class="uk-container">
       <h2 class="uk-heading-line uk-text-center"><span>よくある質問</span></h2>
 
       <ul uk-accordion="multiple: true">
@@ -558,7 +558,7 @@ get_header();
        CTA
   =================================== -->
   <section class="uk-section uk-section-primary uk-text-center uk-light" style="background: linear-gradient(135deg, #316B3F 0%, #2E86AB 100%);">
-    <div class="uk-container uk-container-expand" style="max-width: 95vw; padding: 0 2.5vw;">
+    <div class="uk-container">
       <h2 class="uk-heading-medium">開発リスクゼロで新収益源を</h2>
       <p class="uk-text-lead uk-margin">
         技術は任せて、あなたは売るだけ。<br class="uk-visible@s">まずはどちらの参加形態が合うか相談しましょう。

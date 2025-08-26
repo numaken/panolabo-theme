@@ -38,12 +38,21 @@ get_header();
       </div>
       <div class="uk-width-1-3@m uk-flex uk-flex-middle uk-flex-center">
         <div class="uk-card uk-card-default uk-card-body uk-text-center">
-          <!-- LCP画像：固定比でCLS回避 -->
-          <div class="plb-hero-thumb" style="aspect-ratio: 4 / 3; width:100%; background:#eee; display:flex; align-items:center; justify-content:center;">
-            <img src="<?php echo esc_url( get_theme_file_uri('/assets/img/hero-placeholder.webp') ); ?>"
-                 alt="Panolabo Hero" style="max-width:100%; height:auto;" loading="eager" />
+          <!-- ヒーロー画像：Panolaboブランドビジュアル -->
+          <div class="plb-hero-thumb" style="aspect-ratio: 4 / 3; width:100%; background: linear-gradient(135deg, #316B3F, #2E86AB); display:flex; align-items:center; justify-content:center; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+            <div style="text-align: center;">
+              <img src="<?php echo esc_url( get_theme_file_uri('/images/logo/panolabo-logoWr.svg') ); ?>"
+                   alt="Panolabo - AI×VR×アプリ×Web総合制作代理店" 
+                   style="width: 180px; height: auto; margin-bottom: 15px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));" 
+                   loading="eager" />
+              <div style="color: white; font-size: 0.85rem; font-weight: 600; text-shadow: 0 1px 2px rgba(0,0,0,0.3);">
+                <div style="background: rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 20px; margin-bottom: 8px;">
+                  🤖 AI・📱 VR・💻 Web・🔧 OEM
+                </div>
+                <p style="margin: 0; font-size: 0.9rem; opacity: 0.95;">1人総合制作代理店</p>
+              </div>
+            </div>
           </div>
-          <small class="uk-text-muted">※ダミー画像。差し替え推奨</small>
         </div>
       </div>
     </div>

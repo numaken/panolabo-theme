@@ -6,7 +6,7 @@ get_header();
 ?>
 
 <!-- ヒーローセクション - numakenテーマカラー統合 -->
-<section class="uk-section  parallax" style="background: linear-gradient(135deg, #69ba64 0%, #5aa659 100%); min-height: 550px;">
+<section class="uk-section parallax" style="background: linear-gradient(135deg, #69ba64 0%, #5aa659 100%); min-height: 550px; padding: 60px 0;">
   <div class="uk-container">
     <div class="uk-grid uk-flex-middle" uk-grid>
       <div class="uk-width-1-2@m">
@@ -35,7 +35,7 @@ get_header();
 </section>
 
 <!-- 問題提起＆ベネフィット -->
-<section class="uk-section  uk-padding-large">
+<section class="uk-section" style="padding: 80px 0;">
   <div class="uk-container">
     <h2 class="uk-text-center uk-text-bold uk-margin-bottom" style="color: #69ba64;">AI会話の管理、こんなお悩みありませんか？</h2>
     <div class="uk-grid-match uk-child-width-1-3@m uk-text-center" uk-grid>
@@ -65,7 +65,7 @@ get_header();
 </section>
 
 <!-- 解決策セクション -->
-<section class="uk-section  uk-padding-large" style="background: linear-gradient(135deg, #69ba64 0%, #5aa659 100%);">
+<section class="uk-section" style="background: linear-gradient(135deg, #69ba64 0%, #5aa659 100%); padding: 80px 0;">
   <div class="uk-container">
     <h2 class="uk-text-center uk-text-bold uk-margin-bottom">Chat2Docが全て解決します</h2>
     <div class="uk-grid-match uk-child-width-1-4@m uk-text-center" uk-grid>
@@ -102,7 +102,7 @@ get_header();
 </section>
 
 <!-- 機能一覧セクション -->
-<section class="uk-section  uk-padding-large">
+<section class="uk-section" style="padding: 80px 0;">
   <div class="uk-container">
     <h2 class="uk-heading-line uk-text-center uk-text-bold"><span style="color: #69ba64;">7つのカテゴリで完璧な構造化</span></h2>
     <div class="uk-grid-match uk-child-width-1-3@m uk-text-center uk-margin-large-top" uk-grid>
@@ -179,7 +179,7 @@ get_header();
 </section>
 
 <!-- 料金プランセクション -->
-<section class="uk-section  uk-padding-large">
+<section class="uk-section" style="padding: 80px 0;">
   <div class="uk-container">
     <h2 class="uk-heading-line uk-text-center uk-text-bold"><span style="color: #69ba64;">シンプルで分かりやすい料金プラン</span></h2>
     <div class="uk-text-center uk-margin-large-top">
@@ -210,7 +210,7 @@ get_header();
 </section>
 
 <!-- 対象ユーザーセクション -->
-<section class="uk-section  uk-padding-large">
+<section class="uk-section" style="padding: 80px 0;">
   <div class="uk-container">
     <h2 class="uk-heading-line uk-text-center uk-text-bold"><span style="color: #69ba64;">こんな方におすすめ</span></h2>
     <div class="uk-grid-match uk-child-width-1-3@m uk-text-center uk-margin-large-top" uk-grid>
@@ -244,7 +244,7 @@ get_header();
 </section>
 
 <!-- 使い方セクション -->
-<section class="uk-section  uk-padding-large">
+<section class="uk-section" style="padding: 80px 0;">
   <div class="uk-container">
     <h2 class="uk-heading-line uk-text-center uk-text-bold"><span style="color: #69ba64;">使い方は超簡単</span></h2>
     <div class="uk-grid-large uk-child-width-1-4@m uk-text-center uk-margin-large-top" uk-grid>
@@ -294,7 +294,7 @@ get_header();
 </section>
 
 <!-- CTA -->
-<section class="uk-section  uk-padding-large" style="background: linear-gradient(135deg, #69ba64 0%, #5aa659 100%);">
+<section class="uk-section" style="background: linear-gradient(135deg, #69ba64 0%, #5aa659 100%); padding: 80px 0;">
   <div class="uk-container">
     <h2 class="uk-heading-line uk-text-center uk-text-bold"><span>今すぐChat2Docを試してみませんか？</span></h2>
     <p class="uk-text-center uk-text-lead">完全無料、アカウント登録不要で今すぐ利用開始できます</p>
